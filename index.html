@@ -639,6 +639,22 @@
         </div>
       </div>
 
+      <!-- 1-Click Diagnostic Summary Export & Pre-fill Consultation Box -->
+      <div class="card" style="margin-top:24px;border:2px solid #6E252D;background:#FAF8F5;">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;">
+          <div>
+            <h3 style="margin:0 0 4px 0;font-size:17px;font-weight:800;color:#6E252D;" data-i18n="exportTitle">내 부모비자 종합 진단 리포트 복사 · 인쇄(PDF) &amp; 박앤코 상담 자동 프리필</h3>
+            <p style="margin:0;font-size:13.5px;color:#3F3F46;" data-i18n="exportSub">위 시뮬레이터(모듈 02~05)에서 입력하신 조건과 산출 결과를 1페이지 상담용 요약문으로 즉시 복사하거나 인쇄할 수 있어요.</p>
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;">
+            <button type="button" id="btn-copy-summary" class="btn-burgundy" style="font-size:13px;padding:9px 16px;" data-i18n="btnCopySummary">진단 요약문 클립보드 복사</button>
+            <button type="button" id="btn-print-summary" class="btn-secondary" style="font-size:13px;padding:9px 16px;color:#18181B !important;border-color:#6E252D;" data-i18n="btnPrintSummary">PDF / 인쇄하기</button>
+            <a id="btn-prefill-email" href="mailto:enquiry@parkcolawyers.com" class="btn-burgundy" style="font-size:13px;padding:9px 16px;background:#1F5138;border-color:#1F5138;" data-i18n="btnPrefillEmail">진단 결과 첨부해 이메일 문의 &rarr;</a>
+          </div>
+        </div>
+        <pre id="diagnostic-summary-preview" style="margin-top:12px;padding:12px 14px;background:#FFFFFF;border:1px solid #DED6C8;border-radius:8px;font-size:12.5px;color:#27272A;white-space:pre-wrap;font-family:inherit;line-height:1.55;"></pre>
+      </div>
+
       <!-- 6 Deep Legal Cards on Subclass 870 & Sponsor Rules -->
       <div style="margin-top:28px;">
         <h3 style="font-size:19px;font-weight:800;margin-bottom:8px;" data-i18n="s870DeepHeading">Subclass 870 비자 &amp; Parent Sponsor 심사지침(PAM3 VM-6276 · VM-6327) 6대 핵심 규칙</h3>

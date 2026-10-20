@@ -1,7 +1,7 @@
 {
   "manifest_version": "2026.10.20-parent-visas",
-  "generated_at": "2026-10-20T23:46:37+10:00",
-  "last_polled_date": "2026-10-20",
+  "generated_at": "2026-10-21T00:02:30+10:00",
+  "last_polled_date": "2026-10-21",
   "verification_stages": [
     "fetchStatus (HTTP transport / insane-search WAF-bypass retrieval)",
     "contentCheckStatus (SharePoint #contentBox / PageSchemaHiddenField / GetPriceList JSON extraction & \\u200b strip)",
@@ -32,11 +32,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "verified_2026-10-20",
       "http_code": 200,
-      "sha256": "cb2a816cd06761560cde1dbc3ef9bb3371448bd8549e0f9de07cea6e1f0e441d",
-      "bytes": 1410198,
+      "sha256": "f4768e380ba25d832b810ed8435aa14718f413b388ce964c19d0c3e473f1d4c9",
+      "bytes": 1410199,
       "method": "insane-search-live",
       "changed_since_last_poll": true,
-      "checked_at": "2026-10-20T23:46:37+10:00"
+      "checked_at": "2026-10-21T00:02:30+10:00"
     },
     {
       "id": "ha_pricing_api",
@@ -62,7 +62,7 @@
       "bytes": 246288,
       "method": "dha-json-api-post",
       "changed_since_last_poll": false,
-      "checked_at": "2026-10-20T23:46:37+10:00"
+      "checked_at": "2026-10-21T00:02:30+10:00"
     },
     {
       "id": "ha_subclass_143",
@@ -84,11 +84,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "verified_2026-10-20",
       "http_code": 200,
-      "sha256": "74bb50db655fd28d8155e815e7747ed030bf2866d8fcb5a9680827472b26c199",
+      "sha256": "66df4eb8a66174068a6053e080423cba715f2a764797e040b70c2871e54b856a",
       "bytes": 1503797,
       "method": "insane-search-live",
       "changed_since_last_poll": true,
-      "checked_at": "2026-10-20T23:46:37+10:00"
+      "checked_at": "2026-10-21T00:02:30+10:00"
     },
     {
       "id": "ha_subclass_173",
@@ -110,11 +110,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "verified_2026-10-20",
       "http_code": 200,
-      "sha256": "d130bcd49b0bdce783fbd9f68e05f0d09baaa90174a1699f5507a1a8920dbb5b",
-      "bytes": 1483496,
+      "sha256": "697eba32034bfbd79b805b825f23a549f0c426764ff03e3859d90f795f016568",
+      "bytes": 1483495,
       "method": "insane-search-live",
       "changed_since_last_poll": true,
-      "checked_at": "2026-10-20T23:46:37+10:00"
+      "checked_at": "2026-10-21T00:02:30+10:00"
     },
     {
       "id": "ha_subclass_864",
@@ -136,11 +136,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "verified_2026-10-20",
       "http_code": 200,
-      "sha256": "a4a683ddbd7a7b9c2a8aeabf4e5546d9ced87831cead141770ecb43d892ceddc",
+      "sha256": "c6eb852d2d7e8347866fe5f63acc34ae6d72391266a8ff70c767fce1ee467ac2",
       "bytes": 1495160,
       "method": "insane-search-live",
       "changed_since_last_poll": true,
-      "checked_at": "2026-10-20T23:46:37+10:00"
+      "checked_at": "2026-10-21T00:02:30+10:00"
     },
     {
       "id": "ha_subclass_884",
@@ -162,11 +162,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "verified_2026-10-20",
       "http_code": 200,
-      "sha256": "429212cff5604105a3b71d8438ba780b18cbdd8a1f8c5f98938a5ef56115b0c9",
+      "sha256": "f5bf451f40e54a2d06c970a7f69fb101064193d660ffec981330ad2642059239",
       "bytes": 1481404,
       "method": "insane-search-live",
       "changed_since_last_poll": true,
-      "checked_at": "2026-10-20T23:46:37+10:00"
+      "checked_at": "2026-10-21T00:02:30+10:00"
     },
     {
       "id": "ha_subclass_103",
@@ -188,11 +188,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "verified_2026-10-20",
       "http_code": 200,
-      "sha256": "ca6f7d1c8b75b4eefc5deaa1b7b8baf9d3434810cb9c86f577de2676392b458f",
+      "sha256": "68c5285c13393d076e6f8132b3e8a6384d29f25ab603c17f47d5baa7bb12dcbe",
       "bytes": 1498847,
       "method": "insane-search-live",
       "changed_since_last_poll": true,
-      "checked_at": "2026-10-20T23:46:37+10:00"
+      "checked_at": "2026-10-21T00:02:30+10:00"
     },
     {
       "id": "ha_subclass_804",
@@ -214,11 +214,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "verified_2026-10-20",
       "http_code": 200,
-      "sha256": "c2c828465daa8f356806912e19b6f3606f308e6d34bf2d9b4910a98c6ec2d7f0",
+      "sha256": "462b7d7ce286936e909cefb46d074c4deb378dfb3aa62a9ce4fac624d0e861e9",
       "bytes": 1492532,
       "method": "insane-search-live",
       "changed_since_last_poll": true,
-      "checked_at": "2026-10-20T23:46:37+10:00"
+      "checked_at": "2026-10-21T00:02:30+10:00"
     },
     {
       "id": "ha_subclass_870",
@@ -240,11 +240,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "verified_2026-10-20",
       "http_code": 200,
-      "sha256": "f8acbca609d1a2121bc539fea10e04b21db21b0c273e83ec992ff5b03d031c09",
+      "sha256": "d3115705ec2bb770d7445b82f66cfaa62a76acc9fe0e1b087275be99540452a4",
       "bytes": 1492037,
       "method": "insane-search-live",
       "changed_since_last_poll": true,
-      "checked_at": "2026-10-20T23:46:37+10:00"
+      "checked_at": "2026-10-21T00:02:30+10:00"
     },
     {
       "id": "ha_bof_test",
@@ -266,11 +266,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "verified_2026-10-20",
       "http_code": 200,
-      "sha256": "1d80b3286f21c788320892ddda10f66c02a69515f62fbe6a59e2ac1389b61176",
+      "sha256": "d3a25151210c7c8b4437c771a41e394a14b2c180ac339946bf6f0fe47d320f40",
       "bytes": 1415707,
       "method": "insane-search-live",
       "changed_since_last_poll": true,
-      "checked_at": "2026-10-20T23:46:37+10:00"
+      "checked_at": "2026-10-21T00:02:30+10:00"
     },
     {
       "id": "ha_planning_levels",
@@ -296,7 +296,7 @@
       "bytes": 18172,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-10-20T23:46:37+10:00"
+      "checked_at": "2026-10-21T00:02:30+10:00"
     },
     {
       "id": "leg_lin_26_042",
@@ -318,11 +318,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "verified_2026-10-20",
       "http_code": 200,
-      "sha256": "3adc39642ac825184cdc078ba982d203a540062ecaaddcf625ad198b003332d3",
-      "bytes": 85196,
+      "sha256": "cc1a0807d098d4f4e42feeec6f93a33b2b2e298da954926f6d40d3aa6ca46810",
+      "bytes": 85199,
       "method": "insane-search-live",
       "changed_since_last_poll": true,
-      "checked_at": "2026-10-20T23:46:37+10:00"
+      "checked_at": "2026-10-21T00:02:30+10:00"
     },
     {
       "id": "sa_aos_policy",
@@ -344,11 +344,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "verified_2026-10-20",
       "http_code": 200,
-      "sha256": "b47f67913dd8394f75788c5a9e465f597cf1659c4acf3b5d49481482f0878f7c",
+      "sha256": "fb2657c8b8a46b88c2a61b9a8a4b525a24a445579f32533c488d6ed221ccb6f1",
       "bytes": 206055,
       "method": "insane-search-live",
       "changed_since_last_poll": true,
-      "checked_at": "2026-10-20T23:46:37+10:00"
+      "checked_at": "2026-10-21T00:02:30+10:00"
     },
     {
       "id": "sa_medicare_rhca",
@@ -374,7 +374,7 @@
       "bytes": 7108,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-10-20T23:46:37+10:00"
+      "checked_at": "2026-10-21T00:02:30+10:00"
     },
     {
       "id": "dss_guide_aos",
@@ -396,11 +396,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "verified_2026-10-20",
       "http_code": 200,
-      "sha256": "12e4870abad0a0a9bc008dbc8088b139ac79db0e02b4b4b6b75235902d3e368b",
+      "sha256": "ab583318be691a8fc0f089d0d5e8f2f426d8065e7dbac4eb834d1ece7ae1a021",
       "bytes": 32159,
       "method": "insane-search-live",
       "changed_since_last_poll": true,
-      "checked_at": "2026-10-20T23:46:37+10:00"
+      "checked_at": "2026-10-21T00:02:30+10:00"
     }
   ],
   "internal_policy_references": [
