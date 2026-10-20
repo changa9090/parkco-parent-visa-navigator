@@ -85,9 +85,10 @@
           <a href="#queue-dashboard" class="whm-nav-pill" data-i18n="pillM1">01 · 실시간 대기열 &amp; 3대 분석 그래프</a>
           <a href="#queue-simulator" class="whm-nav-pill" data-i18n="pillM2">02 · 내 순번 &amp; 승인 연도 시뮬레이터</a>
           <a href="#pathway-wizard" class="whm-nav-pill" data-i18n="pillM3">03 · 7대 비자 맞춤 경로 &amp; 가족균형 진단기</a>
-          <a href="#cost-aos-calculator" class="whm-nav-pill" data-i18n="pillM4">04 · 총비용(TCO) &amp; AoS 소득 계산기</a>
-          <a href="#survival-guide" class="whm-nav-pill" data-i18n="pillM5">05 · 대기기간 생존 가이드 (메디케어·요양·신검)</a>
-          <a href="#links-hub" class="whm-nav-pill" data-i18n="pillM6">06 · 22개 원스톱 공식 링크 &amp; Poller</a>
+          <a href="#cost-aos-calculator" class="whm-nav-pill" data-i18n="pillM4">04 · 총비용(TCO) &amp; AoS 보증인 계산기</a>
+          <a href="#subclass-870-hub" class="whm-nav-pill" data-i18n="pillM870">05 · Subclass 870 &amp; 스폰서 자격 정밀 진단기</a>
+          <a href="#survival-guide" class="whm-nav-pill" data-i18n="pillM5">06 · 대기기간 생존 가이드 (메디케어·요양·신검)</a>
+          <a href="#links-hub" class="whm-nav-pill" data-i18n="pillM6">07 · 22개 원스톱 공식 링크 &amp; Poller</a>
         </div>
       </div>
 
@@ -544,6 +545,107 @@
           Social Security (Assurance of Support) Determination 2018 (ss 7–18) 및 DSS Social Security Guide 9.4 원문에 따른 핵심 실무 기준이에요.
         </p>
         <div id="aos-deep-cards" class="pv-inference-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODULE 04B (NEW): Subclass 870 Sponsored Parent (Temporary) Visa & Parent Sponsor Eligibility Hub -->
+  <section class="band-ivory" id="subclass-870-hub">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="overline-serif light-mode" data-i18n="m870Overline">MODULE 05 · SUBCLASS 870 (SPONSORED PARENT TEMPORARY) &amp; PARENT SPONSOR ELIGIBILITY HUB</span>
+          <h2 data-i18n="m870Title">Subclass 870 (임시 부모비자 3년/5년 · 최대 10년) &amp; 스폰서 자녀 자격($83,454.80 · 50% 룰) 정밀 진단기</h2>
+          <p data-i18n="m870Sub">
+            Migration Regulations 1994 (regs 2.60U–2.60Z, Sch 1 Item 1239, Sch 2 Part 870), LIN 19/146, 그리고 PAM3 심사지침(VM-6276 스폰서십 · VM-6327 비자) 원문을 기반으로 <strong>스폰서 자녀(또는 사위/며느리)의 적격 여부, 과세소득 $83,454.80 및 주 스폰서 50%($41,727.40) 최소 소득 룰, 가구당 1건(최대 2명) 제한, 2차 신청비 28일/70일 절대 납부 기한(reg 2.12D), 90일 해외 체류 간격, 그리고 영주 부모비자(143/103)와의 비대칭 잠금 규칙</strong>을 정밀 진단해요.
+          </p>
+        </div>
+      </div>
+
+      <div class="calc-grid">
+        <!-- 870 Sponsor & Visa Input Panel -->
+        <div class="card">
+          <h3 style="margin-top:0;font-size:17px;font-weight:800;" data-i18n="s870FormTitle">Subclass 870 스폰서(자녀/사위/며느리) 자격 &amp; 비자 시뮬레이션 입력</h3>
+
+          <div class="form-row" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+            <div class="form-group">
+              <label for="s870-sponsor-status" data-i18n="s870LblStatus">1. 스폰서 자녀(또는 사위/며느리) 체류 신분</label>
+              <select id="s870-sponsor-status" class="form-control">
+                <option value="citizen" selected>호주 시민권자 (거주기간 제한 없음)</option>
+                <option value="pr_4yr_plus">호주 영주권자(PR) / 적격 NZ 시민권자 — 최근 4년 이상 호주 통상 거주</option>
+                <option value="pr_under_4yr">호주 영주권자(PR) — 최근 호주 거주 4년 미만 (⚠️ 부적격)</option>
+                <option value="unlawful_or_bve">최근 4년 내 불법체류 또는 BVA/B/C 외 브리징(BVE 등) 이력 있음</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="s870-relationship" data-i18n="s870LblRel">2. 주 스폰서와 부모님의 관계 (reg 2.60U(1)(c))</label>
+              <select id="s870-relationship" class="form-control">
+                <option value="child" selected>친자녀 / 입양자녀 / 의붓자녀 본인</option>
+                <option value="inlaw">자녀의 배우자/파트너 (사위 또는 며느리 — 단독 스폰서 적격!)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+            <div class="form-group">
+              <label for="s870-sponsor-income" data-i18n="s870LblSponsorInc">3. 주 스폰서 본인의 직전 연도 ATO NOA 과세소득 (AUD)</label>
+              <input type="number" id="s870-sponsor-income" class="form-control" min="0" max="1000000" step="1000" value="55000" />
+            </div>
+            <div class="form-group">
+              <label for="s870-partner-income" data-i18n="s870LblPartnerInc">4. 합산할 배우자(및/또는 다른 자녀 1명)의 ATO NOA 과세소득 (AUD)</label>
+              <input type="number" id="s870-partner-income" class="form-control" min="0" max="1000000" step="1000" value="35000" />
+            </div>
+          </div>
+
+          <div class="form-row" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+            <div class="form-group">
+              <label for="s870-household" data-i18n="s870LblHousehold">5. 가구(Household) 내 기존 활성 870 스폰서십 유무</label>
+              <select id="s870-household" class="form-control">
+                <option value="none" selected>없음 (우리 부부 가구에서 첫 870 스폰서십)</option>
+                <option value="existing_inlaws">배우자가 이미 시부모/처가 부모님을 870 스폰서 중 (⚠️ 가구당 1건 제한)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="s870-pr-plan" data-i18n="s870LblPrPlan">6. 영주 부모비자(143/103/864) 병행 계획</label>
+              <select id="s870-pr-plan" class="form-control">
+                <option value="pr_first" selected>이미 143/103을 먼저 접수했거나, 870 전에 먼저 접수할 예정 (✅ 황금 순서)</option>
+                <option value="870_first">870을 먼저 받고 체류 중에 143/864 영주비자를 접수할 생각 (❌ 법정 차단)</option>
+                <option value="870_only">영주비자 계획 없이 870(최대 10년)만 이용할 예정</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+            <div class="form-group">
+              <label for="s870-duration" data-i18n="s870LblDur">7. 신청할 870 비자 기간 &amp; 부모님 인원</label>
+              <select id="s870-duration" class="form-control">
+                <option value="3yr_1">3년 비자 · 부모님 1분</option>
+                <option value="3yr_2">3년 비자 · 부모님 2분 (부부)</option>
+                <option value="5yr_1">5년 비자 · 부모님 1분</option>
+                <option value="5yr_2" selected>5년 비자 · 부모님 2분 (부부)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="s870-prev-years" data-i18n="s870LblPrevYrs">8. 부모님이 기존에 소지했던 870 누적 연수 (평생 10년 한도)</label>
+              <input type="number" id="s870-prev-years" class="form-control" min="0" max="10" value="0" />
+            </div>
+          </div>
+        </div>
+
+        <!-- 870 Output Panel -->
+        <div class="card">
+          <h3 style="margin-top:0;font-size:17px;font-weight:800;" data-i18n="s870ResultTitle">Subclass 870 스폰서 적격 · 50% 소득 룰 &amp; 비용·잠금 진단 결과</h3>
+          <div id="s870-output-content"></div>
+        </div>
+      </div>
+
+      <!-- 6 Deep Legal Cards on Subclass 870 & Sponsor Rules -->
+      <div style="margin-top:28px;">
+        <h3 style="font-size:19px;font-weight:800;margin-bottom:8px;" data-i18n="s870DeepHeading">Subclass 870 비자 &amp; Parent Sponsor 심사지침(PAM3 VM-6276 · VM-6327) 6대 핵심 규칙</h3>
+        <p style="font-size:14px;color:#52525B;margin-bottom:16px;" data-i18n="s870DeepSub">
+          가족균형테스트 면제라는 큰 장점이 있는 반면, 스폰서 자격과 비자 조건에서 놓치면 거절·잠금되는 6가지 법정 규칙이에요.
+        </p>
+        <div id="s870-deep-cards" class="pv-inference-grid"></div>
       </div>
     </div>
   </section>
