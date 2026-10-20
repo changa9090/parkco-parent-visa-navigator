@@ -1,0 +1,309 @@
+{
+  "generated_at": "2026-10-20T23:40:02+10:00",
+  "last_polled_date": "2026-10-20",
+  "official_contact": "enquiry@parkcolawyers.com",
+  "live_queue_state": {
+    "as_at_date": "31 August 2026",
+    "last_updated_str": "6/10/2026 10:27 AM",
+    "queue_release_bullets": {
+      "Contributory Parent": "November 2018",
+      "Contributory Aged Parent": "November 2020",
+      "Parent": "March 2014",
+      "Aged Parent": "October 2014"
+    },
+    "milestone_table": [
+      {
+        "visa_type": "Temporary to Permanent (173 to 143 and 884 to 864)",
+        "acknowledge_new_application": "Approx. 4 weeks",
+        "queue_assessment": "N/A",
+        "visa_assessment_queue_release_date": "May 2026"
+      },
+      {
+        "visa_type": "Contributory Parent (143)",
+        "acknowledge_new_application": "Approx. 4 weeks",
+        "queue_assessment": "Lodged April 2024",
+        "visa_assessment_queue_release_date": "Lodged/queued up to November 2018"
+      },
+      {
+        "visa_type": "Contributory Parent (Temp) (173)",
+        "acknowledge_new_application": "Approx. 4 weeks",
+        "queue_assessment": "Lodged April 2024",
+        "visa_assessment_queue_release_date": "Lodged/queued up to November 2018"
+      },
+      {
+        "visa_type": "Contributory Aged Parent (864)",
+        "acknowledge_new_application": "Approx. 4 weeks",
+        "queue_assessment": "Lodged April 2023",
+        "visa_assessment_queue_release_date": "Lodged/queued up to November 2020"
+      },
+      {
+        "visa_type": "Contributory Aged Parent (Temp) (884)",
+        "acknowledge_new_application": "Approx. 4 weeks",
+        "queue_assessment": "Lodged April 2023",
+        "visa_assessment_queue_release_date": "Lodged/queued up to November 2020"
+      },
+      {
+        "visa_type": "Parent (103)",
+        "acknowledge_new_application": "Approx. 4 weeks",
+        "queue_assessment": "Lodged February 2023",
+        "visa_assessment_queue_release_date": "Queued up to March 2014"
+      },
+      {
+        "visa_type": "Aged Parent (804)",
+        "acknowledge_new_application": "Approx. 4 weeks",
+        "queue_assessment": "Lodged January 2023",
+        "visa_assessment_queue_release_date": "Queued up to October 2014"
+      }
+    ],
+    "new_application_estimates": {
+      "Contributory Parent visas": "18 years",
+      "Parent & Aged Parent visas": "42 years"
+    }
+  },
+  "queue_lags_months_as_at_aug_2026": [
+    {
+      "id": "step_up",
+      "label_ko": "2단계 영주 전환 (173→143 / 884→864)",
+      "label_en": "2-Stage Temp→Perm (173→143 / 884→864)",
+      "stage1_assessment_str": "N/A (대기열 면제)",
+      "stage1_assessment_str_en": "N/A (Exempt from Queue)",
+      "stage1_lag_months": 0,
+      "stage2_release_str": "May 2026",
+      "stage2_lag_months": 3,
+      "official_wait_years": 0.3,
+      "empirical_velocity_months_per_year": 12.0
+    },
+    {
+      "id": "sub_864_884",
+      "label_ko": "기여제 고령부모 (864 / 884 · Onshore 67+)",
+      "label_en": "Contributory Aged Parent (864 / 884 · Onshore 67+)",
+      "stage1_assessment_str": "2023년 4월 접수분",
+      "stage1_assessment_str_en": "Lodged April 2023",
+      "stage1_lag_months": 40,
+      "stage2_release_str": "November 2020",
+      "stage2_lag_months": 69,
+      "official_wait_years": 18,
+      "empirical_velocity_months_per_year": 9.13
+    },
+    {
+      "id": "sub_143_173",
+      "label_ko": "기여제 부모 (143 / 173 · 일반)",
+      "label_en": "Contributory Parent (143 / 173 · General)",
+      "stage1_assessment_str": "2024년 4월 접수분",
+      "stage1_assessment_str_en": "Lodged April 2024",
+      "stage1_lag_months": 28,
+      "stage2_release_str": "November 2018",
+      "stage2_lag_months": 93,
+      "official_wait_years": 18,
+      "empirical_velocity_months_per_year": 5.07
+    },
+    {
+      "id": "sub_804",
+      "label_ko": "일반 고령부모 (804 · Onshore 67+)",
+      "label_en": "Aged Parent (804 · Onshore 67+)",
+      "stage1_assessment_str": "2023년 1월 접수분",
+      "stage1_assessment_str_en": "Lodged January 2023",
+      "stage1_lag_months": 43,
+      "stage2_release_str": "October 2014",
+      "stage2_lag_months": 142,
+      "official_wait_years": 42,
+      "empirical_velocity_months_per_year": 2.35
+    },
+    {
+      "id": "sub_103",
+      "label_ko": "일반 부모 (103 · Offshore/일반)",
+      "label_en": "Parent (103 · General)",
+      "stage1_assessment_str": "2023년 2월 접수분",
+      "stage1_assessment_str_en": "Lodged February 2023",
+      "stage1_lag_months": 42,
+      "stage2_release_str": "March 2014",
+      "stage2_lag_months": 149,
+      "official_wait_years": 42,
+      "empirical_velocity_months_per_year": 4.18
+    }
+  ],
+  "historical_velocity_series": [
+    {
+      "period": "2020-09",
+      "c_143_year": 2016.42,
+      "c_143_label": "May 2016",
+      "c_864_year": 2016.42,
+      "c_864_label": "May 2016",
+      "p_103_year": 2010.83,
+      "p_103_label": "Oct 2010"
+    },
+    {
+      "period": "2021-09",
+      "c_143_year": 2016.42,
+      "c_143_label": "May 2016",
+      "c_864_year": 2016.58,
+      "c_864_label": "Jul 2016",
+      "p_103_year": 2010.83,
+      "p_103_label": "Oct 2010"
+    },
+    {
+      "period": "2022-09",
+      "c_143_year": 2016.83,
+      "c_143_label": "Oct 2016",
+      "c_864_year": 2017.0,
+      "c_864_label": "Jan 2017",
+      "p_103_year": 2011.42,
+      "p_103_label": "May 2011"
+    },
+    {
+      "period": "2023-09",
+      "c_143_year": 2017.42,
+      "c_143_label": "May 2017",
+      "c_864_year": 2017.42,
+      "c_864_label": "May 2017",
+      "p_103_year": 2011.83,
+      "p_103_label": "Oct 2011"
+    },
+    {
+      "period": "2024-09",
+      "c_143_year": 2017.75,
+      "c_143_label": "Sep 2017",
+      "c_864_year": 2017.75,
+      "c_864_label": "Sep 2017",
+      "p_103_year": 2012.67,
+      "p_103_label": "Aug 2012"
+    },
+    {
+      "period": "2025-09",
+      "c_143_year": 2018.42,
+      "c_143_label": "May 2018",
+      "c_864_year": 2018.42,
+      "c_864_label": "May 2018",
+      "p_103_year": 2013.33,
+      "p_103_label": "Apr 2013"
+    },
+    {
+      "period": "2026-08",
+      "c_143_year": 2018.92,
+      "c_143_label": "Nov 2018",
+      "c_864_year": 2020.92,
+      "c_864_label": "Nov 2020",
+      "p_103_year": 2014.25,
+      "p_103_label": "Mar 2014"
+    }
+  ],
+  "capping_and_backlog": {
+    "instrument_id": "LIN 26/042 (F2026L00724)",
+    "s85_contributory_cap": 6800,
+    "s85_contributory_aged_earmark": 1125,
+    "s85_non_contributory_cap": 1700,
+    "s85_total_cap": 8500,
+    "fy26_27_planning_level": 7060,
+    "backlog_as_at": "31 December 2025 (FOI DA 26/01/00017 & DA 25/07/00301)",
+    "backlog_contributory_persons": 100762,
+    "backlog_non_contributory_persons": 57706,
+    "backlog_total_persons": 158468,
+    "subclass_804_onhand": 27013,
+    "subclass_804_annual_grants_fy24_25": 37,
+    "subclass_804_annual_withdrawals_refusals_fy24_25": 475
+  },
+  "fee_schedule_fy26_27": {
+    "103": {
+      "first_base": 5280,
+      "first_adult": 2640,
+      "first_child": 1325,
+      "second_per_person": 2065,
+      "aos_years": 4,
+      "aos_bond_1": 5000,
+      "aos_bond_2": 7000
+    },
+    "804": {
+      "first_base": 5280,
+      "first_adult": 2640,
+      "first_child": 1325,
+      "second_per_person": 2065,
+      "aos_years": 4,
+      "aos_bond_1": 5000,
+      "aos_bond_2": 7000
+    },
+    "143": {
+      "first_base": 5040,
+      "first_adult": 1700,
+      "first_child": 855,
+      "second_per_person": 43600,
+      "aos_years": 10,
+      "aos_bond_1": 10000,
+      "aos_bond_2": 14000
+    },
+    "173": {
+      "first_base": 3395,
+      "first_adult": 1145,
+      "first_child": 575,
+      "second_per_person": 29130,
+      "aos_years": 0,
+      "aos_bond_1": 0,
+      "aos_bond_2": 0
+    },
+    "173_to_143": {
+      "first_base": 440,
+      "first_adult": 195,
+      "first_child": 100,
+      "second_per_person": 19420,
+      "aos_years": 10,
+      "aos_bond_1": 10000,
+      "aos_bond_2": 14000
+    },
+    "864": {
+      "first_base": 5040,
+      "first_adult": 2515,
+      "first_child": 1260,
+      "second_per_person": 43600,
+      "aos_years": 10,
+      "aos_bond_1": 10000,
+      "aos_bond_2": 14000
+    },
+    "884": {
+      "first_base": 4990,
+      "first_adult": 2490,
+      "first_child": 1250,
+      "second_per_person": 29130,
+      "aos_years": 0,
+      "aos_bond_1": 0,
+      "aos_bond_2": 0
+    },
+    "884_to_864": {
+      "first_base": 440,
+      "first_adult": 195,
+      "first_child": 100,
+      "second_per_person": 19420,
+      "aos_years": 10,
+      "aos_bond_1": 10000,
+      "aos_bond_2": 14000
+    },
+    "870_3yr": {
+      "sponsorship": 420,
+      "first_base": 1180,
+      "second_per_person": 4715,
+      "total_per_parent": 6315,
+      "sponsor_income": 83454.8
+    },
+    "870_5yr": {
+      "sponsorship": 420,
+      "first_base": 1180,
+      "second_per_person": 10605,
+      "total_per_parent": 12205,
+      "sponsor_income": 83454.8
+    }
+  },
+  "aos_formula_fy26_27": {
+    "authority": "Social Security (Assurance of Support) Determination 2018 (F2024C00296) ss 15-16 & DSS Social Security Guide 9.4.3",
+    "jsp_annual_base_aud": 22578,
+    "ftb_child_add_aud": 2942,
+    "corporate_bond_contributory_aud": 20000,
+    "corporate_bond_non_contributory_aud": 10000,
+    "examples": {
+      "single_assurer_1_parent": 45156,
+      "single_assurer_2_parents": 67734,
+      "single_assurer_2_parents_1_child": 70676,
+      "single_assurer_2_parents_2_children": 73618,
+      "joint_2_assurers_1_parent": 67734,
+      "joint_2_assurers_2_parents": 90312,
+      "joint_2_assurers_2_parents_2_children": 96195
+    }
+  }
+}
