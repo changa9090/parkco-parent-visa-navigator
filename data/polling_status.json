@@ -1,6 +1,6 @@
 {
   "release_id": "2026.10.21-audit-v2",
-  "last_polled_at": "2026-10-21T14:06:16+10:00",
+  "last_polled_at": "2026-10-21T14:08:00+10:00",
   "last_polled_date": "2026-10-21",
   "total_sources": 15,
   "live_verified_count": 15,
@@ -296,7 +296,7 @@
       "bytes": 1410199,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-10-21T14:06:16+10:00"
+      "checked_at": "2026-10-21T14:08:00+10:00"
     },
     {
       "id": "ha_pricing_api",
@@ -323,7 +323,7 @@
       "bytes": 39910,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-10-21T14:06:16+10:00"
+      "checked_at": "2026-10-21T14:08:00+10:00"
     },
     {
       "id": "ha_subclass_143",
@@ -350,7 +350,7 @@
       "bytes": 81219,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-10-21T14:06:16+10:00"
+      "checked_at": "2026-10-21T14:08:00+10:00"
     },
     {
       "id": "ha_subclass_173",
@@ -377,7 +377,7 @@
       "bytes": 65336,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-10-21T14:06:16+10:00"
+      "checked_at": "2026-10-21T14:08:00+10:00"
     },
     {
       "id": "ha_subclass_864",
@@ -404,7 +404,7 @@
       "bytes": 74604,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-10-21T14:06:16+10:00"
+      "checked_at": "2026-10-21T14:08:00+10:00"
     },
     {
       "id": "ha_subclass_884",
@@ -431,7 +431,7 @@
       "bytes": 63970,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-10-21T14:06:16+10:00"
+      "checked_at": "2026-10-21T14:08:00+10:00"
     },
     {
       "id": "ha_subclass_103",
@@ -458,7 +458,7 @@
       "bytes": 77555,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-10-21T14:06:16+10:00"
+      "checked_at": "2026-10-21T14:08:00+10:00"
     },
     {
       "id": "ha_subclass_804",
@@ -485,7 +485,7 @@
       "bytes": 72581,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-10-21T14:06:16+10:00"
+      "checked_at": "2026-10-21T14:08:00+10:00"
     },
     {
       "id": "ha_subclass_870",
@@ -512,7 +512,7 @@
       "bytes": 72164,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-10-21T14:06:16+10:00"
+      "checked_at": "2026-10-21T14:08:00+10:00"
     },
     {
       "id": "ha_bof_test",
@@ -539,7 +539,7 @@
       "bytes": 9973,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-10-21T14:06:16+10:00"
+      "checked_at": "2026-10-21T14:08:00+10:00"
     },
     {
       "id": "ha_planning_levels",
@@ -566,7 +566,7 @@
       "bytes": 18172,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-10-21T14:06:16+10:00"
+      "checked_at": "2026-10-21T14:08:00+10:00"
     },
     {
       "id": "leg_lin_26_042",
@@ -593,7 +593,7 @@
       "bytes": 5251,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-10-21T14:06:16+10:00"
+      "checked_at": "2026-10-21T14:08:00+10:00"
     },
     {
       "id": "sa_aos_policy",
@@ -620,7 +620,7 @@
       "bytes": 9391,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-10-21T14:06:16+10:00"
+      "checked_at": "2026-10-21T14:08:00+10:00"
     },
     {
       "id": "sa_medicare_rhca",
@@ -647,7 +647,7 @@
       "bytes": 7108,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-10-21T14:06:16+10:00"
+      "checked_at": "2026-10-21T14:08:00+10:00"
     },
     {
       "id": "dss_guide_aos",
@@ -674,7 +674,7 @@
       "bytes": 8192,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-10-21T14:06:16+10:00"
+      "checked_at": "2026-10-21T14:08:00+10:00"
     }
   ]
 }
