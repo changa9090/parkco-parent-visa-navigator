@@ -58,7 +58,7 @@
     <div class="container urgent-strip-inner">
       <div>
         <span class="urgent-badge" data-i18n="urgentBadge">2026.10.06 최신 대기열 공시 &amp; 법령 업데이트</span>
-        <span data-i18n="urgentText">연방 이민성 최신 공시(2026.08.31 기준, 2026.10.06 발표): 기여제(143/173) 2018년 11월 · 기여제 고령(864/884) 2020년 11월(Direction 117 온쇼어 우선심사로 2년 추월) · 2단계 전환(173→143 / 884→864) 2026년 5월(약 3~4개월 소요) · 일반(103) 2014년 3월 · 고령(804) 2014년 10월 심사 중 [1] / 2026.04.22부터 103·143·804·864 ImmiAccount 온라인 접수 의무화(173·884는 종이 우편 유지) [3–8] / 2024.12.17부터 고령부모(804/864/884) 만 67세 요건이 접수 유효 요건(Sch 1)으로 격상 [5,8] / FY2026–27 재정보증(AoS) 보증인 소득 기준: 1인 보증+부모 1명 $45,156 · 부모 2명 $67,734 [13,15].</span>
+        <span data-i18n="urgentText">연방 이민성 최신 공시(2026.08.31 기준, 2026.10.06 발표): 기여제(143/173) 2018년 11월 · 기여제 고령(864/884) 2020년 11월(Direction 117 온쇼어 우선심사) · 2단계 전환(173→143 / 884→864) 2026년 5월 접수 코호트 심사 중(Direction 103 s 7(2)(b) 1단계 접수일 의제) · 일반(103) 2014년 3월 · 고령(804) 2014년 10월 심사 중 [1] / 2026.04.22부터 103·143·804·864 ImmiAccount 온라인 접수 원칙(LIN 26/005 ss 12–13 서면 허가 예외 및 경과규정 존재 · 173·884는 종이 우편 유지) [3–8] / 2024.12.17부터 고령부모(804/864/884) 만 67세 요건(또는 대체 Subclass 600 특례)이 접수 유효 요건(Sch 1)으로 격상 [5,8] / FY2026–27 재정보증(AoS) 보증인 소득 기준: 1인 보증+부모 1명 $45,156 · 부모 2명 $67,734(기존 피보증인 합산 필수 · 법인은 2년 재무/가용자금 심사 대상) [13,15].</span>
       </div>
       <a href="#legal-disclaimer" style="color:#D9A7AD;font-weight:700;font-size:12.5px;white-space:nowrap;" data-i18n="urgentLink">[1]–[18] 1차 출처 각주 &darr;</a>
     </div>
@@ -103,7 +103,7 @@
         </div>
         <div class="specialist-slogan" data-i18n="specSlogan">"삶에 집중하세요, 법률은 저희가 맡겠습니다."</div>
         <div class="specialist-meta" data-i18n="specMeta">
-          법무법인 박앤코 (Park &amp; Co Lawyers · Underwood QLD) | 공식 이메일: enquiry@parkcolawyers.com
+          법무법인 박앤코 (PNC Legal Pty Ltd t/a Park &amp; Co Lawyers · Underwood QLD) | 공식 이메일: enquiry@parkcolawyers.com
         </div>
         <a href="https://parklawyers.com.au/links/?lang=ko" target="_blank" rel="noopener" class="btn-burgundy cta-enquiry" style="width:100%;justify-content:center;" data-i18n="specBtn">
           온라인 문의 바로가기 (parklawyers.com.au) &rarr;
@@ -122,8 +122,8 @@
       </div>
       <div class="stat-cell">
         <div class="s-over" data-i18n="stat2Over">2-STAGE STEP-UP (173→143)</div>
-        <div class="s-num" data-i18n="stat2Val">약 3~4개월</div>
-        <div class="s-sub" data-i18n="stat2Sub">2026.05 심사 중 · Direction 103 대기열 면제 [1]</div>
+        <div class="s-num" data-i18n="stat2Val">2026.05 코호트</div>
+        <div class="s-sub" data-i18n="stat2Sub">2026.05 접수분 심사 중 · Direction 103 s 7(2)(b) 의제 [1,16]</div>
       </div>
       <div class="stat-cell">
         <div class="s-over" data-i18n="stat3Over">NEW WAIT ESTIMATE</div>
@@ -376,7 +376,7 @@
 
           <div class="form-row" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
             <div class="form-group">
-              <label for="wiz-total-children" data-i18n="wizLblTotalKids">5. 부모님의 전체 자녀 수 (전혼·입양 포함)</label>
+              <label for="wiz-total-children" data-i18n="wizLblTotalKids">5. 부모님의 전체 자녀 수 (전혼·입양 포함 · reg 1.05(3) 제외 자녀 반영 후)</label>
               <select id="wiz-total-children" class="form-control">
                 <option value="1">1명</option>
                 <option value="2" selected>2명</option>
@@ -385,10 +385,13 @@
                 <option value="5">5명</option>
                 <option value="6">6명</option>
                 <option value="7">7명</option>
+                <option value="8">8명</option>
+                <option value="9">9명</option>
+                <option value="10">10명</option>
               </select>
             </div>
             <div class="form-group">
-              <label for="wiz-au-children" data-i18n="wizLblAuKids">6. 호주 시민권·영주권(통상 거주) 자녀 수</label>
+              <label for="wiz-au-children" data-i18n="wizLblAuKids">6. 호주 적격 자녀 수 (시민권·통상거주 PR·통상거주 ENZC)</label>
               <select id="wiz-au-children" class="form-control">
                 <option value="0">0명</option>
                 <option value="1" selected>1명</option>
@@ -396,18 +399,36 @@
                 <option value="3">3명</option>
                 <option value="4">4명</option>
                 <option value="5">5명</option>
+                <option value="6">6명</option>
+                <option value="7">7명</option>
+                <option value="8">8명</option>
+                <option value="9">9명</option>
+                <option value="10">10명</option>
               </select>
             </div>
           </div>
 
-          <div class="form-group">
-            <label for="wiz-budget" data-i18n="wizLblBudget">7. 기여금($43,600/인) 및 메디케어 선호 전략</label>
-            <select id="wiz-budget" class="form-control">
-              <option value="contrib_direct" selected>기여제 1단계 직행 (143 / 864 — 총비용 절감 우선)</option>
-              <option value="contrib_2stage">기여제 2단계 분할 (173→143 / 884→864 — 메디케어 조기 취득 &amp; AoS 2년 유예)</option>
-              <option value="non_contrib">일반 비기여제 (103 / 804 — 초기·최종 비용 최소화, 42년 대기 감수)</option>
-              <option value="temp_870">영주권 없이 3~10년 장기 체류만 희망 (Subclass 870)</option>
-            </select>
+          <div class="form-row" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+            <div class="form-group">
+              <label for="wiz-max-overseas-country" data-i18n="wizLblMaxOverseas">7. 해외 단일 국가 최다 거주 자녀 수 (reg 1.05(2C)(b) 제2기준 확인용)</label>
+              <select id="wiz-max-overseas-country" class="form-control">
+                <option value="auto" selected>자동(모든 해외 자녀가 동일 국가 거주 가정 — 보수적 판정)</option>
+                <option value="0">0명 (해외 거주 자녀 없음)</option>
+                <option value="1">1명 (해외 자녀들이 서로 다른 국가에 1명씩 분산 거주)</option>
+                <option value="2">2명 (특정 해외 1개국에 최대 2명 거주)</option>
+                <option value="3">3명 (특정 해외 1개국에 최대 3명 거주)</option>
+                <option value="4">4명 이상 (특정 해외 1개국에 4명 이상 거주)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="wiz-budget" data-i18n="wizLblBudget">8. 기여금($43,600/인) 및 체류·메디케어 선호 전략</label>
+              <select id="wiz-budget" class="form-control">
+                <option value="contrib_direct" selected>기여제 1단계 직행 (143 / 864 — 총비용 절감 우선)</option>
+                <option value="contrib_2stage">기여제 2단계 분할 (173→143 / 884→864 — 메디케어 조기 취득 &amp; AoS 2년 유예)</option>
+                <option value="non_contrib">일반 비기여제 (103 / 804 — 초기·최종 비용 최소화, 42년 대기 감수)</option>
+                <option value="temp_870">영주권 없이 3~10년 장기 체류만 희망 (Subclass 870)</option>
+              </select>
+            </div>
           </div>
         </div>
 
@@ -449,7 +470,7 @@
           <span class="overline-serif light-mode" data-i18n="m4Overline">MODULE 04 · 20-YEAR TOTAL COST (TCO), ASSURER ELIGIBILITY &amp; SERVICES AUSTRALIA AOS CALCULATOR</span>
           <h2 data-i18n="m4Title">부모초청 총비용(1·2차 VAC + AoS 본드) &amp; 재정보증인(Assurer) 자격·최소 과세소득 정밀 계산기</h2>
           <p data-i18n="m4Sub">
-            이민성 내부 가격 API(GetPriceList) 기준 1·2차 비자신청비와 Social Security (Assurance of Support) Determination 2018 ss 7–18 · DSS Guide 9.4 공식(2026.07.01 기준 JobSeeker 기준액 $22,578 × [보증인 수 + 피보증 부모 수] + 미성년 자녀당 $2,942)을 기반으로 <strong>보증인 적격 여부, 요구 과세소득 달성 여부(ATO NOA + 현행 소득), 공동 보증(최대 3인) 또는 법인 보증($20,000 본드·소득면제) 대안, 그리고 Subclass 870 스폰서 소득 요건($83,454.80)</strong>까지 한 번에 진단해요.
+            이민성 수수료표 및 Social Security (Assurance of Support) Determination 2018 ss 8, 9, 15, 16 · DSS Guide 9.4.3 공식(2026.07.01 기준 JobSeeker 기준액 $22,578 × [보증인 수 + 신규 피보증 부모 수 + 기존 피보증 성인 수] + 미성년 자녀당 $2,942)을 기반으로 <strong>보증인 적격 여부, 요구 과세소득 달성 여부(ATO NOA + 현행 소득), 공동 보증(최대 3인), 법인 보증($20,000/$10,000 본드 + 최근 2년 흑자·성인당 $5,000 가용자금 재무심사), 그리고 Subclass 870 개인 스폰서 소득 요건($83,454.80 · 법인 불가)</strong>까지 한 번에 진단해요.
           </p>
         </div>
       </div>
@@ -467,17 +488,18 @@
               <option value="884_864">Subclass 884 → 864 — 기여제 고령부모 2단계 분할 (Onshore 67+ · 864 단계 10년 AoS)</option>
               <option value="103">Subclass 103 — 일반 부모 영주 (42년 대기 · 4년 AoS)</option>
               <option value="804">Subclass 804 — 일반 고령부모 영주 (Onshore 67+, 42년 대기 · 4년 AoS)</option>
-              <option value="870_5">Subclass 870 — 임시 부모비자 5년 (AoS 없음 · 스폰서 소득 $83,454.80 심사)</option>
-              <option value="870_10">Subclass 870 — 임시 부모비자 5년×2회 = 10년 (스폰서 소득 $83,454.80 심사)</option>
+              <option value="870_3">Subclass 870 — 임시 부모비자 3년 (AoS 없음 · 개인 스폰서 소득 $83,454.80 심사)</option>
+              <option value="870_5">Subclass 870 — 임시 부모비자 5년 (AoS 없음 · 개인 스폰서 소득 $83,454.80 심사)</option>
+              <option value="870_10">Subclass 870 — 임시 부모비자 5년×2회 = 10년 (개인 스폰서 소득 $83,454.80 심사)</option>
             </select>
           </div>
 
           <div class="form-row" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
             <div class="form-group">
-              <label for="cost-parents" data-i18n="costLblParents">2. 초청 부모님 인원 수 (성인 피보증인)</label>
+              <label for="cost-parents" data-i18n="costLblParents">2. 초청 부모님 인원 수 (신규 성인 피보증인)</label>
               <select id="cost-parents" class="form-control">
                 <option value="1">부모님 1분 (단독 신청)</option>
-                <option value="2" selected>부모님 2분 (부부 동반 신청 — 개인 보증 상한 2인)</option>
+                <option value="2" selected>부모님 2분 (부부 동반 신청 — 성인 피보증 상한 2인)</option>
               </select>
             </div>
             <div class="form-group">
@@ -486,7 +508,7 @@
                 <option value="1" selected>개인 보증인 1명 (자녀 또는 제3자 단독 보증)</option>
                 <option value="2">공동 보증인 2명 (부부·형제·지인 2인 소득 합산)</option>
                 <option value="3">공동 보증인 3명 (최대 3인 과세소득 합산)</option>
-                <option value="corp">호주 법인(Pty Ltd 등) 보증 (소득 심사 면제 · $20,000/$10,000 본드)</option>
+                <option value="corp">호주 법인(Pty Ltd 등) 보증 ($20k/$10k 본드 + 2년 재무·가용자금 심사 대상, 870 불가)</option>
               </select>
             </div>
           </div>
@@ -497,11 +519,11 @@
               <input type="number" id="cost-assurer-kids" class="form-control" min="0" max="8" value="0" />
             </div>
             <div class="form-group">
-              <label for="cost-existing-assured" data-i18n="costLblExisting">5. 보증인이 현재 보증 중인 기존 성인 피보증인 수 (한도 체크)</label>
+              <label for="cost-existing-assured" data-i18n="costLblExisting">5. 보증인이 현재 보증 중인 기존 성인 피보증인 수 (한도 및 소득 산식 합산)</label>
               <select id="cost-existing-assured" class="form-control">
                 <option value="0" selected>0명 (현재 진행 중인 다른 AoS 보증 없음)</option>
-                <option value="1">1명 (이미 다른 성인 1명을 AoS 보증 중)</option>
-                <option value="2">2명 (이미 성인 2명 보증 중 — ⚠️ 추가 보증 불가)</option>
+                <option value="1">1명 (이미 다른 성인 1명 보증 중 — 소득 산식에 +$22,578 합산)</option>
+                <option value="2">2명 (이미 성인 2명 보증 중 — ⚠️ s 8/s 9 한도 초과로 추가 보증 불가)</option>
               </select>
             </div>
           </div>
@@ -557,7 +579,7 @@
           <span class="overline-serif light-mode" data-i18n="m870Overline">MODULE 05 · SUBCLASS 870 (SPONSORED PARENT TEMPORARY) &amp; PARENT SPONSOR ELIGIBILITY HUB</span>
           <h2 data-i18n="m870Title">Subclass 870 (임시 부모비자 3년/5년 · 최대 10년) &amp; 스폰서 자녀 자격($83,454.80 · 50% 룰) 정밀 진단기</h2>
           <p data-i18n="m870Sub">
-            Migration Regulations 1994 (regs 2.60U–2.60Z, Sch 1 Item 1239, Sch 2 Part 870), LIN 19/146, 그리고 PAM3 심사지침(VM-6276 스폰서십 · VM-6327 비자) 원문을 기반으로 <strong>스폰서 자녀(또는 사위/며느리)의 적격 여부, 과세소득 $83,454.80 및 주 스폰서 50%($41,727.40) 최소 소득 룰, 가구당 1건(최대 2명) 제한, 2차 신청비 28일/70일 절대 납부 기한(reg 2.12D), 90일 해외 체류 간격, 그리고 영주 부모비자(143/103)와의 비대칭 잠금 규칙</strong>을 정밀 진단해요.
+            Migration Regulations 1994 (regs 2.60U–2.60W, reg 2.87CE, Sch 1 Item 1239, Sch 2 Part 870 cl 870.227 &amp; 870.228), LIN 19/146, 그리고 PAM3 심사지침(VM-6276 스폰서십 · VM-6327 비자 · VM-6647 2차 VAC) 원문을 기반으로 <strong>스폰서 자녀(또는 사위/며느리)의 적격 여부, 과세소득 $83,454.80 및 주 스폰서 50%($41,727.40) 최소 소득 룰(신규 회계연도 초 직전 연도 NOA 예외 포함), 가구당 1건(최대 2명) 제한, 2차 신청비 통지서 간주수령일(deemed receipt) 기준 28일(호주→호주 주소)/70일(기타 주소) 기한(reg 2.12D), 60일 온쇼어 PTA 신청 기한, 10년 누적 체류 상한(COVID-19 18개월 자동연장분 제외), 신청 시점 위치에 따른 건강요건(오프쇼어 PIC 4005 vs 온쇼어 PIC 4007), 그리고 영주 부모비자(143/103)와의 비대칭 잠금 규칙</strong>을 정밀 진단해요.
           </p>
         </div>
       </div>
@@ -671,10 +693,10 @@
     <div class="container">
       <div class="section-head">
         <div>
-          <span class="overline-serif light-mode" data-i18n="m5Overline">MODULE 05 · 15–42 YEAR WAITING PERIOD SURVIVAL GUIDE: ELIGIBLE VS NOT SUPPORTED</span>
+          <span class="overline-serif light-mode" data-i18n="m5Overline">MODULE 06 · 15–42 YEAR WAITING PERIOD SURVIVAL GUIDE: ELIGIBLE VS NOT SUPPORTED</span>
           <h2 data-i18n="m5Title">15~42년 대기기간 생존 가이드: 지원되는 권리(Eligible) vs 배제되는 복지(Exclusions) &amp; 8대 실무 함정</h2>
           <p data-i18n="m5Sub">
-            부모비자를 접수하고 대기하는 수십 년 동안 <strong>브리징 비자 취업권, 해외 출국 시 BVB 트랩, 메디케어 전면 배제(한국 국적자) 및 173/884 메디케어 우회 전략, PIC 4005($86,000) 2차 신체검사 탈락 리스크, 정부 노인요양원(My Aged Care) 보조금 배제, 한-호 사회보장협정 연금 합산</strong>까지 반드시 알아야 할 법령 기준을 정리했어요.
+            부모비자를 접수하고 대기하는 수십 년 동안 <strong>브리징 비자 취업권, 해외 출국 시 BVB 트랩, 메디케어 전면 배제(한국 국적자) 및 173/884 메디케어 우회 전략, PIC 4005/4007($86,000 상한 · 연령/질환별 3년·5년·최대 10년 비용 산정 기간) 신체검사 리스크, 정부 노인요양원(My Aged Care) 보조금 배제, 한-호 사회보장협정(DSS Guide 10.22) 연금 합산</strong>까지 반드시 알아야 할 법령 기준을 정리했어요.
           </p>
         </div>
       </div>
@@ -717,7 +739,7 @@
     <div class="container">
       <div class="section-head">
         <div>
-          <span class="overline-serif light-mode" data-i18n="m6Overline">MODULE 06 · ONE-STOP OFFICIAL LINKS DIRECTORY (22 BOOKMARKS) &amp; POLLER OPERATIONS</span>
+          <span class="overline-serif light-mode" data-i18n="m6Overline">MODULE 07 · ONE-STOP OFFICIAL LINKS DIRECTORY (22 BOOKMARKS) &amp; POLLER OPERATIONS</span>
           <h2 data-i18n="m6Title">부모비자 대기자·스폰서를 위한 22개 원스톱 공식 링크 허브 &amp; 정기 모니터링(Poller) 아키텍처</h2>
           <p data-i18n="m6Sub">
             대기열 조회, PVC 서류 변경 웹폼, ImmiAccount, VEVO, BVB 신청, Services Australia AoS, 메디케어, 한-호 사회보장협정, My Aged Care까지 대기 기간 내내 필요한 <strong>22개 정부 공식 사이트 링크</strong>와 본 웹사이트가 정기적으로 폴링하는 <strong>15개 1차 출처 감시 스케줄</strong>을 한곳에서 이용해 보세요.
@@ -773,7 +795,7 @@
       </div>
 
       <h3 style="font-size:18px;font-weight:800;color:#2E2E2E;margin-bottom:14px;" data-i18n="fnHeading">
-        1차 공식 법령 · 행정입법(LIN) · FOI · PAM3 · DSS 심사지침 레퍼런스 각주 ([1] ~ [18])
+        1차 공식 법령 · 행정입법(LIN) · FOI · PAM3(LEGEND 2026.10.02 스냅샷) · DSS 심사지침 레퍼런스 각주 ([1] ~ [18])
       </h3>
       <div id="footnotes-container" class="footnotes-list"></div>
     </div>

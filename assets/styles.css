@@ -1789,3 +1789,220 @@ table.occ-table tr:hover td {
   font-weight: 700;
   font-size: 12px;
 }
+
+/* ============================================================================
+   UNIFIED PARK & CO 2026 REBRAND KIT UTILITY & CALCULATOR CLASSES
+   ============================================================================ */
+.band-white {
+  background: var(--color-paper);
+  padding: 56px 0;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.card {
+  background: var(--color-white);
+  border: 1.5px solid var(--color-line-strong);
+  border-radius: var(--radius-lg);
+  padding: 24px 26px;
+  box-shadow: var(--shadow-1);
+}
+
+.calc-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 980px) {
+  .calc-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.form-group label,
+.form-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-charcoal);
+}
+
+.form-control,
+.form-select,
+.form-input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  background-color: var(--color-paper);
+  border: 1.5px solid var(--color-line-strong);
+  border-radius: var(--radius-md);
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.form-control:focus,
+.form-select:focus,
+.form-input:focus {
+  border-color: var(--color-burgundy);
+  background-color: var(--color-white);
+  outline: none;
+}
+
+.form-hint {
+  font-size: 12px;
+  color: var(--color-charcoal-soft);
+  line-height: 1.45;
+}
+
+.checkbox-label {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-top: 3px;
+  accent-color: var(--color-burgundy);
+}
+
+.table-wrap,
+.table-responsive {
+  background: var(--color-white);
+  border: 1.5px solid var(--color-line-strong);
+  border-radius: var(--radius-lg);
+  overflow-x: auto;
+  box-shadow: var(--shadow-1);
+}
+
+table.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.8px;
+  min-width: 720px;
+}
+
+table.data-table th {
+  background: var(--color-ink-deep);
+  color: var(--color-white);
+  text-align: left;
+  padding: 12px 14px;
+  font-size: 12.8px;
+  font-weight: 700;
+  border-bottom: 2px solid var(--color-burgundy);
+}
+
+table.data-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--color-line);
+  vertical-align: top;
+  color: var(--color-charcoal);
+}
+
+table.data-table tr:hover td {
+  background-color: #FAF6F0;
+}
+
+.disclaimer-box {
+  background: var(--color-white);
+  border: 1.5px solid var(--color-line-strong);
+  border-left: 5px solid var(--color-burgundy);
+  border-radius: var(--radius-lg);
+  padding: 24px 28px;
+  margin-bottom: 28px;
+  box-shadow: var(--shadow-1);
+}
+
+.disclaimer-box h3 {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--color-charcoal);
+  margin: 4px 0 10px;
+}
+
+.disclaimer-box p {
+  font-size: 14px;
+  color: var(--color-charcoal-soft);
+  margin-bottom: 10px;
+  line-height: 1.65;
+}
+
+.result-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.mini-kpi {
+  background: var(--color-paper);
+  border: 1px solid var(--color-line-strong);
+  border-top: 3px solid var(--color-burgundy);
+  border-radius: 10px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.mini-kpi span {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--color-charcoal-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.mini-kpi strong {
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--color-burgundy);
+}
+
+.mini-kpi small {
+  font-size: 12px;
+  color: var(--color-charcoal-soft);
+}
+
+.alert-box {
+  padding: 14px 16px;
+  border-radius: var(--radius-md);
+  font-size: 13.8px;
+  line-height: 1.6;
+  border: 1px solid var(--color-line-strong);
+  background: var(--color-paper);
+  color: var(--color-charcoal);
+}
+
+.alert-box--success {
+  background: #E7F3EC;
+  border-color: #B7DEC8;
+  border-left: 4px solid #2E6B4F;
+  color: #1A4731;
+}
+
+.alert-box--warn {
+  background: #FDF4E7;
+  border-color: #EED2A4;
+  border-left: 4px solid #B67A1E;
+  color: #6B4A1F;
+}
+
+.alert-box--danger {
+  background: #FBEAE8;
+  border-color: #E8B8B3;
+  border-left: 4px solid #B23A2E;
+  color: #7A1F2B;
+}
+

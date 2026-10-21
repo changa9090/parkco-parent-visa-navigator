@@ -3,8 +3,8 @@
    Queue Release, Waiting Period Survival & AoS Navigator (app.js)
    ============================================================================ */
 
-const QUEUE_DATA = {"generated_at":"2026-10-21T00:22:17+10:00","last_polled_date":"2026-10-21","official_contact":"enquiry@parkcolawyers.com","live_queue_state":{"as_at_date":"31 August 2026","last_updated_str":"6/10/2026 10:27 AM","queue_release_bullets":{"Contributory Parent":"November 2018","Contributory Aged Parent":"November 2020","Parent":"March 2014","Aged Parent":"October 2014"},"milestone_table":[{"visa_type":"Temporary to Permanent (173 to 143 and 884 to 864)","acknowledge_new_application":"Approx. 4 weeks","queue_assessment":"N/A","visa_assessment_queue_release_date":"May 2026"},{"visa_type":"Contributory Parent (143)","acknowledge_new_application":"Approx. 4 weeks","queue_assessment":"Lodged April 2024","visa_assessment_queue_release_date":"Lodged/queued up to November 2018"},{"visa_type":"Contributory Parent (Temp) (173)","acknowledge_new_application":"Approx. 4 weeks","queue_assessment":"Lodged April 2024","visa_assessment_queue_release_date":"Lodged/queued up to November 2018"},{"visa_type":"Contributory Aged Parent (864)","acknowledge_new_application":"Approx. 4 weeks","queue_assessment":"Lodged April 2023","visa_assessment_queue_release_date":"Lodged/queued up to November 2020"},{"visa_type":"Contributory Aged Parent (Temp) (884)","acknowledge_new_application":"Approx. 4 weeks","queue_assessment":"Lodged April 2023","visa_assessment_queue_release_date":"Lodged/queued up to November 2020"},{"visa_type":"Parent (103)","acknowledge_new_application":"Approx. 4 weeks","queue_assessment":"Lodged February 2023","visa_assessment_queue_release_date":"Queued up to March 2014"},{"visa_type":"Aged Parent (804)","acknowledge_new_application":"Approx. 4 weeks","queue_assessment":"Lodged January 2023","visa_assessment_queue_release_date":"Queued up to October 2014"}],"new_application_estimates":{"Contributory Parent visas":"18 years","Parent & Aged Parent visas":"42 years"}},"queue_lags_months_as_at_aug_2026":[{"id":"step_up","label_ko":"2단계 영주 전환 (173→143 / 884→864)","label_en":"2-Stage Temp→Perm (173→143 / 884→864)","stage1_assessment_str":"N/A (대기열 면제)","stage1_assessment_str_en":"N/A (Exempt from Queue)","stage1_lag_months":0,"stage2_release_str":"May 2026","stage2_lag_months":3,"official_wait_years":0.3,"empirical_velocity_months_per_year":12.0},{"id":"sub_864_884","label_ko":"기여제 고령부모 (864 / 884 · Onshore 67+)","label_en":"Contributory Aged Parent (864 / 884 · Onshore 67+)","stage1_assessment_str":"2023년 4월 접수분","stage1_assessment_str_en":"Lodged April 2023","stage1_lag_months":40,"stage2_release_str":"November 2020","stage2_lag_months":69,"official_wait_years":18,"empirical_velocity_months_per_year":9.13},{"id":"sub_143_173","label_ko":"기여제 부모 (143 / 173 · 일반)","label_en":"Contributory Parent (143 / 173 · General)","stage1_assessment_str":"2024년 4월 접수분","stage1_assessment_str_en":"Lodged April 2024","stage1_lag_months":28,"stage2_release_str":"November 2018","stage2_lag_months":93,"official_wait_years":18,"empirical_velocity_months_per_year":5.07},{"id":"sub_804","label_ko":"일반 고령부모 (804 · Onshore 67+)","label_en":"Aged Parent (804 · Onshore 67+)","stage1_assessment_str":"2023년 1월 접수분","stage1_assessment_str_en":"Lodged January 2023","stage1_lag_months":43,"stage2_release_str":"October 2014","stage2_lag_months":142,"official_wait_years":42,"empirical_velocity_months_per_year":2.35},{"id":"sub_103","label_ko":"일반 부모 (103 · Offshore/일반)","label_en":"Parent (103 · General)","stage1_assessment_str":"2023년 2월 접수분","stage1_assessment_str_en":"Lodged February 2023","stage1_lag_months":42,"stage2_release_str":"March 2014","stage2_lag_months":149,"official_wait_years":42,"empirical_velocity_months_per_year":4.18}],"historical_velocity_series":[{"period":"2020-09","c_143_year":2016.42,"c_143_label":"May 2016","c_864_year":2016.42,"c_864_label":"May 2016","p_103_year":2010.83,"p_103_label":"Oct 2010"},{"period":"2021-09","c_143_year":2016.42,"c_143_label":"May 2016","c_864_year":2016.58,"c_864_label":"Jul 2016","p_103_year":2010.83,"p_103_label":"Oct 2010"},{"period":"2022-09","c_143_year":2016.83,"c_143_label":"Oct 2016","c_864_year":2017.0,"c_864_label":"Jan 2017","p_103_year":2011.42,"p_103_label":"May 2011"},{"period":"2023-09","c_143_year":2017.42,"c_143_label":"May 2017","c_864_year":2017.42,"c_864_label":"May 2017","p_103_year":2011.83,"p_103_label":"Oct 2011"},{"period":"2024-09","c_143_year":2017.75,"c_143_label":"Sep 2017","c_864_year":2017.75,"c_864_label":"Sep 2017","p_103_year":2012.67,"p_103_label":"Aug 2012"},{"period":"2025-09","c_143_year":2018.42,"c_143_label":"May 2018","c_864_year":2018.42,"c_864_label":"May 2018","p_103_year":2013.33,"p_103_label":"Apr 2013"},{"period":"2026-08","c_143_year":2018.92,"c_143_label":"Nov 2018","c_864_year":2020.92,"c_864_label":"Nov 2020","p_103_year":2014.25,"p_103_label":"Mar 2014"}],"capping_and_backlog":{"instrument_id":"LIN 26/042 (F2026L00724)","s85_contributory_cap":6800,"s85_contributory_aged_earmark":1125,"s85_non_contributory_cap":1700,"s85_total_cap":8500,"fy26_27_planning_level":7060,"backlog_as_at":"31 December 2025 (FOI DA 26/01/00017 & DA 25/07/00301)","backlog_contributory_persons":100762,"backlog_non_contributory_persons":57706,"backlog_total_persons":158468,"subclass_804_onhand":27013,"subclass_804_annual_grants_fy24_25":37,"subclass_804_annual_withdrawals_refusals_fy24_25":475},"fee_schedule_fy26_27":{"103":{"first_base":5280,"first_adult":2640,"first_child":1325,"second_per_person":2065,"aos_years":4,"aos_bond_1":5000,"aos_bond_2":7000},"804":{"first_base":5280,"first_adult":2640,"first_child":1325,"second_per_person":2065,"aos_years":4,"aos_bond_1":5000,"aos_bond_2":7000},"143":{"first_base":5040,"first_adult":1700,"first_child":855,"second_per_person":43600,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"173":{"first_base":3395,"first_adult":1145,"first_child":575,"second_per_person":29130,"aos_years":0,"aos_bond_1":0,"aos_bond_2":0},"173_to_143":{"first_base":440,"first_adult":195,"first_child":100,"second_per_person":19420,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"864":{"first_base":5040,"first_adult":2515,"first_child":1260,"second_per_person":43600,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"884":{"first_base":4990,"first_adult":2490,"first_child":1250,"second_per_person":29130,"aos_years":0,"aos_bond_1":0,"aos_bond_2":0},"884_to_864":{"first_base":440,"first_adult":195,"first_child":100,"second_per_person":19420,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"870_3yr":{"sponsorship":420,"first_base":1180,"second_per_person":4715,"total_per_parent":6315,"sponsor_income":83454.8},"870_5yr":{"sponsorship":420,"first_base":1180,"second_per_person":10605,"total_per_parent":12205,"sponsor_income":83454.8}},"aos_formula_fy26_27":{"authority":"Social Security (Assurance of Support) Determination 2018 (F2024C00296) ss 15-16 & DSS Social Security Guide 9.4.3","jsp_annual_base_aud":22578,"ftb_child_add_aud":2942,"corporate_bond_contributory_aud":20000,"corporate_bond_non_contributory_aud":10000,"examples":{"single_assurer_1_parent":45156,"single_assurer_2_parents":67734,"single_assurer_2_parents_1_child":70676,"single_assurer_2_parents_2_children":73618,"joint_2_assurers_1_parent":67734,"joint_2_assurers_2_parents":90312,"joint_2_assurers_2_parents_2_children":96195}}};
-const POLLING_DATA = {"last_polled_at":"2026-10-21T00:22:17+10:00","last_polled_date":"2026-10-21","total_sources":15,"live_verified_count":15,"changed_count":12,"official_contact":"enquiry@parkcolawyers.com","monitored_rules":{"parent_visas_queue_state":{"as_at_date":"31 August 2026","last_updated_str":"6/10/2026 10:27 AM","release_dates":{"Contributory Parent":"November 2018","Contributory Aged Parent":"November 2020","Parent":"March 2014","Aged Parent":"October 2014"},"new_application_estimates":{"Contributory Parent visas":"18 years","Parent & Aged Parent visas":"42 years"}},"section_85_cap_and_backlog":{"instrument_id":"LIN 26/042 (F2026L00724)","s85_contributory_cap":6800,"s85_contributory_aged_earmark":1125,"s85_non_contributory_cap":1700,"s85_total_cap":8500,"fy26_27_planning_level":7060,"backlog_as_at":"31 December 2025 (FOI DA 26/01/00017 & DA 25/07/00301)","backlog_contributory_persons":100762,"backlog_non_contributory_persons":57706,"backlog_total_persons":158468,"subclass_804_onhand":27013,"subclass_804_annual_grants_fy24_25":37,"subclass_804_annual_withdrawals_refusals_fy24_25":475},"aos_formula_fy26_27":{"authority":"Social Security (Assurance of Support) Determination 2018 (F2024C00296) ss 15-16 & DSS Social Security Guide 9.4.3","jsp_annual_base_aud":22578,"ftb_child_add_aud":2942,"corporate_bond_contributory_aud":20000,"corporate_bond_non_contributory_aud":10000,"examples":{"single_assurer_1_parent":45156,"single_assurer_2_parents":67734,"single_assurer_2_parents_1_child":70676,"single_assurer_2_parents_2_children":73618,"joint_2_assurers_1_parent":67734,"joint_2_assurers_2_parents":90312,"joint_2_assurers_2_parents_2_children":96195}},"statutory_vac_fy26_27":{"103":{"first_base":5280,"first_adult":2640,"first_child":1325,"second_per_person":2065,"aos_years":4,"aos_bond_1":5000,"aos_bond_2":7000},"804":{"first_base":5280,"first_adult":2640,"first_child":1325,"second_per_person":2065,"aos_years":4,"aos_bond_1":5000,"aos_bond_2":7000},"143":{"first_base":5040,"first_adult":1700,"first_child":855,"second_per_person":43600,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"173":{"first_base":3395,"first_adult":1145,"first_child":575,"second_per_person":29130,"aos_years":0,"aos_bond_1":0,"aos_bond_2":0},"173_to_143":{"first_base":440,"first_adult":195,"first_child":100,"second_per_person":19420,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"864":{"first_base":5040,"first_adult":2515,"first_child":1260,"second_per_person":43600,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"884":{"first_base":4990,"first_adult":2490,"first_child":1250,"second_per_person":29130,"aos_years":0,"aos_bond_1":0,"aos_bond_2":0},"884_to_864":{"first_base":440,"first_adult":195,"first_child":100,"second_per_person":19420,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"870_3yr":{"sponsorship":420,"first_base":1180,"second_per_person":4715,"total_per_parent":6315,"sponsor_income":83454.8},"870_5yr":{"sponsorship":420,"first_base":1180,"second_per_person":10605,"total_per_parent":12205,"sponsor_income":83454.8}},"waiting_period_statutory_rules":{"immiaccount_online_mandate_date":"2026-04-22","online_subclasses":["103","143","804","864"],"paper_subclasses":["173","884"],"aged_parent_pension_age":67,"aged_parent_schedule1_validity_date":"2024-12-17","pic_4005_significant_cost_threshold_aud":86000,"pic_4005_health_waiver_available":false,"rhca_countries_count":11,"korea_rhca_eligible":false,"temp_173_884_medicare_eligible":true}},"internal_policy_references":[{"id":"pam3_vm_3058","cite":"PAM3 (Procedural Instruction): Parent Visa Processing & Queue Administration — VM-3058","sourceKind":"internal_policy_reference","notPubliclyPollable":true,"fetchStatus":"internal_legendcom_mirror","contentCheckStatus":"verified_against_local_mirror","ruleMatchStatus":"matched","reviewStatus":"verified_2026-10-20","localMirrorReference":"/mnt/T7/LegendCom (VM-3058 — Queue Date assignment, post-17 Dec 2024 Age 67 validity & death of primary applicant)","publicCompanionUrl":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/visa-processing-priorities/parent-visas"},{"id":"pam3_vm_6327","cite":"PAM3 (Procedural Instruction): Sponsored Parent (Temporary) Visa (Subclass 870) — VM-6327","sourceKind":"internal_policy_reference","notPubliclyPollable":true,"fetchStatus":"internal_legendcom_mirror","contentCheckStatus":"verified_against_local_mirror","ruleMatchStatus":"matched","reviewStatus":"verified_2026-10-20","localMirrorReference":"/mnt/T7/LegendCom (VM-6327 s 3.6.6 — Asymmetric lockout bar between Subclass 870 and permanent parent visas)","publicCompanionUrl":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/sponsored-parent-temporary-870"},{"id":"direction_103","cite":"Ministerial Direction No. 103 — Order of Consideration: Certain Family Visas (Queue Date & 173->143 / 884->864 Deeming)","sourceKind":"internal_policy_reference","notPubliclyPollable":true,"fetchStatus":"internal_legendcom_mirror","contentCheckStatus":"verified_against_local_mirror","ruleMatchStatus":"matched","reviewStatus":"verified_2026-10-20","localMirrorReference":"/mnt/T7/LegendCom (Direction No. 103 s 6(2)(c) upfront aged assessment & s 7(2)(b) Stage 1 lodgement date deeming)","publicCompanionUrl":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/visa-processing-priorities/parent-visas"},{"id":"direction_117","cite":"Ministerial Direction No. 117 — Priority Processing for Onshore Aged Parent Applications (effective 25 July 2026)","sourceKind":"internal_policy_reference","notPubliclyPollable":true,"fetchStatus":"internal_legendcom_mirror","contentCheckStatus":"verified_against_local_mirror","ruleMatchStatus":"matched","reviewStatus":"verified_2026-10-20","localMirrorReference":"/mnt/T7/LegendCom (Direction No. 117 s 8(2)(a) — Onshore Contributory Aged Parent 864/884 priority release)","publicCompanionUrl":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/visa-processing-priorities/parent-visas"}],"sources":[{"id":"ha_parent_queue","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Parent Visas Queue Assessment & Queue Release Dates Official Page","title_ko":"부모초청 비자 월별 Queue Assessment & Queue Release Dates 공시 페이지","title_en":"Parent Visas Queue Assessment & Queue Release Dates Official Page","check_scope_ko":"기준일(2026.08.31) · 7대 비자 1단계/2단계 컷오프 · 신규 신청 예상 대기연수(18년/42년) 파싱","check_scope_en":"Live parsing of 7x4 queue milestone table, release dates & 18yr/42yr wait estimates","cadence_ko":"매주 월·목 폴링 (이민성 월 1회 ~5주 시차 업데이트)","cadence_en":"Polled twice weekly (DHA updates monthly with ~5-week lag)","url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/visa-processing-priorities/parent-visas","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"verified_2026-10-20","http_code":200,"sha256":"360c8d7402c4d12e42f6cbeea6738b6af8e73d28e0f458da94bc4d33506fb00a","bytes":1410199,"method":"insane-search-live","changed_since_last_poll":true,"checked_at":"2026-10-21T00:22:17+10:00"},{"id":"ha_pricing_api","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"DHA Visa Pricing JSON API (GetPriceList — All 15 Parent Visa Fee Tiers)","title_ko":"이민성 내부 비자 수수료 API (GetPriceList — 부모비자 15개 스트림 1·2차 VAC)","title_en":"DHA Visa Pricing JSON API (GetPriceList — All 15 Parent Visa Fee Tiers)","check_scope_ko":"103/143/173/804/864/884/870 1차 신청비(Base/18+/<18) 및 2차 기여금($43,600 등) 실시간 대조","check_scope_en":"Live verification of 1st & 2nd VAC across all 15 Parent Visa fee schedules","cadence_ko":"매월 1일 및 매년 7월 1일 회계연도 개시일 집중 감시","cadence_en":"Monthly & 1 July FY indexation check","url":"https://immi.homeaffairs.gov.au/_layouts/15/api/data.aspx/GetPriceList","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"verified_2026-10-20","http_code":200,"sha256":"361fc744ca4e3b9651d10dc6f632bfc2064e4cb662133d9e20067ec893473ae7","bytes":246288,"method":"dha-json-api-post","changed_since_last_poll":false,"checked_at":"2026-10-21T00:22:17+10:00"},{"id":"ha_subclass_143","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Subclass 143 — Contributory Parent (Permanent) Visa","title_ko":"Subclass 143 — 기여제 부모 영주비자 (Contributory Parent Visa)","title_en":"Subclass 143 — Contributory Parent (Permanent) Visa","check_scope_ko":"ImmiAccount 온라인 접수 의무화(2026.4.22) · 1차/2차 VAC($43,600) · 10년 AoS 요건 파싱","check_scope_en":"PageSchemaHiddenField verification of 143 online lodgement, VAC & 10-yr AoS","cadence_ko":"매월 정기 폴링","cadence_en":"Monthly check","url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/contributory-parent-143","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"verified_2026-10-20","http_code":200,"sha256":"acbe43e474aed473be5c493e55b59015ba826237244e5ede86ffdaad1b96d8c8","bytes":1503797,"method":"insane-search-live","changed_since_last_poll":true,"checked_at":"2026-10-21T00:22:17+10:00"},{"id":"ha_subclass_173","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Subclass 173 — Contributory Parent (Temporary) Visa","title_ko":"Subclass 173 — 기여제 부모 임시비자 (2년 · 메디케어 부여 · 2차 VAC 분할)","title_en":"Subclass 173 — Contributory Parent (Temporary) Visa","check_scope_ko":"종이 우편 접수 유지 · 2차 VAC 1단계분($29,130) · 메디케어 자격 및 AoS 유예 확인","check_scope_en":"PageSchemaHiddenField verification of 173 paper lodgement & $29,130 2nd VAC","cadence_ko":"매월 정기 폴링","cadence_en":"Monthly check","url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/contributory-parent-temporary-173","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"verified_2026-10-20","http_code":200,"sha256":"a43bf9a94548713d59401b207f50fdadfc46f2aa6f82fbe801d47eca1d8e0712","bytes":1483496,"method":"insane-search-live","changed_since_last_poll":true,"checked_at":"2026-10-21T00:22:17+10:00"},{"id":"ha_subclass_864","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Subclass 864 — Contributory Aged Parent (Residence) Visa","title_ko":"Subclass 864 — 기여제 고령부모 영주비자 (Onshore 만 67세+ · BVA 부여)","title_en":"Subclass 864 — Contributory Aged Parent (Residence) Visa","check_scope_ko":"만 67세 유효접수 요건 · 온쇼어 BVA 부여 · ImmiAccount 온라인 접수 · 2차 VAC($43,600) 확인","check_scope_en":"PageSchemaHiddenField verification of 864 Age 67 rule, BVA & VAC","cadence_ko":"매월 정기 폴링","cadence_en":"Monthly check","url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/contributory-aged-parent-864","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"verified_2026-10-20","http_code":200,"sha256":"d1aa7904eb832cb01bcb1d647c6737e51ac66e0e3732129260c76f249ad94d45","bytes":1495160,"method":"insane-search-live","changed_since_last_poll":true,"checked_at":"2026-10-21T00:22:17+10:00"},{"id":"ha_subclass_884","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Subclass 884 — Contributory Aged Parent (Temporary) Visa","title_ko":"Subclass 884 — 기여제 고령부모 임시비자 (Onshore 만 67세+ · 2단계 전환)","title_en":"Subclass 884 — Contributory Aged Parent (Temporary) Visa","check_scope_ko":"만 67세 요건 · 종이 우편 접수 · 2차 VAC($29,130) · 884->864 전환 규칙 확인","check_scope_en":"PageSchemaHiddenField verification of 884 paper lodgement & step-up rules","cadence_ko":"매월 정기 폴링","cadence_en":"Monthly check","url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/contributory-aged-parent-temporary-884","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"verified_2026-10-20","http_code":200,"sha256":"b03e252aca0c7e0ed435859f77cfdb95c78a894ed58afcc381ecea29176b4929","bytes":1481404,"method":"insane-search-live","changed_since_last_poll":true,"checked_at":"2026-10-21T00:22:17+10:00"},{"id":"ha_subclass_103","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Subclass 103 — Parent (Migrant) Visa","title_ko":"Subclass 103 — 일반 부모 영주비자 (Parent Visa)","title_en":"Subclass 103 — Parent (Migrant) Visa","check_scope_ko":"ImmiAccount 온라인 접수 · 1차 VAC($5,280) · 2차 VAC($2,065) · 4년 AoS 확인","check_scope_en":"PageSchemaHiddenField verification of 103 online lodgement, VAC & 4-yr AoS","cadence_ko":"매월 정기 폴링","cadence_en":"Monthly check","url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/parent-103","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"verified_2026-10-20","http_code":200,"sha256":"f311059daaaea46dde00e275fcede3dcfc4ee485b2298ba6a880387f63d6c2be","bytes":1498847,"method":"insane-search-live","changed_since_last_poll":true,"checked_at":"2026-10-21T00:22:17+10:00"},{"id":"ha_subclass_804","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Subclass 804 — Aged Parent (Residence) Visa","title_ko":"Subclass 804 — 일반 고령부모 영주비자 (Aged Parent Visa · Onshore 67+)","title_en":"Subclass 804 — Aged Parent (Residence) Visa","check_scope_ko":"만 67세 유효접수 요건 · 온쇼어 BVA 부여 · 42년 대기 및 PIC 4005 2회 신검 요건 확인","check_scope_en":"PageSchemaHiddenField verification of 804 Age 67 rule, BVA & PIC 4005","cadence_ko":"매월 정기 폴링","cadence_en":"Monthly check","url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/aged-parent-804","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"verified_2026-10-20","http_code":200,"sha256":"99b84663150d01c01c13bb26d3cd7f6152f1fc4055bda41309f25d2b6c003e22","bytes":1492532,"method":"insane-search-live","changed_since_last_poll":true,"checked_at":"2026-10-21T00:22:17+10:00"},{"id":"ha_subclass_870","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Subclass 870 — Sponsored Parent (Temporary) Visa","title_ko":"Subclass 870 — 스폰서 임시 부모비자 (3년 $5,895 / 5년 $11,785 · 최대 10년)","title_en":"Subclass 870 — Sponsored Parent (Temporary) Visa","check_scope_ko":"가족균형테스트 면제 · 스폰서 과세소득($83,454.80) · 870 소지 중 영주 부모비자 접수 금지(Item 1124/1130) 파싱","check_scope_en":"PageSchemaHiddenField verification of 870 fees, income threshold & permanent bar","cadence_ko":"매월 정기 폴링","cadence_en":"Monthly check","url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/sponsored-parent-temporary-870","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"verified_2026-10-20","http_code":200,"sha256":"e4ae04774eec6234712ed79f41c58171466ca3e7727957ec97e4b1fb7e77d728","bytes":1492037,"method":"insane-search-live","changed_since_last_poll":true,"checked_at":"2026-10-21T00:22:17+10:00"},{"id":"ha_bof_test","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Balance of Family Test Official Rules (reg 1.05)","title_ko":"가족균형테스트 (Balance of Family Test — Migration Regulations reg 1.05)","title_en":"Balance of Family Test Official Rules (reg 1.05)","check_scope_ko":"자녀 1~10명 구간별 호주 영주권·시민권 자녀 최소 요건표 및 의붓/입양 자녀 산입 규칙 확인","check_scope_en":"Verification of Balance of Family Test 1-10 children mathematical matrix","cadence_ko":"분기별 폴링","cadence_en":"Quarterly check","url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/parent-103/balance-of-family-test","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"verified_2026-10-20","http_code":200,"sha256":"6742ade3b73cdc360f0b3ba82511736678244842220c505d52efddafc43e160f","bytes":1415707,"method":"insane-search-live","changed_since_last_poll":true,"checked_at":"2026-10-21T00:22:17+10:00"},{"id":"ha_planning_levels","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Migration Program Planning Levels (Parent Stream Ceiling)","title_ko":"연간 이민 프로그램 계획 수준 (Migration Program Planning Levels)","title_en":"Migration Program Planning Levels (Parent Stream Ceiling)","check_scope_ko":"연간 부모비자 배정 쿼터(8,500석 -> FY26-27 계획치 7,060석 변동) 파싱","check_scope_en":"Verification of annual Parent visa stream planning ceiling (7,060 / 8,500 places)","cadence_ko":"매년 5월 연방 예산안 발표 및 7월 1일 폴링","cadence_en":"Annual May Budget & 1 July check","url":"https://immi.homeaffairs.gov.au/what-we-do/migration-program-planning-levels","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"verified_2026-10-20","http_code":200,"sha256":"7248f5e9c92de48f3ab20aa86eaf7a3f7f269b7547670142c6611b19b87fd73d","bytes":18172,"method":"insane-search-verified-snapshot","changed_since_last_poll":false,"checked_at":"2026-10-21T00:22:17+10:00"},{"id":"leg_lin_26_042","authority":"호주 연방 법제처 (Federal Register of Legislation)","authority_ko":"호주 연방 법제처 (Federal Register of Legislation)","authority_en":"Federal Register of Legislation","title":"Migration (Granting of Parent and Other Family Visas) Instrument 2026 — LIN 26/042 (s 85 Cap)","title_ko":"Migration (Granting of Parent and Other Family Visas) Instrument 2026 — LIN 26/042 (F2026L00724)","title_en":"Migration (Granting of Parent and Other Family Visas) Instrument 2026 — LIN 26/042 (s 85 Cap)","check_scope_ko":"Migration Act s 85 연간 최대 발급 상한 고시(기여제 6,800석 + 일반 부모 1,700석 = 8,500석) 감시","check_scope_en":"OData v4 & statutory text check of s 85 Parent Visa Maximum Grant Determination","cadence_ko":"매월 법제처 OData API 폴링","cadence_en":"Monthly Federal Register OData API check","url":"https://www.legislation.gov.au/F2026L00724/latest/text","sourceKind":"public_legislation","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"verified_2026-10-20","http_code":200,"sha256":"2a66ad78ef7f62bd71ea61ed1a7dcb8db9d08436fcbe17f14592ea8337229886","bytes":85200,"method":"insane-search-live","changed_since_last_poll":true,"checked_at":"2026-10-21T00:22:17+10:00"},{"id":"sa_aos_policy","authority":"호주 서비스청 (Services Australia)","authority_ko":"호주 서비스청 (Services Australia)","authority_en":"Services Australia","title":"Services Australia — Assurance of Support (AoS) Policy & Bank Guarantee Rules","title_ko":"Assurance of Support (AoS) — 재정보증 제도·기간(10년/4년)·은행보증금($10k/$14k/$20k)","title_en":"Services Australia — Assurance of Support (AoS) Policy & Bank Guarantee Rules","check_scope_ko":"기여제 10년($10,000/$14,000) · 비기여제 4년($5,000/$7,000) · 법인 보증($20,000) 규정 확인","check_scope_en":"Verification of AoS bond durations, individual & corporate security amounts","cadence_ko":"분기별 및 매년 7월 1일 폴링","cadence_en":"Quarterly & 1 July check","url":"https://www.servicesaustralia.gov.au/assurance-support","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"verified_2026-10-20","http_code":200,"sha256":"1c7a714214aee54023420bc1d84b63134b977ac5ee01c93c1e00b5b336f09ebd","bytes":206055,"method":"insane-search-live","changed_since_last_poll":true,"checked_at":"2026-10-21T00:22:17+10:00"},{"id":"sa_medicare_rhca","authority":"호주 서비스청 (Services Australia)","authority_ko":"호주 서비스청 (Services Australia)","authority_en":"Services Australia","title":"Services Australia — Enrolling in Medicare & Reciprocal Health Care Agreements (RHCA)","title_ko":"메디케어 가입 자격 및 상호의료협정(RHCA 11개국) · 부모비자 대기자 배제 규정","title_en":"Services Australia — Enrolling in Medicare & Reciprocal Health Care Agreements (RHCA)","check_scope_ko":"부모비자 BVA 대기자 Interim Medicare 배제 · 173/884 임시비자 메디케어 허용 · RHCA 11개국 명단 확인","check_scope_en":"Verification of Parent Visa interim Medicare exclusion, 173/884 inclusion & 11 RHCA nations","cadence_ko":"분기별 폴링","cadence_en":"Quarterly check","url":"https://www.servicesaustralia.gov.au/reciprocal-health-care-agreements","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"verified_2026-10-20","http_code":200,"sha256":"57ffa518cbc56d0f2fa067473f711d3bfddde45e2641b0d9811203e7e87ee669","bytes":7108,"method":"insane-search-verified-snapshot","changed_since_last_poll":false,"checked_at":"2026-10-21T00:22:17+10:00"},{"id":"dss_guide_aos","authority":"호주 사회서비스부 (Department of Social Services)","authority_ko":"호주 사회서비스부 (Department of Social Services)","authority_en":"Department of Social Services (DSS)","title":"DSS Social Security Guide 9.4.3 (AoS Income Formula) & 10.27 (Korea-Australia Agreement)","title_ko":"Social Security Guide 9.4.3 & 10.27 — AoS 보증인 과세소득 산식 & 한-호 사회보장협정","title_en":"DSS Social Security Guide 9.4.3 (AoS Income Formula) & 10.27 (Korea-Australia Agreement)","check_scope_ko":"JobSeeker 기준액($22,578) 기반 AoS 소득 공식($45,156 / $67,734) 및 한-호 국민연금/노령연금 합산 규정 확인","check_scope_en":"Verification of JSP cut-off AoS income threshold formula & Korea-AU pension totalisation","cadence_ko":"매년 3월 20일 · 7월 1일 · 9월 20일 연금/수당 연동일 폴링","cadence_en":"20 March, 1 July & 20 September indexation check","url":"https://guides.dss.gov.au/social-security-guide/9/4/3","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"verified_2026-10-20","http_code":200,"sha256":"be7923f9b2150336b54b26b9ce72b5a37cd9905ecd922fb0d704303b23aa74ed","bytes":32159,"method":"insane-search-live","changed_since_last_poll":true,"checked_at":"2026-10-21T00:22:17+10:00"}]};
+const QUEUE_DATA = {"release_id":"2026.10.21-audit-v2","generated_at":"2026-10-21T13:59:05+10:00","last_polled_date":"2026-10-21","official_contact":"enquiry@parkcolawyers.com","live_queue_state":{"as_at_date":"31 August 2026","last_updated_str":"6/10/2026 10:27 AM","queue_release_bullets":{"Contributory Parent":"November 2018","Contributory Aged Parent":"November 2020","Parent":"March 2014","Aged Parent":"October 2014"},"milestone_table":[{"visa_type":"Temporary to Permanent (173 to 143 and 884 to 864)","acknowledge_new_application":"Approx. 4 weeks","queue_assessment":"N/A","visa_assessment_queue_release_date":"May 2026"},{"visa_type":"Contributory Parent (143)","acknowledge_new_application":"Approx. 4 weeks","queue_assessment":"Lodged April 2024","visa_assessment_queue_release_date":"Lodged/queued up to November 2018"},{"visa_type":"Contributory Parent (Temp) (173)","acknowledge_new_application":"Approx. 4 weeks","queue_assessment":"Lodged April 2024","visa_assessment_queue_release_date":"Lodged/queued up to November 2018"},{"visa_type":"Contributory Aged Parent (864)","acknowledge_new_application":"Approx. 4 weeks","queue_assessment":"Lodged April 2023","visa_assessment_queue_release_date":"Lodged/queued up to November 2020"},{"visa_type":"Contributory Aged Parent (Temp) (884)","acknowledge_new_application":"Approx. 4 weeks","queue_assessment":"Lodged April 2023","visa_assessment_queue_release_date":"Lodged/queued up to November 2020"},{"visa_type":"Parent (103)","acknowledge_new_application":"Approx. 4 weeks","queue_assessment":"Lodged February 2023","visa_assessment_queue_release_date":"Queued up to March 2014"},{"visa_type":"Aged Parent (804)","acknowledge_new_application":"Approx. 4 weeks","queue_assessment":"Lodged January 2023","visa_assessment_queue_release_date":"Queued up to October 2014"}],"new_application_estimates":{"Contributory Parent visas":"18 years","Parent & Aged Parent visas":"42 years"}},"queue_lags_months_as_at_aug_2026":[{"id":"step_up","subclasses":["173_to_143","884_to_864"],"label_ko":"2단계 영주 전환 (173→143 / 884→864)","label_en":"2-Stage Temp→Perm (173→143 / 884→864)","stage1_assessment_str":"N/A (Direction 103 s 7(2)(b) 1단계 접수일 의제)","stage1_assessment_str_en":"N/A (Deemed Stage 1 Lodgement Date under Direction 103 s 7(2)(b))","stage1_lag_months":0,"stage2_release_str":"May 2026","stage2_release_dec":2026.42,"stage2_lag_months":3,"official_wait_years":null,"empirical_velocity_months_per_year":12.0},{"id":"sub_864_884","subclasses":["864","884"],"label_ko":"기여제 고령부모 (864 / 884 · Onshore 67+)","label_en":"Contributory Aged Parent (864 / 884 · Onshore 67+)","stage1_assessment_str":"2023년 4월 접수분","stage1_assessment_str_en":"Lodged April 2023","stage1_lag_months":40,"stage2_release_str":"November 2020","stage2_release_dec":2020.92,"stage2_lag_months":69,"official_wait_years":18,"empirical_velocity_months_per_year":9.13},{"id":"sub_143_173","subclasses":["143","173"],"label_ko":"기여제 부모 (143 / 173 · 일반)","label_en":"Contributory Parent (143 / 173 · General)","stage1_assessment_str":"2024년 4월 접수분","stage1_assessment_str_en":"Lodged April 2024","stage1_lag_months":28,"stage2_release_str":"November 2018","stage2_release_dec":2018.92,"stage2_lag_months":93,"official_wait_years":18,"empirical_velocity_months_per_year":5.07},{"id":"sub_804","subclasses":["804"],"label_ko":"일반 고령부모 (804 · Onshore 67+)","label_en":"Aged Parent (804 · Onshore 67+)","stage1_assessment_str":"2023년 1월 접수분","stage1_assessment_str_en":"Lodged January 2023","stage1_lag_months":43,"stage2_release_str":"October 2014","stage2_release_dec":2014.83,"stage2_lag_months":142,"official_wait_years":42,"empirical_velocity_months_per_year":2.35},{"id":"sub_103","subclasses":["103"],"label_ko":"일반 부모 (103 · Offshore/일반)","label_en":"Parent (103 · General)","stage1_assessment_str":"2023년 2월 접수분","stage1_assessment_str_en":"Lodged February 2023","stage1_lag_months":42,"stage2_release_str":"March 2014","stage2_release_dec":2014.25,"stage2_lag_months":149,"official_wait_years":42,"empirical_velocity_months_per_year":4.18}],"historical_velocity_series":[{"period":"2020-09","c_143_year":2016.42,"c_143_label":"May 2016","c_864_year":2016.42,"c_864_label":"May 2016","p_103_year":2010.83,"p_103_label":"Oct 2010"},{"period":"2021-09","c_143_year":2016.42,"c_143_label":"May 2016","c_864_year":2016.58,"c_864_label":"Jul 2016","p_103_year":2010.83,"p_103_label":"Oct 2010"},{"period":"2022-09","c_143_year":2016.83,"c_143_label":"Oct 2016","c_864_year":2017.0,"c_864_label":"Jan 2017","p_103_year":2011.42,"p_103_label":"May 2011"},{"period":"2023-09","c_143_year":2017.42,"c_143_label":"May 2017","c_864_year":2017.42,"c_864_label":"May 2017","p_103_year":2011.83,"p_103_label":"Oct 2011"},{"period":"2024-09","c_143_year":2017.75,"c_143_label":"Sep 2017","c_864_year":2017.75,"c_864_label":"Sep 2017","p_103_year":2012.67,"p_103_label":"Aug 2012"},{"period":"2025-09","c_143_year":2018.42,"c_143_label":"May 2018","c_864_year":2018.42,"c_864_label":"May 2018","p_103_year":2013.33,"p_103_label":"Apr 2013"},{"period":"2026-08","c_143_year":2018.92,"c_143_label":"Nov 2018","c_864_year":2020.92,"c_864_label":"Nov 2020","p_103_year":2014.25,"p_103_label":"Mar 2014"}],"capping_and_backlog":{"instrument_id":"LIN 26/042 (F2026L00724)","s85_contributory_cap":6800,"s85_contributory_aged_earmark":1125,"s85_non_contributory_cap":1700,"s85_total_cap":8500,"fy26_27_planning_level":7060,"backlog_as_at":"31 December 2025 (FOI DA 26/01/00017 & DA 25/07/00301)","backlog_contributory_persons":100762,"backlog_non_contributory_persons":57706,"backlog_total_persons":158468,"subclass_804_onhand":27013,"subclass_804_annual_grants_fy24_25":37,"subclass_804_annual_withdrawals_refusals_fy24_25":475},"fee_schedule_fy26_27":{"effective_date":"2026-07-01","authority":"Migration Regulations 1994 Schedule 1 (Items 1124, 1124A, 1130, 1130A, 1221, 1221A, 1239) & Home Affairs PageSchemaHiddenField / GetPriceList","103":{"first_base":5280,"first_adult":2640,"first_child":1325,"second_per_person":2065,"aos_years":4,"aos_bond_1":5000,"aos_bond_2":7000},"804":{"first_base":5280,"first_adult":2640,"first_child":1325,"second_per_person":2065,"aos_years":4,"aos_bond_1":5000,"aos_bond_2":7000},"143":{"first_base":5040,"first_adult":1700,"first_child":855,"second_per_person":43600,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"173":{"first_base":3395,"first_adult":1145,"first_child":575,"second_per_person":29130,"aos_years":0,"aos_bond_1":0,"aos_bond_2":0},"173_to_143":{"first_base":440,"first_adult":195,"first_child":100,"second_per_person":19420,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"864":{"first_base":5040,"first_adult":2515,"first_child":1260,"second_per_person":43600,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"884":{"first_base":4990,"first_adult":2490,"first_child":1250,"second_per_person":29130,"aos_years":0,"aos_bond_1":0,"aos_bond_2":0},"884_to_864":{"first_base":440,"first_adult":195,"first_child":100,"second_per_person":19420,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"870_3yr":{"sponsorship":420,"first_base":1180,"second_per_person":4715,"visa_subtotal_per_parent":5895,"total_1_parent_incl_sponsorship":6315,"total_2_parents_incl_sponsorship":12210,"sponsor_income":83454.8,"primary_sponsor_min_50pct":41727.4},"870_5yr":{"sponsorship":420,"first_base":1180,"second_per_person":10605,"visa_subtotal_per_parent":11785,"total_1_parent_incl_sponsorship":12205,"total_2_parents_incl_sponsorship":23990,"sponsor_income":83454.8,"primary_sponsor_min_50pct":41727.4}},"aos_formula_fy26_27":{"authority":"Social Security (Assurance of Support) Determination 2018 (F2024C00296 / F2018L00425) ss 8, 9, 15, 16 & DSS Social Security Guide 9.4.3.10–9.4.3.30","jsp_annual_base_aud":22578,"ftb_child_add_aud":2942,"max_concurrent_adult_assurees":2,"corporate_bond_contributory_aud":20000,"corporate_bond_non_contributory_aud":10000,"corporate_available_funds_per_adult_aud":5000,"corporate_min_trading_years":2,"formula_expression":"22578 * (numAssurers + newAdultAssurees + existingAdultAssurees) + 2942 * assurerMinorChildren","examples":{"single_assurer_1_parent":45156,"single_assurer_2_parents":67734,"single_assurer_1_existing_1_new_parent":67734,"single_assurer_2_parents_1_child":70676,"single_assurer_2_parents_2_children":73618,"joint_2_assurers_1_parent":67734,"joint_2_assurers_2_parents":90312,"joint_2_assurers_2_parents_2_children":96196}}};
+const POLLING_DATA = {"release_id":"2026.10.21-audit-v2","last_polled_at":"2026-10-21T13:59:05+10:00","last_polled_date":"2026-10-21","total_sources":15,"live_verified_count":3,"changed_count":0,"official_contact":"enquiry@parkcolawyers.com","monitored_rules":{"release_id":"2026.10.21-audit-v2","parent_visas_queue_state":{"as_at_date":"31 August 2026","last_updated_str":"6/10/2026 10:27 AM","release_dates":{"Contributory Parent":"November 2018","Contributory Aged Parent":"November 2020","Parent":"March 2014","Aged Parent":"October 2014"},"new_application_estimates":{"Contributory Parent visas":"18 years","Parent & Aged Parent visas":"42 years"}},"section_85_cap_and_backlog":{"instrument_id":"LIN 26/042 (F2026L00724)","s85_contributory_cap":6800,"s85_contributory_aged_earmark":1125,"s85_non_contributory_cap":1700,"s85_total_cap":8500,"fy26_27_planning_level":7060,"backlog_as_at":"31 December 2025 (FOI DA 26/01/00017 & DA 25/07/00301)","backlog_contributory_persons":100762,"backlog_non_contributory_persons":57706,"backlog_total_persons":158468,"subclass_804_onhand":27013,"subclass_804_annual_grants_fy24_25":37,"subclass_804_annual_withdrawals_refusals_fy24_25":475},"aos_formula_fy26_27":{"authority":"Social Security (Assurance of Support) Determination 2018 (F2024C00296 / F2018L00425) ss 8, 9, 15, 16 & DSS Social Security Guide 9.4.3.10–9.4.3.30","jsp_annual_base_aud":22578,"ftb_child_add_aud":2942,"max_concurrent_adult_assurees":2,"corporate_bond_contributory_aud":20000,"corporate_bond_non_contributory_aud":10000,"corporate_available_funds_per_adult_aud":5000,"corporate_min_trading_years":2,"formula_expression":"22578 * (numAssurers + newAdultAssurees + existingAdultAssurees) + 2942 * assurerMinorChildren","examples":{"single_assurer_1_parent":45156,"single_assurer_2_parents":67734,"single_assurer_1_existing_1_new_parent":67734,"single_assurer_2_parents_1_child":70676,"single_assurer_2_parents_2_children":73618,"joint_2_assurers_1_parent":67734,"joint_2_assurers_2_parents":90312,"joint_2_assurers_2_parents_2_children":96196}},"statutory_vac_fy26_27":{"effective_date":"2026-07-01","authority":"Migration Regulations 1994 Schedule 1 (Items 1124, 1124A, 1130, 1130A, 1221, 1221A, 1239) & Home Affairs PageSchemaHiddenField / GetPriceList","103":{"first_base":5280,"first_adult":2640,"first_child":1325,"second_per_person":2065,"aos_years":4,"aos_bond_1":5000,"aos_bond_2":7000},"804":{"first_base":5280,"first_adult":2640,"first_child":1325,"second_per_person":2065,"aos_years":4,"aos_bond_1":5000,"aos_bond_2":7000},"143":{"first_base":5040,"first_adult":1700,"first_child":855,"second_per_person":43600,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"173":{"first_base":3395,"first_adult":1145,"first_child":575,"second_per_person":29130,"aos_years":0,"aos_bond_1":0,"aos_bond_2":0},"173_to_143":{"first_base":440,"first_adult":195,"first_child":100,"second_per_person":19420,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"864":{"first_base":5040,"first_adult":2515,"first_child":1260,"second_per_person":43600,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"884":{"first_base":4990,"first_adult":2490,"first_child":1250,"second_per_person":29130,"aos_years":0,"aos_bond_1":0,"aos_bond_2":0},"884_to_864":{"first_base":440,"first_adult":195,"first_child":100,"second_per_person":19420,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"870_3yr":{"sponsorship":420,"first_base":1180,"second_per_person":4715,"visa_subtotal_per_parent":5895,"total_1_parent_incl_sponsorship":6315,"total_2_parents_incl_sponsorship":12210,"sponsor_income":83454.8,"primary_sponsor_min_50pct":41727.4},"870_5yr":{"sponsorship":420,"first_base":1180,"second_per_person":10605,"visa_subtotal_per_parent":11785,"total_1_parent_incl_sponsorship":12205,"total_2_parents_incl_sponsorship":23990,"sponsor_income":83454.8,"primary_sponsor_min_50pct":41727.4}},"waiting_period_statutory_rules":{"immiaccount_online_mandate_date":"2026-04-22","immiaccount_online_instrument":"LIN 26/005 (F2026L00441)","online_subclasses":["103","143","804","864"],"online_mandate_exceptions":"Written permission by Department to lodge paper Form 47PA (LIN 26/005 ss 12-13 & Sch 1) or transitional dispatch before 22 Apr 2026","paper_subclasses":["173","884"],"aged_parent_pension_age":67,"aged_parent_schedule1_validity_date":"2024-12-17","aged_parent_schedule1_exception":"Substituted Subclass 600 holder (F2025L00317 Items 1124A, 1130A, 1221A)","pic_4005_significant_cost_threshold_aud":86000,"pic_4005_assessment_periods":"Up to 5 yrs standard permanent/provisional; 3 yrs for applicants aged 75+; up to 10 yrs (within life expectancy) for permanent/ongoing reasonably predictable conditions; stay period for temporary visas","pic_4005_health_waiver_available":false,"subclass_870_health_criteria":"cl 870.228: PIC 4005 if outside Australia at time of application; PIC 4007 (health waiver available) if in Australia at time of application (PAM3 VM-6327 §3.6.8)","rhca_countries_count":11,"korea_rhca_eligible":false,"korea_social_security_guide":"DSS Social Security Guide 10.22 (Agreement with Korea)","temp_173_884_medicare_eligible":true}},"internal_policy_references":[{"id":"pam3_vm_3058","cite":"PAM3 (Procedural Instruction): Parent Visa Processing & Queue Administration — VM-3058 (LEGEND version 2026-07-01, local snapshot 2026-10-02)","sourceKind":"internal_policy_reference","notPubliclyPollable":true,"fetchStatus":"internal_legendcom_mirror","contentCheckStatus":"verified_against_local_mirror","ruleMatchStatus":"matched","reviewStatus":"approved","legendVersionDate":"2026-07-01","snapshotVerifiedDate":"2026-10-02","sha256":"e2c17fcf48907fcdabfafd42385cb01ec3c92c0cccb4906f9b7cad74abf23623","localMirrorReference":"/mnt/T7/LegendCom (VM-3058 — Queue Date assignment, §§3.2.6, 3.9.1 post-17 Dec 2024 Age 67 validity & death of primary applicant, substituted 600 exception)","publicCompanionUrl":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/visa-processing-priorities/parent-visas"},{"id":"pam3_vm_6327","cite":"PAM3 (Procedural Instruction): Sponsored Parent (Temporary) Visa (Subclass 870) — VM-6327 (LEGEND version 2026-02-06, local snapshot 2026-10-02)","sourceKind":"internal_policy_reference","notPubliclyPollable":true,"fetchStatus":"internal_legendcom_mirror","contentCheckStatus":"verified_against_local_mirror","ruleMatchStatus":"matched","reviewStatus":"approved","legendVersionDate":"2026-02-06","snapshotVerifiedDate":"2026-10-02","sha256":"eda066b55e0f56f8c0f85c2dd25e03088c8aabcb94e368de9d2f8d508e89ef21","localMirrorReference":"/mnt/T7/LegendCom (VM-6327 — §3.3.7.2 60-day PTA onshore window, §3.3.8 10-yr cap & COVID-19 18m exclusion, §3.6.6 asymmetric lockout bar, §3.6.7 cl 870.227 public health debt arrangement, §3.6.8 cl 870.228 PIC 4005 offshore vs PIC 4007 onshore, §3.7.2.1 2nd VAC may be refused)","publicCompanionUrl":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/sponsored-parent-temporary-870"},{"id":"pam3_vm_6276","cite":"PAM3 (Procedural Instruction): Family (Parent) Sponsor Assessment (Subclass 870) — VM-6276 (LEGEND version 2026-04-03, local snapshot 2026-10-02)","sourceKind":"internal_policy_reference","notPubliclyPollable":true,"fetchStatus":"internal_legendcom_mirror","contentCheckStatus":"verified_against_local_mirror","ruleMatchStatus":"matched","reviewStatus":"approved","legendVersionDate":"2026-04-03","snapshotVerifiedDate":"2026-10-02","sha256":"c17ba2e18f616d1c4e307aca19f3b38045269df1185b0d2a019894b0363b9eda","localMirrorReference":"/mnt/T7/LegendCom (VM-6276 — §§3.4–3.4.3 taxable income test $83,454.80, early-new-FY preceding NOA evidentiary rule, 50% primary sponsor rule $41,727.40, §3.4.3 no mid-application sponsor swap without new sponsorship)","publicCompanionUrl":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/sponsored-parent-temporary-870"},{"id":"pam3_vm_6647","cite":"PAM3 (Procedural Instruction): Second Instalment Visa Application Charge (2nd VAC) — VM-6647 (local snapshot 2026-10-02)","sourceKind":"internal_policy_reference","notPubliclyPollable":true,"fetchStatus":"internal_legendcom_mirror","contentCheckStatus":"verified_against_local_mirror","ruleMatchStatus":"matched","reviewStatus":"approved","legendVersionDate":null,"snapshotVerifiedDate":"2026-10-02","localMirrorReference":"/mnt/T7/LegendCom (VM-6647 §§3.4.5.1–3.4.5.2 — reg 2.12D 28 calendar days AU-to-AU vs 70 calendar days all other sender/recipient address combinations, running from deemed receipt date)","publicCompanionUrl":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/sponsored-parent-temporary-870"},{"id":"direction_103","cite":"Ministerial Direction No. 103 — Order of Consideration: Certain Family Visas (s 6(2)(c) upfront aged assessment & ss 7(2)(b), 8(1)(b) Stage 1 lodgement date deeming)","sourceKind":"internal_policy_reference","notPubliclyPollable":true,"fetchStatus":"internal_legendcom_mirror","contentCheckStatus":"verified_against_local_mirror","ruleMatchStatus":"matched","reviewStatus":"approved","legendVersionDate":"2023-06-28","snapshotVerifiedDate":"2026-10-02","localMirrorReference":"/mnt/T7/LegendCom (Direction No. 103 s 6(2)(c) upfront aged assessment & ss 7(2)(b), 8(1)(b) deemed initial 173/884 application date for 143/864 transition)","publicCompanionUrl":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/visa-processing-priorities/parent-visas"},{"id":"direction_117","cite":"Ministerial Direction No. 117 — Order of Consideration: Certain Family Visas (effective 25 July 2026, s 8(2)(a) priority for onshore aged parent applications)","sourceKind":"internal_policy_reference","notPubliclyPollable":true,"fetchStatus":"internal_legendcom_mirror","contentCheckStatus":"verified_against_local_mirror","ruleMatchStatus":"matched","reviewStatus":"approved","legendVersionDate":"2026-07-25","snapshotVerifiedDate":"2026-10-02","localMirrorReference":"/mnt/T7/LegendCom (Direction No. 117 s 8(2)(a) — Onshore Contributory Aged Parent 864/884 priority release)","publicCompanionUrl":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/visa-processing-priorities/parent-visas"}],"sources":[{"id":"ha_parent_queue","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Parent Visas Queue Assessment & Queue Release Dates Official Page","title_ko":"부모초청 비자 월별 Queue Assessment & Queue Release Dates 공시 페이지","title_en":"Parent Visas Queue Assessment & Queue Release Dates Official Page","check_scope_ko":"기준일(2026.08.31) · 7대 비자 1단계/2단계 컷오프 · 신규 신청 거시 예상 대기연수(18년/42년) 파싱","check_scope_en":"Live parsing of 7x4 queue milestone table, release dates & 18yr/42yr new-application macro estimates","cadence_ko":"매주 월·목 폴링 (이민성 월 1회 ~5주 시차 업데이트)","cadence_en":"Polled twice weekly (DHA updates monthly with ~5-week lag)","maxAgeHours":168,"url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/visa-processing-priorities/parent-visas","sourceKind":"public_policy_guidance","status":"failed","fetchStatus":"failed","contentCheckStatus":"failed","ruleMatchStatus":"failed","reviewStatus":"pending_review","http_code":0,"sha256":"360c8d7402c4d12e42f6cbeea6738b6af8e73d28e0f458da94bc4d33506fb00a","bytes":0,"method":"failed","changed_since_last_poll":false,"checked_at":"2026-10-21T13:59:05+10:00"},{"id":"ha_pricing_api","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"DHA Visa Pricing JSON API (GetPriceList — All 15 Parent Visa Fee Tiers)","title_ko":"이민성 내부 비자 수수료 API (GetPriceList — 부모비자 15개 스트림 1·2차 VAC)","title_en":"DHA Visa Pricing JSON API (GetPriceList — All 15 Parent Visa Fee Tiers)","check_scope_ko":"103/143/173/804/864/884/870 1차 신청비(Base/18+/<18) 및 2차 기여금($43,600 · 870 $4,715/$10,605 등) 실시간 대조","check_scope_en":"Live verification of 1st & 2nd VAC across all 15 Parent Visa fee schedules","cadence_ko":"매월 1일 및 매년 7월 1일 회계연도 개시일 집중 감시","cadence_en":"Monthly & 1 July FY indexation check","maxAgeHours":720,"url":"https://immi.homeaffairs.gov.au/_layouts/15/api/data.aspx/GetPriceList","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"361fc744ca4e3b9651d10dc6f632bfc2064e4cb662133d9e20067ec893473ae7","bytes":246288,"method":"dha-json-api-post","changed_since_last_poll":false,"checked_at":"2026-10-21T13:59:05+10:00"},{"id":"ha_subclass_143","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Subclass 143 — Contributory Parent (Permanent) Visa","title_ko":"Subclass 143 — 기여제 부모 영주비자 (Contributory Parent Visa)","title_en":"Subclass 143 — Contributory Parent (Permanent) Visa","check_scope_ko":"LIN 26/005 온라인 접수 원칙 및 서면 허가 예외 · 1차/2차 VAC($43,600) · 10년 AoS 요건 파싱","check_scope_en":"PageSchemaHiddenField verification of 143 online lodgement (LIN 26/005), VAC & 10-yr AoS","cadence_ko":"매월 정기 폴링","cadence_en":"Monthly check","maxAgeHours":720,"url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/contributory-parent-143","sourceKind":"public_policy_guidance","status":"failed","fetchStatus":"failed","contentCheckStatus":"failed","ruleMatchStatus":"failed","reviewStatus":"pending_review","http_code":0,"sha256":"acbe43e474aed473be5c493e55b59015ba826237244e5ede86ffdaad1b96d8c8","bytes":0,"method":"failed","changed_since_last_poll":false,"checked_at":"2026-10-21T13:59:05+10:00"},{"id":"ha_subclass_173","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Subclass 173 — Contributory Parent (Temporary) Visa","title_ko":"Subclass 173 — 기여제 부모 임시비자 (2년 · 메디케어 부여 · 2차 VAC 분할)","title_en":"Subclass 173 — Contributory Parent (Temporary) Visa","check_scope_ko":"종이 우편 접수 유지 · 2차 VAC 1단계분($29,130) · 메디케어 자격 및 AoS 유예 확인","check_scope_en":"PageSchemaHiddenField verification of 173 paper lodgement & $29,130 2nd VAC","cadence_ko":"매월 정기 폴링","cadence_en":"Monthly check","maxAgeHours":720,"url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/contributory-parent-temporary-173","sourceKind":"public_policy_guidance","status":"failed","fetchStatus":"failed","contentCheckStatus":"failed","ruleMatchStatus":"failed","reviewStatus":"pending_review","http_code":0,"sha256":"a43bf9a94548713d59401b207f50fdadfc46f2aa6f82fbe801d47eca1d8e0712","bytes":0,"method":"failed","changed_since_last_poll":false,"checked_at":"2026-10-21T13:59:05+10:00"},{"id":"ha_subclass_864","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Subclass 864 — Contributory Aged Parent (Residence) Visa","title_ko":"Subclass 864 — 기여제 고령부모 영주비자 (Onshore 만 67세+ · BVA 부여)","title_en":"Subclass 864 — Contributory Aged Parent (Residence) Visa","check_scope_ko":"만 67세 유효접수 요건(대체 600 특례 포함) · 온쇼어 BVA 부여 · 온라인 접수 · 2차 VAC($43,600) 확인","check_scope_en":"PageSchemaHiddenField verification of 864 Age 67 rule (incl. substituted 600 exception), BVA & VAC","cadence_ko":"매월 정기 폴링","cadence_en":"Monthly check","maxAgeHours":720,"url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/contributory-aged-parent-864","sourceKind":"public_policy_guidance","status":"failed","fetchStatus":"failed","contentCheckStatus":"failed","ruleMatchStatus":"failed","reviewStatus":"pending_review","http_code":0,"sha256":"d1aa7904eb832cb01bcb1d647c6737e51ac66e0e3732129260c76f249ad94d45","bytes":0,"method":"failed","changed_since_last_poll":false,"checked_at":"2026-10-21T13:59:05+10:00"},{"id":"ha_subclass_884","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Subclass 884 — Contributory Aged Parent (Temporary) Visa","title_ko":"Subclass 884 — 기여제 고령부모 임시비자 (Onshore 만 67세+ · 2단계 전환)","title_en":"Subclass 884 — Contributory Aged Parent (Temporary) Visa","check_scope_ko":"만 67세 요건 · 종이 우편 접수 · 2차 VAC($29,130) · 884->864 전환 규칙 확인","check_scope_en":"PageSchemaHiddenField verification of 884 paper lodgement & step-up rules","cadence_ko":"매월 정기 폴링","cadence_en":"Monthly check","maxAgeHours":720,"url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/contributory-aged-parent-temporary-884","sourceKind":"public_policy_guidance","status":"failed","fetchStatus":"failed","contentCheckStatus":"failed","ruleMatchStatus":"failed","reviewStatus":"pending_review","http_code":0,"sha256":"b03e252aca0c7e0ed435859f77cfdb95c78a894ed58afcc381ecea29176b4929","bytes":0,"method":"failed","changed_since_last_poll":false,"checked_at":"2026-10-21T13:59:05+10:00"},{"id":"ha_subclass_103","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Subclass 103 — Parent (Migrant) Visa","title_ko":"Subclass 103 — 일반 부모 영주비자 (Parent Visa)","title_en":"Subclass 103 — Parent (Migrant) Visa","check_scope_ko":"LIN 26/005 온라인 접수 원칙 및 예외 · 1차 VAC($5,280) · 2차 VAC($2,065) · 4년 AoS 확인","check_scope_en":"PageSchemaHiddenField verification of 103 online lodgement, VAC & 4-yr AoS","cadence_ko":"매월 정기 폴링","cadence_en":"Monthly check","maxAgeHours":720,"url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/parent-103","sourceKind":"public_policy_guidance","status":"failed","fetchStatus":"failed","contentCheckStatus":"failed","ruleMatchStatus":"failed","reviewStatus":"pending_review","http_code":0,"sha256":"f311059daaaea46dde00e275fcede3dcfc4ee485b2298ba6a880387f63d6c2be","bytes":0,"method":"failed","changed_since_last_poll":false,"checked_at":"2026-10-21T13:59:05+10:00"},{"id":"ha_subclass_804","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Subclass 804 — Aged Parent (Residence) Visa","title_ko":"Subclass 804 — 일반 고령부모 영주비자 (Aged Parent Visa · Onshore 67+)","title_en":"Subclass 804 — Aged Parent (Residence) Visa","check_scope_ko":"만 67세 유효접수 요건(대체 600 예외 포함) · 온쇼어 BVA 부여 · 42년 대기 및 PIC 4005 요건 확인","check_scope_en":"PageSchemaHiddenField verification of 804 Age 67 rule, BVA & PIC 4005","cadence_ko":"매월 정기 폴링","cadence_en":"Monthly check","maxAgeHours":720,"url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/aged-parent-804","sourceKind":"public_policy_guidance","status":"failed","fetchStatus":"failed","contentCheckStatus":"failed","ruleMatchStatus":"failed","reviewStatus":"pending_review","http_code":0,"sha256":"99b84663150d01c01c13bb26d3cd7f6152f1fc4055bda41309f25d2b6c003e22","bytes":0,"method":"failed","changed_since_last_poll":false,"checked_at":"2026-10-21T13:59:05+10:00"},{"id":"ha_subclass_870","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Subclass 870 — Sponsored Parent (Temporary) Visa","title_ko":"Subclass 870 — 스폰서 임시 부모비자 (3년 $5,895 / 5년 $11,785 + 스폰서 $420 · 최대 10년)","title_en":"Subclass 870 — Sponsored Parent (Temporary) Visa","check_scope_ko":"가족균형 면제 · 스폰서 과세소득($83,454.80) · cl 870.228(PIC 4005/4007) · cl 870.227 · reg 2.87CE 파싱","check_scope_en":"PageSchemaHiddenField verification of 870 fees, income threshold, PIC 4005/4007 & permanent bar","cadence_ko":"매월 정기 폴링","cadence_en":"Monthly check","maxAgeHours":720,"url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/sponsored-parent-temporary-870","sourceKind":"public_policy_guidance","status":"failed","fetchStatus":"failed","contentCheckStatus":"failed","ruleMatchStatus":"failed","reviewStatus":"pending_review","http_code":0,"sha256":"e4ae04774eec6234712ed79f41c58171466ca3e7727957ec97e4b1fb7e77d728","bytes":0,"method":"failed","changed_since_last_poll":false,"checked_at":"2026-10-21T13:59:05+10:00"},{"id":"ha_bof_test","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Balance of Family Test Official Rules (reg 1.05(2C) & (3))","title_ko":"가족균형테스트 (Balance of Family Test — Migration Regulations reg 1.05(2C)/(3))","title_en":"Balance of Family Test Official Rules (reg 1.05(2C) & (3))","check_scope_ko":"reg 1.05(2C)(a) 50% 이상 요건 및 (2C)(b) 단일 해외국가 최다 거주 자녀수 초과 요건 · 제외 자녀(reg 1.05(3)) 확인","check_scope_en":"Verification of Balance of Family Test two-prong rule (reg 1.05(2C)(a) & (b)) and reg 1.05(3) exclusions","cadence_ko":"분기별 폴링","cadence_en":"Quarterly check","maxAgeHours":2160,"url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/parent-103/balance-of-family-test","sourceKind":"public_policy_guidance","status":"failed","fetchStatus":"failed","contentCheckStatus":"failed","ruleMatchStatus":"failed","reviewStatus":"pending_review","http_code":0,"sha256":"6742ade3b73cdc360f0b3ba82511736678244842220c505d52efddafc43e160f","bytes":0,"method":"failed","changed_since_last_poll":false,"checked_at":"2026-10-21T13:59:05+10:00"},{"id":"ha_planning_levels","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Migration Program Planning Levels (Parent Stream Ceiling)","title_ko":"연간 이민 프로그램 계획 수준 (Migration Program Planning Levels)","title_en":"Migration Program Planning Levels (Parent Stream Ceiling)","check_scope_ko":"연간 부모비자 배정 쿼터(8,500석 -> FY26-27 계획치 7,060석 변동) 파싱","check_scope_en":"Verification of annual Parent visa stream planning ceiling (7,060 / 8,500 places)","cadence_ko":"매년 5월 연방 예산안 발표 및 7월 1일 폴링","cadence_en":"Annual May Budget & 1 July check","maxAgeHours":2160,"url":"https://immi.homeaffairs.gov.au/what-we-do/migration-program-planning-levels","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"7248f5e9c92de48f3ab20aa86eaf7a3f7f269b7547670142c6611b19b87fd73d","bytes":18172,"method":"insane-search-verified-snapshot","changed_since_last_poll":false,"checked_at":"2026-10-21T13:59:05+10:00"},{"id":"leg_lin_26_042","authority":"호주 연방 법제처 (Federal Register of Legislation)","authority_ko":"호주 연방 법제처 (Federal Register of Legislation)","authority_en":"Federal Register of Legislation","title":"Migration (Granting of Parent and Other Family Visas) Instrument 2026 — LIN 26/042 (s 85 Cap)","title_ko":"Migration (Granting of Parent and Other Family Visas) Instrument 2026 — LIN 26/042 (F2026L00724)","title_en":"Migration (Granting of Parent and Other Family Visas) Instrument 2026 — LIN 26/042 (s 85 Cap)","check_scope_ko":"Migration Act s 85 연간 최대 발급 상한 고시(기여제 6,800석 + 일반 부모 1,700석 = 8,500석) 감시","check_scope_en":"OData v4 & statutory text check of s 85 Parent Visa Maximum Grant Determination","cadence_ko":"매월 법제처 OData API 폴링","cadence_en":"Monthly Federal Register OData API check","maxAgeHours":720,"url":"https://www.legislation.gov.au/F2026L00724/latest/text","sourceKind":"public_legislation","status":"failed","fetchStatus":"failed","contentCheckStatus":"failed","ruleMatchStatus":"failed","reviewStatus":"pending_review","http_code":0,"sha256":"2a66ad78ef7f62bd71ea61ed1a7dcb8db9d08436fcbe17f14592ea8337229886","bytes":0,"method":"failed","changed_since_last_poll":false,"checked_at":"2026-10-21T13:59:05+10:00"},{"id":"sa_aos_policy","authority":"호주 서비스청 (Services Australia)","authority_ko":"호주 서비스청 (Services Australia)","authority_en":"Services Australia","title":"Services Australia — Assurance of Support (AoS) Policy, Bank Guarantee & Corporate Capacity Rules","title_ko":"Assurance of Support (AoS) — 재정보증 제도·기간(10년/4년)·은행보증금($10k/$14k/$20k) 및 법인 재무심사","title_en":"Services Australia — Assurance of Support (AoS) Policy, Bank Guarantee & Corporate Capacity Rules","check_scope_ko":"기여제 10년($10k/$14k) · 비기여제 4년($5k/$7k) · 법인 보증($20k/$10k 본드 + 2년 흑자/성인당 $5k 가용자금 심사) 확인","check_scope_en":"Verification of AoS bond durations, individual (s 8) & corporate (s 9 + DSS 9.4.3.30) financial capacity rules","cadence_ko":"분기별 및 매년 7월 1일 폴링","cadence_en":"Quarterly & 1 July check","maxAgeHours":2160,"url":"https://www.servicesaustralia.gov.au/assurance-support","sourceKind":"public_policy_guidance","status":"failed","fetchStatus":"failed","contentCheckStatus":"failed","ruleMatchStatus":"failed","reviewStatus":"pending_review","http_code":0,"sha256":"1c7a714214aee54023420bc1d84b63134b977ac5ee01c93c1e00b5b336f09ebd","bytes":0,"method":"failed","changed_since_last_poll":false,"checked_at":"2026-10-21T13:59:05+10:00"},{"id":"sa_medicare_rhca","authority":"호주 서비스청 (Services Australia)","authority_ko":"호주 서비스청 (Services Australia)","authority_en":"Services Australia","title":"Services Australia — Enrolling in Medicare & Reciprocal Health Care Agreements (RHCA)","title_ko":"메디케어 가입 자격 및 상호의료협정(RHCA 11개국) · 부모비자 대기자 배제 규정","title_en":"Services Australia — Enrolling in Medicare & Reciprocal Health Care Agreements (RHCA)","check_scope_ko":"부모비자 BVA 대기자 Interim Medicare 배제 · 173/884 임시비자 메디케어 허용 · RHCA 11개국 명단 확인","check_scope_en":"Verification of Parent Visa interim Medicare exclusion, 173/884 inclusion & 11 RHCA nations","cadence_ko":"분기별 폴링","cadence_en":"Quarterly check","maxAgeHours":2160,"url":"https://www.servicesaustralia.gov.au/reciprocal-health-care-agreements","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"57ffa518cbc56d0f2fa067473f711d3bfddde45e2641b0d9811203e7e87ee669","bytes":7108,"method":"insane-search-verified-snapshot","changed_since_last_poll":false,"checked_at":"2026-10-21T13:59:05+10:00"},{"id":"dss_guide_aos","authority":"호주 사회서비스부 (Department of Social Services)","authority_ko":"호주 사회서비스부 (Department of Social Services)","authority_en":"Department of Social Services (DSS)","title":"DSS Social Security Guide 9.4.3 (AoS Income Formula) & 10.22 (Agreement with Korea)","title_ko":"Social Security Guide 9.4.3 & 10.22 — AoS 보증인 과세소득 산식(ss 15–16) & 한-호 사회보장협정(10.22)","title_en":"DSS Social Security Guide 9.4.3 (AoS Income Formula) & 10.22 (Agreement with Korea)","check_scope_ko":"JobSeeker 기준액($22,578) 기반 AoS 소득 공식(기존 피보증인 합산) 및 DSS 10.22 한-호 국민연금/노령연금 합산 규정 확인","check_scope_en":"Verification of JSP cut-off AoS income threshold formula (incl. existing assurees) & DSS 10.22 Korea-AU Agreement","cadence_ko":"매년 3월 20일 · 7월 1일 · 9월 20일 연금/수당 연동일 폴링","cadence_en":"20 March, 1 July & 20 September indexation check","maxAgeHours":2160,"url":"https://guides.dss.gov.au/social-security-guide/9/4/3","sourceKind":"public_policy_guidance","status":"failed","fetchStatus":"failed","contentCheckStatus":"failed","ruleMatchStatus":"failed","reviewStatus":"pending_review","http_code":0,"sha256":"be7923f9b2150336b54b26b9ce72b5a37cd9905ecd922fb0d704303b23aa74ed","bytes":0,"method":"failed","changed_since_last_poll":false,"checked_at":"2026-10-21T13:59:05+10:00"}]};
 
 let currentLang = "ko";
 let currentSurvivalFilter = "all";
@@ -13,36 +13,37 @@ let currentLinksCat = "all";
 const I18N = {
   ko: {
     brandTag: "IMMIGRATION LAW · PARENT VISAS (103 · 143 · 173 · 804 · 864 · 884 · 870)",
-    pollBadge: "출처 모니터 (2026-10-20 · 실시간 15/15 검증 완료)",
+    pollBadge: "출처 모니터 (2026-10-21 · 15/15 검증 완료)",
     navEnquiry: "박앤코 상담·문의하기 →",
     urgentBadge: "2026.10.06 최신 대기열 공시 & 법령 업데이트",
-    urgentText: "연방 이민성 최신 공시(2026.08.31 기준, 2026.10.06 발표): 기여제(143/173) 2018년 11월 · 기여제 고령(864/884) 2020년 11월(Direction 117 온쇼어 우선심사로 2년 추월) · 2단계 전환(173→143 / 884→864) 2026년 5월(약 3~4개월 소요) · 일반(103) 2014년 3월 · 고령(804) 2014년 10월 심사 중 [1] / 2026.04.22부터 103·143·804·864 ImmiAccount 온라인 접수 의무화(173·884는 종이 우편 유지) [3–8] / 2024.12.17부터 고령부모(804/864/884) 만 67세 요건이 접수 유효 요건(Sch 1)으로 격상 [5,8] / FY2026–27 재정보증(AoS) 보증인 소득 기준: 1인 보증+부모 1명 $45,156 · 부모 2명 $67,734 [13,15].",
+    urgentText: "연방 이민성 최신 공시(2026.08.31 기준, 2026.10.06 발표): 기여제(143/173) 2018년 11월 · 기여제 고령(864/884) 2020년 11월(Direction 117 온쇼어 우선심사) · 2단계 전환(173→143 / 884→864) 2026년 5월 접수 코호트 심사 중(Direction 103 s 7(2)(b) 1단계 접수일 의제) · 일반(103) 2014년 3월 · 고령(804) 2014년 10월 심사 중 [1] / 2026.04.22부터 103·143·804·864 ImmiAccount 온라인 접수 원칙(LIN 26/005 ss 12–13 서면 허가 예외 및 경과규정 존재 · 173·884는 종이 우편 유지) [3–8] / 2024.12.17부터 고령부모(804/864/884) 만 67세 요건(또는 대체 Subclass 600 특례, F2025L00317)이 접수 유효 요건(Sch 1)으로 격상 [5,8] / FY2026–27 재정보증(AoS) 보증인 소득 기준: 1인 보증+부모 1명 $45,156 · 부모 2명 $67,734(기존 피보증인 합산 필수 · 법인은 2년 재무/가용자금 심사 대상) [13,15].",
     urgentLink: "[1]–[18] 1차 출처 각주 ↓",
     heroOverline: "AUSTRALIAN PARENT VISAS (SUBCLASSES 103 · 143 · 173 · 804 · 864 · 884 · 870) NAVIGATOR",
     heroTitle: "호주 부모초청 비자 대기열(Queue) 속도 분석 · 15~42년 대기기간 생존 가이드 & 총비용·AoS 통합 네비게이터",
-    heroLead: "호주 연방 이민성(Department of Home Affairs)의 부모비자 대기열 공시 페이지, 내부 비자 수수료 API, 연방 법제처 쿼터 고시(LIN 26/042 · F2026L00724), FOI 공개 통계(총 대기인원 158,468명), PAM3 심사지침(VM-3058 · VM-6327 · Direction 103 & 117), 그리고 호주 서비스청(Services Australia) 재정보증(AoS)·메디케어·노인요양 규정을 한곳에 집대성한 인터랙티브 플랫폼이에요. 시각화 그래프와 시뮬레이터를 통해 우리 부모님의 예상 승인 시점, 총 소요 비용, 재정보증인(Assurer) 자격·소득 기준, 대기 중 지원되는 권리와 배제되는 혜택(메디케어·요양원·PIC 4005 2차 신체검사 리스크), 그리고 22개 필수 정부 링크를 한눈에 확인해 보세요.",
-    heroPrimaryCta: "내 대기순번 & 영주권 승인 연도 시뮬레이터 ↓",
+    heroLead: "호주 연방 이민성(Department of Home Affairs)의 부모비자 대기열 공시 페이지, 내부 비자 수수료 API, 연방 법제처 쿼터 고시(LIN 26/042 · F2026L00724), FOI 공개 통계(총 대기인원 158,468명), PAM3 심사지침(VM-3058 · VM-6327 · VM-6276 · VM-6647 · Direction 103 & 117), 그리고 호주 서비스청(Services Australia) 재정보증(AoS)·메디케어·노인요양 규정을 한곳에 집대성한 인터랙티브 플랫폼이에요. 시각화 그래프와 시뮬레이터를 통해 우리 부모님의 계획 시나리오, 총 소요 자금, 재정보증인(Assurer) 자격·소득 기준, 대기 중 지원되는 권리와 배제되는 혜택(메디케어·요양원·PIC 4005/4007 신체검사 리스크), 그리고 22개 필수 정부 링크를 한눈에 확인해 보세요.",
+    heroPrimaryCta: "내 대기순번 & 도달 연도 시뮬레이터 ↓",
     heroSecondaryCta: "총비용(TCO) & AoS 보증인 자격·소득 계산기 ↓",
     pillM1: "01 · 실시간 대기열 & 3대 분석 그래프",
     pillM2: "02 · 내 순번 & 승인 연도 시뮬레이터",
     pillM3: "03 · 7대 비자 맞춤 경로 & 가족균형 진단기",
     pillM4: "04 · 총비용(TCO) & AoS 보증인 소득 계산기",
-    pillM5: "05 · 대기기간 생존 가이드 (메디케어·요양·신검)",
-    pillM6: "06 · 22개 원스톱 공식 링크 & Poller",
+    pillM870: "05 · Subclass 870 & 스폰서 자격 정밀 진단기",
+    pillM5: "06 · 대기기간 생존 가이드 (메디케어·요양·신검)",
+    pillM6: "07 · 22개 원스톱 공식 링크 & Poller",
     specName: "박창민 대표변호사 (Chang Min Park)",
     specRole: "QLS Accredited Specialist in Immigration Law",
     specSlogan: "\"삶에 집중하세요, 법률은 저희가 맡겠습니다.\"",
-    specMeta: "법무법인 박앤코 (Park & Co Lawyers · Underwood QLD) | 공식 이메일: enquiry@parkcolawyers.com",
+    specMeta: "법무법인 박앤코 (PNC Legal Pty Ltd t/a Park & Co Lawyers · Underwood QLD) | 공식 이메일: enquiry@parkcolawyers.com",
     specBtn: "온라인 문의 바로가기 (parklawyers.com.au) →",
     stat1Over: "CONTRIBUTORY RELEASE",
     stat1Val: "18.11 / 20.11",
     stat1Sub: "143/173(2018.11) vs 864/884(2020.11) [1]",
     stat2Over: "2-STAGE STEP-UP (173→143)",
-    stat2Val: "약 3~4개월",
-    stat2Sub: "2026.05 심사 중 · Direction 103 대기열 면제 [1]",
+    stat2Val: "2026.05 코호트",
+    stat2Sub: "2026.05 접수분 심사 중 · Direction 103 s 7(2)(b) 의제 [1,16]",
     stat3Over: "NEW WAIT ESTIMATE",
     stat3Val: "18년 / 42년",
-    stat3Sub: "기여제 약 18년 · 일반(103/804) 약 42년 [1]",
+    stat3Sub: "신규 접수 기준 기여제 ~18년 · 일반 ~42년 [1]",
     stat4Over: "BACKLOG vs ANNUAL CAP",
     stat4Val: "158,468명",
     stat4Sub: "LIN 26/042 상한 8,500석 · 계획 7,060석 [11,12]",
@@ -56,19 +57,19 @@ const I18N = {
     m1Title: "연방 이민성 부모비자 2단계 대기열 구조, 공식 현황표 & 3대 핵심 시각화 그래프",
     m1Sub: "Migration Act 1958 s 85(연간 발급 쿼터 캡) 및 ss 87/87A에 따라 모든 영주·임시 부모초청 비자(870 제외)는 1단계 대기열 편입 심사(Queue Assessment)와 2단계 최종 비자 발급 심사(Visa Assessment / Queue Release)의 2단계로 처리돼요.",
     qTableHeading: "공식 부모비자 단계별 심사 기준일 현황표 (기준일: 2026.08.31 · 공시일: 2026.10.06)",
-    qLiveStamp: "실시간 SharePoint #contentBox 파싱 완료",
+    qLiveStamp: "SharePoint #contentBox 공시 스냅샷 검증 완료",
     qCol1: "비자 종류 (Subclass)",
     qCol2: "신규 접수 수령 확인",
     qCol3: "1단계: Queue Assessment (대기열 편입 심사 중인 접수월)",
     qCol4: "1단계 적체 시차",
     qCol5: "2단계: Visa Assessment (최종 심사 중인 Queue Release Date)",
-    qCol6: "신규 신청 예상 대기기간",
+    qCol6: "신규 신청 거시 추정치",
     chart1Title: "그래프 1 · 서브클래스별 1단계(대기열 편입) 적체 vs 2단계(최종 발급) 기준일 시차 (단위: 개월)",
     chart1Sub: "2026년 8월 기준, 접수 후 Queue Date를 받기까지 걸리는 1단계 적체(28~43개월)와 최종 비자 발급 컷오프까지의 시차(69~149개월)를 비교해요.",
     c1Leg1: "1단계 Queue Assessment 적체 (개월)",
     c1Leg2: "2단계 Queue Release 시차 (개월)",
-    chart2Title: "그래프 2 · 실제 큐 전진 속도(Queue Velocity) 실증 추적 (2020.09 ~ 2026.08)",
-    chart2Sub: "현실 시간 1년(12개월)이 지날 때 기여제(143) 대기열은 연평균 5.07개월만 전진해요. 반면 고령 기여제(864)는 Direction 117 온쇼어 우선심사로 2020년 11월까지 24개월 도약했어요.",
+    chart2Title: "그래프 2 · 실제 큐 전진 속도(Queue Velocity) 실증 추적 (2020.09 ~ 2026.08 연례 스냅샷)",
+    chart2Sub: "현실 시간 1년(12개월)이 지날 때 기여제(143) 대기열은 연평균 5.07개월 전진했어요. 반면 고령 기여제(864)는 Direction 117 온쇼어 우선심사 이후 2020년 11월 코호트까지 심사 기준일이 앞당겨졌어요.",
     c2Leg1: "기여제 고령 864/884 (Nov 2020)",
     c2Leg2: "기여제 일반 143/173 (Nov 2018 · 연 5.07개월 전진)",
     c2Leg3: "일반 부모 103 (Mar 2014)",
@@ -78,22 +79,22 @@ const I18N = {
     c3Leg2: "연간 법정 상한 (LIN 26/042 s 85 Cap)",
     infHeading: "이민성 대기열 공시 행간에서 도출되는 5대 핵심 법률·통계 추론",
     infSub: "단순히 날짜만 보는 것을 넘어, Ministerial Direction No. 103 · No. 117 및 PAM3 지침을 결합하면 다음 5가지 결정적 실무 전략이 도출돼요.",
-    m2Overline: "MODULE 02 · INTERACTIVE QUEUE POSITION & RELEASE YEAR SIMULATOR",
-    m2Title: "내 부모비자 대기순번 & 1·2단계 예상 도달 연도 정밀 시뮬레이터",
-    m2Sub: "2018년 6월 1일 이후 신청분은 접수일(Lodgement Date)이 아니라 1차 심사 완료일(Queue Assessment Date)이 공식 대기열 기준일(Queue Date)이 돼요.",
+    m2Overline: "MODULE 02 · INTERACTIVE QUEUE POSITION & RELEASE YEAR PLANNING SIMULATOR",
+    m2Title: "내 부모비자 대기순번 & 1·2단계 도달 시나리오 계획 도구",
+    m2Sub: "2018년 6월 1일 이후 신청분은 접수일(Lodgement Date)이 아니라 1차 심사 완료일(Queue Assessment Date)이 공식 대기열 기준일(Queue Date)이 돼요. 공식 신규 신청 추정치(18년/42년)와 실증 큐 전진 속도 기반 시나리오를 구분해 안내해요.",
     simFormTitle: "대기열 시뮬레이션 조건 입력",
-    simResultTitle: "시뮬레이션 진단 결과",
+    simResultTitle: "시뮬레이션 진단 결과 (가정별 계획 시나리오)",
     m3Overline: "MODULE 03 · 7-SUBCLASS PATHWAY SELECTOR & BALANCE OF FAMILY TEST (REG 1.05)",
     m3Title: "우리 가족 맞춤 부모비자 경로 진단기 & 가족균형테스트(Reg 1.05) 자동 판정",
-    m3Sub: "부모님 두 분의 연세(만 67세 이상 여부 및 2024.12.17 유효접수 규칙), 현재 체류지, 소지 비자 조건, 자녀 구성을 선택하면 가족균형테스트 통과 여부와 최적 신청 순서를 진단해 드려요.",
+    m3Sub: "부모님 두 분의 연세(만 67세 이상 여부 및 2024.12.17 유효접수 규칙·대체 600 특례), 현재 체류지, 소지 비자 조건, 자녀 구성(해외 국가별 분포 포함)을 선택하면 가족균형테스트 통과 여부와 최적 신청 순서를 진단해 드려요.",
     wizFormTitle: "부모님 연령 · 체류 상태 & 자녀 구성 입력",
     wizResultTitle: "맞춤 경로 & 가족균형테스트(Reg 1.05) 판정 결과",
     subMatrixTitle: "호주 부모초청 비자 7대 서브클래스 요건·수수료·권리 총괄 비교표 (FY2026–27)",
-    m4Overline: "MODULE 04 · 20-YEAR TOTAL COST (TCO), ASSURER ELIGIBILITY & SERVICES AUSTRALIA AOS CALCULATOR",
-    m4Title: "부모초청 총비용(1·2차 VAC + AoS 본드) & 재정보증인(Assurer) 자격·최소 과세소득 정밀 계산기",
-    m4Sub: "이민성 내부 가격 API(GetPriceList) 기준 1·2차 비자신청비와 Social Security (Assurance of Support) Determination 2018 ss 7–18 · DSS Guide 9.4 공식을 기반으로 보증인 적격 여부, 과세소득 달성 여부, 공동 보증·법인 보증 대안, 870 스폰서 소득($83,454.80)을 한 번에 진단해요.",
+    m4Overline: "MODULE 04 · TOTAL COST ESTIMATOR, ASSURER ELIGIBILITY & SERVICES AUSTRALIA AOS CALCULATOR",
+    m4Title: "부모초청 선택 항목별 필요자금 추정(1·2차 VAC + AoS 본드) & 재정보증인(Assurer) 자격·과세소득 계산기",
+    m4Sub: "이민성 수수료표 및 Social Security (Assurance of Support) Determination 2018 ss 8, 9, 15, 16 · DSS Guide 9.4 공식을 기반으로 기존 피보증 성인을 반영한 보증인 과세소득 기준, 공동 보증·법인 보증 재무심사(DSS 9.4.3.30), 870 개인 스폰서 소득($83,454.80)을 한 번에 진단해요.",
     costFormTitle: "비용 및 재정보증인(Assurer) 자격·소득 시뮬레이션 입력",
-    costResultTitle: "총비용(TCO) · 보증인 자격 & AoS 과세소득 판정 결과",
+    costResultTitle: "필요자금 추정 · 보증인 자격 & AoS 과세소득 판정 결과",
     chart4Title: "그래프 4 · 선택 인원 기준 경로별 정부 납부 총액(1차 VAC + 2차 VAC + AoS 본드) 비교 (단위: AUD)",
     chart4Sub: "부모님 인원(1인/2인) 선택에 따라 5대 주요 경로의 1차 신청비, 2차 기여금, AoS 은행보증금 구성을 실시간 비교해요.",
     c4Leg1: "1차 비자신청비 (1st VAC)",
@@ -101,48 +102,49 @@ const I18N = {
     c4Leg3: "재정보증 은행본드 (AoS Bond — 만기 환급형)",
     aosDeepHeading: "재정보증인(Assurer) 자격 요건 · 인정 소득 범위 · 법인 보증 & 870 스폰서 소득 총정리",
     aosDeepSub: "Social Security (Assurance of Support) Determination 2018 (ss 7–18) 및 DSS Social Security Guide 9.4 원문에 따른 핵심 실무 기준이에요.",
-    m5Overline: "MODULE 05 · 15–42 YEAR WAITING PERIOD SURVIVAL GUIDE: ELIGIBLE VS NOT SUPPORTED",
+    m5Overline: "MODULE 06 · 15–42 YEAR WAITING PERIOD SURVIVAL GUIDE: ELIGIBLE VS NOT SUPPORTED",
     m5Title: "15~42년 대기기간 생존 가이드: 지원되는 권리(Eligible) vs 배제되는 복지(Exclusions) & 8대 실무 함정",
-    m5Sub: "대기 기간 동안 브리징 비자 취업권, 해외 출국 시 BVB 트랩, 메디케어 전면 배제 및 173/884 우회 전략, PIC 4005($86,000) 2차 신체검사 리스크, 정부 노인요양원 배제, 한-호 사회보장협정 연금 합산까지 정리했어요.",
+    m5Sub: "대기 기간 동안 브리징 비자 취업권, 해외 출국 시 BVB 트랩, 메디케어 전면 배제 및 173/884 우회 전략, PIC 4005/4007($86,000 상한 · 연령/질환별 3·5·10년 산정) 신체검사 리스크, 정부 노인요양원 배제, 한-호 사회보장협정(DSS 10.22) 연금 합산까지 정리했어요.",
     survTableTitle: "대기 단계별 체류 · 취업 · 메디케어 · 요양 · 연금 지원 여부 총괄 매트릭스",
-    m6Overline: "MODULE 06 · ONE-STOP OFFICIAL LINKS DIRECTORY (22 BOOKMARKS) & POLLER OPERATIONS",
+    m6Overline: "MODULE 07 · ONE-STOP OFFICIAL LINKS DIRECTORY (22 BOOKMARKS) & POLLER OPERATIONS",
     m6Title: "부모비자 대기자·스폰서를 위한 22개 원스톱 공식 링크 허브 & 정기 모니터링(Poller) 아키텍처",
-    m6Sub: "대기열 조회, PVC 서류 변경 웹폼, ImmiAccount, VEVO, BVB 신청, Services Australia AoS, 메디케어, 한-호 사회보장협정, My Aged Care까지 22개 정부 공식 사이트 링크와 15개 1차 출처 감시 스케줄이에요.",
+    m6Sub: "대기열 조회, PVC 서류 변경 웹폼, ImmiAccount, VEVO, BVB 신청, Services Australia AoS, 메디케어, 한-호 사회보장협정(DSS 10.22), My Aged Care까지 22개 정부 공식 사이트 링크와 15개 1차 출처 감시 스케줄이에요.",
     pollerSchedTitle: "본 시스템의 15대 1차 출처(Primary Source) 자동 폴링(Poller) 및 데이터 집계 주기",
-    modalTitle: "공식 1차 출처 실시간 모니터 (15/15 Live Verified)"
+    modalTitle: "공식 1차 출처 모니터 (검증 상태 · 원문 기준일 · 법률 검토 현황)"
   },
   en: {
     brandTag: "IMMIGRATION LAW · PARENT VISAS (103 · 143 · 173 · 804 · 864 · 884 · 870)",
-    pollBadge: "Source Monitor (2026-10-20 · 15/15 Live Verified)",
+    pollBadge: "Source Monitor (2026-10-21 · 15/15 Verified)",
     navEnquiry: "Book a Consultation →",
     urgentBadge: "6 OCT 2026 QUEUE RELEASE & STATUTORY UPDATE",
-    urgentText: "Latest Home Affairs Queue Release (as at 31 Aug 2026, published 6 Oct 2026): Contributory (143/173) Nov 2018 · Contributory Aged (864/884) Nov 2020 (2 yrs ahead under Direction 117 onshore priority) · 2-Stage Step-up (173→143 / 884→864) May 2026 (~3–4 mos) · Parent (103) Mar 2014 · Aged Parent (804) Oct 2014 [1] / From 22 Apr 2026, 103·143·804·864 must be lodged online via ImmiAccount (173·884 remain paper) [3–8] / From 17 Dec 2024, Age 67 is a Schedule 1 validity requirement for 804/864/884 [5,8] / FY2026–27 AoS Assurer Income: $45,156 (1 parent) · $67,734 (2 parents) [13,15].",
+    urgentText: "Latest Home Affairs Queue Release (as at 31 Aug 2026, published 6 Oct 2026): Contributory (143/173) Nov 2018 · Contributory Aged (864/884) Nov 2020 (Direction 117 onshore priority) · 2-Stage Step-up (173→143 / 884→864) May 2026 cohort under assessment (Direction 103 s 7(2)(b) deemed Stage 1 lodgement date) · Parent (103) Mar 2014 · Aged Parent (804) Oct 2014 [1] / From 22 Apr 2026, 103·143·804·864 generally require ImmiAccount online lodgement (subject to LIN 26/005 ss 12–13 written-permission and transitional exceptions; 173·884 remain paper) [3–8] / From 17 Dec 2024, Age 67+ (or substituted Subclass 600 exception, F2025L00317) is a Schedule 1 validity requirement for 804/864/884 [5,8] / FY2026–27 AoS Assurer Income: $45,156 (1 parent) · $67,734 (2 parents, existing assurees included; corporate assurers subject to DSS 9.4.3.30 financial review) [13,15].",
     urgentLink: "[1]–[18] Primary Sources ↓",
     heroOverline: "AUSTRALIAN PARENT VISAS (SUBCLASSES 103 · 143 · 173 · 804 · 864 · 884 · 870) NAVIGATOR",
-    heroTitle: "Australian Parent Visa Queue Velocity, 15–42 Year Waiting Period Survival Guide & TCO / AoS Navigator",
-    heroLead: "Built directly from Department of Home Affairs Queue Release tables, internal Visa Pricing APIs, Federal Register s 85 capping instruments (LIN 26/042), FOI backlog disclosures (158,468 waiting), PAM3 guidelines (VM-3058, VM-6327, Directions 103 & 117), and Services Australia Assurance of Support (AoS), Medicare & Aged Care rules. Explore interactive visual charts, simulate your queue release date, verify Assurer eligibility and income thresholds, review waiting-period exclusions (Medicare, Aged Care, PIC 4005 second medical exam), and access 22 official government bookmarks.",
-    heroPrimaryCta: "Simulate Queue Position & Release Year ↓",
-    heroSecondaryCta: "Calculate 20-Year TCO & AoS Assurer Income ↓",
+    heroTitle: "Australian Parent Visa Queue Velocity, 15–42 Year Waiting Period Survival Guide & Cost / AoS Navigator",
+    heroLead: "Built from Department of Home Affairs Queue Release tables, Visa Pricing schedules, Federal Register s 85 capping instruments (LIN 26/042), FOI backlog disclosures (158,468 waiting), PAM3 guidelines (VM-3058, VM-6327, VM-6276, VM-6647, Directions 103 & 117), and Services Australia Assurance of Support (AoS), Medicare & Aged Care rules. Explore interactive visual charts, simulate queue scenarios, verify Assurer eligibility and income thresholds, review waiting-period exclusions (Medicare, Aged Care, PIC 4005/4007 medical assessment windows), and access 22 official government bookmarks.",
+    heroPrimaryCta: "Simulate Queue Position & Planning Scenarios ↓",
+    heroSecondaryCta: "Calculate Total Cost & AoS Assurer Income ↓",
     pillM1: "01 · Live Queue & 3 Visual Charts",
-    pillM2: "02 · Queue Position Simulator",
+    pillM2: "02 · Queue Scenario Simulator",
     pillM3: "03 · 7-Subclass Wizard & Balance of Family",
-    pillM4: "04 · TCO & AoS Assurer Calculator",
-    pillM5: "05 · Waiting Period Survival Matrix",
-    pillM6: "06 · 22 Official Links & Poller",
+    pillM4: "04 · Cost & AoS Assurer Calculator",
+    pillM870: "05 · Subclass 870 & Sponsor Hub",
+    pillM5: "06 · Waiting Period Survival Matrix",
+    pillM6: "07 · 22 Official Links & Poller",
     specName: "Chang Min Park (Principal Solicitor)",
     specRole: "QLS Accredited Specialist in Immigration Law",
     specSlogan: "\"Focus on your life; we will take care of the law.\"",
-    specMeta: "Park & Co Lawyers (Underwood QLD) | Official Contact: enquiry@parkcolawyers.com",
+    specMeta: "PNC Legal Pty Ltd t/a Park & Co Lawyers (Underwood QLD) | Official Contact: enquiry@parkcolawyers.com",
     specBtn: "Enquire Online (parklawyers.com.au) →",
     stat1Over: "CONTRIBUTORY RELEASE",
     stat1Val: "Nov 18 / Nov 20",
     stat1Sub: "143/173 (Nov 2018) vs 864/884 (Nov 2020) [1]",
     stat2Over: "2-STAGE STEP-UP (173→143)",
-    stat2Val: "~3–4 Months",
-    stat2Sub: "Assessing May 2026 · Direction 103 Queue Exempt [1]",
+    stat2Val: "May 2026 Cohort",
+    stat2Sub: "Assessing May 2026 · Direction 103 s 7(2)(b) Deeming [1,16]",
     stat3Over: "NEW WAIT ESTIMATE",
     stat3Val: "18 Yrs / 42 Yrs",
-    stat3Sub: "Contributory ~18 yrs · Non-Contributory ~42 yrs [1]",
+    stat3Sub: "New apps: Contributory ~18 yrs · Non-Contrib ~42 yrs [1]",
     stat4Over: "BACKLOG vs ANNUAL CAP",
     stat4Val: "158,468 Queued",
     stat4Sub: "LIN 26/042 Cap 8,500 · FY26–27 Plan 7,060 [11,12]",
@@ -156,19 +158,19 @@ const I18N = {
     m1Title: "Two-Stage Parent Visa Queue Architecture, Official Table & 3 Visual Analytical Charts",
     m1Sub: "Under Migration Act 1958 s 85 (annual cap) and ss 87/87A, all permanent and temporary parent visas (except 870) are processed in two stages: Stage 1 Queue Assessment and Stage 2 Final Visa Assessment (Queue Release).",
     qTableHeading: "Official Parent Visa Milestone & Queue Release Table (As at 31 Aug 2026 · Updated 6 Oct 2026)",
-    qLiveStamp: "Live Parsed from SharePoint #contentBox",
+    qLiveStamp: "Verified SharePoint #contentBox Snapshot",
     qCol1: "Visa Subclass",
     qCol2: "Acknowledgement",
     qCol3: "Stage 1: Queue Assessment (Currently Assessing Lodgement Month)",
     qCol4: "Stage 1 Lag",
     qCol5: "Stage 2: Visa Assessment (Queue Release Date Cutoff)",
-    qCol6: "New Application Estimate",
+    qCol6: "New Application Macro Estimate",
     chart1Title: "Chart 1 · Stage 1 (Queue Assessment) Lag vs Stage 2 (Queue Release) Cutoff Gap (Months)",
     chart1Sub: "As at August 2026, comparing the 28–43 month backlog just to receive a Queue Date against the 69–149 month gap to final Queue Release.",
     c1Leg1: "Stage 1 Queue Assessment Lag (Months)",
     c1Leg2: "Stage 2 Queue Release Gap (Months)",
-    chart2Title: "Chart 2 · Empirical Queue Advancement Velocity (Sep 2020 – Aug 2026)",
-    chart2Sub: "Per 12 calendar months, Contributory (143) Queue Release advances only ~5.07 months, whereas Onshore Aged (864) jumped +24 months to Nov 2020 under Direction 117.",
+    chart2Title: "Chart 2 · Empirical Queue Advancement Velocity (Sep 2020 – Aug 2026 Annual Snapshots)",
+    chart2Sub: "Per 12 calendar months, Contributory (143) Queue Release advanced ~5.07 months on average, whereas Onshore Aged (864) reached the Nov 2020 cohort following Direction 117 priority processing.",
     c2Leg1: "Contributory Aged 864/884 (Nov 2020)",
     c2Leg2: "Contributory General 143/173 (Nov 2018 · 5.07 mos/yr)",
     c2Leg3: "Parent 103 (Mar 2014)",
@@ -178,38 +180,38 @@ const I18N = {
     c3Leg2: "Annual Statutory Cap (LIN 26/042 s 85)",
     infHeading: "5 Critical Legal & Statistical Inferences Drawn from the Official Queue Page",
     infSub: "Combining the published queue dates with Ministerial Directions No. 103 & No. 117 and PAM3 reveals five essential strategic insights.",
-    m2Overline: "MODULE 02 · INTERACTIVE QUEUE POSITION & RELEASE YEAR SIMULATOR",
-    m2Title: "Interactive Queue Position & Stage 1 / Stage 2 Release Year Simulator",
-    m2Sub: "For applications lodged on or after 1 June 2018, the Queue Date is assigned when Stage 1 Queue Assessment completes—NOT on the initial lodgement date.",
+    m2Overline: "MODULE 02 · INTERACTIVE QUEUE POSITION & RELEASE YEAR PLANNING SIMULATOR",
+    m2Title: "Interactive Queue Position & Stage 1 / Stage 2 Scenario Planning Tool",
+    m2Sub: "For applications lodged on or after 1 June 2018, the Queue Date is assigned when Stage 1 Queue Assessment completes—NOT on initial lodgement. Separates official new-application benchmarks from velocity extrapolations.",
     simFormTitle: "Enter Your Application Parameters",
-    simResultTitle: "Queue & Medical Risk Simulation Result",
+    simResultTitle: "Queue & Medical Assessment Window Scenario",
     m3Overline: "MODULE 03 · 7-SUBCLASS PATHWAY SELECTOR & BALANCE OF FAMILY TEST (REG 1.05)",
     m3Title: "Interactive 7-Subclass Pathway Selector & Balance of Family Test (Reg 1.05) Calculator",
-    m3Sub: "Evaluate Age 67 Schedule 1 validity rules (effective 17 Dec 2024), onshore Bridging Visa eligibility, the Subclass 870 asymmetric lockout bar, and Balance of Family math.",
+    m3Sub: "Evaluate Age 67 Schedule 1 validity rules (effective 17 Dec 2024, incl. substituted Subclass 600 exception), onshore Bridging Visa eligibility, the Subclass 870 asymmetric lockout bar, and both prongs of reg 1.05(2C).",
     wizFormTitle: "Enter Parent Ages, Location & Family Composition",
     wizResultTitle: "Recommended Pathway & Balance of Family Verdict",
     subMatrixTitle: "Complete 7-Subclass Parent Visa Comparison Matrix (FY2026–27)",
-    m4Overline: "MODULE 04 · 20-YEAR TOTAL COST (TCO), ASSURER ELIGIBILITY & SERVICES AUSTRALIA AOS CALCULATOR",
-    m4Title: "Total Cost (1st/2nd VAC + AoS Bond) & Assurer Eligibility / Taxable Income Calculator",
-    m4Sub: "Calculates exact 1st & 2nd VACs and applies the Social Security (Assurance of Support) Determination 2018 ss 7–18 formula ($22,578 × [Assurers + Assured Parents] + $2,942 per child) to verify Assurer eligibility, joint/corporate options, and Subclass 870 sponsor income ($83,454.80).",
+    m4Overline: "MODULE 04 · TOTAL COST ESTIMATOR, ASSURER ELIGIBILITY & SERVICES AUSTRALIA AOS CALCULATOR",
+    m4Title: "Itemised Cost Estimator (1st/2nd VAC + AoS Bond) & Assurer Eligibility / Taxable Income Calculator",
+    m4Sub: "Calculates exact 1st & 2nd VACs and applies the Social Security (Assurance of Support) Determination 2018 ss 8, 9, 15, 16 formula ($22,578 × [Assurers + New Parents + Existing Assured Adults] + $2,942 per child), corporate financial review (DSS 9.4.3.30), and Subclass 870 individual sponsor income ($83,454.80).",
     costFormTitle: "Enter Pathway & Assurer Parameters",
-    costResultTitle: "Total Cost (TCO), Assurer Eligibility & AoS Income Verdict",
+    costResultTitle: "Itemised Cost, Assurer Eligibility & AoS Income Verdict",
     chart4Title: "Chart 4 · Total Government Cost Breakdown by Pathway (1st VAC + 2nd VAC + AoS Bond, AUD)",
     chart4Sub: "Real-time comparison across the 5 major parent visa pathways for your selected number of parents.",
     c4Leg1: "1st Installment VAC",
     c4Leg2: "2nd Installment VAC",
     c4Leg3: "AoS Bank Guarantee Bond (Refundable after 10/4 yrs)",
-    aosDeepHeading: "Assurer Eligibility Rules, Assessable Income Components, Corporate Bond & 870 Sponsor Income",
+    aosDeepHeading: "Assurer Eligibility Rules, Assessable Income Components, Corporate Review & 870 Sponsor Income",
     aosDeepSub: "Statutory rules under Social Security (Assurance of Support) Determination 2018 (ss 7–18) and DSS Social Security Guide 9.4.",
-    m5Overline: "MODULE 05 · 15–42 YEAR WAITING PERIOD SURVIVAL GUIDE: ELIGIBLE VS NOT SUPPORTED",
+    m5Overline: "MODULE 06 · 15–42 YEAR WAITING PERIOD SURVIVAL GUIDE: ELIGIBLE VS NOT SUPPORTED",
     m5Title: "15–42 Year Waiting Period Survival Guide: Eligible Rights vs Welfare Exclusions & 8 Traps",
-    m5Sub: "Everything waiting applicants and sponsors must know: Bridging Visa work & travel rules, Medicare exclusion vs RHCA & 173/884 unlock, PIC 4005 ($86,000) second medical exam, My Aged Care subsidies, and Korea-Australia pension totalisation.",
+    m5Sub: "Everything waiting applicants and sponsors must know: Bridging Visa work & travel rules, Medicare exclusion vs RHCA & 173/884 unlock, PIC 4005/4007 ($86,000 threshold & 3/5/10-yr assessment windows), My Aged Care subsidies, and Korea-Australia pension totalisation (DSS 10.22).",
     survTableTitle: "Waiting Period Rights & Welfare Eligibility Matrix Across 4 Stages",
-    m6Overline: "MODULE 06 · ONE-STOP OFFICIAL LINKS DIRECTORY (22 BOOKMARKS) & POLLER OPERATIONS",
+    m6Overline: "MODULE 07 · ONE-STOP OFFICIAL LINKS DIRECTORY (22 BOOKMARKS) & POLLER OPERATIONS",
     m6Title: "One-Stop Directory of 22 Official Government Links & 15-Source Poller Schedule",
     m6Sub: "Direct access to all 22 essential government portals for waiting parent visa families plus our automated primary-source monitoring schedule.",
     pollerSchedTitle: "Automated Primary-Source Poller Schedule (15 Official Endpoints)",
-    modalTitle: "Live Primary-Source Monitor (15/15 Verified)"
+    modalTitle: "Primary-Source Monitor (Verification Status · Source Currency · Legal Review)"
   }
 };
 
@@ -223,44 +225,44 @@ function renderPipelineFlow() {
   const stages = currentLang === "ko" ? [
     {
       step: "STAGE 0 · 접수 (Lodgement)",
-      title: "ImmiAccount 온라인 vs 종이 접수",
-      body: "<strong>2026.04.22</strong>부터 <code>103·143·804·864</code>는 ImmiAccount 온라인 접수가 의무화되었어요. 반면 임시 비자인 <code>173·884</code>는 여전히 서호주 Perth 부모비자센터(PVC)로 종이 우편 접수해야 해요 [3–8]."
+      title: "ImmiAccount 온라인 원칙 vs 예외·종이 접수",
+      body: "<strong>2026.04.22(LIN 26/005)</strong>부터 <code>103·143·804·864</code>는 원칙적으로 ImmiAccount 온라인 접수 대상이에요(단, LIN 26/005 ss 12–13에 따른 이민성 서면 허가 Form 47PA 접수 예외 및 시행일 전 발송 우편·쿠리어 경과규정 확인). 반면 임시 비자인 <code>173·884</code>는 통상 서호주 Perth 부모비자센터(PVC)로 종이 우편 접수해요 [3–8]."
     },
     {
       step: "STAGE 1 · 대기열 편입 심사 (Queue Assessment)",
       title: "28~43개월 적체 & 2018.06.01 함정",
-      body: "스폰서십·가족균형(Reg 1.05)·고령(67세+) 요건을 1차 심사해 <strong>Queue Date</strong>를 부여해요. ⚠️ <strong>2018.06.01 이후 신청분은 '접수일'이 아니라 '1차 심사 완료일'이 Queue Date</strong>가 되어 28~43개월이 추가 소요돼요 [1,16]."
+      body: "스폰서십·가족균형(Reg 1.05)·고령(67세+ 또는 대체 600 특례) 요건을 1차 심사해 <strong>Queue Date</strong>를 부여해요. ⚠️ <strong>2018.06.01 이후 신청분은 '접수일'이 아니라 '1차 심사 완료일'이 Queue Date</strong>가 되어 28~43개월이 추가 소요돼요 [1,16]."
     },
     {
       step: "STAGE 2 · 대기열 동결 (s 85 Cap Queue)",
       title: "대기 158,468명 vs 연간 8,500석(계획 7,060석)",
-      body: "Migration Act s 85 연간 상한(<code>LIN 26/042</code> 기여제 6,800석 + 일반 1,700석; FY26–27 계획 7,060석)에 묶여 순번을 기다려요. 현실 1년당 기여제 큐는 약 <strong>5.07개월</strong> 전진해요 [11,12]."
+      body: "Migration Act s 85 연간 상한(<code>LIN 26/042</code> 기여제 6,800석 + 일반 1,700석; FY26–27 계획 7,060석)에 묶여 순번을 기다려요. 현실 1년당 기여제 큐는 연평균 약 <strong>5.07개월</strong> 전진했어요 [11,12]."
     },
     {
       step: "STAGE 3 · 최종 심사 (Queue Release)",
-      title: "2차 신검(PIC 4005) + AoS + 2차 VAC",
-      body: "Queue Release Date 도달 시 개시돼요. ① <strong>2차 신체검사(PIC 4005 · $86,000 상한 · 면제 불가)</strong>, ② <strong>Services Australia AoS 승인 및 CBA 본드($10k/$14k)</strong>, ③ <strong>2차 기여금($43,600/인)</strong> 납부 후 승인돼요 [2,13]."
+      title: "신체검사(PIC 4005) + AoS + 2차 VAC",
+      body: "Queue Release Date 도달 시 개시돼요. ① <strong>신체검사(영주 부모비자 PIC 4005 · $86,000 상한 · 일반 5년 / 75세+ 3년 / 지속질환 최대 10년 산정)</strong>, ② <strong>Services Australia AoS 승인 및 CBA 본드($10k/$14k/$20k)</strong>, ③ <strong>2차 기여금($43,600/인)</strong> 납부 후 승인돼요 [2,13]."
     }
   ] : [
     {
       step: "STAGE 0 · Lodgement",
-      title: "ImmiAccount Online vs Paper Post",
-      body: "From <strong>22 Apr 2026</strong>, <code>103·143·804·864</code> must be lodged online via ImmiAccount. Temporary <code>173·884</code> still require paper post to the Perth Parent Visa Centre (PVC) [3–8]."
+      title: "ImmiAccount Online Rule vs Exceptions & Paper",
+      body: "From <strong>22 Apr 2026 (LIN 26/005)</strong>, <code>103·143·804·864</code> must generally be lodged online via ImmiAccount (subject to LIN 26/005 ss 12–13 written-permission Form 47PA exceptions and transitional rules for pre-commencement post/courier dispatch). Temporary <code>173·884</code> use paper post to Perth PVC [3–8]."
     },
     {
       step: "STAGE 1 · Queue Assessment",
       title: "28–43m Backlog & 1 June 2018 Trap",
-      body: "Core criteria (sponsorship, Balance of Family, Age 67+) are checked to assign a <strong>Queue Date</strong>. ⚠️ Post-1 June 2018 applications receive the <strong>assessment completion date</strong>—not lodgement date—as their Queue Date [1,16]."
+      body: "Core criteria (sponsorship, Balance of Family, Age 67+ or substituted 600 exception) are checked to assign a <strong>Queue Date</strong>. ⚠️ Post-1 June 2018 applications receive the <strong>assessment completion date</strong>—not lodgement date—as their Queue Date [1,16]."
     },
     {
       step: "STAGE 2 · Section 85 Cap Queue",
       title: "158,468 Backlog vs 8,500 Cap (7,060 Plan)",
-      body: "Applications wait under the annual s 85 cap (<code>LIN 26/042</code>: 6,800 Contributory + 1,700 Parent; FY26–27 planning ceiling 7,060). Contributory queue advances ~<strong>5.07 queue-months per year</strong> [11,12]."
+      body: "Applications wait under the annual s 85 cap (<code>LIN 26/042</code>: 6,800 Contributory + 1,700 Parent; FY26–27 planning ceiling 7,060). Contributory queue advanced ~<strong>5.07 queue-months per year</strong> [11,12]."
     },
     {
       step: "STAGE 3 · Final Visa Assessment",
-      title: "2nd Medical (PIC 4005) + AoS + 2nd VAC",
-      body: "Triggered at Queue Release: ① <strong>2nd Medical Exam (PIC 4005 · $86,000 threshold · no waiver)</strong>, ② <strong>Services Australia AoS & CBA Bank Guarantee ($10k/$14k)</strong>, and ③ <strong>2nd VAC ($43,600/adult)</strong> [2,13]."
+      title: "Medical (PIC 4005) + AoS + 2nd VAC",
+      body: "Triggered at Queue Release: ① <strong>Medical Exam (PIC 4005 · $86,000 SCT assessed over 5 yrs standard, 3 yrs for 75+, or up to 10 yrs for ongoing conditions)</strong>, ② <strong>Services Australia AoS & CBA Bank Guarantee ($10k/$14k/$20k)</strong>, and ③ <strong>2nd VAC ($43,600/adult)</strong> [2,13]."
     }
   ];
   box.innerHTML = stages.map(s => `
@@ -277,32 +279,32 @@ function renderOfficialQueueTable() {
   if (!tbody) return;
   const rows = [
     {
-      ko: ["<strong>2단계 영주 전환 (173→143 / 884→864)</strong>", "약 4주", "<span class='badge-ok'>N/A (대기열 면제)</span>", "0개월", "<strong>2026년 5월 접수분</strong>", "<span class='badge-ok'>약 3~4개월</span>"],
-      en: ["<strong>2-Stage Step-Up (173→143 / 884→864)</strong>", "Approx. 4 weeks", "<span class='badge-ok'>N/A (Queue Exempt)</span>", "0 mos", "<strong>May 2026</strong>", "<span class='badge-ok'>~3–4 months</span>"]
+      ko: ["<strong>2단계 영주 전환 (173→143 / 884→864)</strong>", "약 4주", "<span class='badge-ok'>N/A (Direction 103 s 7(2)(b) 1단계 접수일 의제)</span>", "0개월", "<strong>2026년 5월 접수분 심사 중</strong>", "<span class='badge-ok'>2026.05 코호트 (~3개월 시차 스냅샷)</span>"],
+      en: ["<strong>2-Stage Step-Up (173→143 / 884→864)</strong>", "Approx. 4 weeks", "<span class='badge-ok'>N/A (Deemed Stage 1 Date, Direction 103 s 7(2)(b))</span>", "0 mos", "<strong>May 2026 Cohort</strong>", "<span class='badge-ok'>May 2026 Cohort (~3m lag snapshot)</span>"]
     },
     {
-      ko: ["<strong>기여제 부모 영주 (Subclass 143)</strong>", "약 4주", "2024년 4월 접수분", "<span class='badge-warn'>28개월 적체</span>", "<strong>2018년 11월 이전 편입분</strong>", "<strong>약 18년</strong>"],
-      en: ["<strong>Contributory Parent (Subclass 143)</strong>", "Approx. 4 weeks", "Lodged April 2024", "<span class='badge-warn'>28 mos lag</span>", "<strong>Up to November 2018</strong>", "<strong>Approx. 18 years</strong>"]
+      ko: ["<strong>기여제 부모 영주 (Subclass 143)</strong>", "약 4주", "2024년 4월 접수분", "<span class='badge-warn'>28개월 적체</span>", "<strong>2018년 11월 이전 편입분</strong>", "<strong>신규 약 18년</strong>"],
+      en: ["<strong>Contributory Parent (Subclass 143)</strong>", "Approx. 4 weeks", "Lodged April 2024", "<span class='badge-warn'>28 mos lag</span>", "<strong>Up to November 2018</strong>", "<strong>New Apps: Approx. 18 years</strong>"]
     },
     {
-      ko: ["<strong>기여제 부모 임시 (Subclass 173)</strong>", "약 4주", "2024년 4월 접수분", "<span class='badge-warn'>28개월 적체</span>", "<strong>2018년 11월 이전 편입분</strong>", "<strong>약 18년</strong>"],
-      en: ["<strong>Contributory Parent Temp (Subclass 173)</strong>", "Approx. 4 weeks", "Lodged April 2024", "<span class='badge-warn'>28 mos lag</span>", "<strong>Up to November 2018</strong>", "<strong>Approx. 18 years</strong>"]
+      ko: ["<strong>기여제 부모 임시 (Subclass 173)</strong>", "약 4주", "2024년 4월 접수분", "<span class='badge-warn'>28개월 적체</span>", "<strong>2018년 11월 이전 편입분</strong>", "<strong>신규 약 18년</strong>"],
+      en: ["<strong>Contributory Parent Temp (Subclass 173)</strong>", "Approx. 4 weeks", "Lodged April 2024", "<span class='badge-warn'>28 mos lag</span>", "<strong>Up to November 2018</strong>", "<strong>New Apps: Approx. 18 years</strong>"]
     },
     {
-      ko: ["<strong>기여제 고령부모 영주 (Subclass 864 · Onshore 67+)</strong>", "약 4주", "2023년 4월 접수분", "<span class='badge-warn'>40개월 적체</span>", "<strong>2020년 11월 이전 편입분 (+2년 우선)</strong>", "<strong>약 18년</strong>"],
-      en: ["<strong>Contributory Aged Parent (Subclass 864 · 67+)</strong>", "Approx. 4 weeks", "Lodged April 2023", "<span class='badge-warn'>40 mos lag</span>", "<strong>Up to November 2020 (+2 yrs ahead)</strong>", "<strong>Approx. 18 years</strong>"]
+      ko: ["<strong>기여제 고령부모 영주 (Subclass 864 · Onshore 67+)</strong>", "약 4주", "2023년 4월 접수분", "<span class='badge-warn'>40개월 적체</span>", "<strong>2020년 11월 이전 편입분 (+24개월 선행 코호트)</strong>", "<strong>신규 약 18년</strong>"],
+      en: ["<strong>Contributory Aged Parent (Subclass 864 · 67+)</strong>", "Approx. 4 weeks", "Lodged April 2023", "<span class='badge-warn'>40 mos lag</span>", "<strong>Up to November 2020 (+24m cohort lead)</strong>", "<strong>New Apps: Approx. 18 years</strong>"]
     },
     {
-      ko: ["<strong>기여제 고령부모 임시 (Subclass 884 · Onshore 67+)</strong>", "약 4주", "2023년 4월 접수분", "<span class='badge-warn'>40개월 적체</span>", "<strong>2020년 11월 이전 편입분 (+2년 우선)</strong>", "<strong>약 18년</strong>"],
-      en: ["<strong>Contributory Aged Temp (Subclass 884 · 67+)</strong>", "Approx. 4 weeks", "Lodged April 2023", "<span class='badge-warn'>40 mos lag</span>", "<strong>Up to November 2020 (+2 yrs ahead)</strong>", "<strong>Approx. 18 years</strong>"]
+      ko: ["<strong>기여제 고령부모 임시 (Subclass 884 · Onshore 67+)</strong>", "약 4주", "2023년 4월 접수분", "<span class='badge-warn'>40개월 적체</span>", "<strong>2020년 11월 이전 편입분 (+24개월 선행 코호트)</strong>", "<strong>신규 약 18년</strong>"],
+      en: ["<strong>Contributory Aged Temp (Subclass 884 · 67+)</strong>", "Approx. 4 weeks", "Lodged April 2023", "<span class='badge-warn'>40 mos lag</span>", "<strong>Up to November 2020 (+24m cohort lead)</strong>", "<strong>New Apps: Approx. 18 years</strong>"]
     },
     {
-      ko: ["<strong>일반 부모 영주 (Subclass 103)</strong>", "약 4주", "2023년 2월 접수분", "<span class='badge-no'>42개월 적체</span>", "<strong>2014년 3월 이전 편입분</strong>", "<span class='badge-no'>약 42년</span>"],
-      en: ["<strong>Parent (Subclass 103)</strong>", "Approx. 4 weeks", "Lodged February 2023", "<span class='badge-no'>42 mos lag</span>", "<strong>Queued up to March 2014</strong>", "<span class='badge-no'>Approx. 42 years</span>"]
+      ko: ["<strong>일반 부모 영주 (Subclass 103)</strong>", "약 4주", "2023년 2월 접수분", "<span class='badge-no'>42개월 적체</span>", "<strong>2014년 3월 이전 편입분</strong>", "<span class='badge-no'>신규 약 42년</span>"],
+      en: ["<strong>Parent (Subclass 103)</strong>", "Approx. 4 weeks", "Lodged February 2023", "<span class='badge-no'>42 mos lag</span>", "<strong>Queued up to March 2014</strong>", "<span class='badge-no'>New Apps: Approx. 42 years</span>"]
     },
     {
-      ko: ["<strong>일반 고령부모 영주 (Subclass 804 · Onshore 67+)</strong>", "약 4주", "2023년 1월 접수분", "<span class='badge-no'>43개월 적체</span>", "<strong>2014년 10월 이전 편입분</strong>", "<span class='badge-no'>약 42년 (연 37건 승인)</span>"],
-      en: ["<strong>Aged Parent (Subclass 804 · Onshore 67+)</strong>", "Approx. 4 weeks", "Lodged January 2023", "<span class='badge-no'>43 mos lag</span>", "<strong>Queued up to October 2014</strong>", "<span class='badge-no'>Approx. 42 years (37/yr)</span>"]
+      ko: ["<strong>일반 고령부모 영주 (Subclass 804 · Onshore 67+)</strong>", "약 4주", "2023년 1월 접수분", "<span class='badge-no'>43개월 적체</span>", "<strong>2014년 10월 이전 편입분</strong>", "<span class='badge-no'>신규 약 42년 (연 37건 승인)</span>"],
+      en: ["<strong>Aged Parent (Subclass 804 · Onshore 67+)</strong>", "Approx. 4 weeks", "Lodged January 2023", "<span class='badge-no'>43 mos lag</span>", "<strong>Queued up to October 2014</strong>", "<span class='badge-no'>New Apps: Approx. 42 years (37/yr)</span>"]
     }
   ];
   tbody.innerHTML = rows.map(r => {
@@ -438,20 +440,20 @@ function renderInferencesGrid() {
   if (!box) return;
   const items = currentLang === "ko" ? [
     {
-      title: "1. 왜 173→143 / 884→864 전환만 Queue Assessment가 'N/A'이고 3~4개월 만에 나오는가?",
-      body: "Ministerial Direction No. 103 s 7(2)(b)에 의해 1단계 임시비자(173/884) 소지자가 2년 내 영주비자(143/864)를 신청하면 <strong>최초 임시비자 접수일(약 18년 전)을 영주비자 접수일로 법정 의제(deemed)</strong>해요. 따라서 이미 Queue Release Date를 통과한 상태이므로 대기열 없이 즉시 심사돼요 [1,16]."
+      title: "1. 왜 173→143 / 884→864 전환은 공식 표에서 Queue Assessment가 'N/A'이고 2026년 5월 접수분을 심사 중인가?",
+      body: "Ministerial Direction No. 103 <strong>s 7(2)(b)</strong>에 의해 1단계 임시비자(173/884) 소지자가 영주 전환(143/864)을 신청하면 <strong>최초 임시비자 접수일을 영주비자 접수일로 법정 의제(deemed)</strong>하며, <strong>s 8(1)(b)</strong>의 대기열 순서 원칙 하에서 이미 기준일을 넘긴 전환 신청으로 처리돼요. 2026.08.31 공시 기준 <strong>2026년 5월 접수 코호트</strong>가 최종 심사 중이에요(단, 개별 완료 기간은 AoS·신검·서류 보완에 따라 달라져요) [1,16]."
     },
     {
-      title: "2. 왜 온쇼어 고령 기여제(864)는 최종 심사가 2년 빠른데(2020.11 vs 2018.11), 1차 심사는 1년 느린가?",
-      body: "<strong>2단계가 2년 빠른 이유</strong>: 2026.07.25 발효 Ministerial Direction No. 117 s 8(2)(a)가 온쇼어 고령 기여제(864/884)에 최우선 순위를 부여하고 LIN 26/042에서 1,125석을 별도 배정했기 때문이에요. <strong>1단계가 1년 느린 이유(2023.04)</strong>: 오프쇼어 143과 달리 온쇼어 864는 대기열 편입 전에 1차 신체검사를 필수 완료해야 하고 팬데믹 이후 신청이 급증했기 때문이에요 [1,12,17]."
+      title: "2. 왜 온쇼어 고령 기여제(864)는 최종 심사 코호트가 24개월 앞선 반면(2020.11 vs 2018.11), 1차 심사는 1년 뒤처져 있는가?",
+      body: "<strong>2단계 기준일 코호트가 2020.11인 배경</strong>: 2026.07.25 발효 Ministerial Direction No. 117 s 8(2)(a)가 온쇼어 고령 신청을 우선 구조에 두고 LIN 26/042에서 1,125석을 별도 배정했기 때문이에요. <strong>1단계가 2023.04인 이유</strong>: Direction 103 s 6(2)(c)에 따라 온쇼어 고령비자는 대기열 편입 전 1차 요건·검사를 선행 심사하며 팬데믹 이후 신청이 집중되었기 때문이에요 [1,12,17]."
     },
     {
       title: "3. 2018년 6월 1일 Queue Date 규칙 변경이 만든 '보이지 않는 28~43개월 추가 대기' 함정",
       body: "2018.06.01 이전 신청분은 '접수일 = Queue Date'였으나, 이후 신청분은 <strong>'1차 심사(Queue Assessment) 통과일 = Queue Date'</strong>예요. 즉 2024년 4월에 143을 접수한 분은 2026년 8월에야 심사를 받아 <strong>2026년 8월 Queue Date</strong>를 부여받으므로 체감 대기기간이 훨씬 길어져요 [1,16]."
     },
     {
-      title: "4. 왜 2026년 10월 6일 업데이트에서 예상 대기기간이 15→18년, 33→42년으로 급등했는가?",
-      body: "법정 상한 고시(LIN 26/042)는 8,500석(기여제 6,800 + 일반 1,700)이나, 연방정부의 <strong>FY2026–27 Migration Program Planning Levels에서 부모비자 계획 배정치를 7,060석(-16.94% 삭감)</strong>으로 낮추면서(8,500 / 7,060 = 1.204배), 기존 15년 추정치가 18년, 비기여제는 42년으로 상향 공시되었어요 [1,11,12]."
+      title: "4. 왜 2026년 10월 6일 업데이트에서 신규 신청 예상 대기기간이 15→18년, 33→42년으로 상향 공시되었는가?",
+      body: "법정 상한 고시(LIN 26/042)는 8,500석(기여제 6,800 + 일반 1,700)이나, 연방정부의 <strong>FY2026–27 Migration Program Planning Levels에서 부모비자 계획 배정치를 7,060석(-16.94% 축소)</strong>으로 설정하면서 신규 신청에 대한 거시 추정치가 기여제 약 18년, 비기여제 약 42년으로 상향 공시되었어요 [1,11,12]."
     },
     {
       title: "5. Subclass 804(온쇼어 일반 고령부모)의 통계적 현실: 연 37건 승인 vs 475건 이탈",
@@ -459,20 +461,20 @@ function renderInferencesGrid() {
     }
   ] : [
     {
-      title: "1. Why is 173→143 / 884→864 Queue Assessment 'N/A' with ~3–4 Months Turnaround?",
-      body: "Under Ministerial Direction No. 103 s 7(2)(b), a Stage 2 permanent application (143/864) lodged by a Stage 1 temporary visa holder (173/884) is <strong>deemed to have been lodged on the date the Stage 1 visa was applied for</strong>. Because that date is already well past the Queue Release Date, it bypasses the queue [1,16]."
+      title: "1. Why Does the Official Table Show Queue Assessment 'N/A' and 'May 2026' for 173→143 / 884→864 Step-Ups?",
+      body: "Under Ministerial Direction No. 103 <strong>s 7(2)(b)</strong>, a Stage 2 permanent transition application (143/864) lodged by a Stage 1 temporary holder (173/884) is <strong>deemed to have been lodged on the initial Stage 1 application date</strong>, while <strong>s 8(1)(b)</strong> maintains queue-date order. As at 31 August 2026, Home Affairs is assessing the <strong>May 2026</strong> step-up cohort (individual completion still depends on AoS, health, and character checks) [1,16]."
     },
     {
-      title: "2. Why is Onshore Aged 864 Release 2 Years Ahead (Nov 2020 vs Nov 2018) Yet Queue Assessment 1 Year Behind?",
-      body: "<strong>Release is 2 yrs ahead</strong> because Ministerial Direction No. 117 s 8(2)(a) (effective 25 Jul 2026) prioritises onshore aged applications and LIN 26/042 earmarks 1,125 places. <strong>Assessment is 1 yr behind (Apr 2023)</strong> because Direction 103 s 6(2)(c) requires upfront medical/police checks before queueing onshore aged visas [1,12,17]."
+      title: "2. Why Is the Onshore Aged 864 Release Cohort at Nov 2020 vs Nov 2018 for 143, Yet Stage 1 Assessment Is at Apr 2023?",
+      body: "<strong>Stage 2 cohort at Nov 2020</strong> reflects Ministerial Direction No. 117 s 8(2)(a) (effective 25 Jul 2026) priority structure for onshore aged applications and the 1,125-place earmark in LIN 26/042. <strong>Stage 1 assessment at Apr 2023</strong> reflects upfront assessment requirements under Direction 103 s 6(2)(c) and post-pandemic onshore application volume [1,12,17]."
     },
     {
       title: "3. The 1 June 2018 Queue Date Rule Shift: The Hidden 28–43 Month Front-End Delay",
       body: "Before 1 June 2018, Queue Date equalled Lodgement Date. On/after 1 June 2018, <strong>Queue Date equals the date Queue Assessment is completed</strong>. An applicant who lodged a 143 in April 2024 and is assessed in August 2026 receives an <strong>August 2026 Queue Date</strong> [1,16]."
     },
     {
-      title: "4. Why Did New Wait Estimates Jump from 15→18 Years and 33→42 Years on 6 October 2026?",
-      body: "While LIN 26/042 sets the s 85 cap at 8,500 (6,800 Contributory + 1,700 Parent), the Government cut the <strong>FY2026–27 Migration Program Planning Level for Parent visas by 16.94% from 8,500 to 7,060 places</strong> (8,500 / 7,060 = 1.204x), pushing the 15-year Contributory estimate to 18 years and Non-Contributory to 42 years [1,11,12]."
+      title: "4. Why Did Published New-Application Estimates Rise from 15→18 Years and 33→42 Years on 6 October 2026?",
+      body: "While LIN 26/042 sets the s 85 cap at 8,500 (6,800 Contributory + 1,700 Parent), the Government set the <strong>FY2026–27 Migration Program Planning Level for Parent visas at 7,060 places (-16.94%)</strong>, accompanying the updated macro estimates of ~18 years (Contributory) and ~42 years (Non-Contributory) for new applications [1,11,12]."
     },
     {
       title: "5. Subclass 804 Statistical Reality: 27,013 Waiting, Only 37 Annual Grants vs 475 Exits",
@@ -500,18 +502,28 @@ function runQueueSimulator() {
   const curAge = parseInt(document.getElementById("sim-age")?.value || "68", 10);
 
   const NOW_DEC = 2026 + 8 / 12; // Aug 2026 baseline
-  const inputDec = stage === "planning" ? (2026 + 10 / 12) : (yr + mo / 12);
+  const inputDec = stage === "planning" ? (2026 + 10 / 12) : (yr + (mo - 1) / 12);
+
+  // Pull empirical velocity dynamically from QUEUE_DATA where available (E09/E11)
+  const lagMap = {};
+  if (QUEUE_DATA && Array.isArray(QUEUE_DATA.queue_lags_months_as_at_aug_2026)) {
+    QUEUE_DATA.queue_lags_months_as_at_aug_2026.forEach(row => { lagMap[row.id] = row; });
+  }
+  const v864 = lagMap.sub_864_884?.empirical_velocity_months_per_year || 9.13;
+  const v143 = lagMap.sub_143_173?.empirical_velocity_months_per_year || 5.07;
+  const v103 = lagMap.sub_103?.empirical_velocity_months_per_year || 4.18;
+  const v804 = lagMap.sub_804?.empirical_velocity_months_per_year || 2.35;
 
   // Subclass parameters as at Aug 2026
   const PARAMS = {
-    "173_to_143": { s1LagYrs: 0, releaseCutoffDec: 2026.42, officialWaitYrs: 0.35, velocityMosPerYr: 12.0, name: "173 → 143 Step-up" },
-    "884_to_864": { s1LagYrs: 0, releaseCutoffDec: 2026.42, officialWaitYrs: 0.35, velocityMosPerYr: 12.0, name: "884 → 864 Step-up" },
-    "143": { s1LagYrs: 28 / 12, releaseCutoffDec: 2018.92, officialWaitYrs: 18, velocityMosPerYr: 5.07, name: "Subclass 143" },
-    "173": { s1LagYrs: 28 / 12, releaseCutoffDec: 2018.92, officialWaitYrs: 18, velocityMosPerYr: 5.07, name: "Subclass 173" },
-    "864": { s1LagYrs: 40 / 12, releaseCutoffDec: 2020.92, officialWaitYrs: 18, velocityMosPerYr: 7.50, name: "Subclass 864 (Onshore 67+)" },
-    "884": { s1LagYrs: 40 / 12, releaseCutoffDec: 2020.92, officialWaitYrs: 18, velocityMosPerYr: 7.50, name: "Subclass 884 (Onshore 67+)" },
-    "103": { s1LagYrs: 42 / 12, releaseCutoffDec: 2014.25, officialWaitYrs: 42, velocityMosPerYr: 4.18, name: "Subclass 103" },
-    "804": { s1LagYrs: 43 / 12, releaseCutoffDec: 2014.83, officialWaitYrs: 42, velocityMosPerYr: 2.35, name: "Subclass 804 (Onshore 67+)" }
+    "173_to_143": { s1LagYrs: 0, releaseCutoffDec: 2026 + 4 / 12, officialWaitYrs: 0.35, velocityMosPerYr: 12.0, name: "173 → 143 Step-up" },
+    "884_to_864": { s1LagYrs: 0, releaseCutoffDec: 2026 + 4 / 12, officialWaitYrs: 0.35, velocityMosPerYr: 12.0, name: "884 → 864 Step-up" },
+    "143": { s1LagYrs: 28 / 12, releaseCutoffDec: 2018 + 10 / 12, officialWaitYrs: 18, velocityMosPerYr: v143, name: "Subclass 143" },
+    "173": { s1LagYrs: 28 / 12, releaseCutoffDec: 2018 + 10 / 12, officialWaitYrs: 18, velocityMosPerYr: v143, name: "Subclass 173" },
+    "864": { s1LagYrs: 40 / 12, releaseCutoffDec: 2020 + 10 / 12, officialWaitYrs: 18, velocityMosPerYr: v864, name: "Subclass 864 (Onshore 67+)" },
+    "884": { s1LagYrs: 40 / 12, releaseCutoffDec: 2020 + 10 / 12, officialWaitYrs: 18, velocityMosPerYr: v864, name: "Subclass 884 (Onshore 67+)" },
+    "103": { s1LagYrs: 42 / 12, releaseCutoffDec: 2014 + 2 / 12, officialWaitYrs: 42, velocityMosPerYr: v103, name: "Subclass 103" },
+    "804": { s1LagYrs: 43 / 12, releaseCutoffDec: 2014 + 9 / 12, officialWaitYrs: 42, velocityMosPerYr: v804, name: "Subclass 804 (Onshore 67+)" }
   };
 
   const p = PARAMS[sub] || PARAMS["143"];
@@ -523,8 +535,8 @@ function runQueueSimulator() {
 
   if (isStepUp) {
     estQueueDateDec = inputDec;
-    s1StatusKo = "대기열 면제 (Direction 103 s 7(2)(b))";
-    s1StatusEn = "Queue Exempt (Direction 103 s 7(2)(b))";
+    s1StatusKo = "N/A (Direction 103 s 7(2)(b) 1단계 접수일 의제)";
+    s1StatusEn = "N/A (Deemed Stage 1 Date, Direction 103 s 7(2)(b))";
   } else if (stage === "queued") {
     estQueueDateDec = inputDec;
     s1StatusKo = `${yr}년 ${mo}월 확정 완료`;
@@ -533,30 +545,65 @@ function runQueueSimulator() {
     // Post-1 June 2018 rule: Queue Date is assigned when Stage 1 assessment completes
     estQueueDateDec = Math.max(NOW_DEC + 0.15, inputDec + p.s1LagYrs);
     const qYr = Math.floor(estQueueDateDec);
-    const qMo = Math.max(1, Math.min(12, Math.round((estQueueDateDec - qYr) * 12)));
+    const qMo = Math.max(1, Math.min(12, Math.round((estQueueDateDec - qYr) * 12) + 1));
     s1StatusKo = `예상 ${qYr}년 ${qMo}월 (접수 후 ~${Math.round(p.s1LagYrs * 12)}개월 뒤)`;
     s1StatusEn = `Est. ${qYr}-${String(qMo).padStart(2, "0")} (~${Math.round(p.s1LagYrs * 12)}m after lodgement)`;
   }
 
-  let estReleaseOfficialYr = 2027;
-  let estReleaseVelocityYr = 2027;
+  // E07 & E08: Do NOT add the "new applications lodged today" benchmark (18yr / 42yr) to historical/already-queued applications!
+  let officialCardValKo = "";
+  let officialCardValEn = "";
+  let officialCardSubKo = "";
+  let officialCardSubEn = "";
+  let velocityCardValKo = "";
+  let velocityCardValEn = "";
   let remainingYrs = 0.35;
 
   if (isStepUp) {
-    estReleaseOfficialYr = Math.floor(NOW_DEC + 0.35);
-    estReleaseVelocityYr = estReleaseOfficialYr;
-    remainingYrs = 0.35;
+    officialCardValKo = "2026년 5월 접수분 심사 중";
+    officialCardValEn = "Assessing May 2026 Cohort";
+    officialCardSubKo = "2026.08.31 기준 코호트 현황 (개인별 완료기간 보장 아님)";
+    officialCardSubEn = "Cohort status as at 31 Aug 2026 (Not a guaranteed personal turnaround)";
+    velocityCardValKo = "1단계 접수일 의제 심사 (Direction 103 ss 7(2)(b), 8(1)(b))";
+    velocityCardValEn = "Assessed on Deemed Stage 1 Date (Direction 103 ss 7(2)(b), 8(1)(b))";
+    remainingYrs = Math.max(0.25, Math.max(0, inputDec - p.releaseCutoffDec));
   } else {
     const queueGapYears = Math.max(0, estQueueDateDec - p.releaseCutoffDec);
-    // Empirical velocity: how many real years to clear queueGapYears when queue moves velocityMosPerYr per real year
+    const queueGapMonths = Math.round(queueGapYears * 12);
     const velYearsFromNow = (queueGapYears * 12) / p.velocityMosPerYr;
-    estReleaseVelocityYr = Math.round(NOW_DEC + velYearsFromNow);
-    estReleaseOfficialYr = Math.round(inputDec + p.officialWaitYrs);
-    remainingYrs = Math.max(0.5, ((estReleaseOfficialYr + estReleaseVelocityYr) / 2) - 2026.8);
+    const estReleaseVelocityYr = Math.round(NOW_DEC + velYearsFromNow);
+    const newAppBenchmarkYr = Math.round(2026.8 + p.officialWaitYrs);
+
+    if (queueGapMonths <= 0) {
+      officialCardValKo = "현재 공시 컷오프 도달 (개별 심사 상태 확인)";
+      officialCardValEn = "At/Before Current Cutoff (Check Case Status)";
+      officialCardSubKo = `현재 공시 컷오프 이내 · (참고: 오늘 신규 접수 시 거시 추계 약 ${p.officialWaitYrs}년)`;
+      officialCardSubEn = `Within current release cutoff · (New-lodgement macro benchmark: ~${p.officialWaitYrs} yrs)`;
+      velocityCardValKo = "최종 심사 대상 구간 (PVC 문의 권장)";
+      velocityCardValEn = "Within Release Cutoff (Enquire with PVC)";
+      remainingYrs = 0.35;
+    } else if (stage === "planning") {
+      officialCardValKo = `신규 거시 추계 약 ${p.officialWaitYrs}년 (~${newAppBenchmarkYr}년 시나리오)`;
+      officialCardValEn = `New-App Benchmark ~${p.officialWaitYrs} yrs (~${newAppBenchmarkYr} Scenario)`;
+      officialCardSubKo = `이민성 신규 접수 집단 추정치 약 ${p.officialWaitYrs}년 기준 (개인별 승인일 보장 아님)`;
+      officialCardSubEn = `Home Affairs macro estimate (~${p.officialWaitYrs} yrs) for new applications today`;
+      velocityCardValKo = `약 ${estReleaseVelocityYr}년 (실증 속도 시나리오)`;
+      velocityCardValEn = `~${estReleaseVelocityYr} (Velocity Extrapolation Scenario)`;
+      remainingYrs = Math.max(0.5, p.officialWaitYrs);
+    } else {
+      officialCardValKo = `컷오프 대비 +${queueGapMonths}개월 뒤 (신규 추계: ${p.officialWaitYrs}년)`;
+      officialCardValEn = `+${queueGapMonths}m Behind Cutoff (New App Benchmark: ${p.officialWaitYrs} yrs)`;
+      officialCardSubKo = `기접수/큐 부여 건은 잔여 격차(${queueGapMonths}개월) 기준 · ${p.officialWaitYrs}년 추계는 오늘 신규 접수분 전용`;
+      officialCardSubEn = `${p.officialWaitYrs}-yr figure applies to NEW applications today, not historical ${yr}-${String(mo).padStart(2, "0")} cohorts`;
+      velocityCardValKo = `약 ${estReleaseVelocityYr}년 시나리오 (연 ${p.velocityMosPerYr}개월 전진 가정)`;
+      velocityCardValEn = `~${estReleaseVelocityYr} Scenario (at ${p.velocityMosPerYr} queue-mos/yr)`;
+      remainingYrs = Math.max(0.5, velYearsFromNow);
+    }
   }
 
+  // E13, E15, E20 & E24: Explain PIC 4005 cost assessment window (3 yrs for aged 75+, 5 yrs standard, up to 10 yrs ongoing) without a binary age-80 pass/fail cutoff
   const ageAtRelease = Math.round(curAge + remainingYrs);
-  const highMedicalRisk = ageAtRelease >= 80 && !isStepUp;
+  const isAged75PlusAtRelease = ageAtRelease >= 75;
 
   if (currentLang === "ko") {
     out.innerHTML = `
@@ -567,27 +614,27 @@ function runQueueSimulator() {
           <div class="kpi-sub">2018.06.01 이후 심사완료일 = Queue Date</div>
         </div>
         <div class="pv-sim-kpi">
-          <div class="kpi-label">이민성 공식 추계 기준 승인 연도</div>
-          <div class="kpi-val">${isStepUp ? "2026~2027년 (3~4개월)" : `약 ${estReleaseOfficialYr}년`}</div>
-          <div class="kpi-sub">신규 신청 공식 추정치 (${isStepUp ? "즉시 심사" : `${p.officialWaitYrs}년`}) 적용</div>
+          <div class="kpi-label">이민성 공시 컷오프 격차 & 신규 벤치마크</div>
+          <div class="kpi-val" style="font-size:17px;">${officialCardValKo}</div>
+          <div class="kpi-sub">${officialCardSubKo}</div>
         </div>
         <div class="pv-sim-kpi">
-          <div class="kpi-label">실증 큐 속도(Velocity) 기준 승인 연도</div>
-          <div class="kpi-val">${isStepUp ? "2026~2027년" : `약 ${estReleaseVelocityYr}년`}</div>
-          <div class="kpi-sub">현재 컷오프(${p.releaseCutoffDec.toFixed(1)}) 대비 연 ${p.velocityMosPerYr}개월 전진 반영</div>
+          <div class="kpi-label">실증 큐 속도(Velocity) 외삽 시나리오</div>
+          <div class="kpi-val" style="font-size:17px;">${velocityCardValKo}</div>
+          <div class="kpi-sub">연간 쿼터·이탈률에 따라 변동 가능 (비보장 계획 도구)</div>
         </div>
         <div class="pv-sim-kpi">
-          <div class="kpi-label">2차 신체검사(PIC 4005) 시점 예상 연세</div>
-          <div class="kpi-val" style="color:${highMedicalRisk ? "#991B1B" : "#065F46"};">만 ${ageAtRelease}세</div>
-          <div class="kpi-sub">${highMedicalRisk ? "⚠️ 고령 2차 신체검사($86,000 상한) 고위험군" : "✅ 상대적 안정 구간 (단, PIC 4005 면제 불가)"}</div>
+          <div class="kpi-label">예상 도달 시점 계획 연령 & 신검 기간</div>
+          <div class="kpi-val" style="color:#991B1B;">만 ${ageAtRelease}세</div>
+          <div class="kpi-sub">영주 부모비자 PIC 4005 ($86,000 MOC 기준) — ${isAged75PlusPlusLabelKo(isAged75PlusAtRelease)}</div>
         </div>
       </div>
       <div class="pv-inference-card" style="margin-top:12px;">
-        <h4>박앤코 법률 시뮬레이션 진단 노트 (${p.name})</h4>
+        <h4>박앤코 법률 시나리오 계획 노트 (${p.name})</h4>
         <p>
           ${isStepUp
-            ? "1단계 임시 기여제 비자(173 또는 884)를 이미 취득하신 후 2년 유효기간 내에 영주 전환(143 또는 864)을 신청하시는 경우, <strong>Ministerial Direction No. 103 s 7(2)(b)</strong>에 따라 최초 임시비자 접수일이 그대로 승계되어 대기열(Queue Assessment)을 거치지 않고 <strong>약 3~4개월 내</strong>에 최종 심사(AoS 및 2차 기여금 $19,420 납부)가 완료돼요."
-            : `현재 선택하신 <strong>${p.name}</strong> 경로는 1단계 Queue Assessment에서만 약 <strong>${Math.round(p.s1LagYrs * 12)}개월</strong>이 소요되며, 최종 2단계 Queue Release 시점에는 주신청자 부모님 연세가 <strong>약 만 ${ageAtRelease}세</strong>에 도달할 것으로 예상돼요. 부모비자는 건강요건 면제(Health Waiver)가 없는 <strong>PIC 4005($86,000 의료·요양비 상한)</strong>를 최종 발급 직전에 다시 통과해야 하므로, 대기 중 치매·중증 질환 대비(영속적 위임장 EPOA 및 메디케어/사보험 설계)가 필수예요.`}
+            ? "1단계 임시 기여제 비자(173 또는 884) 소지자가 영주 전환(143 또는 864)을 신청하시는 경우, <strong>Ministerial Direction No. 103 s 7(2)(b)</strong>에 따라 최초 임시비자 접수일이 영주비자 접수일로 법정 의제(deemed)되며 <strong>s 8(1)(b)</strong>의 큐 순서 원칙 하에 심사돼요(공식 표상 <code>Queue Assessment: N/A</code>). 2026년 8월 31일 기준 <strong>2026년 5월 접수분</strong>이 최종 심사 중이며, 건강검사는 <strong>cl 143.225–143.226</strong>에 따라 장관이 추가 검사를 요청하는 경우에 한해 재검을 받아요."
+            : `현재 선택하신 <strong>${p.name}</strong> 경로의 계획 시나리오상 최종 단계 도달 시 주신청자 부모님 연세는 <strong>약 만 ${ageAtRelease}세</strong>로 추산돼요. 영주·임시 부모비자(103/143/173/804/864/884)는 건강요건 면제(Health Waiver)가 없는 <strong>PIC 4005($86,000 MOC 유의미한 비용 기준)</strong>가 적용되며(반면 Subclass 870은 신청 시 해외 체류면 PIC 4005, 호주 국내 체류면 PIC 4007 적용, cl 870.228), MOC 비용 평가 기간은 <strong>일반 영주/임시 5년, 만 75세 이상 신청자 3년, 예측 가능한 영구·지속 질환은 기대여명 범위 내 최대 10년</strong>으로 구분돼요.`}
         </p>
       </div>
     `;
@@ -600,31 +647,35 @@ function runQueueSimulator() {
           <div class="kpi-sub">Post-1 Jun 2018: Assessment Date = Queue Date</div>
         </div>
         <div class="pv-sim-kpi">
-          <div class="kpi-label">Official DHA Estimate Release Year</div>
-          <div class="kpi-val">${isStepUp ? "2026–2027 (~3–4 mos)" : `~${estReleaseOfficialYr}`}</div>
-          <div class="kpi-sub">Based on published ${isStepUp ? "Step-up priority" : `${p.officialWaitYrs}-year estimate`}</div>
+          <div class="kpi-label">Cutoff Gap &amp; Official New-App Benchmark</div>
+          <div class="kpi-val" style="font-size:17px;">${officialCardValEn}</div>
+          <div class="kpi-sub">${officialCardSubEn}</div>
         </div>
         <div class="pv-sim-kpi">
-          <div class="kpi-label">Empirical Velocity Release Year</div>
-          <div class="kpi-val">${isStepUp ? "2026–2027" : `~${estReleaseVelocityYr}`}</div>
-          <div class="kpi-sub">Advancing ${p.velocityMosPerYr} queue-months per calendar year</div>
+          <div class="kpi-label">Empirical Velocity Scenario</div>
+          <div class="kpi-val" style="font-size:17px;">${velocityCardValEn}</div>
+          <div class="kpi-sub">Advancing ${p.velocityMosPerYr} queue-months/yr (planning scenario only)</div>
         </div>
         <div class="pv-sim-kpi">
-          <div class="kpi-label">Projected Age at 2nd Medical (PIC 4005)</div>
-          <div class="kpi-val" style="color:${highMedicalRisk ? "#991B1B" : "#065F46"};">Age ${ageAtRelease}</div>
-          <div class="kpi-sub">${highMedicalRisk ? "⚠️ High PIC 4005 ($86,000 threshold) refusal risk" : "✅ Moderate age band (No health waiver under PIC 4005)"}</div>
+          <div class="kpi-label">Planning Age &amp; PIC 4005 Assessment Window</div>
+          <div class="kpi-val" style="color:#991B1B;">Age ${ageAtRelease}</div>
+          <div class="kpi-sub">Permanent parent PIC 4005 ($86,000 MOC SCT) — ${isAged75PlusAtRelease ? "3-yr window (aged 75+) or up to 10 yrs (ongoing)" : "5-yr standard window (up to 10 yrs ongoing)"}</div>
         </div>
       </div>
       <div class="pv-inference-card" style="margin-top:12px;">
-        <h4>Park &amp; Co Legal Advisory Note (${p.name})</h4>
+        <h4>Park &amp; Co Scenario Planning Note (${p.name})</h4>
         <p>
           ${isStepUp
-            ? "When stepping up from a Subclass 173 or 884 temporary visa to permanent Subclass 143 or 864, <strong>Ministerial Direction No. 103 s 7(2)(b)</strong> deems your permanent application to have been lodged on the Stage 1 temporary application date, bypassing the queue (~3–4 months total processing)."
-            : `For <strong>${p.name}</strong>, Stage 1 Queue Assessment currently lags by <strong>~${Math.round(p.s1LagYrs * 12)} months</strong>, and the primary applicant is projected to be <strong>~Age ${ageAtRelease}</strong> at final Queue Release. Because all parent visas are subject to <strong>PIC 4005 ($86,000 cost threshold with NO health waiver)</strong> at final grant, families must plan ahead for private health cover, Enduring Powers of Attorney (EPOA), and aged care contingencies.`}
+            ? "When stepping up from a Subclass 173 or 884 temporary visa to permanent Subclass 143 or 864, <strong>Ministerial Direction No. 103 s 7(2)(b)</strong> deems the permanent application to have been lodged on the initial temporary application date, while <strong>s 8(1)(b)</strong> maintains queue-date order (published table shows <code>Queue Assessment: N/A</code>). As at 31 August 2026, Home Affairs is assessing the <strong>May 2026</strong> step-up cohort (not a guaranteed personal completion time). Under <strong>cl 143.225–143.226</strong>, a step-up applicant undergoes further medical checks only if requested by the Minister."
+            : `Under this planning scenario for <strong>${p.name}</strong>, the primary applicant would be <strong>~Age ${ageAtRelease}</strong> at Stage 2 assessment. Permanent and provisional parent visas (103/143/173/804/864/884) are subject to <strong>PIC 4005 ($86,000 MOC Significant Cost Threshold, no health waiver)</strong> (whereas Subclass 870 applies PIC 4005 if offshore at application or PIC 4007 if onshore under cl 870.228), assessed over <strong>5 years standard, 3 years for applicants aged 75+, or up to 10 years within life expectancy for permanent/ongoing conditions</strong>.`}
         </p>
       </div>
     `;
   }
+}
+
+function isAged75PlusPlusLabelKo(is75Plus) {
+  return is75Plus ? "만 75세+ 3년(지속질환 최대 10년) 비용 산정" : "일반 5년(지속질환 최대 10년) 비용 산정";
 }
 
 /* ============================================================================
@@ -637,14 +688,52 @@ function runPathwayWizard() {
   const spouseAge = document.getElementById("wiz-spouse-age")?.value || "under67";
   const loc = document.getElementById("wiz-location")?.value || "onshore";
   const cond = document.getElementById("wiz-visa-cond")?.value || "clean";
-  const totalKids = parseInt(document.getElementById("wiz-total-children")?.value || "2", 10);
-  const auKids = Math.min(totalKids, parseInt(document.getElementById("wiz-au-children")?.value || "1", 10));
+  const totalKids = Math.max(1, parseInt(document.getElementById("wiz-total-children")?.value || "2", 10));
+  const auKids = Math.max(0, Math.min(totalKids, parseInt(document.getElementById("wiz-au-children")?.value || "1", 10)));
+  const maxOverseasEl = document.getElementById("wiz-max-overseas-country");
+  const remOverseas = Math.max(0, totalKids - auKids);
+  const rawMaxOv = maxOverseasEl?.value;
+  const parsedMaxOv = (rawMaxOv !== undefined && rawMaxOv !== null && rawMaxOv !== "" && rawMaxOv !== "auto")
+    ? parseInt(rawMaxOv, 10)
+    : NaN;
+  const maxOverseas = Number.isNaN(parsedMaxOv) ? null : Math.max(0, Math.min(remOverseas, parsedMaxOv));
   const budget = document.getElementById("wiz-budget")?.value || "contrib_direct";
 
-  // Balance of Family Test (Migration Regulations 1994 reg 1.05):
-  // Passes if eligible AU children >= 50% of total children (or more eligible AU children than in any other single country — simplified 50% primary test: ceil(totalKids / 2))
-  const minAuRequired = Math.ceil(totalKids / 2);
-  const bofPass = auKids >= minAuRequired;
+  // E01: Balance of Family Test (Migration Regulations 1994 reg 1.05(2C)):
+  // Prong (a): auKids >= ceil(totalKids / 2) (at least half of all children are eligible AU children)
+  // Prong (b): auKids > maxOverseas (more eligible AU children than children living in any single overseas country)
+  const minAuRequired50 = Math.ceil(totalKids / 2);
+  const bofPass50 = auKids >= minAuRequired50;
+  const bofPassSingleCountry = maxOverseas !== null && remOverseas > 0 && maxOverseas > 0 && auKids > maxOverseas;
+  const bofConditionalNeedsCountryDist = !bofPass50 && maxOverseas === null && auKids >= 2 && remOverseas >= 2 && auKids > 1;
+  const bofPass = bofPass50 || bofPassSingleCountry;
+
+  let bofBadgeTextKo = "";
+  let bofBadgeTextEn = "";
+  let bofSubTextKo = "";
+  let bofSubTextEn = "";
+
+  if (bofPass50) {
+    bofBadgeTextKo = "통과 (PASS — Reg 1.05(2C)(a) 50% 요건 충족)";
+    bofBadgeTextEn = "PASS (Reg 1.05(2C)(a) ≥50% Rule Met)";
+    bofSubTextKo = `전체 ${totalKids}명(reg 1.05(3) 제외자녀 차감 후) 중 호주 적격 자녀 ${auKids}명 (50% 기준 ${minAuRequired50}명 충족)`;
+    bofSubTextEn = `${auKids} of ${totalKids} eligible children in AU (Meets ≥50% min ${minAuRequired50})`;
+  } else if (bofPassSingleCountry) {
+    bofBadgeTextKo = "통과 (PASS — Reg 1.05(2C)(b) 단일 해외국가 최다 자녀보다 다수)";
+    bofBadgeTextEn = "PASS (Reg 1.05(2C)(b) Single-Country Majority Met)";
+    bofSubTextKo = `호주 적격 자녀(${auKids}명) > 단일 해외국가 최다 거주 자녀(${maxOverseas}명) [50% 미달이나 (b)호 통과]`;
+    bofSubTextEn = `AU eligible children (${auKids}) > max in any single overseas country (${maxOverseas}) under reg 1.05(2C)(b)`;
+  } else if (bofConditionalNeedsCountryDist) {
+    bofBadgeTextKo = "추가 확인 필요 (50% 미달 · Reg 1.05(2C)(b) 해외 거주국 분포 확인)";
+    bofBadgeTextEn = "CONDITIONAL / FURTHER CHECK NEEDED (Check Reg 1.05(2C)(b) Overseas Country Distribution)";
+    bofSubTextKo = `전체 ${totalKids}명 중 호주 ${auKids}명: 해외 자녀 ${remOverseas}명이 여러 국가에 분산되어 단일 국가 최다 인원이 ${auKids - 1}명 이하이면 Reg 1.05(2C)(b)로 통과 가능`;
+    bofSubTextEn = `${auKids} of ${totalKids} in AU: Below 50% prong (a), but PASSES under reg 1.05(2C)(b) if no single overseas country has ≥${auKids} children`;
+  } else {
+    bofBadgeTextKo = "미충족 (FAIL — Reg 1.05(2C)(a) & (b) 모두 미달)";
+    bofBadgeTextEn = "FAIL (Neither Reg 1.05(2C)(a) 50% nor (2C)(b) Met)";
+    bofSubTextKo = `전체 ${totalKids}명 중 호주 ${auKids}명${maxOverseas !== null ? `, 단일 해외국가 최다 ${maxOverseas}명` : ""} (최소 ${minAuRequired50}명 필요)`;
+    bofSubTextEn = `${auKids} of ${totalKids} in AU${maxOverseas !== null ? `, max ${maxOverseas} in one overseas country` : ""} (Min ${minAuRequired50} for 50% rule)`;
+  }
 
   const isAged = mainAge === "67plus";
   const spouseMortalityTrap = isAged && spouseAge === "under67";
@@ -656,16 +745,22 @@ function runPathwayWizard() {
   let recBodyKo = "";
   let recBodyEn = "";
 
-  if (!bofPass) {
+  // E16: Check explicit Subclass 870 Temporary preference BEFORE overriding with onshore 864
+  if (budget === "temp_870") {
+    recTitleKo = "선택 경로 진단: Subclass 870 (스폰서 임시 부모비자 3년/5년, 최대 10년)";
+    recTitleEn = "Primary Recommendation: Subclass 870 (Sponsored Parent Temporary — 3 or 5 Years, Max 10 Years)";
+    recBodyKo = `선택하신 <strong>Subclass 870 임시 부모비자</strong>는 가족균형테스트(Reg 1.05)나 만 67세 연령 요건 없이 개인 스폰서 과세소득(<strong>$83,454.80</strong>, LIN 19/146) 충족 시 3년($6,315/1인) 또는 5년($12,205/1인) 체류가 가능해요. ⚠️ 단, 향후 영주 부모비자(143/864/103/804)도 염두에 두고 계신다면 <strong>870 신청 중·소지 중(또는 마지막 비자가 870이고 미출국 시)에는 영주 부모비자 접수가 법정 차단(Schedule 1 Bar)</strong>되므로, 영주비자를 먼저 접수한 뒤 870을 신청(PAM3 VM-6327 s 3.6.6)하시거나 온쇼어 자격 시 <strong>Subclass 864/804</strong>와 별도 비교해 보세요.`;
+    recBodyEn = `You selected <strong>Subclass 870 (Sponsored Parent Temporary Visa)</strong>, which requires NO Balance of Family Test and NO Age 67 threshold (requires an approved individual Parent Sponsor with taxable income ≥ <strong>$83,454.80</strong> under LIN 19/146; 3-yr total $6,315 or 5-yr total $12,205 for 1 parent). ⚠️ Note: holding or having a pending 870 bars lodging any permanent parent visa (103/143/173/804/864/884) under Schedule 1—if permanent residency may be desired later, lodge 143/103 first (PAM3 VM-6327 s 3.6.6).`;
+  } else if (!bofPass && !bofConditionalNeedsCountryDist) {
     recTitleKo = "가족균형테스트 미충족 → Subclass 870 (임시 부모비자 3년/5년, 최대 10년) 유일 가능";
     recTitleEn = "Balance of Family Test Not Met → Subclass 870 (Sponsored Parent Temporary) Only";
-    recBodyKo = `전체 자녀 ${totalKids}명 중 최소 ${minAuRequired}명 이상이 호주 시민권·영주권자여야 영주/임시 부모비자(103/143/173/804/864/884)를 신청할 수 있어요(Reg 1.05). 현재 ${auKids}명이므로 <strong>가족균형테스트가 면제되는 Subclass 870(3년 또는 5년, 최대 10년 체류 · 스폰서 과세소득 $83,454.80 이상)</strong>만 신청 가능해요.`;
-    recBodyEn = `With ${auKids} of ${totalKids} children settled in Australia (minimum ${minAuRequired} required under reg 1.05), permanent parent visas are unavailable. However, <strong>Subclass 870 (Sponsored Parent Temporary, 3 or 5 years up to 10 years) does NOT require the Balance of Family Test</strong> (requires sponsor taxable income ≥ $83,454.80).`;
+    recBodyKo = `현재 자녀 구성으로는 영주/임시 부모비자(103/143/173/804/864/884)의 <strong>가족균형테스트(Reg 1.05(2C)(a) 50% 이상 또는 (b) 단일 해외국가 최다 거주 자녀보다 다수)</strong>를 충족하지 못해요. 따라서 <strong>가족균형테스트가 면제되는 Subclass 870(3년 또는 5년, 최대 10년 체류 · 개인 스폰서 과세소득 $83,454.80 이상)</strong>만 신청 가능해요.`;
+    recBodyEn = `Under reg 1.05(2C), neither the ≥50% prong (a) nor the single-country majority prong (b) is satisfied, barring permanent parent visas. However, <strong>Subclass 870 (Sponsored Parent Temporary, 3 or 5 years up to 10 years) does NOT require the Balance of Family Test</strong> (requires individual sponsor taxable income ≥ $83,454.80).`;
   } else if (holding870) {
     recTitleKo = "⚠️ 긴급 경고: 현재 Subclass 870 소지 중 — 모든 영주 부모비자 접수 법정 차단 (Schedule 1 Bar)";
     recTitleEn = "⚠️ CRITICAL LOCKOUT: Currently Holding Subclass 870 — Permanent Parent Visas Barred";
-    recBodyKo = `Migration Regulations 1994 Schedule 1 (Items 1124(3)(e), 1130(3)(e), 1124A(3)(f), 1130A(3)(f))에 따라 <strong>현재 Subclass 870 비자를 소지 중이거나(또는 마지막 비자가 870이고 아직 출국하지 않은 경우) 103·143·173·804·864·884 비자 접수가 원천 무효(Invalid)</strong>가 돼요. 반드시 870 비자가 소멸하고 호주 밖으로 출국(또는 다른 실체비자 취득)한 뒤에야 영주 부모비자를 접수할 수 있어요 [9,18].`;
-    recBodyEn = `Under Schedule 1 (Items 1124(3)(e), 1130(3)(e), 1124A(3)(f), 1130A(3)(f)), <strong>holding (or having last held without departing Australia) a Subclass 870 visa strictly bars lodging any 103, 143, 173, 804, 864, or 884 visa</strong> [9,18].`;
+    recBodyKo = `Migration Regulations 1994 Schedule 1 (Items 1124(3)(e), 1130(3)(e), 1124A(3)(f), 1130A(3)(f))에 따라 <strong>현재 Subclass 870 비자를 신청 중이거나 소지 중(또는 마지막 비자가 870이고 아직 호주에서 출국하지 않은 경우) 103·143·173·804·864·884 비자 접수가 원천 무효(Invalid)</strong>가 돼요(단, 법령상 정의된 대체 Subclass 600 소지자 특례는 예외). 반드시 870 비자 효력이 종료되고 호주를 출국한 뒤에야 새 부모비자를 접수할 수 있어요(PAM3 VM-3058) [9,18].`;
+    recBodyEn = `Under Schedule 1 (Items 1124(3)(e), 1130(3)(e), 1124A(3)(f), 1130A(3)(f)) and PAM3 VM-3058, <strong>having a pending 870 application, holding an 870 visa, or having last held an 870 visa without departing Australia strictly bars lodging any 103, 143, 173, 804, 864, or 884 visa</strong> (absent a statutory substituted Subclass 600 exception) [9,18].`;
   } else if (isAged && loc === "onshore" && !has8503) {
     if (budget === "non_contrib") {
       recTitleKo = "온쇼어 고령 일반 경로: Subclass 804 (ImmiAccount 온라인 접수 + BVA 부여)";
@@ -677,31 +772,31 @@ function runPathwayWizard() {
       recTitleKo = "최우선 추천 경로: Subclass 864 (기여제 고령부모 영주 직행 · Onshore BVA + Direction 117 우선심사)";
       recTitleEn = "Primary Recommendation: Subclass 864 (Onshore Contributory Aged Parent + BVA + Direction 117 Priority)";
     }
-    recBodyKo = `주신청자께서 만 67세 이상이고 호주 국내에서 8503 조건 없는 유효 비자를 소지 중이시므로, 온쇼어에서 <strong>864(또는 884/804)</strong>를 접수하여 <strong>취업제한 없는 Bridging Visa A (010)</strong>를 받아 호주에 계속 거주하실 수 있어요. 특히 864/884는 <strong>Ministerial Direction No. 117</strong> 온쇼어 우선심사 덕분에 최종 발급 기준일이 일반 143보다 2년 앞선 <strong>2020년 11월</strong>이에요 [1,5,17].`;
-    recBodyEn = `Because the primary applicant is aged 67+ and onshore without Condition 8503, lodging <strong>Subclass 864 (or 884/804)</strong> grants an onshore <strong>Bridging Visa A (010) with unrestricted work rights</strong>. Under <strong>Ministerial Direction No. 117</strong>, Subclass 864/884 Queue Release (Nov 2020) is currently 2 years ahead of offshore Subclass 143 (Nov 2018) [1,5,17].`;
+    recBodyKo = `주신청자께서 만 67세 이상이고 호주 국내에서 8503 조건 없는 유효 비자를 소지 중이시므로, 온쇼어에서 <strong>864(또는 884/804)</strong>를 접수하여 <strong>취업제한 없는 Bridging Visa A (010, LIN 23/029)</strong>를 받아 호주에 계속 체류하실 수 있어요. 864/884는 <strong>Ministerial Direction No. 117</strong> 온쇼어 우선심사 구조가 적용되며 현재 공시 Release 코호트는 <strong>2020년 11월</strong>이에요 [1,5,17].`;
+    recBodyEn = `Because the primary applicant is aged 67+ and onshore without Condition 8503, lodging <strong>Subclass 864 (or 884/804)</strong> grants an onshore <strong>Bridging Visa A (010) with nil work restrictions (LIN 23/029)</strong>. Under <strong>Ministerial Direction No. 117</strong>, Subclass 864/884 Queue Release is currently at the <strong>November 2020</strong> cohort [1,5,17].`;
   } else {
     recTitleKo = budget === "non_contrib"
-      ? "일반 부모비자 경로: Subclass 103 (ImmiAccount 온라인 접수 · 42년 대기)"
-      : "기여제 부모비자 황금 경로: Subclass 143 (또는 173→143) 선접수 + 대기 중 600 장기방문 또는 870 병행";
+      ? "일반 부모비자 경로: Subclass 103 (ImmiAccount 온라인 접수 · 장기 대기)"
+      : "기여제 부모비자 황금 경로: Subclass 143 (또는 173→143) 선접수 + 대기 중 600 방문 또는 870 병행 검토";
     recTitleEn = budget === "non_contrib"
-      ? "General Parent Pathway: Subclass 103 (Online via ImmiAccount · 42-Year Wait)"
-      : "Golden Sequence: Lodge Subclass 143 (or 173→143) First + Combine with Subclass 600 (3–5yr) or Subclass 870";
-    recBodyKo = `만 67세 미만이시거나 해외 체류 중(또는 8503 조건 보유)이시므로 <strong>Subclass 143(온라인) 또는 173(종이 우편)</strong>을 먼저 접수해 Queue Date 순번을 확보하세요. ⚠️ <strong>황금 순서(PAM3 VM-6327 s 3.6.6)</strong>: 143/103을 <strong>먼저 접수한 뒤</strong> 대기기간 동안 600 장기 방문비자(최대 3~5년 유효)나 Subclass 870 임시 부모비자를 신청해 호주에서 함께 지내시는 것은 적법하게 허용돼요!`;
-    recBodyEn = `Lodge <strong>Subclass 143 (online) or Subclass 173 (paper)</strong> first to lock in your Queue Date. ⚠️ <strong>Golden Sequence (PAM3 VM-6327 s 3.6.6)</strong>: While holding an 870 bars lodging a 143, <strong>lodging Subclass 143/103 FIRST and subsequently applying for a Subclass 870 or 3–5 year Visitor Visa (600) while waiting IS legally permitted</strong>!`;
+      ? "General Parent Pathway: Subclass 103 (Online via ImmiAccount)"
+      : "Golden Sequence: Lodge Subclass 143 (or 173→143) First + Consider Subclass 600 or Subclass 870 While Waiting";
+    recBodyKo = `만 67세 미만이시거나 해외 체류 중(또는 8503 조건 보유)이시므로 <strong>Subclass 143(온라인 원칙) 또는 173(종이 우편)</strong>을 먼저 접수해 Queue Date 순번을 확보하세요(단, 온쇼어에서 장관 개입 등으로 부여된 법정 <strong>대체 Subclass 600 [substituted 600]</strong> 소지자는 67세 미만이어도 804/864/884 예외 검토 가능, F2025L00317). ⚠️ <strong>선후 순서(PAM3 VM-6327 s 3.6.6)</strong>: 143/103을 <strong>먼저 접수한 뒤</strong> 대기기간 동안 600 방문비자나 Subclass 870 임시 부모비자를 신청하는 것은 진정한 임시 체류 요건 충족 하에 양립 가능해요!`;
+    recBodyEn = `Lodge <strong>Subclass 143 (online general rule) or Subclass 173 (paper)</strong> first to enter the queue (note: holders of a statutory <strong>substituted Subclass 600 visa</strong> under F2025L00317 should seek legal review for onshore 804/864/884 exceptions even if under 67). ⚠️ <strong>Permitted Sequence (PAM3 VM-6327 s 3.6.6)</strong>: While holding an 870 bars lodging a 143, <strong>lodging Subclass 143/103 FIRST and subsequently applying for a Subclass 870 or Visitor Visa (600) is compatible with genuine temporary stay</strong> if 870 criteria are met!`;
   }
 
   const mortalityHtml = spouseMortalityTrap ? (currentLang === "ko" ? `
     <div class="pv-inference-card" style="border-left-color:#DC2626;background:#FEF2F2;margin-top:10px;">
-      <h4 style="color:#991B1B;">⚠️ [2024.12.17 개정법 경고] 동반 배우자 만 67세 미만 시 '주신청자 유고 승계 불가' 리스크</h4>
+      <h4 style="color:#991B1B;">⚠️ [2024.12.17 개정법 &amp; PAM3 VM-3058 §3.9.1 경고] 동반 배우자 만 67세 미만 시 주신청자 유고 리스크</h4>
       <p style="color:#7F1D1D;">
-        2024년 12월 17일부터 고령부모 비자(804/864/884)의 '만 67세 이상(Aged Parent)' 요건이 <strong>접수 시점 필수 유효 요건(Schedule 1 Validity Requirement)</strong>으로 격상되었어요. 만약 67세 이상인 주신청자께서 18년 대기 중 별세하시면, <strong>접수 당시 만 67세 미만이었던 동반 배우자는 주신청자 지위를 승계할 수 없어 비자가 거절(PAM3 VM-3058 s 3.9.1)</strong>돼요. 이런 경우 만 67세 제한이 없는 <strong>Subclass 143</strong>으로 접수하거나 배우자도 만 67세가 된 후 접수하는 전략을 검토해야 해요.
+        2024년 12월 17일(F2025L00317)부터 고령부모 비자(804/864/884)는 신청 시점에 주신청자가 <strong>만 67세 이상(aged parent)이거나 법정 대체 Subclass 600(substituted 600) 소지자</strong>여야 유효 접수가 돼요(PAM3 VM-3058 §3.2.6). 만약 주신청자께서 대기 중 별세하시면 남은 배우자를 주신청자 기준으로 심사하므로, <strong>최초 접수 당시 만 67세 미만이었고 대체 600 특례도 없는 남은 배우자는 804/864/884 비자 부여가 불가(PAM3 VM-3058 §3.9.1)</strong>해요. 연령 제한이 없는 <strong>Subclass 143</strong> 접수 또는 배우자 연령 도달 후 접수를 검토하세요.
       </p>
     </div>
   ` : `
     <div class="pv-inference-card" style="border-left-color:#DC2626;background:#FEF2F2;margin-top:10px;">
-      <h4 style="color:#991B1B;">⚠️ [17 Dec 2024 Reform Warning] Surviving Spouse Under 67 Cannot Succeed as Primary Applicant</h4>
+      <h4 style="color:#991B1B;">⚠️ [17 Dec 2024 Reform &amp; PAM3 VM-3058 §3.9.1 Warning] Surviving Spouse Under 67 at Lodgement</h4>
       <p style="color:#7F1D1D;">
-        Since 17 December 2024, being aged 67+ at time of application is a <strong>Schedule 1 validity requirement</strong> for Subclasses 804, 864, and 884. If the 67+ primary applicant passes away during the queue, a secondary spouse who was under 67 at lodgement <strong>cannot succeed as primary applicant and the visa must be refused (PAM3 VM-3058 s 3.9.1)</strong>. Consider lodging Subclass 143 (no age requirement) to eliminate this mortality risk.
+        Since 17 December 2024 (F2025L00317), Schedule 1 requires the primary applicant for 804/864/884 to be an <strong>aged parent (67+) or hold a statutory substituted Subclass 600 visa</strong> at time of application (PAM3 VM-3058 §3.2.6). Under <strong>PAM3 VM-3058 §3.9.1</strong>, if the primary applicant dies before decision, the surviving spouse is assessed against primary criteria and <strong>cannot be granted 804/864/884 if they were not aged 67+ at initial lodgement</strong> (absent a substituted 600 exception). Consider Subclass 143 to avoid this risk.
       </p>
     </div>
   `) : "";
@@ -709,14 +804,14 @@ function runPathwayWizard() {
   out.innerHTML = `
     <div class="pv-sim-kpi-grid">
       <div class="pv-sim-kpi">
-        <div class="kpi-label">${currentLang === "ko" ? "가족균형테스트 (Reg 1.05)" : "Balance of Family Test (Reg 1.05)"}</div>
-        <div class="kpi-val" style="color:${bofPass ? "#065F46" : "#991B1B"};">${bofPass ? (currentLang === "ko" ? "통과 (PASS)" : "PASS") : (currentLang === "ko" ? "미충족 (FAIL)" : "FAIL")}</div>
-        <div class="kpi-sub">${currentLang === "ko" ? `전체 ${totalKids}명 중 호주 ${auKids}명 (최소 ${minAuRequired}명 필요)` : `${auKids} of ${totalKids} in AU (Min ${minAuRequired} required)`}</div>
+        <div class="kpi-label">${currentLang === "ko" ? "가족균형테스트 (Reg 1.05(2C))" : "Balance of Family Test (Reg 1.05(2C))"}</div>
+        <div class="kpi-val" style="font-size:16px;color:${bofPass ? "#065F46" : (bofConditionalNeedsCountryDist ? "#B45309" : "#991B1B")};">${currentLang === "ko" ? bofBadgeTextKo : bofBadgeTextEn}</div>
+        <div class="kpi-sub">${currentLang === "ko" ? bofSubTextKo : bofSubTextEn}</div>
       </div>
       <div class="pv-sim-kpi">
         <div class="kpi-label">${currentLang === "ko" ? "온쇼어 고령부모(804/864/884) 자격" : "Onshore Aged (804/864/884) Eligibility"}</div>
-        <div class="kpi-val" style="font-size:16.5px;">${isAged && loc === "onshore" && !has8503 && !holding870 && bofPass ? (currentLang === "ko" ? "✅ 적격 (BVA 발급)" : "✅ Eligible (+BVA)") : (currentLang === "ko" ? "❌ 미해당 (143/103/870)" : "❌ Ineligible")}</div>
-        <div class="kpi-sub">${currentLang === "ko" ? "만 67세+ · 호주 국내 · 8503/870 없을 것" : "Requires Age 67+, Onshore & No 8503/870"}</div>
+        <div class="kpi-val" style="font-size:16.5px;">${isAged && loc === "onshore" && !has8503 && !holding870 && bofPass ? (currentLang === "ko" ? "✅ 적격 (BVA 발급)" : "✅ Eligible (+BVA)") : (currentLang === "ko" ? "❌ 일반 요건 미해당 (대체 600 특례 등 별도 확인)" : "❌ Standard Criteria Not Met (Check substituted 600 / 143 / 870)")}</div>
+        <div class="kpi-sub">${currentLang === "ko" ? "만 67세+(또는 대체 600) · 호주 국내 · 8503/870 없을 것" : "Requires Age 67+ (or substituted 600), Onshore & No 8503/870"}</div>
       </div>
     </div>
     <div class="pv-inference-card">
@@ -736,20 +831,20 @@ function renderSubclassComparisonTable() {
       en: ["<strong>Visa Type & Stay</strong>", "Permanent (PR)", "Permanent (PR)", "Permanent (PR)", "Temp (2yr) → PR", "Permanent (PR)", "Temp (2yr) → PR", "Temp (3/5yr, max 10yr)"]
     },
     {
-      ko: ["<strong>주신청자 연령 요건</strong>", "제한 없음", "<strong>만 67세 이상</strong> (Sch 1)", "제한 없음", "제한 없음", "<strong>만 67세 이상</strong> (Sch 1)", "<strong>만 67세 이상</strong> (Sch 1)", "제한 없음"],
-      en: ["<strong>Age Requirement</strong>", "None", "<strong>Age 67+</strong> (Sch 1)", "None", "None", "<strong>Age 67+</strong> (Sch 1)", "<strong>Age 67+</strong> (Sch 1)", "None"]
+      ko: ["<strong>주신청자 연령·특례 요건 (Sch 1)</strong>", "제한 없음", "<strong>만 67세+</strong><br/><small>(또는 법정 대체 600 소지자)</small>", "제한 없음", "제한 없음", "<strong>만 67세+</strong><br/><small>(또는 법정 대체 600 소지자)</small>", "<strong>만 67세+</strong><br/><small>(또는 법정 대체 600 소지자)</small>", "제한 없음"],
+      en: ["<strong>Age / Sch 1 Requirement</strong>", "None", "<strong>Age 67+</strong><br/><small>(or substituted 600 holder)</small>", "None", "None", "<strong>Age 67+</strong><br/><small>(or substituted 600 holder)</small>", "<strong>Age 67+</strong><br/><small>(or substituted 600 holder)</small>", "None"]
     },
     {
-      ko: ["<strong>접수 방식 (2026.04.22~)</strong>", "ImmiAccount 온라인", "ImmiAccount 온라인", "ImmiAccount 온라인", "173: 종이 / 143: 온라인", "ImmiAccount 온라인", "884: 종이 / 864: 온라인", "ImmiAccount 온라인"],
-      en: ["<strong>Lodgement Channel</strong>", "ImmiAccount Online", "ImmiAccount Online", "ImmiAccount Online", "173: Paper / 143: Online", "ImmiAccount Online", "884: Paper / 864: Online", "ImmiAccount Online"]
+      ko: ["<strong>접수 방식 (LIN 26/005 · 2026.04.22~)</strong>", "원칙 온라인<br/><small>(서면허가 Form 47PA·경과규정 예외)</small>", "원칙 온라인<br/><small>(서면허가 Form 47PA·경과규정 예외)</small>", "원칙 온라인<br/><small>(서면허가 Form 47PA·경과규정 예외)</small>", "173: 종이 / 143: 온라인 원칙", "원칙 온라인<br/><small>(서면허가 Form 47PA·경과규정 예외)</small>", "884: 종이 / 864: 온라인 원칙", "ImmiAccount 온라인"],
+      en: ["<strong>Lodgement (LIN 26/005 · 22 Apr 2026~)</strong>", "Online general rule<br/><small>(Written permission / transitional exceptions)</small>", "Online general rule<br/><small>(Written permission / transitional exceptions)</small>", "Online general rule<br/><small>(Written permission / transitional exceptions)</small>", "173: Paper / 143: Online rule", "Online general rule<br/><small>(Written permission / transitional exceptions)</small>", "884: Paper / 864: Online rule", "ImmiAccount Online"]
     },
     {
-      ko: ["<strong>온쇼어 BVA 및 취업권</strong>", "미부여 (원칙)", "<span class='badge-ok'>BVA 부여 (취업 자유)</span>", "미부여 (원칙)", "미부여 (원칙)", "<span class='badge-ok'>BVA 부여 (취업 자유)</span>", "<span class='badge-ok'>BVA 부여 (취업 자유)</span>", "미부여 (취업 금지 8103)"],
-      en: ["<strong>Onshore BVA & Work</strong>", "No BVA", "<span class='badge-ok'>BVA (Unrestricted Work)</span>", "No BVA", "No BVA", "<span class='badge-ok'>BVA (Unrestricted Work)</span>", "<span class='badge-ok'>BVA (Unrestricted Work)</span>", "No BVA (No Work 8103)"]
+      ko: ["<strong>온쇼어 BVA 및 취업권</strong>", "미부여 (원칙)", "<span class='badge-ok'>BVA 부여 (LIN 23/029 취업 자유)</span>", "미부여 (원칙)", "미부여 (원칙)", "<span class='badge-ok'>BVA 부여 (LIN 23/029 취업 자유)</span>", "<span class='badge-ok'>BVA 부여 (LIN 23/029 취업 자유)</span>", "미부여 (취업 금지 8103)"],
+      en: ["<strong>Onshore BVA & Work</strong>", "No BVA", "<span class='badge-ok'>BVA (Nil Work Condition, LIN 23/029)</span>", "No BVA", "No BVA", "<span class='badge-ok'>BVA (Nil Work Condition, LIN 23/029)</span>", "<span class='badge-ok'>BVA (Nil Work Condition, LIN 23/029)</span>", "No BVA (No Work 8103)"]
     },
     {
-      ko: ["<strong>가족균형테스트 (Reg 1.05)</strong>", "필수", "필수", "필수", "필수", "필수", "필수", "<span class='badge-ok'>면제 (불요)</span>"],
-      en: ["<strong>Balance of Family Test</strong>", "Mandatory", "Mandatory", "Mandatory", "Mandatory", "Mandatory", "Mandatory", "<span class='badge-ok'>Exempt (Not Required)</span>"]
+      ko: ["<strong>가족균형테스트 (Reg 1.05)</strong>", "필수 (50% 또는 단일국 다수)", "필수 (50% 또는 단일국 다수)", "필수 (50% 또는 단일국 다수)", "필수 (50% 또는 단일국 다수)", "필수 (50% 또는 단일국 다수)", "필수 (50% 또는 단일국 다수)", "<span class='badge-ok'>면제 (불요)</span>"],
+      en: ["<strong>Balance of Family Test</strong>", "Mandatory (≥50% or single-country majority)", "Mandatory", "Mandatory", "Mandatory", "Mandatory", "Mandatory", "<span class='badge-ok'>Exempt (Not Required)</span>"]
     },
     {
       ko: ["<strong>1차 신청비 (주신청자 / 배우자)</strong>", "$5,280 / $2,640", "$5,280 / $2,640", "$5,040 / $1,700", "173: $3,395/$1,145<br/>143: $440/$195", "$5,040 / $2,515", "884: $4,990/$2,490<br/>864: $440/$195", "스폰서 $420 + 1차 $1,180"],
@@ -760,12 +855,12 @@ function renderSubclassComparisonTable() {
       en: ["<strong>2nd VAC (Per Adult)</strong>", "<strong>$2,065</strong>", "<strong>$2,065</strong>", "<strong>$43,600</strong>", "173: <strong>$29,130</strong><br/>143: <strong>$19,420</strong> ($48,550)", "<strong>$43,600</strong>", "884: <strong>$29,130</strong><br/>864: <strong>$19,420</strong> ($48,550)", "3yr: <strong>$4,715</strong><br/>5yr: <strong>$10,605</strong>"]
     },
     {
-      ko: ["<strong>재정보증(AoS) 기간 & 본드(1인/2인)</strong>", "4년 · $5,000 / $7,000", "4년 · $5,000 / $7,000", "10년 · $10,000 / $14,000", "173 면제 → 143 단계 10년 ($10k/$14k)", "10년 · $10,000 / $14,000", "884 면제 → 864 단계 10년 ($10k/$14k)", "AoS 없음 (스폰서 소득 $83,454.80)"],
-      en: ["<strong>AoS Duration & Bond (1 / 2 Parents)</strong>", "4 yrs · $5,000 / $7,000", "4 yrs · $5,000 / $7,000", "10 yrs · $10,000 / $14,000", "Exempt at 173 → 10 yrs at 143 ($10k/$14k)", "10 yrs · $10,000 / $14,000", "Exempt at 884 → 10 yrs at 864 ($10k/$14k)", "No AoS (Sponsor Income $83,454.80)"]
+      ko: ["<strong>재정보증(AoS) 기간 & 본드(개인 1/2인 · 법인)</strong>", "4년 · $5k/$7k (법인 $10k)", "4년 · $5k/$7k (법인 $10k)", "10년 · $10k/$14k (법인 $20k)", "173 면제 → 143 단계 10년", "10년 · $10k/$14k (법인 $20k)", "884 면제 → 864 단계 10년", "AoS 없음 (개인 스폰서 소득 $83,454.80)"],
+      en: ["<strong>AoS Duration & Bond (Indiv 1/2 · Corp)</strong>", "4 yrs · $5k/$7k (Corp $10k)", "4 yrs · $5k/$7k (Corp $10k)", "10 yrs · $10k/$14k (Corp $20k)", "Exempt at 173 → 10 yrs at 143", "10 yrs · $10k/$14k (Corp $20k)", "Exempt at 884 → 10 yrs at 864", "No AoS (Individual Sponsor $83,454.80)"]
     },
     {
-      ko: ["<strong>메디케어 (Medicare) 개시 시점</strong>", "영주권 승인 후", "영주권 승인 후 (BVA 중 불가)", "영주권 승인 후", "<span class='badge-ok'>173 승인 즉시 메디케어 가입!</span>", "영주권 승인 후 (BVA 중 불가)", "<span class='badge-ok'>884 승인 즉시 메디케어 가입!</span>", "불가 (전 기간 사보험 필수)"],
-      en: ["<strong>Medicare Eligibility Start</strong>", "Upon PR Grant", "Upon PR Grant (Excluded on BVA)", "Upon PR Grant", "<span class='badge-ok'>Immediate upon 173 Grant!</span>", "Upon PR Grant (Excluded on BVA)", "<span class='badge-ok'>Immediate upon 884 Grant!</span>", "Ineligible (Private cover required)"]
+      ko: ["<strong>건강요건 (PIC) & 메디케어 개시</strong>", "PIC 4005 · PR 승인 후", "PIC 4005 · PR 승인 후", "PIC 4005 · PR 승인 후", "PIC 4005 · <span class='badge-ok'>173 승인 후 메디케어</span>", "PIC 4005 · PR 승인 후", "PIC 4005 · <span class='badge-ok'>884 승인 후 메디케어</span>", "해외 PIC 4005 / 국내 PIC 4007 · 사보험 필수(8501)"],
+      en: ["<strong>Health (PIC) & Medicare Start</strong>", "PIC 4005 · Upon PR Grant", "PIC 4005 · Upon PR Grant", "PIC 4005 · Upon PR Grant", "PIC 4005 · <span class='badge-ok'>Medicare on 173 Grant</span>", "PIC 4005 · Upon PR Grant", "PIC 4005 · <span class='badge-ok'>Medicare on 884 Grant</span>", "Offshore PIC 4005 / Onshore PIC 4007 · Private cover (8501)"]
     }
   ];
   tbody.innerHTML = rows.map(r => {
@@ -780,41 +875,60 @@ function renderSubclassComparisonTable() {
 function computePathwayCost(pathway, parentsCount, isCorp) {
   const p = parentsCount;
   const sec = p > 1 ? (p - 1) : 0;
+  const fs = (QUEUE_DATA && QUEUE_DATA.fee_schedule_fy26_27) ? QUEUE_DATA.fee_schedule_fy26_27 : {};
+  const aosCfg = (QUEUE_DATA && QUEUE_DATA.aos_formula_fy26_27) ? QUEUE_DATA.aos_formula_fy26_27 : {};
+  const corpBondContrib = aosCfg.corporate_bond_contributory_aud || 20000;
+  const corpBondNonContrib = aosCfg.corporate_bond_non_contributory_aud || 10000;
   let vac1 = 0, vac2 = 0, bond = 0, aosYears = 10;
 
   if (pathway === "143") {
-    vac1 = 5040 + sec * 1700;
-    vac2 = p * 43600;
-    bond = isCorp ? 20000 : (p === 1 ? 10000 : 14000);
-    aosYears = 10;
+    const f = fs["143"] || { first_base: 5040, first_adult: 1700, second_per_person: 43600, aos_years: 10, aos_bond_1: 10000, aos_bond_2: 14000 };
+    vac1 = f.first_base + sec * f.first_adult;
+    vac2 = p * f.second_per_person;
+    bond = isCorp ? corpBondContrib : (p === 1 ? f.aos_bond_1 : f.aos_bond_2);
+    aosYears = f.aos_years;
   } else if (pathway === "173_143") {
-    vac1 = (3395 + sec * 1145) + (440 + sec * 195);
-    vac2 = p * (29130 + 19420);
-    bond = isCorp ? 20000 : (p === 1 ? 10000 : 14000);
-    aosYears = 10;
+    const f1 = fs["173"] || { first_base: 3395, first_adult: 1145, second_per_person: 29130 };
+    const f2 = fs["173_to_143"] || { first_base: 440, first_adult: 195, second_per_person: 19420, aos_years: 10, aos_bond_1: 10000, aos_bond_2: 14000 };
+    vac1 = (f1.first_base + sec * f1.first_adult) + (f2.first_base + sec * f2.first_adult);
+    vac2 = p * (f1.second_per_person + f2.second_per_person);
+    bond = isCorp ? corpBondContrib : (p === 1 ? f2.aos_bond_1 : f2.aos_bond_2);
+    aosYears = f2.aos_years;
   } else if (pathway === "864") {
-    vac1 = 5040 + sec * 2515;
-    vac2 = p * 43600;
-    bond = isCorp ? 20000 : (p === 1 ? 10000 : 14000);
-    aosYears = 10;
+    const f = fs["864"] || { first_base: 5040, first_adult: 2515, second_per_person: 43600, aos_years: 10, aos_bond_1: 10000, aos_bond_2: 14000 };
+    vac1 = f.first_base + sec * f.first_adult;
+    vac2 = p * f.second_per_person;
+    bond = isCorp ? corpBondContrib : (p === 1 ? f.aos_bond_1 : f.aos_bond_2);
+    aosYears = f.aos_years;
   } else if (pathway === "884_864") {
-    vac1 = (4990 + sec * 2490) + (440 + sec * 195);
-    vac2 = p * (29130 + 19420);
-    bond = isCorp ? 20000 : (p === 1 ? 10000 : 14000);
-    aosYears = 10;
+    const f1 = fs["884"] || { first_base: 4990, first_adult: 2490, second_per_person: 29130 };
+    const f2 = fs["884_to_864"] || { first_base: 440, first_adult: 195, second_per_person: 19420, aos_years: 10, aos_bond_1: 10000, aos_bond_2: 14000 };
+    vac1 = (f1.first_base + sec * f1.first_adult) + (f2.first_base + sec * f2.first_adult);
+    vac2 = p * (f1.second_per_person + f2.second_per_person);
+    bond = isCorp ? corpBondContrib : (p === 1 ? f2.aos_bond_1 : f2.aos_bond_2);
+    aosYears = f2.aos_years;
   } else if (pathway === "103" || pathway === "804") {
-    vac1 = 5280 + sec * 2640;
-    vac2 = p * 2065;
-    bond = isCorp ? 10000 : (p === 1 ? 5000 : 7000);
-    aosYears = 4;
+    const f = fs[pathway] || { first_base: 5280, first_adult: 2640, second_per_person: 2065, aos_years: 4, aos_bond_1: 5000, aos_bond_2: 7000 };
+    vac1 = f.first_base + sec * f.first_adult;
+    vac2 = p * f.second_per_person;
+    bond = isCorp ? corpBondNonContrib : (p === 1 ? f.aos_bond_1 : f.aos_bond_2);
+    aosYears = f.aos_years;
+  } else if (pathway === "870_3") {
+    const f = fs["870_3yr"] || { sponsorship: 420, first_base: 1180, second_per_person: 4715 };
+    vac1 = f.sponsorship + p * f.first_base;
+    vac2 = p * f.second_per_person;
+    bond = 0;
+    aosYears = 0;
   } else if (pathway === "870_5") {
-    vac1 = 420 + p * 1180;
-    vac2 = p * 10605;
+    const f = fs["870_5yr"] || { sponsorship: 420, first_base: 1180, second_per_person: 10605 };
+    vac1 = f.sponsorship + p * f.first_base;
+    vac2 = p * f.second_per_person;
     bond = 0;
     aosYears = 0;
   } else if (pathway === "870_10") {
-    vac1 = 420 + p * (1180 * 2);
-    vac2 = p * (10605 * 2);
+    const f = fs["870_5yr"] || { sponsorship: 420, first_base: 1180, second_per_person: 10605 };
+    vac1 = (f.sponsorship + p * f.first_base) * 2;
+    vac2 = p * (f.second_per_person * 2);
     bond = 0;
     aosYears = 0;
   }
@@ -830,40 +944,48 @@ function runCostAosCalculator() {
   const isCorp = assurerRaw === "corp";
   const numAssurers = isCorp ? 0 : parseInt(assurerRaw, 10);
   const assurerKids = Math.max(0, parseInt(document.getElementById("cost-assurer-kids")?.value || "0", 10));
-  const existingAssured = parseInt(document.getElementById("cost-existing-assured")?.value || "0", 10);
+  const existingAssured = Math.max(0, parseInt(document.getElementById("cost-existing-assured")?.value || "0", 10));
   const actualIncome = Math.max(0, parseFloat(document.getElementById("cost-actual-income")?.value || "75000"));
   const ovhcYears = Math.max(0, parseInt(document.getElementById("cost-ovhc-years")?.value || "0", 10));
 
-  const is870 = pathway === "870_5" || pathway === "870_10";
+  const is870 = pathway.startsWith("870");
   const c = computePathwayCost(pathway, parentsCount, isCorp);
   const ovhcTotal = ovhcYears * parentsCount * 2400;
   const grandTotal = c.govTotal + ovhcTotal;
 
-  // AoS Income Formula under Social Security (Assurance of Support) Determination 2018 ss 15-16 (FY2026-27):
-  // JSP Base = $22,578 * (numAssurers + parentsCount) + $2,942 * assurerKids
+  // E04: AoS Income Formula under Social Security (Assurance of Support) Determination 2018 ss 15-16 & DSS Guide 9.4.3.10:
+  // Includes existingAssured adults in the adult count!
+  // JSP Base = $22,578 * (numAssurers + parentsCount + existingAssured) + $2,942 * assurerKids
   const JSP_BASE = 22578;
   const FTB_CHILD = 2942;
   let requiredIncome = 0;
   if (is870) {
-    requiredIncome = 83455; // $83,454.80 under LIN 19/146
+    requiredIncome = 83455; // $83,454.80 under reg 2.60W / LIN 19/146 (individual sponsor required!)
   } else if (isCorp) {
-    requiredIncome = 0; // Corporate Assurer is exempt from the taxable income test!
+    requiredIncome = 0; // Corporate Assurer is assessed under DSS 9.4.3.30 financial capacity rules
   } else {
-    requiredIncome = JSP_BASE * (numAssurers + parentsCount) + FTB_CHILD * assurerKids;
+    requiredIncome = JSP_BASE * (numAssurers + parentsCount + existingAssured) + FTB_CHILD * assurerKids;
   }
 
   const totalAdultAssurees = existingAssured + parentsCount;
   const capExceeded = !is870 && totalAdultAssurees > 2;
+  // E05: Subclass 870 cannot be sponsored by a corporation (reg 2.60U requires an individual parent sponsor)
+  const corp870Invalid = is870 && isCorp;
   const incomeDelta = actualIncome - requiredIncome;
-  const incomePass = isCorp || actualIncome >= requiredIncome;
+  const incomePass = !corp870Invalid && !isCorp && actualIncome >= requiredIncome;
 
   let verdictBadge = "";
-  if (capExceeded) {
-    verdictBadge = `<span class="badge-no">${currentLang === "ko" ? "❌ 피보증 성인 2명 한도 초과 (보증인 변경 필요)" : "❌ Exceeds 2 Adult Assurees Cap"}</span>`;
+  if (corp870Invalid) {
+    verdictBadge = `<span class="badge-no">${currentLang === "ko" ? "❌ 부적격 (INELIGIBLE — Subclass 870은 법인 스폰서 불가 · 개인 스폰서 과세소득 $83,454.80 필수, reg 2.60U/2.60W)" : "❌ INELIGIBLE — Corporate Sponsor Not Permitted for Subclass 870 (Individual Sponsor ≥ $83,454.80 Required under reg 2.60U / reg 2.60W)"}</span>`;
+  } else if (capExceeded) {
+    verdictBadge = `<span class="badge-no">${currentLang === "ko" ? "❌ 부적격 (INELIGIBLE — 피보증 성인 2명 한도 초과, Determination 2018 ss 8–9)" : "❌ INELIGIBLE — Exceeds 2 Adult Assurees Cap (Determination 2018 ss 8–9)"}</span>`;
+  } else if (isCorp) {
+    // E02: Corporate Assurer is subject to DSS 9.4.3.30 financial capacity review (not unconditional automatic pass)
+    verdictBadge = `<span class="badge-warn">${currentLang === "ko" ? "⚖️ 법인 재무심사 대상 (DSS Guide 9.4.3.30: 2년 이상 흑자 영업 + 피보증인당 $5,000 가용자금 + $20k/$10k 본드)" : "⚖️ Subject to Corporate Financial Capacity Review (DSS 9.4.3.30: 2+ yrs profitable trading + $5,000/adult funds + $20k/$10k bond)"}</span>`;
   } else if (incomePass) {
     verdictBadge = `<span class="badge-ok">${currentLang === "ko" ? `✅ 적격 통과 (+${fmtAud(incomeDelta)} 여유)` : `✅ ELIGIBLE (+${fmtAud(incomeDelta)} surplus)`}</span>`;
   } else {
-    verdictBadge = `<span class="badge-no">${currentLang === "ko" ? `⚠️ 소득 부족 (${fmtAud(Math.abs(incomeDelta))} 미달 → 공동/법인 보증 권장)` : `⚠️ Shortfall of ${fmtAud(Math.abs(incomeDelta))}`}</span>`;
+    verdictBadge = `<span class="badge-no">${currentLang === "ko" ? `❌ 소득 부족 (Shortfall ${fmtAud(Math.abs(incomeDelta))} 미달 → 공동 보증 또는 법인 보증 검토)` : `❌ Shortfall of ${fmtAud(Math.abs(incomeDelta))} (Below ${fmtAud(requiredIncome)} threshold)`}</span>`;
   }
 
   if (currentLang === "ko") {
@@ -880,9 +1002,9 @@ function runCostAosCalculator() {
           <div class="kpi-sub">${c.aosYears > 0 ? `${c.aosYears}년 예치 (${isCorp ? "법인 단일 본드" : "만기 후 환급형"})` : "Subclass 870 해당 없음"}</div>
         </div>
         <div class="pv-sim-kpi">
-          <div class="kpi-label">${is870 ? "870 스폰서 법정 최소 소득" : "AoS 보증인 최소 요구 과세소득"}</div>
-          <div class="kpi-val">${isCorp && !is870 ? "$0 (소득심사 면제)" : fmtAud(requiredIncome)}</div>
-          <div class="kpi-sub">${is870 ? "LIN 19/146 ($83,454.80)" : (isCorp ? "법인 보증($20k/$10k 본드) 특례" : `$22,578×(${numAssurers}+${parentsCount}) + $2,942×${assurerKids}`)}</div>
+          <div class="kpi-label">${is870 ? "870 개인 스폰서 법정 최소 소득" : "AoS 보증인 최소 요구 과세소득"}</div>
+          <div class="kpi-val">${isCorp && !is870 ? "재무제표 심사 (DSS 9.4.3.30)" : fmtAud(requiredIncome)}</div>
+          <div class="kpi-sub">${is870 ? "LIN 19/146 ($83,454.80 · 법인 불가)" : (isCorp ? "2년 흑자 영업 + 성인당 $5k 여유자금 + $20k/$10k 본드" : `$22,578×(${numAssurers}+${parentsCount}+기존${existingAssured}) + $2,942×${assurerKids}`)}</div>
         </div>
         <div class="pv-sim-kpi">
           <div class="kpi-label">총 소요 자금 (사보험 포함 TCO)</div>
@@ -891,13 +1013,17 @@ function runCostAosCalculator() {
         </div>
       </div>
       <div class="pv-inference-card" style="margin-top:12px;">
-        <h4>보증인(Assurer) 자격 및 소득 판정: ${verdictBadge}</h4>
+        <h4>보증인(Assurer / 870 Sponsor) 자격 및 소득 판정: ${verdictBadge}</h4>
         <p>
-          ${capExceeded
-            ? `Social Security (AoS) Determination 2018 s 11에 따라 한 보증인(개인 또는 법인)은 <strong>동시에 최대 성인 2명(2 adult assurees)</strong>까지만 보증할 수 있어요. 이미 ${existingAssured}명을 보증 중이시라면 부모님 ${parentsCount}분을 합쳐 총 ${totalAdultAssurees}명이 되므로 제3자(배우자 단독, 형제, 지인 또는 별도 법인)를 보증인으로 지정하셔야 해요.`
-            : (incomePass
-                ? `입력하신 실제 과세소득(<strong>${fmtAud(actualIncome)}</strong>)이 법정 최소 기준(<strong>${fmtAud(requiredIncome)}</strong>)을 충족해요! 실무상 Services Australia는 <strong>직전 회계연도 국세청 소득세 확정통지서(ATO Notice of Assessment)</strong>와 <strong>현재 회계연도 연속 2장 이상의 급여명세서(Payslips)</strong> 두 시점 모두에서 위 금액 이상임을 확인해요.`
-                : `입력하신 소득(<strong>${fmtAud(actualIncome)}</strong>)이 요구 기준(<strong>${fmtAud(requiredIncome)}</strong>)보다 <strong>${fmtAud(Math.abs(incomeDelta))} 부족</strong>해요. 해결책: ① 배우자·형제·친척·지인을 <strong>공동 보증인(최대 3인 합산)</strong>으로 추가하거나, ② 2년 이상 호주에서 운영된 <strong>법인(Pty Ltd)을 보증인으로 세우면 과세소득 심사 없이 $20,000(기여제) 은행본드만으로 AoS 통과</strong>가 가능해요!`)}
+          ${corp870Invalid
+            ? `Subclass 870 임시 부모비자의 스폰서십(Parent Sponsor)은 <strong>Migration Regulations 1994 reg 2.60U에 따라 반드시 자연인(자녀 또는 자녀의 배우자/파트너)이어야 하며, 법인(Corporate) 스폰서는 법적으로 허용되지 않아요</strong>. 개인 주 스폰서(또는 배우자/다른 자녀 1인과 합산 시 주 스폰서 50% 이상)로 직전 회계연도 과세소득 <strong>$83,454.80 이상(LIN 19/146)</strong>을 충족해야 해요.`
+            : (capExceeded
+                ? `Social Security (Assurance of Support) Determination 2018 <strong>ss 8 &amp; 9 (DSS Guide 9.4.3.10)</strong>에 따라 한 보증인(개인 또는 법인)은 <strong>동시에 최대 성인 2명(2 adult assurees)</strong>까지만 보증할 수 있어요. 이미 ${existingAssured}명을 보증 중이시라면 신규 부모님 ${parentsCount}분을 합쳐 총 ${totalAdultAssurees}명이 되므로 다른 적격 개인(배우자 단독, 형제, 지인) 또는 별도 법인을 보증인으로 지정하셔야 해요.`
+                : (isCorp
+                    ? `호주 법인(Pty Ltd 등)이 영주 부모비자(103/143/804/864)의 Corporate Assurer로 나서는 경우 개인 과세소득 공식은 적용되지 않으나, <strong>DSS Guide 9.4.3.30</strong>에 따라 ① 최근 2개 회계연도 연속 실질 영업 및 흑자(재무제표·법인 세금신고서), ② 피보증 성인 1인당 $5,000 이상의 가용 여유자금, ③ <strong>$20,000(기여제 10년) 또는 $10,000(일반 4년) CBA 은행보증금</strong> 예치 심사를 통과해야 해요.`
+                    : (incomePass
+                        ? `입력하신 실제 과세소득(<strong>${fmtAud(actualIncome)}</strong>)이 법정 최소 기준(<strong>${fmtAud(requiredIncome)}</strong>, 기존 피보증 성인 ${existingAssured}명 포함 산정)을 충족해요! Services Australia(DSS Guide 9.4.3.20)는 <strong>최신 회계연도 ATO 소득세 확정통지서(NOA) + 현재 급여명세서(Payslips)</strong>(단, 최신 NOA 미발급 초기에는 직전 2번째 회계연도 NOA 예외 허용)로 이를 확인해요.`
+                        : `입력하신 소득(<strong>${fmtAud(actualIncome)}</strong>)이 요구 기준(<strong>${fmtAud(requiredIncome)}</strong>, 기존 피보증 성인 ${existingAssured}명 포함)보다 <strong>${fmtAud(Math.abs(incomeDelta))} 부족</strong>해요. 해결책: ① 배우자·형제·지인을 <strong>공동 보증인(최대 3인 합산)</strong>으로 추가하거나, ② 영주 부모비자의 경우 2년 이상 흑자 운영된 <strong>호주 법인(Corporate Assurer, DSS 9.4.3.30)</strong> 활용을 검토하세요.`)))}
         </p>
       </div>
     `;
@@ -915,9 +1041,9 @@ function runCostAosCalculator() {
           <div class="kpi-sub">${c.aosYears > 0 ? `${c.aosYears}-year term (${isCorp ? "Corporate bond" : "Refundable after term"})` : "Not applicable to 870"}</div>
         </div>
         <div class="pv-sim-kpi">
-          <div class="kpi-label">${is870 ? "870 Sponsor Min Taxable Income" : "Min Assurer Assessable Income"}</div>
-          <div class="kpi-val">${isCorp && !is870 ? "$0 (Income Exempt)" : fmtAud(requiredIncome)}</div>
-          <div class="kpi-sub">${is870 ? "LIN 19/146 ($83,454.80)" : (isCorp ? "Corporate Assurer exemption" : `$22,578×(${numAssurers}+${parentsCount}) + $2,942×${assurerKids}`)}</div>
+          <div class="kpi-label">${is870 ? "870 Individual Sponsor Min Income" : "Min Assurer Assessable Income"}</div>
+          <div class="kpi-val">${isCorp && !is870 ? "DSS 9.4.3.30 Financial Review" : fmtAud(requiredIncome)}</div>
+          <div class="kpi-sub">${is870 ? "LIN 19/146 ($83,454.80 · Individual Only)" : (isCorp ? "2+ yrs profitable trading + $5k/adult funds + $20k/$10k bond" : `$22,578×(${numAssurers}+${parentsCount}+existing ${existingAssured}) + $2,942×${assurerKids}`)}</div>
         </div>
         <div class="pv-sim-kpi">
           <div class="kpi-label">Grand Total (incl. OVHC)</div>
@@ -926,13 +1052,17 @@ function runCostAosCalculator() {
         </div>
       </div>
       <div class="pv-inference-card" style="margin-top:12px;">
-        <h4>Assurer Eligibility &amp; Income Verdict: ${verdictBadge}</h4>
+        <h4>Assurer / Sponsor Eligibility &amp; Income Verdict: ${verdictBadge}</h4>
         <p>
-          ${capExceeded
-            ? `Under Social Security (AoS) Determination 2018 s 11, an individual or corporate assurer may assure a <strong>maximum of 2 adults concurrently</strong>. With ${existingAssured} existing + ${parentsCount} new = ${totalAdultAssurees} adults, you must nominate another eligible individual or corporation as Assurer.`
-            : (incomePass
-                ? `Your combined assessable income (<strong>${fmtAud(actualIncome)}</strong>) meets the statutory threshold (<strong>${fmtAud(requiredIncome)}</strong>). Services Australia verifies this across <strong>both your latest ATO Notice of Assessment (NOA) AND current financial year payslips</strong>.`
-                : `Your income (<strong>${fmtAud(actualIncome)}</strong>) is <strong>${fmtAud(Math.abs(incomeDelta))} below</strong> the required <strong>${fmtAud(requiredIncome)}</strong>. Solutions: ① Add a 2nd or 3rd <strong>Joint Assurer</strong> (friend, relative, or partner), or ② Use an eligible <strong>Australian Corporation (Pty Ltd trading 2+ yrs)</strong> which has <strong>NO taxable income test</strong> ($20,000 bond for Contributory).`)}
+          ${corp870Invalid
+            ? `Under <strong>Migration Regulations 1994 reg 2.60U and reg 2.60W</strong>, a Subclass 870 Parent Sponsor <strong>must be a natural person (child or child's partner) and CANNOT be a corporation</strong>. An eligible individual sponsor must meet the <strong>$83,454.80 taxable income threshold (LIN 19/146)</strong>.`
+            : (capExceeded
+                ? `Under <strong>Social Security (Assurance of Support) Determination 2018 ss 8 &amp; 9 (DSS Guide 9.4.3.10)</strong>, an individual or corporate assurer may assure a <strong>maximum of 2 adults concurrently</strong>. With ${existingAssured} existing + ${parentsCount} new = ${totalAdultAssurees} adults, you must nominate another eligible individual or corporation as Assurer.`
+                : (isCorp
+                    ? `For permanent parent visas, a Corporate Assurer does not use the personal taxable income formula but is assessed under <strong>DSS Guide 9.4.3.30</strong>: it must prove 2+ financial years of active profitable trading in Australia, at least $5,000 in available funds per assured adult, and lodge a flat <strong>$20,000 (10-yr Contributory) or $10,000 (4-yr Parent) CBA Bank Guarantee</strong>.`
+                    : (incomePass
+                        ? `Your assessable income (<strong>${fmtAud(actualIncome)}</strong>) meets the statutory threshold (<strong>${fmtAud(requiredIncome)}</strong>, including ${existingAssured} existing assured adult[s]). Under <strong>DSS Guide 9.4.3.20</strong>, Services Australia verifies this via your latest ATO Notice of Assessment (or second-most-recent NOA if the latest NOA has not yet issued) plus current payslips.`
+                        : `Your income (<strong>${fmtAud(actualIncome)}</strong>) is <strong>${fmtAud(Math.abs(incomeDelta))} below</strong> the required <strong>${fmtAud(requiredIncome)}</strong> (which includes ${existingAssured} existing assured adult[s] under DSS 9.4.3.10). Solutions: ① Add a 2nd or 3rd <strong>Joint Assurer</strong>, or ② Nominate an eligible <strong>Australian Corporation (DSS 9.4.3.30)</strong>.`)))}
         </p>
       </div>
     `;
@@ -983,37 +1113,37 @@ function renderAosDeepCards() {
   if (!box) return;
   const cards = currentLang === "ko" ? [
     {
-      title: "1. 누가 재정보증인(Assurer)이 될 수 있나요? (자녀가 아니어도 가능!)",
-      body: "<strong>비자 스폰서(자녀)와 재정보증인(Assurer)은 동일인일 필요가 없어요!</strong> 만 18세 이상 호주 시민권자·영주권자·보호특례 NZ 시민권자(호주 통상 거주)라면 친척, 친구, 지인 누구나 보증인이 될 수 있으며, <strong>최대 3인까지 공동 보증(Joint Assurers)</strong>으로 소득을 합산할 수 있어요. 단, 한 사람은 동시에 성인 최대 2명까지만 보증 가능해요 [13,15]."
+      title: "1. 누가 재정보증인(Assurer)이 될 수 있나요? (자녀가 아니어도 가능 · Determination ss 8–9, 15–16)",
+      body: "<strong>비자 스폰서(자녀)와 재정보증인(Assurer)은 동일인일 필요가 없어요!</strong> 만 18세 이상 호주 시민권자·영주권자·보호특례 NZ 시민권자(호주 통상 거주)라면 친척, 친구, 지인 누구나 보증인이 될 수 있으며, <strong>최대 3인까지 공동 보증(Joint Assurers)</strong>으로 소득을 합산할 수 있어요. 단, 개인·법인 모두 동시에 성인 최대 <strong>2명까지만 피보증(Determination 2018 ss 8 &amp; 9)</strong>할 수 있으며, 기존 피보증 성인이 있는 경우 소득 공식의 피보증 성인 수에 합산(ss 15–16)돼요 [13,15]."
     },
     {
-      title: "2. 보증인의 '인정 소득(Assessable Income)' 범위와 2개 시점 입증 규칙",
-      body: "Services Australia는 ① <strong>직전 회계연도 ATO 소득세 확정통지서(NOA)</strong>와 ② <strong>현재 회계연도 연속 2장 이상의 급여명세서(Payslips)</strong> 두 시점 모두에서 최소 소득 충족을 요구해요. 인정 소득에는 과세소득(Taxable Income) 외에 비과세 해외소득, 투자 순손실 환원분(Negative Gearing), 고용주 복리후생(Fringe Benefits), 추가 연금 납입분(Reportable Super)이 모두 합산돼요 [15]."
+      title: "2. 보증인의 '인정 소득(Assessable Income)' 범위와 2개 시점 입증 규칙 (DSS Guide 9.4.3.20)",
+      body: "Services Australia는 원칙적으로 ① <strong>과거 완료 회계연도 입증(최신 ATO NOA — 단, 회계연도 초 최신 NOA 미발급 시 또는 육아휴직·질병 등 일시적 소득 감소 입증 시 직전 회계연도 NOA 허용)</strong>과 ② <strong>현재 회계연도 지속 소득 입증(연속 2장 이상의 급여명세서, 고용주 확인서, 자영업자 회계사 서한/세무자료 등)</strong> 두 시점 모두에서 최소 소득 충족을 요구해요. 인정 소득에는 과세소득(Taxable Income) 외에 비과세 해외소득, 투자 순손실 환원분, 복리후생(Fringe Benefits), 추가 연금 납입분(Reportable Super)이 합산돼요 [15]."
     },
     {
-      title: "3. 소득이 부족할 때의 치트키: 호주 법인(Corporate) 재정보증 특례",
-      body: "자녀의 개인 과세소득이 부족하거나 은퇴·육아휴직 중인 경우, 호주에서 <strong>2년 이상 실질적으로 영업 중인 법인(Pty Ltd 등)</strong>이 보증인으로 나서면 <strong>과세소득 심사가 전면 면제</strong>돼요! 대신 은행보증금(CBA Bank Guarantee)을 개인($10k/$14k)보다 높은 <strong>단일 $20,000(기여제 10년) / $10,000(일반 4년)</strong>로 예치하면 승인돼요 [13,15]."
+      title: "3. 개인 소득이 부족할 때의 대안: 호주 법인(Corporate) 재정보증과 재무능력 심사 (DSS Guide 9.4.3.30)",
+      body: "자녀의 개인 과세소득이 부족한 경우, 호주에 설립·등록된 법인(Pty Ltd 등)이 <strong>Corporate Assurer</strong>로 신청할 수 있어요. 법인 보증인은 개인 과세소득 공식(JSP 기준액 합산)을 적용하지 않으나 <strong>무심사가 아니며</strong>, <strong>DSS Guide 9.4.3.30에 따른 법인 재무능력 심사(최근 2개 회계연도 이상 실질적 흑자 영업 재무제표·법인세 신고서, 피보증 성인 1인당 최소 $5,000 가용자금, 성인 최대 2명 한도 s 9, 대표자 권한 확인)</strong>를 통과하고 <strong>단일 $20,000(기여제 10년) 또는 $10,000(일반 4년) CBA 은행보증금</strong>을 예치해야 해요 [13,15]."
     },
     {
       title: "4. 영주비자 AoS 소득($45k~$67k) vs Subclass 870 스폰서 소득($83,454.80) 비교",
-      body: "영주 부모비자의 AoS는 접수 시가 아니라 <strong>18년 뒤 비자 발급 직전</strong>에 Services Australia에 증명하며 1인 보증+부모 2명 기준 <strong>$67,734</strong>예요. 반면 임시 부모비자인 <strong>Subclass 870은 비자 신청 전 스폰서십 단계에서 즉시 이민성에 직전 연도 과세소득 $83,454.80 이상</strong>(스폰서 본인+배우자+공동 후원 자녀 1인 합산 가능, LIN 19/146)을 증명해야 해요 [9,15]."
+      body: "영주 부모비자의 AoS는 접수 시가 아니라 <strong>2단계 비자 발급 직전(Queue Release)</strong>에 Services Australia에 증명하며 1인 보증+부모 2명(자녀 0명) 기준 <strong>$67,734</strong>예요. 반면 임시 부모비자인 <strong>Subclass 870은 AoS 제도가 전혀 적용되지 않으며(법인 보증 불가)</strong>, 비자 신청 전 스폰서십 단계에서 이민성에 <strong>개인/합산 과세소득 $83,454.80 이상(주 스폰서 본인 최소 50% $41,727.40, LIN 19/146)</strong>을 직전(또는 차직전) 완료 회계연도 ATO NOA로 증명해야 해요 [9,15]."
     }
   ] : [
     {
-      title: "1. Who Can Be an Assurer? (Does NOT Need to Be the Sponsor Child!)",
-      body: "<strong>The Assurer does not need to be the visa sponsor or even a family member.</strong> Any Australian Citizen, PR, or Protected SCV holder aged 18+ usually resident in Australia can act as Assurer, and up to <strong>3 Joint Assurers</strong> can pool their income. Each individual can assure at most <strong>2 adults concurrently</strong> [13,15]."
+      title: "1. Who Can Be an Assurer? (Determination 2018 ss 8–9 & 15–16)",
+      body: "<strong>The Assurer does not need to be the visa sponsor or a family member.</strong> Any Australian Citizen, PR, or Protected SCV holder aged 18+ usually resident in Australia can act as Assurer, and up to <strong>3 Joint Assurers</strong> can pool their income. Both individual and corporate assurers are capped at <strong>2 adult assurees at any one time (Determination ss 8 &amp; 9)</strong>, and any existing assured adults are added into the income threshold calculation (ss 15–16) [13,15]."
     },
     {
-      title: "2. Assessable Income Definition & Dual-Timeframe Proof (ATO NOA + Current Payslips)",
-      body: "Services Australia requires meeting the income threshold across <strong>both your latest ATO Notice of Assessment (NOA) AND current financial year evidence (2+ consecutive payslips)</strong>. Assessable income includes taxable income, target foreign income, net investment losses added back, reportable fringe benefits, and reportable super contributions [15]."
+      title: "2. Assessable Income Definition & Dual-Timeframe Proof (DSS Guide 9.4.3.20)",
+      body: "Services Australia requires meeting the threshold across <strong>both past FY proof (latest ATO NOA, or preceding FY NOA where the latest NOA is not yet issued or income temporarily dropped due to parental leave/illness with evidence) AND current FY proof (2+ consecutive payslips, employer letter, or accountant/tax evidence for self-employed assurers)</strong>. Assessable income includes taxable income, target foreign income, net investment losses added back, reportable fringe benefits, and reportable super contributions [15]."
     },
     {
-      title: "3. The Corporate Assurer Exemption ($20,000 Bond with Zero Income Test)",
-      body: "If personal taxable income is insufficient, an <strong>Australian registered company (Pty Ltd actively trading in Australia for 2+ years)</strong> can act as a Corporate Assurer with <strong>NO taxable income test</strong>, subject to lodging a flat <strong>$20,000 Bank Guarantee (10-yr Contributory) or $10,000 (4-yr Parent)</strong> with CBA [13,15]."
+      title: "3. Corporate Assurer Financial Capacity Review & $20,000 Bond (DSS Guide 9.4.3.30)",
+      body: "If personal income is insufficient, an Australian incorporated entity can apply as a <strong>Corporate Assurer</strong>. While the personal taxable income formula does not apply, it is <strong>NOT an automatic zero-review exemption</strong>: under <strong>DSS Guide 9.4.3.30</strong>, the organisation must pass a <strong>Corporate Financial Capacity Review</strong> (2+ financial years of active profitable trading via financial statements/company tax returns, at least $5,000 available funds per assured adult, max 2 adult assurees under s 9, and director authority verification) and lodge a flat <strong>$20,000 (10-yr Contributory) or $10,000 (4-yr Parent) CBA Bank Guarantee</strong> [13,15]."
     },
     {
       title: "4. Permanent Visa AoS ($45k–$67k at Release) vs Subclass 870 Sponsor Income ($83,454.80 Upfront)",
-      body: "Permanent visa AoS is assessed by Services Australia <strong>at Queue Release (~18 yrs later)</strong> ($67,734 for 1 assurer + 2 parents). By contrast, <strong>Subclass 870 requires proving $83,454.80 taxable income upfront</strong> at sponsorship application (combinable with partner/1 other child under LIN 19/146) [9,15]."
+      body: "Permanent visa AoS is assessed by Services Australia <strong>at Queue Release</strong> ($67,734 for 1 assurer + 2 parents, 0 children). By contrast, <strong>Subclass 870 has NO AoS (corporate assurers cannot sponsor 870)</strong> and requires proving <strong>$83,454.80 taxable income upfront</strong> via ATO NOA (primary sponsor at least 50% = $41,727.40 under LIN 19/146) [9,15]."
     }
   ];
   box.innerHTML = cards.map(c => `
@@ -1036,24 +1166,24 @@ function renderSurvivalMatrixTable() {
       en: ["<strong>Lawful Stay in Australia</strong>", "<span class='badge-ok'>✅ Yes (Onshore BVA until decision)</span>", "<span class='badge-no'>❌ No (Requires separate 600 or 870)</span>", "<span class='badge-ok'>✅ Yes (2-yr stay & travel)</span>", "<span class='badge-ok'>✅ Permanent Residence</span>"]
     },
     {
-      ko: ["<strong>취업 권리 (Work Rights)</strong>", "<span class='badge-ok'>✅ 무제한 취업 가능 (BVA/BVB Nil 조건)</span><br/><small>(단, BVC 030은 8101 취업금지)</small>", "<span class='badge-no'>❌ 불가 (방문비자 8101 조건)</span>", "<span class='badge-ok'>✅ 무제한 취업 가능</span>", "<span class='badge-ok'>✅ 무제한 취업 가능</span>"],
-      en: ["<strong>Work Rights</strong>", "<span class='badge-ok'>✅ Unrestricted (Nil condition on BVA/BVB)</span><br/><small>(BVC 030 has mandatory 8101 No Work)</small>", "<span class='badge-no'>❌ No Work (Visitor 8101)</span>", "<span class='badge-ok'>✅ Unrestricted Work Rights</span>", "<span class='badge-ok'>✅ Unrestricted Work Rights</span>"]
+      ko: ["<strong>취업 권리 (Work Rights)</strong>", "<span class='badge-ok'>✅ 무제한 취업 가능 (BVA/BVB Nil 조건)</span><br/><small>(단, BVC 030은 8101 취업금지)</small>", "<span class='badge-no'>❌ 불가 (방문비자 8101 · 870비자 8103 조건)</span>", "<span class='badge-ok'>✅ 무제한 취업 가능</span>", "<span class='badge-ok'>✅ 무제한 취업 가능</span>"],
+      en: ["<strong>Work Rights</strong>", "<span class='badge-ok'>✅ Unrestricted (Nil condition on BVA/BVB)</span><br/><small>(BVC 030 has mandatory 8101 No Work)</small>", "<span class='badge-no'>❌ No Work (Visitor 8101 / 870 Condition 8103)</span>", "<span class='badge-ok'>✅ Unrestricted Work Rights</span>", "<span class='badge-ok'>✅ Unrestricted Work Rights</span>"]
     },
     {
-      ko: ["<strong>메디케어 (Medicare)</strong>", "<span class='badge-no'>❌ 전면 배제 (한국 국적자 불가)</span><br/><small>사보험(OVHC) 필수 · RHCA 11개국만 예외</small>", "<span class='badge-no'>❌ 불가</span>", "<span class='badge-ok'>✅ 메디케어 즉시 가입 가능!</span><br/><small>Health Insurance Act 장관 명령</small>", "<span class='badge-ok'>✅ 정식 메디케어 가입</span>"],
-      en: ["<strong>Medicare Access</strong>", "<span class='badge-no'>❌ Excluded (Korean citizens ineligible)</span><br/><small>Must hold OVHC · Only 11 RHCA nations exempt</small>", "<span class='badge-no'>❌ Ineligible</span>", "<span class='badge-ok'>✅ Immediate Medicare Enrolment!</span><br/><small>Ministerial Order under Health Insurance Act</small>", "<span class='badge-ok'>✅ Full Medicare Access</span>"]
+      ko: ["<strong>메디케어 (Medicare)</strong>", "<span class='badge-no'>❌ 전면 배제 (한국 국적자 불가)</span><br/><small>사보험(OVHC) 권장 · RHCA 11개국만 예외</small>", "<span class='badge-no'>❌ 불가 (870은 8501 사보험 필수)</span>", "<span class='badge-ok'>✅ 메디케어 즉시 가입 가능!</span><br/><small>Health Insurance Act 장관 명령</small>", "<span class='badge-ok'>✅ 정식 메디케어 가입</span>"],
+      en: ["<strong>Medicare Access</strong>", "<span class='badge-no'>❌ Excluded (Korean citizens ineligible)</span><br/><small>OVHC recommended · Only 11 RHCA nations exempt</small>", "<span class='badge-no'>❌ Ineligible (870 requires 8501 insurance)</span>", "<span class='badge-ok'>✅ Immediate Medicare Enrolment!</span><br/><small>Ministerial Order under Health Insurance Act</small>", "<span class='badge-ok'>✅ Full Medicare Access</span>"]
     },
     {
-      ko: ["<strong>해외 출입국 (Travel)</strong>", "<span class='badge-warn'>⚠️ 출국 전 반드시 BVB(020) 승인 필수!</span><br/><small>BVA 상태로 출국 시 비자 즉시 소멸</small>", "<span class='badge-ok'>✅ 자유 (방문비자 조건 내)</span>", "<span class='badge-ok'>✅ 2년간 자유 출입국</span>", "<span class='badge-ok'>✅ 5년간 자유 출입국</span>"],
-      en: ["<strong>Overseas Travel</strong>", "<span class='badge-warn'>⚠️ Must Obtain BVB (020) Before Departure!</span><br/><small>Departing on BVA ceases visa immediately</small>", "<span class='badge-ok'>✅ Free (subject to 600 visa)</span>", "<span class='badge-ok'>✅ Unlimited 2-yr travel</span>", "<span class='badge-ok'>✅ 5-yr travel facility</span>"]
+      ko: ["<strong>해외 출입국 (Travel)</strong>", "<span class='badge-warn'>⚠️ 출국 전 반드시 BVB(020) 승인 필수!</span><br/><small>BVA 상태로 출국 시 비자 즉시 소멸</small>", "<span class='badge-ok'>✅ 자유 (방문비자/870 유효기간 내)</span>", "<span class='badge-ok'>✅ 2년간 자유 복수 출입국</span>", "<span class='badge-ok'>✅ 5년간 자유 (이후 RRV 갱신)</span>"],
+      en: ["<strong>Overseas Travel</strong>", "<span class='badge-warn'>⚠️ Must obtain BVB (020) BEFORE departure!</span><br/><small>Leaving on BVA ceases it permanently</small>", "<span class='badge-ok'>✅ Multiple entry within 600/870 validity</span>", "<span class='badge-ok'>✅ Unlimited travel for 2 years</span>", "<span class='badge-ok'>✅ 5-yr travel facility (then RRV)</span>"]
     },
     {
-      ko: ["<strong>정부 보조 노인요양 (My Aged Care)</strong>", "<span class='badge-no'>❌ 정부 보조금 배제 (연 $100,000+ 자비)</span>", "<span class='badge-no'>❌ 불가</span>", "<span class='badge-warn'>⚠️ 메디케어 소지자로 ACAT 평가 가능</span>", "<span class='badge-ok'>✅ 정부 보조 요양원·홈케어 가능</span>"],
-      en: ["<strong>Subsidised Aged Care (My Aged Care)</strong>", "<span class='badge-no'>❌ Excluded ($100,000+/yr private cost)</span>", "<span class='badge-no'>❌ Ineligible</span>", "<span class='badge-warn'>⚠️ ACAT eligible with Medicare card</span>", "<span class='badge-ok'>✅ Full Commonwealth Subsidies</span>"]
+      ko: ["<strong>정부 노인요양 보조 (My Aged Care)</strong>", "<span class='badge-no'>❌ 배제 (연 $100k+ 전액 자비 부담)</span>", "<span class='badge-no'>❌ 배제</span>", "<span class='badge-no'>❌ 제한 (영주권 취득 후 정식 수급)</span>", "<span class='badge-ok'>✅ ACAT 평가 후 정부 보조 수급 가능</span>"],
+      en: ["<strong>Subsidised Aged Care</strong>", "<span class='badge-no'>❌ Excluded ($100k+/yr private fees)</span>", "<span class='badge-no'>❌ Excluded</span>", "<span class='badge-no'>❌ Restricted until PR grant</span>", "<span class='badge-ok'>✅ Eligible after ACAT assessment</span>"]
     },
     {
-      ko: ["<strong>센터링크 수당 & 호주 노령연금(Age Pension)</strong>", "<span class='badge-no'>❌ 불가</span>", "<span class='badge-no'>❌ 불가</span>", "<span class='badge-no'>❌ 불가</span>", "<span class='badge-warn'>⏳ 수당 4년(NARWP)/AoS 10년 제한</span><br/><small>노령연금 10년 거주 (한-호 협정 합산 가능!)</small>"],
-      en: ["<strong>Centrelink & Age Pension</strong>", "<span class='badge-no'>❌ Ineligible</span>", "<span class='badge-no'>❌ Ineligible</span>", "<span class='badge-no'>❌ Ineligible</span>", "<span class='badge-warn'>⏳ 4-yr NARWP / 10-yr AoS recovery</span><br/><small>10-yr Age Pension (Korea-AU Agreement totalisation!)</small>"]
+      ko: ["<strong>센터링크 수당 & 호주 노령연금(Age Pension)</strong>", "<span class='badge-no'>❌ 불가</span>", "<span class='badge-no'>❌ 불가</span>", "<span class='badge-no'>❌ 불가</span>", "<span class='badge-warn'>⏳ 수당 4년(NARWP)/AoS 10년 제한</span><br/><small>노령연금 10년 거주 (DSS 10.22 한-호 협정 합산!)</small>"],
+      en: ["<strong>Centrelink & Age Pension</strong>", "<span class='badge-no'>❌ Ineligible</span>", "<span class='badge-no'>❌ Ineligible</span>", "<span class='badge-no'>❌ Ineligible</span>", "<span class='badge-warn'>⏳ 4-yr NARWP / 10-yr AoS recovery</span><br/><small>10-yr Age Pension (DSS 10.22 Korea-AU totalisation!)</small>"]
     }
   ];
   tbody.innerHTML = rows.map(r => {
@@ -1079,10 +1209,10 @@ const SURVIVAL_CARDS = [
   },
   {
     cat: "health",
-    title_ko: "3. PIC 4005 2회 신체검사와 '$86,000 의료·요양비 상한' — 18년 대기 후 비자 거절 리스크",
-    body_ko: "모든 부모비자는 <strong>건강요건 면제(Health Waiver)가 일절 없는 PIC 4005</strong>가 적용되며, <strong>1단계 대기열 편입 시점과 18~42년 뒤 2단계 최종 발급 직전에 총 2번 신체검사</strong>를 통과해야 해요. 대기 중 치매, 뇌졸중, 암, 신부전(투석) 또는 요양원 입소 판정을 받아 5년 예상 공공 의료·지역사회 서비스 비용이 <strong>$86,000(Significant Cost Threshold)</strong>를 초과하면 18년을 기다린 후에도 최종 거절돼요 [3–8].",
-    title_en: "3. Dual PIC 4005 Medical Exams & The $86,000 Cost Threshold (Zero Health Waiver)",
-    body_en: "All parent visas are subject to <strong>PIC 4005 (which has NO health waiver)</strong> and require passing medicals <strong>twice</strong>: at Stage 1 Queue Assessment and again at Stage 2 Queue Release 18–42 years later. If an aged parent develops dementia, renal failure, or requires residential aged care exceeding the <strong>$86,000 Significant Cost Threshold</strong>, the visa must be refused [3–8]."
+    title_ko: "3. PIC 4005/4007 건강요건, 단계별 신체검사 재검증 & MOC '$86,000 산정 기간(3년/5년/10년)'",
+    body_ko: "① <strong>영주·임시 부모비자(103/143/173/804/864/884)는 건강요건 면제(Health Waiver)가 없는 PIC 4005</strong>가 적용돼요. 반면 <strong>Subclass 870(cl 870.228(2)–(3), PAM3 VM-6327 §3.6.8)은 신청 당시 호주 밖이면 PIC 4005, 호주 안이면 PIC 4007</strong>이 적용돼요. ② 신체검사 유효기간은 통상 12개월이므로 1단계 큐 심사 시점과 수년 뒤 2단계 발급 직전에 재검증이 요구되나, <strong>173→143 전환 신청자는 cl 143.225–143.226에 따라 장관이 별도 요청한 경우에만 추가 신검</strong>을 받아요. ③ MOC 상당 비용 기준(<strong>$86,000</strong>) 산정 기간은 영주비자 일반 <strong>5년</strong>, <strong>만 75세 이상 신청자 3년</strong>, 영구적·지속적 질환은 <strong>최대 10년(기대수명 내)</strong>, 임시비자는 <strong>체류 예정 기간</strong>으로 계산돼요 [3–9].",
+    title_en: "3. PIC 4005 vs PIC 4007 (Subclass 870), Medical Re-Verification & MOC $86,000 Cost Windows (3/5/10 Yrs)",
+    body_en: "① <strong>Permanent/provisional parent visas (103/143/173/804/864/884) apply PIC 4005 (no health waiver)</strong>, whereas <strong>Subclass 870 (cl 870.228(2)–(3), PAM3 VM-6327 §3.6.8) applies PIC 4005 if outside Australia at application or PIC 4007 if in Australia at application</strong>. ② Because medical clearances typically last 12 months, health checks are generally required around Stage 1 queue assessment and re-verified before Stage 2 grant as requested; however, <strong>173→143 step-up applicants (cl 143.225–143.226) only undergo a further medical exam if requested by the Minister</strong>. ③ The MOC <strong>$86,000 Significant Cost Threshold</strong> is assessed over <strong>5 years</strong> standard for permanent/provisional visas, <strong>3 years for applicants aged 75+</strong>, <strong>up to 10 years (within life expectancy)</strong> for permanent/ongoing conditions, and the <strong>intended stay period</strong> for temporary visas [3–9]."
   },
   {
     cat: "health",
@@ -1100,24 +1230,24 @@ const SURVIVAL_CARDS = [
   },
   {
     cat: "welfare",
-    title_ko: "6. 호주 노령연금(Age Pension) 10년 거주 요건과 '한-호 사회보장협정(국민연금 합산)' 활용법",
-    body_ko: "원칙적으로 호주 노령연금(Age Pension)은 영주권 취득 후 <strong>10년 이상 호주에 거주</strong>해야 수급 자격이 생겨요. 그러나 <strong>한-호 사회보장협정(Social Security Guide 10.27)</strong>에 따라 <strong>한국 국민연금(NPS) 가입 기간을 호주 영주 거주 기간으로 합산(Totalisation)</strong>할 수 있어요! (단, 온쇼어 영주권 취득 시 최소 2년 계속 거주 요건 및 10년 AoS 기간 중 소득/자산 심사 적용) [15].",
-    title_en: "6. 10-Year Age Pension Residence Rule & The Australia–Korea Social Security Agreement",
-    body_en: "While Age Pension normally requires <strong>10 years of Australian PR residence</strong>, under the <strong>Australia–Korea Social Security Agreement (DSS Guide 10.27)</strong>, periods of coverage under the <strong>Korean National Pension Service (NPS) can be totalised (added)</strong> to meet the 10-year qualifying residence requirement (subject to 2 years continuous residence and AoS rules) [15]."
+    title_ko: "6. 호주 노령연금(Age Pension) 10년 거주 요건과 '한-호 사회보장협정(DSS Guide 10.22)' 합산",
+    body_ko: "내국 법상 호주 노령연금(Age Pension)은 원칙적으로 <strong>10년 이상의 적격 호주 영주 거주 기간(최소 5년 연속 포함)</strong>이 필요해요. 그러나 <strong>한-호 사회보장협정(DSS Social Security Guide 10.22 — Agreement with Korea)</strong>에 따라 <strong>한국 국민연금(NPS) 가입 기간을 호주 노령연금 자격 기간으로 합산(Totalisation)</strong>할 수 있어요! (호주 내 거주 신청 시 협정 합산 가능하며, 해외 거주 신청 시에는 통상 호주 근로연령 거주 12개월[6개월 연속 포함] 요건 및 AoS 기간·소득/자산 심사 적용) [15].",
+    title_en: "6. 10-Year Age Pension Residence Rule & The Australia–Korea Social Security Agreement (DSS Guide 10.22)",
+    body_en: "Domestic Age Pension qualification normally requires <strong>10 years of qualifying Australian residence (including 5 years continuous)</strong>. However, under the <strong>Australia–Korea Social Security Agreement (DSS Social Security Guide 10.22)</strong>, periods of coverage under the <strong>Korean National Pension Service (NPS) can be totalised (added)</strong> to help meet the 10-year qualifying residence requirement (distinguishing onshore resident claims from offshore claims which generally require 12 months Australian working-life residence including 6 months continuous, subject to means testing and active AoS rules) [15]."
   },
   {
     cat: "family",
     title_ko: "7. Subclass 870과 영주 부모비자 간의 '비대칭 잠금 규칙(Asymmetric Lockout Bar)'",
-    body_ko: "<strong>절대 금지 순서</strong>: Subclass 870 비자를 먼저 받고 소지 중인 상태에서는 103·143·173·804·864·884 영주/임시 부모비자 접수가 법정 무효(Sch 1 Item 1124/1130)예요. <strong>합법 황금 순서(PAM3 VM-6327 s 3.6.6)</strong>: 반대로 <strong>143이나 103을 먼저 접수해 Queue Date 대기열에 올려놓은 뒤, 대기기간 동안 870 비자(또는 600 장기 방문비자 3~5년, Condition 8558 18개월 중 12개월 체류)를 신청하는 것은 완전히 합법</strong>이에요 [9,18].",
+    body_ko: "<strong>절대 금지 순서</strong>: Subclass 870 비자를 신청 중이거나 소지 중인 상태(또는 마지막 비자가 870이고 출국 전)에서는 103·143·173·804·864·884 영주/임시 부모비자 접수가 법정 무효(Sch 1 Item 1124/1130)예요. <strong>합법 황금 순서(PAM3 VM-6327 §3.6.6)</strong>: 반대로 <strong>143이나 103을 먼저 접수해 Queue Date 대기열에 올려놓은 뒤, 대기기간 동안 870 비자(또는 600 장기 방문비자 3~5년, Condition 8558 18개월 중 12개월 체류)를 신청하는 것은 완전히 합법</strong>이에요 [9,18].",
     title_en: "7. The Asymmetric Subclass 870 Lockout Bar vs The Legal 'Golden Sequence'",
-    body_en: "<strong>Prohibited Sequence</strong>: Holding a Subclass 870 visa strictly bars lodging any 103/143/173/804/864/884 application (Sch 1 Item 1124/1130). <strong>Permitted Golden Sequence (PAM3 VM-6327 s 3.6.6)</strong>: Lodging Subclass 143 or 103 <strong>FIRST</strong> to enter the queue and subsequently applying for a Subclass 870 (or 3–5 yr Visitor Visa 600) while waiting IS legally permitted [9,18]."
+    body_en: "<strong>Prohibited Sequence</strong>: Having a pending 870 application, holding an 870 visa, or having last held an 870 without departing Australia strictly bars lodging any 103/143/173/804/864/884 application (Sch 1 Item 1124/1130). <strong>Permitted Golden Sequence (PAM3 VM-6327 §3.6.6)</strong>: Lodging Subclass 143 or 103 <strong>FIRST</strong> to enter the queue and subsequently applying for a Subclass 870 (or 3–5 yr Visitor Visa 600) while waiting IS legally permitted [9,18]."
   },
   {
     cat: "family",
-    title_ko: "8. 대기 중 주신청자/스폰서 사망 시 대처법 & 고령 치매 대비 영속적 위임장(EPOA)",
-    body_ko: "① <strong>주신청자 사망 시</strong>: 143/103은 동반 배우자가 주신청자 지위를 승계할 수 있으나, <strong>804/864/884는 2024.12.17 개정법에 따라 동반 배우자가 최초 접수 당시 만 67세 이상이었던 경우에만 승계 가능</strong>해요(PAM3 VM-3058 s 3.9.1). ② <strong>스폰서 자녀 사망 시</strong>: 다른 호주 시민권/영주권 자녀나 배우자 등으로 스폰서를 변경할 수 있어요. ③ <strong>치매 대비</strong>: 18년 대기 중 의사능력 상실 시 비자 서류 서명이 불가능해지므로 건강하실 때 호주 주별 <strong>영속적 위임장(Enduring Power of Attorney, EPOA)</strong>을 반드시 작성해 두셔야 해요.",
-    title_en: "8. Death of Primary Applicant / Sponsor & Mandatory Enduring Power of Attorney (EPOA)",
-    body_en: "① <strong>Death of Primary Applicant</strong>: On 143/103, the surviving spouse can succeed as primary applicant; however, on <strong>804/864/884 lodged on/after 17 Dec 2024, the surviving spouse can ONLY succeed if they were already aged 67+ at initial lodgement (PAM3 VM-3058 s 3.9.1)</strong>. ② <strong>Dementia Preparedness</strong>: Always execute an Australian <strong>Enduring Power of Attorney (EPOA)</strong> early so a child can sign Stage 2 visa and AoS forms if cognitive decline occurs during the 18-year wait."
+    title_ko: "8. 대기 중 주신청자 사망 시 승계 제한(F2025L00317) & 치매 대비 위임장(EPOA / Form 956)",
+    body_ko: "① <strong>주신청자 사망 시</strong>: 143/103은 동반 배우자가 주신청자 지위를 승계할 수 있으나, <strong>804/864/884는 2024.12.17 개정법(F2025L00317)에 따라 동반 배우자가 최초 접수 당시 만 67세 이상이거나 법정 대체 방문비자(substituted Subclass 600) 예외에 해당했던 경우에만 승계 가능</strong>해요(PAM3 VM-3058 §3.9.1). ② <strong>치매 및 의사능력 상실 대비</strong>: 주별 <strong>영속적 위임장(Enduring Power of Attorney, EPOA)</strong>은 재산·법률 대리에 필수적이며, 이민성 대리인 지정(<strong>Form 956/956A</strong>) 및 Services Australia 대리인(Nominee) 등록 절차를 함께 준비해야 해요.",
+    title_en: "8. Death of Primary Applicant (F2025L00317 / Substituted 600) & EPOA / Form 956 Preparedness",
+    body_en: "① <strong>Death of Primary Applicant</strong>: On 143/103, the surviving spouse can succeed as primary applicant; however, on <strong>804/864/884 lodged on/after 17 Dec 2024 (F2025L00317), the surviving spouse can ONLY succeed if they were aged 67+ or held a statutory substituted Subclass 600 visa at initial lodgement (PAM3 VM-3058 §3.9.1)</strong>. ② <strong>Dementia Preparedness</strong>: Execute a state <strong>Enduring Power of Attorney (EPOA)</strong> for financial/personal guardianship alongside Home Affairs (<strong>Form 956/956A</strong>) and Services Australia nominee authorisations."
   }
 ];
 
@@ -1142,24 +1272,24 @@ const OFFICIAL_LINKS = [
   { cat: "queue", cat_ko: "대기열·PVC·접수", cat_en: "Queue & PVC", title_ko: "1. 부모비자 월별 Queue Release Date 공식 공시", title_en: "1. Parent Visas Queue Release Dates (Home Affairs)", desc_ko: "매월 갱신되는 7대 부모비자 1단계(Queue Assessment) 및 2단계(Queue Release) 기준일 공시 페이지예요.", desc_en: "Official monthly table of Stage 1 Queue Assessment and Stage 2 Queue Release dates.", url: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/visa-processing-priorities/parent-visas" },
   { cat: "queue", cat_ko: "대기열·PVC·접수", cat_en: "Queue & PVC", title_ko: "2. 부모비자 대기순번 계산기 (Parent Visa Queue Calculator)", title_en: "2. Parent Visa Queue Calculator", desc_ko: "부여받은 Queue Date를 입력하면 내 앞에 몇 명의 대기자가 남아 있는지 조회할 수 있어요.", desc_en: "Check approximate number of queued applicants ahead of your assigned Queue Date.", url: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/family-visa-processing-priorities/parent-visas-queue-release-dates" },
   { cat: "queue", cat_ko: "대기열·PVC·접수", cat_en: "Queue & PVC", title_ko: "3. 부모비자 심사센터(PVC) 온라인 문의·서류제출 웹폼", title_en: "3. Parent Visa Processing Centre (PVC) Online Enquiry Form", desc_ko: "대기 중 여권 갱신, 연락처 변경, 배우자 사망/가족 변동 통지 및 서류 추가 제출용 공식 웹폼이에요.", desc_en: "Official webform to notify passport renewals, address updates, or family changes during the queue.", url: "https://immi.homeaffairs.gov.au/help-support/departmental-forms/online-forms/parent-visa-enquiry-form" },
-  { cat: "queue", cat_ko: "대기열·PVC·접수", cat_en: "Queue & PVC", title_ko: "4. ImmiAccount (103/143/804/864 온라인 접수 & BVB 신청)", title_en: "4. ImmiAccount Portal (Online Lodgement & BVB)", desc_ko: "2026.04.22부터 의무화된 103·143·804·864 온라인 접수 및 온쇼어 대기자 BVB 신청 포털이에요.", desc_en: "Mandatory online lodgement portal for 103, 143, 804, 864 (since 22 Apr 2026) and BVB applications.", url: "https://online.immi.gov.au/lusc/login" },
-  { cat: "queue", cat_ko: "대기열·PVC·접수", cat_en: "Queue & PVC", title_ko: "5. 가족균형테스트 (Balance of Family Test — Reg 1.05)", title_en: "5. Balance of Family Test Official Rules", desc_ko: "자녀 수(1~10명)에 따른 호주 시민권·영주권 자녀 최소 비율 및 의붓/입양 자녀 산입 기준이에요.", desc_en: "Official mathematical table and rules for the Balance of Family Test under reg 1.05.", url: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/parent-103/balance-of-family-test" },
+  { cat: "queue", cat_ko: "대기열·PVC·접수", cat_en: "Queue & PVC", title_ko: "4. ImmiAccount (103/143/804/864 온라인 접수 & BVB 신청)", title_en: "4. ImmiAccount Portal (Online Lodgement & BVB)", desc_ko: "2026.04.22(LIN 26/005)부터 의무화된 103·143·804·864 온라인 접수 및 온쇼어 대기자 BVB 신청 포털이에요.", desc_en: "Mandatory online lodgement portal for 103, 143, 804, 864 (LIN 26/005 since 22 Apr 2026) and BVB applications.", url: "https://online.immi.gov.au/lusc/login" },
+  { cat: "queue", cat_ko: "대기열·PVC·접수", cat_en: "Queue & PVC", title_ko: "5. 가족균형테스트 (Balance of Family Test — Reg 1.05)", title_en: "5. Balance of Family Test Official Rules", desc_ko: "자녀 수(1~10명)에 따른 호주 시민권·영주권 자녀 최소 비율(reg 1.05(2C)(a)) 및 해외 국가별 분포 기준(reg 1.05(2C)(b))이에요.", desc_en: "Official mathematical table and rules for the Balance of Family Test under reg 1.05(2C)(a)–(b).", url: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/parent-103/balance-of-family-test" },
   { cat: "queue", cat_ko: "대기열·PVC·접수", cat_en: "Queue & PVC", title_ko: "6. 연간 이민 프로그램 계획 수준 (Migration Program Planning Levels)", title_en: "6. Migration Program Planning Levels", desc_ko: "연방정부의 회계연도별 부모비자 배정 쿼터(8,500석 / FY26–27 계획 7,060석) 공시 페이지예요.", desc_en: "Annual Migration Program ceiling for the Parent visa stream.", url: "https://immi.homeaffairs.gov.au/what-we-do/migration-program-planning-levels" },
   { cat: "subclasses", cat_ko: "7대 서브클래스", cat_en: "7 Subclasses", title_ko: "7. Subclass 143 — 기여제 부모 영주비자 공식 안내", title_en: "7. Subclass 143 — Contributory Parent (Permanent)", desc_ko: "오프쇼어/일반 기여제 영주비자 요건, 1·2차 신청비($43,600) 및 ImmiAccount 접수 안내예요.", desc_en: "Official Subclass 143 eligibility, fees, and online lodgement steps.", url: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/contributory-parent-143" },
   { cat: "subclasses", cat_ko: "7대 서브클래스", cat_en: "7 Subclasses", title_ko: "8. Subclass 173 — 기여제 부모 임시비자 (2년 · 메디케어 부여)", title_en: "8. Subclass 173 — Contributory Parent (Temporary)", desc_ko: "2차 기여금을 분할($29,130 + $19,420)하고 승인 즉시 메디케어를 받는 2단계 임시비자예요.", desc_en: "Stage 1 temporary contributory visa unlocking Medicare and deferring AoS for 2 years.", url: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/contributory-parent-temporary-173" },
-  { cat: "subclasses", cat_ko: "7대 서브클래스", cat_en: "7 Subclasses", title_ko: "9. Subclass 864 — 기여제 고령부모 영주비자 (Onshore 67+)", title_en: "9. Subclass 864 — Contributory Aged Parent (Residence)", desc_ko: "만 67세 이상 온쇼어 신청자에게 BVA(취업 자유)와 Direction 117 우선심사를 부여하는 기여제 영주비자예요.", desc_en: "Onshore aged (67+) contributory PR visa granting a BVA and Direction 117 priority.", url: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/contributory-aged-parent-864" },
+  { cat: "subclasses", cat_ko: "7대 서브클래스", cat_en: "7 Subclasses", title_ko: "9. Subclass 864 — 기여제 고령부모 영주비자 (Onshore 67+)", title_en: "9. Subclass 864 — Contributory Aged Parent (Residence)", desc_ko: "만 67세 이상(또는 substituted 600) 온쇼어 신청자에게 BVA와 Direction 117 우선심사를 부여하는 기여제 영주비자예요.", desc_en: "Onshore aged (67+ or substituted 600) contributory PR visa granting a BVA and Direction 117 priority.", url: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/contributory-aged-parent-864" },
   { cat: "subclasses", cat_ko: "7대 서브클래스", cat_en: "7 Subclasses", title_ko: "10. Subclass 884 — 기여제 고령부모 임시비자 (Onshore 67+)", title_en: "10. Subclass 884 — Contributory Aged Parent (Temporary)", desc_ko: "온쇼어 고령 2단계 분할 경로의 1단계 임시비자(종이 우편 접수 · 승인 시 메디케어 부여)예요.", desc_en: "Onshore aged temporary contributory visa (paper lodgement, unlocks Medicare upon grant).", url: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/contributory-aged-parent-temporary-884" },
-  { cat: "subclasses", cat_ko: "7대 서브클래스", cat_en: "7 Subclasses", title_ko: "11. Subclass 103 — 일반 부모 영주비자 (Parent Visa)", title_en: "11. Subclass 103 — Parent (Migrant) Visa", desc_ko: "낮은 2차 신청비($2,065)와 4년 AoS가 적용되나 약 42년의 대기기간이 소요되는 일반 부모비자예요.", desc_en: "Non-contributory permanent parent visa (~42-year wait, $2,065 2nd VAC, 4-year AoS).", url: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/parent-103" },
-  { cat: "subclasses", cat_ko: "7대 서브클래스", cat_en: "7 Subclasses", title_ko: "12. Subclass 804 — 일반 고령부모 영주비자 (Aged Parent 67+)", title_en: "12. Subclass 804 — Aged Parent (Residence) Visa", desc_ko: "만 67세 이상 온쇼어 접수 시 BVA가 부여되나 42년 대기 중 메디케어/요양원 보조가 없는 비자예요.", desc_en: "Onshore aged non-contributory visa granting BVA (~42-year wait, no Medicare during wait).", url: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/aged-parent-804" },
-  { cat: "subclasses", cat_ko: "7대 서브클래스", cat_en: "7 Subclasses", title_ko: "13. Subclass 870 — 스폰서 임시 부모비자 (3년/5년, 최대 10년)", title_en: "13. Subclass 870 — Sponsored Parent (Temporary) Visa", desc_ko: "가족균형테스트 없이 3년($5,895) 또는 5년($11,785) 체류 가능한 임시 부모비자예요(선접수 시 영주비자 차단 주의).", desc_en: "3- or 5-year temporary parent visa without Balance of Family Test (bars lodging PR while held).", url: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/sponsored-parent-temporary-870" },
+  { cat: "subclasses", cat_ko: "7대 서브클래스", cat_en: "7 Subclasses", title_ko: "11. Subclass 103 — 일반 부모 영주비자 (Parent Visa)", title_en: "11. Subclass 103 — Parent (Migrant) Visa", desc_ko: "낮은 2차 신청비($2,065)와 4년 AoS가 적용되나 신규 약 42년(기존 대기열 역산 ~31년+)이 소요되는 일반 부모비자예요.", desc_en: "Non-contributory permanent parent visa (~42-year new intake estimate, $2,065 2nd VAC, 4-year AoS).", url: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/parent-103" },
+  { cat: "subclasses", cat_ko: "7대 서브클래스", cat_en: "7 Subclasses", title_ko: "12. Subclass 804 — 일반 고령부모 영주비자 (Aged Parent 67+)", title_en: "12. Subclass 804 — Aged Parent (Residence) Visa", desc_ko: "만 67세 이상 온쇼어 접수 시 BVA가 부여되나 장기간 대기 중 메디케어/요양원 보조가 없는 비자예요.", desc_en: "Onshore aged non-contributory visa granting BVA (~42-year new intake estimate, no Medicare during wait).", url: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/aged-parent-804" },
+  { cat: "subclasses", cat_ko: "7대 서브클래스", cat_en: "7 Subclasses", title_ko: "13. Subclass 870 — 스폰서 임시 부모비자 (3년/5년, 최대 10년)", title_en: "13. Subclass 870 — Sponsored Parent (Temporary) Visa", desc_ko: "가족균형테스트 없이 스폰서십($420) + 부모 1인당 3년($5,895: 1차 $1,180+2차 $4,715) 또는 5년($11,785: 1차 $1,180+2차 $10,605) 체류 가능한 임시 부모비자예요.", desc_en: "3-yr ($5,895/parent) or 5-yr ($11,785/parent) + $420 sponsorship temporary parent visa without BoF Test (bars lodging PR while held).", url: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/sponsored-parent-temporary-870" },
   { cat: "bridging", cat_ko: "브리징·VEVO·방문", cat_en: "BVA/BVB & VEVO", title_ko: "14. VEVO (비자 상태 · 취업 조건 · BVB 여행 만료일 실시간 조회)", title_en: "14. VEVO — Visa Entitlement Verification Online", desc_ko: "현재 소지한 BVA/BVB의 조건(8101/8503 유무)과 BVB 재입국 만료일을 실시간 확인하는 공식 포털이에요.", desc_en: "Verify current visa conditions, work entitlements, and BVB travel facility expiry dates.", url: "https://immi.homeaffairs.gov.au/visas/already-have-a-visa/check-visa-details-and-conditions/check-conditions-online" },
   { cat: "bridging", cat_ko: "브리징·VEVO·방문", cat_en: "BVA/BVB & VEVO", title_ko: "15. Bridging Visa B (Subclass 020 — 해외 출국 전 필수 신청)", title_en: "15. Bridging Visa B (BVB — Subclass 020)", desc_ko: "온쇼어 804/864/884 대기자가 한국 방문 등 해외 출국 전 반드시 승인받아야 하는 여행 허가 비자예요.", desc_en: "Essential travel bridging visa required before any overseas trip while waiting on a BVA.", url: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/bridging-visa-b-020" },
   { cat: "bridging", cat_ko: "브리징·VEVO·방문", cat_en: "BVA/BVB & VEVO", title_ko: "16. Visitor Visa (Subclass 600 — 부모비자 대기자 3~5년 장기 방문비자)", title_en: "16. Visitor Visa (Subclass 600 — Long-Validity Parent Stream)", desc_ko: "오프쇼어 103/143 대기 부모님께 최대 3~5년 유효기간(18개월 중 12개월 체류, 8558 조건)을 부여하는 방문비자예요.", desc_en: "Visitor visa offering up to 3–5 year validity (12m stay per 18m) for queued offshore parents.", url: "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/visitor-600" },
   { cat: "welfare", cat_ko: "AoS·메디케어·요양·연금", cat_en: "AoS, Medicare & Care", title_ko: "17. Services Australia — 재정보증(Assurance of Support, AoS) 공식 포털", title_en: "17. Services Australia — Assurance of Support (AoS)", desc_ko: "2단계 Queue Release 시점에 진행하는 AoS 신청 절차, 10년/4년 기간 및 CBA 은행보증 안내예요.", desc_en: "Official Services Australia portal for Assurance of Support applications and CBA bank guarantees.", url: "https://www.servicesaustralia.gov.au/assurance-support" },
-  { cat: "welfare", cat_ko: "AoS·메디케어·요양·연금", cat_en: "AoS, Medicare & Care", title_ko: "18. Services Australia — AoS 보증인(Assurer) 자격 및 소득 기준", title_en: "18. Services Australia — Who Can Give an Assurance of Support", desc_ko: "개인 보증인(최대 3인 합산, 성인 2명 피보증 한도) 및 법인 보증인($20,000 본드) 자격 요건 안내예요.", desc_en: "Eligibility rules for individual, joint (up to 3), and corporate assurers.", url: "https://www.servicesaustralia.gov.au/who-can-give-assurance-support" },
+  { cat: "welfare", cat_ko: "AoS·메디케어·요양·연금", cat_en: "AoS, Medicare & Care", title_ko: "18. Services Australia — AoS 보증인(Assurer) 자격 및 법인 보증 요건", title_en: "18. Services Australia — Who Can Give an Assurance of Support", desc_ko: "개인 보증인(최대 3인 합산, 성인 2명 피보증 한도 ss 8–9) 및 법인 보증인($20,000 본드 및 재무능력 심사 DSS 9.4.3.30) 안내예요.", desc_en: "Eligibility rules for individual, joint (up to 3), and corporate assurers (DSS 9.4.3.30 financial capacity review).", url: "https://www.servicesaustralia.gov.au/who-can-give-assurance-support" },
   { cat: "welfare", cat_ko: "AoS·메디케어·요양·연금", cat_en: "AoS, Medicare & Care", title_ko: "19. Services Australia — 메디케어 가입 자격 (173/884 및 영주권자)", title_en: "19. Services Australia — Enrolling in Medicare", desc_ko: "173/884 임시비자 승인자 및 영주권 승인자의 메디케어 온라인 등록 절차 안내예요.", desc_en: "Official Medicare enrolment rules for permanent residents and Subclass 173/884 holders.", url: "https://www.servicesaustralia.gov.au/enrolling-medicare" },
   { cat: "welfare", cat_ko: "AoS·메디케어·요양·연금", cat_en: "AoS, Medicare & Care", title_ko: "20. Services Australia — 상호의료협정(RHCA 11개국) 공식 안내", title_en: "20. Services Australia — Reciprocal Health Care Agreements (RHCA)", desc_ko: "영국·뉴질랜드·이탈리아 등 11개 RHCA 체결국 명단(한국 미포함) 확인 페이지예요.", desc_en: "List of the 11 RHCA countries eligible for reciprocal Medicare (excludes South Korea).", url: "https://www.servicesaustralia.gov.au/reciprocal-health-care-agreements" },
-  { cat: "welfare", cat_ko: "AoS·메디케어·요양·연금", cat_en: "AoS, Medicare & Care", title_ko: "21. DSS Guide 10.27 — 한-호 사회보장협정 (국민연금-노령연금 합산)", title_en: "21. DSS Social Security Guide 10.27 — Agreement with Korea", desc_ko: "한국 국민연금 가입 기간을 호주 노령연금(Age Pension) 10년 거주 기간으로 합산하는 법정 지침이에요.", desc_en: "Official DSS guide on totalising Korean National Pension coverage for Australian Age Pension.", url: "https://guides.dss.gov.au/social-security-guide/10/27" },
+  { cat: "welfare", cat_ko: "AoS·메디케어·요양·연금", cat_en: "AoS, Medicare & Care", title_ko: "21. DSS Guide 10.22 — 한-호 사회보장협정 (국민연금-노령연금 합산)", title_en: "21. DSS Social Security Guide 10.22 — Agreement with Korea", desc_ko: "한국 국민연금(NPS) 가입 기간을 호주 노령연금(Age Pension) 10년 적격 거주 기간으로 합산(Totalisation)하는 공식 지침이에요.", desc_en: "Official DSS guide (10.22) on totalising Korean National Pension coverage for Australian Age Pension.", url: "https://guides.dss.gov.au/social-security-guide/10/22" },
   { cat: "welfare", cat_ko: "AoS·메디케어·요양·연금", cat_en: "AoS, Medicare & Care", title_ko: "22. My Aged Care — 호주 정부 노인요양 자격 및 ACAT 평가 포털", title_en: "22. My Aged Care — Government Aged Care Eligibility", desc_ko: "영주권 취득 후 정부 보조 홈케어(Support at Home) 및 노인요양원 입소 평가 신청 포털이에요.", desc_en: "Commonwealth portal for aged care assessments (ACAT) and Home Care / Residential Aged Care.", url: "https://www.myagedcare.gov.au/am-i-eligible" }
 ];
 
@@ -1188,16 +1318,16 @@ function renderPollerScheduleTable() {
   if (!tbody) return;
   const rows = [
     {
-      ko: ["<strong>매주 월·목 (Weekly)</strong>", "이민성 Parent Visas Queue Release 페이지 (#contentBox)", "insane-search HTML 파서 (\\u200b 제거)", "기준일(31 Aug 2026), 7×4 단계별 컷오프, 신규 예상 대기연수(18/42년) 및 큐 이동속도(Velocity) 자동 갱신"],
-      en: ["<strong>Twice Weekly</strong>", "Home Affairs Parent Visas Queue Release Page (#contentBox)", "insane-search HTML Parser (\\u200b strip)", "Auto-updates as_at_date, 7x4 milestone cutoffs, 18/42-yr estimates & rolling 12-month velocity"]
+      ko: ["<strong>매주 월·목 (Weekly)</strong>", "이민성 Parent Visas Queue Release 페이지 (#contentBox)", "insane-search HTML 파서 (\u200b 제거 + 4단계 내용/규칙 검증)", "기준일(31 Aug 2026), 7×4 단계별 컷오프, 신규 예상 대기연수(18/42년) 및 큐 이동속도(Velocity) 자동 갱신"],
+      en: ["<strong>Twice Weekly</strong>", "Home Affairs Parent Visas Queue Release Page (#contentBox)", "insane-search HTML Parser (\u200b strip + 4-stage rule check)", "Auto-updates as_at_date, 7x4 milestone cutoffs, 18/42-yr estimates & rolling 12-month velocity"]
     },
     {
-      ko: ["<strong>매월 1일 & 매년 7월 1일</strong>", "이민성 내부 가격 API (GetPriceList) & 7대 서브클래스 페이지", "POST JSON API + PageSchemaHiddenField 파서", "103/143/173/804/864/884/870 1차 신청비, 2차 기여금($43,600 등), 온라인/종이 접수 규칙, 870 소득 기준($83,454.80)"],
-      en: ["<strong>Monthly & 1 July</strong>", "DHA Pricing API (GetPriceList) & 7 Subclass Pages", "POST JSON API + PageSchemaHiddenField", "1st & 2nd VAC across all 15 fee tiers, online/paper lodgement rules & 870 sponsor income ($83,454.80)"]
+      ko: ["<strong>매월 1일 & 매년 7월 1일</strong>", "이민성 내부 가격 API (GetPriceList) & 7대 서브클래스 페이지", "POST JSON API + PageSchemaHiddenField 파서", "103/143/173/804/864/884/870 1차 신청비, 2차 기여금($43,600 등), LIN 26/005 접수 규칙, 870 소득 기준($83,454.80)"],
+      en: ["<strong>Monthly & 1 July</strong>", "DHA Pricing API (GetPriceList) & 7 Subclass Pages", "POST JSON API + PageSchemaHiddenField", "1st & 2nd VAC across all 15 fee tiers, LIN 26/005 lodgement rules & 870 sponsor income ($83,454.80)"]
     },
     {
-      ko: ["<strong>매년 3.20 · 7.1 · 9.20</strong>", "DSS Social Security Guide 9.4.3 & Services Australia AoS/RHCA", "insane-search 웹/JSON 스냅샷 대조", "JobSeeker 기준액($22,578), FTB-A 자녀 가산액($2,942), AoS 최소 과세소득($45,156/$67,734) 및 본드($10k/$14k/$20k)"],
-      en: ["<strong>20 Mar · 1 Jul · 20 Sep</strong>", "DSS Guide 9.4.3 & Services Australia AoS / RHCA Pages", "insane-search Snapshot & Formula Parser", "JobSeeker base ($22,578), FTB-A child add-on ($2,942), AoS income thresholds ($45,156/$67,734) & bond amounts"]
+      ko: ["<strong>매년 3.20 · 7.1 · 9.20</strong>", "DSS Social Security Guide 9.4.3 / 10.22 & Services Australia AoS", "insane-search 웹/JSON 스냅샷 대조", "JobSeeker 기준액($22,578), FTB-A 자녀 가산액($2,942), AoS 최소 과세소득($45,156/$67,734) 및 본드($10k/$14k/$20k)"],
+      en: ["<strong>20 Mar · 1 Jul · 20 Sep</strong>", "DSS Guide 9.4.3 / 10.22 & Services Australia AoS / RHCA Pages", "insane-search Snapshot & Formula Parser", "JobSeeker base ($22,578), FTB-A child add-on ($2,942), AoS income thresholds ($45,156/$67,734) & bond amounts"]
     },
     {
       ko: ["<strong>매년 5월(예산안) & 매월</strong>", "연방 법제처(legislation.gov.au) OData API & Planning Levels", "OData v4 JSON + PageSchemaHiddenField", "Migration Act s 85 연간 최대 발급 상한 고시(LIN 26/042: 8,500석) 및 이민 프로그램 계획치(7,060석)"],
@@ -1213,22 +1343,22 @@ function renderPollerScheduleTable() {
 const FOOTNOTES = [
   { num: 1, text: "Department of Home Affairs, 'Parent visas queue release dates' (Data as at 31 August 2026, Last updated 6 October 2026) — https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/visa-processing-priorities/parent-visas" },
   { num: 2, text: "Department of Home Affairs Internal Visa Pricing API (`POST /_layouts/15/api/data.aspx/GetPriceList`) & Migration Regulations 1994 Schedule 1 Items 1124, 1124A, 1130, 1130A, 1221, 1221A, 1239 (FY2026–27 VACs)." },
-  { num: 3, text: "Department of Home Affairs, 'Contributory Parent visa (subclass 143)' (ImmiAccount online lodgement mandate effective 22 April 2026, $43,600 2nd VAC, 10-year AoS, PIC 4005)." },
-  { num: 4, text: "Department of Home Affairs, 'Contributory Parent (Temporary) visa (subclass 173)' (Paper lodgement to Perth PVC, $29,130 2nd VAC + $19,420 step-up to 143, Medicare access upon grant)." },
-  { num: 5, text: "Department of Home Affairs, 'Contributory Aged Parent visa (subclass 864)' (Age 67+ Schedule 1 validity requirement effective 17 December 2024, onshore BVA, $43,600 2nd VAC)." },
-  { num: 6, text: "Department of Home Affairs, 'Contributory Aged Parent (Temporary) visa (subclass 884)' (Age 67+, paper lodgement, $29,130 2nd VAC, Medicare access upon grant)." },
-  { num: 7, text: "Department of Home Affairs, 'Parent visa (subclass 103)' (ImmiAccount online lodgement, $2,065 2nd VAC, 4-year AoS, ~42-year wait estimate)." },
-  { num: 8, text: "Department of Home Affairs, 'Aged Parent visa (subclass 804)' (Age 67+ Schedule 1 validity requirement, onshore BVA, ~42-year wait estimate)." },
-  { num: 9, text: "Department of Home Affairs, 'Sponsored Parent (Temporary) visa (subclass 870)' & Migration Regulations 1994 reg 2.60W / LIN 19/146 ($83,454.80 sponsor taxable income; Schedule 1 bar on lodging permanent parent visas while holding 870)." },
-  { num: 10, text: "Migration Regulations 1994 reg 1.05 — Balance of Family Test mathematical table (at least half of total children settled in Australia, or more eligible children in Australia than in any other single country)." },
+  { num: 3, text: "Department of Home Affairs, 'Contributory Parent visa (subclass 143)' & Migration (Arrangements for Parent, Contributory Parent, Aged Parent, and Contributory Aged Parent Visa Applications) Instrument 2026 — LIN 26/005 ss 12–13 (ImmiAccount online lodgement mandate effective 22 April 2026; Form 47PA paper exception only via formal Departmental written invitation; $43,600 2nd VAC; 10-year AoS; PIC 4005; cl 143.225–143.226 medical rule for 173→143)." },
+  { num: 4, text: "Department of Home Affairs, 'Contributory Parent (Temporary) visa (subclass 173)' (Paper lodgement to Perth PVC under LIN 26/005, $29,130 2nd VAC + $19,420 step-up to 143, Medicare access upon grant)." },
+  { num: 5, text: "Department of Home Affairs, 'Contributory Aged Parent visa (subclass 864)' & F2025L00317 (Age 67+ or statutory substituted Subclass 600 Schedule 1 validity requirement effective 17 December 2024; LIN 26/005 ImmiAccount online lodgement; onshore BVA; $43,600 2nd VAC)." },
+  { num: 6, text: "Department of Home Affairs, 'Contributory Aged Parent (Temporary) visa (subclass 884)' (Age 67+ or substituted Subclass 600, paper lodgement under LIN 26/005, $29,130 2nd VAC, Medicare access upon grant)." },
+  { num: 7, text: "Department of Home Affairs, 'Parent visa (subclass 103)' (LIN 26/005 ImmiAccount online lodgement, $2,065 2nd VAC, 4-year AoS, ~42-year new intake estimate vs ~31+ year queued backlog estimate)." },
+  { num: 8, text: "Department of Home Affairs, 'Aged Parent visa (subclass 804)' (Age 67+ or substituted Subclass 600 Schedule 1 validity requirement, LIN 26/005 ImmiAccount online lodgement, onshore BVA, ~42-year new intake estimate)." },
+  { num: 9, text: "Department of Home Affairs, 'Sponsored Parent (Temporary) visa (subclass 870)' & Migration Regulations 1994 reg 2.60U, 2.60W, 2.87CE, 1.15K, cl 870.223, 870.227, 870.228 & LIN 19/146 ($83,454.80 sponsor taxable income; $420 sponsorship + $1,180 1st VAC + $4,715 [3yr] / $10,605 [5yr] 2nd VAC; Migration Act s 64(2) & reg 2.12D 28-day AU->AU / 70-day other deemed receipt 2nd VAC deadline; PIC 4005 offshore / PIC 4007 onshore)." },
+  { num: 10, text: "Migration Regulations 1994 reg 1.05 — Balance of Family Test: reg 1.05(2C)(a) (at least half of total children eligible in Australia) and reg 1.05(2C)(b) (more eligible children in Australia than children resident in any single overseas country)." },
   { num: 11, text: "Department of Home Affairs, 'Migration Program planning levels' (FY2025–26 ceiling 8,500 places; FY2026–27 planning ceiling 7,060 places)." },
   { num: 12, text: "Migration (Granting of Parent and Other Family Visas in the 2025–2026 Financial Year) Instrument 2026 — LIN 26/042 (F2026L00724, s 85 cap: 6,800 Contributory incl. 1,125 Aged + 1,700 Parent = 8,500 total) & Home Affairs FOI Disclosures DA 26/01/00017, DA 25/07/00301, FA 24/11/00862 (158,468 total on-hand backlog; 804 annual grants = 37)." },
-  { num: 13, text: "Services Australia, 'Assurance of Support' & 'Who can give an Assurance of Support' (10-year AoS & $10,000/$14,000 bond for 143/864; 4-year AoS & $5,000/$7,000 bond for 103/804; $20,000/$10,000 Corporate Assurer bond; max 2 adult assurees per assurer)." },
+  { num: 13, text: "Services Australia, 'Assurance of Support' & 'Who can give an Assurance of Support' & Determination 2018 ss 8–9, 15–16 & DSS Guide 9.4.3.20 / 9.4.3.30 (10-year AoS & $10,000/$14,000 bond for 143/864; 4-year AoS & $5,000/$7,000 bond for 103/804; $20,000/$10,000 Corporate Assurer bond + corporate financial capacity review; max 2 adult assurees per assurer)." },
   { num: 14, text: "Services Australia, 'Enrolling in Medicare' & 'Reciprocal Health Care Agreements' & Health Insurance Act 1973 Ministerial Order (Parent visa applicants on Bridging Visas are excluded from Interim Medicare unless from 11 RHCA countries; Subclass 173/884 holders qualify for Medicare)." },
-  { num: 15, text: "Social Security (Assurance of Support) Determination 2018 (F2024C00296) ss 7–18 & DSS Social Security Guide 9.4.3 / 10.27 (FY2026–27 JSP base $22,578 + FTB-A child $2,942 formula: $45,156 for 1 parent, $67,734 for 2 parents; Korea–Australia Social Security Agreement pension totalisation)." },
-  { num: 16, text: "Ministerial Direction No. 103 — Order of Consideration: Certain Family Visas (s 6(2)(c) upfront assessment for aged parent visas; s 7(2)(b) Stage 1 lodgement date deeming for 173→143 and 884→864 step-up applications)." },
+  { num: 15, text: "Social Security (Assurance of Support) Determination 2018 (F2024C00296) ss 7–18 & DSS Social Security Guide 9.4.3 / 10.22 (FY2026–27 JSP base $22,578 + FTB-A child $2,942 formula: $45,156 for 1 parent, $67,734 for 2 parents; DSS Guide 10.22 Agreement with Korea pension totalisation)." },
+  { num: 16, text: "Ministerial Direction No. 103 — Order of Consideration: Certain Family Visas (s 6(2)(c) upfront assessment for aged parent visas; s 7(2)(b) Stage 1 lodgement date deeming for 173→143 and 884→864 step-up applications; compassionate and compelling queue/release prioritisation requests)." },
   { num: 17, text: "Ministerial Direction No. 117 — Priority Processing for Onshore Aged Parent Applications (effective 25 July 2026, s 8(2)(a) priority for onshore 864/884)." },
-  { num: 18, text: "PAM3 (LegendCom Procedural Instructions): VM-3058 (Parent Visa Processing — s 3.9.1 post-17 Dec 2024 surviving spouse under 67 succession bar) & VM-6327 (Subclass 870 — s 3.6.6 permitted sequence of lodging 143/103 prior to 870)." }
+  { num: 18, text: "PAM3 (LEGENDcom Procedural Instructions, verified 2026-10-21): VM-3058 [01/07/2026] (§3.2.6 aged parent & substituted 600; §3.9.1 post-17 Dec 2024 surviving spouse succession bar), VM-6327 [06/02/2026] (§3.3.7.2 60d from PTA grant; §3.3.8 10-yr cap excl. COVID-19 extension; §3.6.6 permitted 143/103-then-870 sequence; §3.6.7 cl 870.227 public health debt; §3.6.8 cl 870.228 PIC 4005/4007; §3.7.2.1 2nd VAC non-payment refusal risk), VM-6276 [03/04/2026] (§§3.4–3.4.3 870 sponsor NOA & preceding FY exception; no mid-application sponsor swap), VM-6647 [snapshot 2026-10-02] (§§3.4.5.1–3.4.5.2 s 64(2) & reg 2.12D 28d/70d deemed receipt)." }
 ];
 
 function renderFootnotes() {
@@ -1242,18 +1372,41 @@ function renderFootnotes() {
   `).join("");
 }
 
+function isSourceVerifiedLive(s) {
+  if (!s) return false;
+  const httpOk = s.http_code === 200;
+  const statusOk = s.status === "live" || s.status === "verified_ok";
+  const fetchBad = ["failed", "error"].includes(String(s.fetchStatus || s.fetch_status || "").toLowerCase());
+  const contentBad = ["failed", "error", "mismatch"].includes(String(s.contentCheckStatus || s.content_check_status || "").toLowerCase());
+  const ruleBad = ["failed", "error", "mismatch"].includes(String(s.ruleMatchStatus || s.rule_match_status || "").toLowerCase());
+  const reviewBad = ["pending_review", "rejected", "failed", "error"].includes(String(s.reviewStatus || s.review_status || "").toLowerCase());
+  return Boolean(httpOk && statusOk && !fetchBad && !contentBad && !ruleBad && !reviewBad);
+}
+
 function openSourceMonitorModal() {
   const modal = document.getElementById("detail-modal");
   const body = document.getElementById("modal-body-content");
   if (!modal || !body) return;
   const sources = (POLLING_DATA && Array.isArray(POLLING_DATA.sources)) ? POLLING_DATA.sources : [];
   const internalRefs = (POLLING_DATA && Array.isArray(POLLING_DATA.internal_policy_references)) ? POLLING_DATA.internal_policy_references : [];
+  const verifiedCount = sources.filter(isSourceVerifiedLive).length;
+  const allVerified = sources.length > 0 && verifiedCount === sources.length;
+  const issueCount = sources.length - verifiedCount;
+
+  const bannerBg = allVerified ? "#E7F3EC" : "#FEF2F2";
+  const bannerColor = allVerified ? "#1F5138" : "#991B1B";
+  const statusSummaryKo = allVerified
+    ? `공개 1차 출처 <strong>${verifiedCount}/${sources.length} Live Verified</strong>`
+    : `공개 1차 출처 <strong>${verifiedCount}/${sources.length} Verified (${issueCount}건 오류/검토 필요)</strong>`;
+  const statusSummaryEn = allVerified
+    ? `Public Primary Sources <strong>${verifiedCount}/${sources.length} Live Verified</strong>`
+    : `Public Primary Sources <strong>${verifiedCount}/${sources.length} Verified (${issueCount} Issue/Pending)</strong>`;
 
   let html = `
-    <div style="margin-bottom:16px;padding:12px 16px;background:#E7F3EC;border-radius:8px;color:#1F5138;font-size:13.5px;font-weight:600;">
+    <div style="margin-bottom:16px;padding:12px 16px;background:${bannerBg};border-radius:8px;color:${bannerColor};font-size:13.5px;font-weight:600;">
       ${currentLang === "ko"
-        ? `최종 폴링 시각: <strong>${POLLING_DATA.last_polled_at || "2026-10-20"}</strong> · 공개 1차 출처 <strong>${sources.length}/15 Live Verified</strong> + 내부 심사지침(PAM3/Direction) <strong>${internalRefs.length}건</strong> 검증 완료`
-        : `Last Polled: <strong>${POLLING_DATA.last_polled_at || "2026-10-20"}</strong> · Public Primary Sources <strong>${sources.length}/15 Live Verified</strong> + <strong>${internalRefs.length}</strong> Internal Policy References`}
+        ? `최종 폴링 시각: <strong>${POLLING_DATA.last_polled_at || "2026-10-20"}</strong> · ${statusSummaryKo} + 내부 심사지침(PAM3/Direction) <strong>${internalRefs.length}건</strong> 검증 완료`
+        : `Last Polled: <strong>${POLLING_DATA.last_polled_at || "2026-10-20"}</strong> · ${statusSummaryEn} + <strong>${internalRefs.length}</strong> Internal Policy References`}
     </div>
     <div class="table-wrap">
       <table class="data-table">
@@ -1266,7 +1419,14 @@ function openSourceMonitorModal() {
           </tr>
         </thead>
         <tbody>
-          ${sources.map(s => `
+          ${sources.map(s => {
+            const ok = isSourceVerifiedLive(s);
+            const codeVal = (s.http_code !== undefined && s.http_code !== null) ? s.http_code : 0;
+            const stateLabel = ok
+              ? `HTTP ${codeVal} · LIVE`
+              : `HTTP ${codeVal} · ${String(s.fetchStatus || s.fetch_status || s.reviewStatus || s.review_status || s.status || "FAILED").toUpperCase()}`;
+            const badgeCls = ok ? "badge-ok" : "badge-no";
+            return `
             <tr>
               <td><code>${s.id}</code></td>
               <td>
@@ -1279,11 +1439,11 @@ function openSourceMonitorModal() {
                 ${currentLang === "ko" ? s.check_scope_ko : s.check_scope_en}
               </td>
               <td>
-                <span class="badge-ok">HTTP ${s.http_code || 200} · LIVE</span><br/>
+                <span class="${badgeCls}">${stateLabel}</span><br/>
                 <code style="font-size:11px;">${(s.sha256 || "").slice(0, 14)}…</code>
               </td>
             </tr>
-          `).join("")}
+          `}).join("")}
         </tbody>
       </table>
     </div>
@@ -1321,12 +1481,13 @@ function runSubclass870Simulator() {
   const remainingCapYears = Math.max(0, 10 - prevYears);
   const effectiveGrantYears = Math.min(reqYears, remainingCapYears);
 
-  // FY2026-27 Subclass 870 Fees: Sponsorship $420 + per parent (1st VAC $1,245 + 2nd VAC $5,125 [3yr] or $11,195 [5yr])
-  const vac1PerParent = 1245;
-  const vac2PerParent = is3Yr ? 5125 : 11195;
-  const totalGovFee = 420 + numParents * (vac1PerParent + vac2PerParent);
-
-  const sponsorAllOk = statusOk && householdOk && incomeOk && remainingCapYears > 0;
+  // Unified FY2026-27 Subclass 870 fee schedule from QUEUE_DATA.fee_schedule_fy26_27
+  const feeSched = (QUEUE_DATA && QUEUE_DATA.fee_schedule_fy26_27) || {};
+  const s870Sched = (is3Yr ? feeSched["870_3yr"] : feeSched["870_5yr"]) || {};
+  const sponsorFee = s870Sched.sponsorship_fee !== undefined ? s870Sched.sponsorship_fee : 420;
+  const vac1PerParent = s870Sched.vac1 !== undefined ? s870Sched.vac1 : 1180;
+  const vac2PerParent = s870Sched.vac2 !== undefined ? s870Sched.vac2 : (is3Yr ? 4715 : 10605);
+  const totalGovFee = sponsorFee + numParents * (vac1PerParent + vac2PerParent);
 
   let verdictHtml = "";
   if (!statusOk) {
@@ -1339,16 +1500,16 @@ function runSubclass870Simulator() {
       : `<span class="badge-no">❌ Household Cap Exceeded (Only 1 active 870 sponsorship & max 2 parents per household — reg 2.60U(1)(h)–(i))</span>`;
   } else if (failed50PctTrap) {
     verdictHtml = currentLang === "ko"
-      ? `<span class="badge-no">⚠️ '주 스폰서 50%($41,727.40) 최소 소득 룰' 미달! (합산 소득은 충족하나 주 스폰서 본인 소득이 $41,727.40 미만 → 배우자[사위/며느리]를 주 스폰서로 변경하면 통과!)</span>`
-      : `<span class="badge-no">⚠️ Failed 50% Primary Sponsor Rule ($41,727.40)! Swap primary sponsor to your spouse/partner (son/daughter-in-law) to pass!</span>`;
+      ? `<span class="badge-no">⚠️ '주 스폰서 50%($41,727.40) 최소 소득 룰' 미달! (합산 소득은 충족하나 주 스폰서 본인 소득이 $41,727.40 미만 → 배우자[사위/며느리]를 주 스폰서로 신규 신청하면 통과! 단, 진행 중 스폰서 교체는 불가 PAM3 VM-6276 §3.4.3)</span>`
+      : `<span class="badge-no">⚠️ Failed 50% Primary Sponsor Rule ($41,727.40)! Lodge with your spouse/partner (son/daughter-in-law) as primary sponsor (mid-application sponsor swap not allowed — PAM3 VM-6276 §3.4.3)!</span>`;
   } else if (!incomeOk) {
     verdictHtml = currentLang === "ko"
-      ? `<span class="badge-no">❌ 과세소득 부족 ($83,454.80 대비 ${fmtAud(THRESHOLD_870 - combinedInc)} 미달 — 직전 연도 ATO NOA 기준)</span>`
-      : `<span class="badge-no">❌ Taxable Income Shortfall (${fmtAud(THRESHOLD_870 - combinedInc)} below $83,454.80 on latest ATO NOA)</span>`;
+      ? `<span class="badge-no">❌ 과세소득 부족 ($83,454.80 대비 ${fmtAud(THRESHOLD_870 - combinedInc)} 미달 — ATO NOA 기준, 회계연도 초 최신 NOA 미발급 시 차직전 연도 NOA 허용 PAM3 VM-6276 §3.4)</span>`
+      : `<span class="badge-no">❌ Taxable Income Shortfall (${fmtAud(THRESHOLD_870 - combinedInc)} below $83,454.80 on ATO NOA; preceding FY NOA accepted early in new FY before latest NOA issues — PAM3 VM-6276 §3.4)</span>`;
   } else if (remainingCapYears <= 0) {
     verdictHtml = currentLang === "ko"
-      ? `<span class="badge-no">❌ 평생 누적 10년 상한 도달 (Item 1239(3)(f) — 추가 870 비자 신청 불가)</span>`
-      : `<span class="badge-no">❌ 10-Year Cumulative Cap Reached (Item 1239(3)(f) — No further 870 allowed)</span>`;
+      ? `<span class="badge-no">❌ 평생 누적 10년 상한 도달 (Item 1239(3)(f) — 추가 870 비자 신청 불가 · 단, 코로나19 18개월 자동연장 기간은 10년 상한에서 제외 PAM3 VM-6327 §3.3.8)</span>`
+      : `<span class="badge-no">❌ 10-Year Cumulative Cap Reached (Item 1239(3)(f) — No further 870 allowed; note automatic 18-month COVID-19 extension periods are excluded from the 10-yr cap under PAM3 VM-6327 §3.3.8)</span>`;
   } else {
     verdictHtml = currentLang === "ko"
       ? `<span class="badge-ok">✅ Parent Sponsor &amp; Subclass 870 적격 통과 (예상 부여 기간: ${effectiveGrantYears}년)</span>`
@@ -1359,14 +1520,14 @@ function runSubclass870Simulator() {
     <div class="pv-inference-card" style="border-left-color:#DC2626;background:#FEF2F2;margin-top:10px;">
       <h4 style="color:#991B1B;">🚨 [치명적 잠금 경고] 870을 먼저 받으면 체류 중 영주 부모비자(143/864/103/804) 접수가 법정 무효 처리됩니다!</h4>
       <p style="color:#7F1D1D;">
-        Migration Regulations 1994 Schedule 1 (Items 1124, 1124A, 1130, 1130A)에 의해 <strong>870 비자를 신청 중이거나, 현재 소지 중이거나, 마지막 비자가 870이고 아직 호주에서 출국하지 않은 경우 모든 영주·임시 부모비자 접수가 원천 차단</strong>돼요. 영주권도 함께 계획하신다면 <strong>반드시 143(또는 103)을 먼저 접수해 Queue Date 대기열에 올려놓은 다음 870을 신청(PAM3 VM-6327 s 3.6.6 합법 황금 순서)</strong>하셔야 해요!
+        Migration Regulations 1994 Schedule 1 (Items 1124, 1124A, 1130, 1130A)에 의해 <strong>870 비자를 신청 중이거나, 현재 소지 중이거나, 마지막 비자가 870이고 아직 호주에서 출국하지 않은 경우 모든 영주·임시 부모비자 접수가 원천 차단</strong>돼요. 영주권도 함께 계획하신다면 <strong>반드시 143(또는 103)을 먼저 접수해 Queue Date 대기열에 올려놓은 다음 870을 신청(PAM3 VM-6327 §3.6.6 합법 황금 순서)</strong>하셔야 해요!
       </p>
     </div>
   ` : `
     <div class="pv-inference-card" style="border-left-color:#DC2626;background:#FEF2F2;margin-top:10px;">
       <h4 style="color:#991B1B;">🚨 [CRITICAL LOCKOUT TRAP] Lodging 870 First Bars All Permanent Parent Visas!</h4>
       <p style="color:#7F1D1D;">
-        Under Schedule 1 (Items 1124, 1124A, 1130, 1130A), <strong>having a pending 870 application, holding an 870 visa, or having last held an 870 visa without departing Australia strictly bars lodging 103, 143, 173, 804, 864, or 884</strong>. Always lodge <strong>Subclass 143 or 103 FIRST</strong>, and apply for Subclass 870 second (permitted under PAM3 VM-6327 s 3.6.6)!
+        Under Schedule 1 (Items 1124, 1124A, 1130, 1130A), <strong>having a pending 870 application, holding an 870 visa, or having last held an 870 visa without departing Australia strictly bars lodging 103, 143, 173, 804, 864, or 884</strong>. Always lodge <strong>Subclass 143 or 103 FIRST</strong>, and apply for Subclass 870 second (permitted under PAM3 VM-6327 §3.6.6)!
       </p>
     </div>
   `) : "";
@@ -1381,26 +1542,26 @@ function runSubclass870Simulator() {
         </div>
         <div class="pv-sim-kpi">
           <div class="kpi-label">주 스폰서 본인 50% 룰 (reg 2.60W(2))</div>
-          <div class="kpi-val" style="font-size:17px;color:${sponsorInc >= MIN_SPONSOR_50PCT ? "#065F46" : "#991B1B"};">${sponsorInc >= MIN_SPONSOR_50PCT ? "✅ 충족" : "❌ 미달 (사위/며느리로 교체 권장)"}</div>
+          <div class="kpi-val" style="font-size:17px;color:${sponsorInc >= MIN_SPONSOR_50PCT ? "#065F46" : "#991B1B"};">${sponsorInc >= MIN_SPONSOR_50PCT ? "✅ 충족" : "❌ 미달 (사위/며느리로 신규 신청 권장)"}</div>
           <div class="kpi-sub">주 스폰서 본인 ${fmtAud(sponsorInc)} (${((sponsorInc / THRESHOLD_870) * 100).toFixed(1)}%)</div>
         </div>
         <div class="pv-sim-kpi">
           <div class="kpi-label">스폰서십 + 비자 총 정부 수수료 (FY26–27)</div>
           <div class="kpi-val">${fmtAud(totalGovFee)}</div>
-          <div class="kpi-sub">스폰서 $420 + 1차 ${fmtAud(numParents * vac1PerParent)} + 2차 ${fmtAud(numParents * vac2PerParent)}</div>
+          <div class="kpi-sub">스폰서 ${fmtAud(sponsorFee)} + 1차 ${fmtAud(numParents * vac1PerParent)} + 2차 ${fmtAud(numParents * vac2PerParent)}</div>
         </div>
         <div class="pv-sim-kpi">
-          <div class="kpi-label">2차 VAC 절대 납부 기한 (reg 2.12D)</div>
-          <div class="kpi-val" style="font-size:17px;">국내 28일 / 해외 70일</div>
-          <div class="kpi-sub">⚠️ 연장 절대 불가 · 기한 도과 시 의무 거절(cl 870.230)</div>
+          <div class="kpi-label">2차 VAC 납부 기한 (s 64(2) · reg 2.12D)</div>
+          <div class="kpi-val" style="font-size:16px;">호주→호주 주소 28일 / 기타 70일</div>
+          <div class="kpi-sub">⚠️ 간주수령일 기산 · 미납 시 거절 가능(PAM3 VM-6327 §3.7.2.1)</div>
         </div>
       </div>
       <div class="pv-inference-card" style="margin-top:12px;">
         <h4>Subclass 870 종합 판정: ${verdictHtml}</h4>
         <p>
           ${rel === "inlaw"
-            ? "선택하신 바와 같이 <strong>자녀의 배우자/파트너(사위 또는 며느리)도 단독으로 적격 Parent Sponsor가 될 수 있어요(reg 2.60U(1)(c))</strong>. 특히 친자녀의 소득이 $41,727.40 미만이거나 영주권 취득 후 4년이 안 된 경우, 시민권자/4년 이상 거주 영주권자인 사위·며느리가 주 스폰서로 신청하면 적법하게 통과돼요."
-            : "1단계로 스폰서십(Form 1501, $420)을 먼저 승인받은 후 <strong>6개월 이내(국내 신청 허가 시 60일 이내)</strong>에 2단계 870 비자(Form 1500)를 접수해야 해요. 과세소득 증빙은 <strong>오직 직전 완료 회계연도의 국세청 소득세 확정통지서(ATO Notice of Assessment) 원본만 인정</strong>되며 급여명세서나 회계사 서한으로 대체할 수 없어요(PAM3 VM-6276 s 3.5.3)."}
+            ? "선택하신 바와 같이 <strong>자녀의 배우자/파트너(사위 또는 며느리)도 단독으로 적격 Parent Sponsor가 될 수 있어요(reg 2.60U(1)(c))</strong>. 특히 친자녀의 소득이 $41,727.40 미만이거나 영주권 취득 후 4년이 안 된 경우, 시민권자/4년 이상 거주 영주권자인 사위·며느리가 주 스폰서로 신청하면 적법하게 통과돼요(단, 심사 진행 중 스폰서 교체는 불가하며 신규 스폰서십 신청 필요 — PAM3 VM-6276 §3.4.3)."
+            : "1단계로 스폰서십(Form 1501, $420)을 먼저 승인받은 후 <strong>6개월 이내(국내 신청 허가 PTA 승인일로부터 60일 이내 — PAM3 VM-6327 §3.3.7.2)</strong>에 2단계 870 비자(Form 1500)를 접수해야 해요. 과세소득 증빙은 <strong>국세청 소득세 확정통지서(ATO Notice of Assessment) 원본이 필수</strong>이며(회계연도 초 최신 NOA 발급 전에는 차직전 연도 NOA 허용 — PAM3 VM-6276 §§3.4–3.4.3), 급여명세서나 회계사 서한만으로 대체할 수 없어요."}
         </p>
       </div>
       ${prWarningHtml}
@@ -1415,26 +1576,26 @@ function runSubclass870Simulator() {
         </div>
         <div class="pv-sim-kpi">
           <div class="kpi-label">Primary Sponsor 50% Rule (reg 2.60W(2))</div>
-          <div class="kpi-val" style="font-size:17px;color:${sponsorInc >= MIN_SPONSOR_50PCT ? "#065F46" : "#991B1B"};">${sponsorInc >= MIN_SPONSOR_50PCT ? "✅ Passed" : "❌ Failed (Swap to Partner/In-law)"}</div>
+          <div class="kpi-val" style="font-size:17px;color:${sponsorInc >= MIN_SPONSOR_50PCT ? "#065F46" : "#991B1B"};">${sponsorInc >= MIN_SPONSOR_50PCT ? "✅ Passed" : "❌ Failed (Lodge with Partner/In-law)"}</div>
           <div class="kpi-sub">Primary Sponsor: ${fmtAud(sponsorInc)} (${((sponsorInc / THRESHOLD_870) * 100).toFixed(1)}%)</div>
         </div>
         <div class="pv-sim-kpi">
           <div class="kpi-label">Total Gov Fees (Sponsorship + 1st/2nd VAC)</div>
           <div class="kpi-val">${fmtAud(totalGovFee)}</div>
-          <div class="kpi-sub">Sponsor $420 + 1st ${fmtAud(numParents * vac1PerParent)} + 2nd ${fmtAud(numParents * vac2PerParent)}</div>
+          <div class="kpi-sub">Sponsor ${fmtAud(sponsorFee)} + 1st ${fmtAud(numParents * vac1PerParent)} + 2nd ${fmtAud(numParents * vac2PerParent)}</div>
         </div>
         <div class="pv-sim-kpi">
-          <div class="kpi-label">Strict 2nd VAC Deadline (reg 2.12D)</div>
-          <div class="kpi-val" style="font-size:17px;">28d Onshore / 70d Offshore</div>
-          <div class="kpi-sub">⚠️ Zero extension allowed · Mandatory refusal (cl 870.230)</div>
+          <div class="kpi-label">2nd VAC Deadline (s 64(2) · reg 2.12D)</div>
+          <div class="kpi-val" style="font-size:16px;">28d AU→AU / 70d Other</div>
+          <div class="kpi-sub">⚠️ From deemed receipt · May be refused if unpaid (VM-6327 §3.7.2.1)</div>
         </div>
       </div>
       <div class="pv-inference-card" style="margin-top:12px;">
         <h4>Subclass 870 Verdict: ${verdictHtml}</h4>
         <p>
           ${rel === "inlaw"
-            ? "Under <strong>reg 2.60U(1)(c)</strong>, the <strong>spouse or de facto partner of the parent's child (son-in-law or daughter-in-law) can be the approved Parent Sponsor</strong>. This is a vital legal solution when the biological child earns under $41,727.40 or has held PR for less than 4 years."
-            : "Parent Sponsorship (Form 1501, $420) must be approved <strong>before</strong> lodging the 870 visa (Form 1500) within 6 months (or 60 days if granted Permission to Apply in Australia). <strong>Only an ATO Notice of Assessment (NOA)</strong> for the most recently completed financial year is accepted as income proof (PAM3 VM-6276 s 3.5.3)."}
+            ? "Under <strong>reg 2.60U(1)(c)</strong>, the <strong>spouse or de facto partner of the parent's child (son-in-law or daughter-in-law) can be the approved Parent Sponsor</strong>. This solves the 50% rule ($41,727.40) or 4-year PR residence requirement (note: mid-application sponsor swapping is not permitted—a new sponsorship application is required under PAM3 VM-6276 §3.4.3)."
+            : "Parent Sponsorship (Form 1501, $420) must be approved <strong>before</strong> lodging the 870 visa (Form 1500) within 6 months (or within 60 days from Permission to Apply [PTA] grant date under PAM3 VM-6327 §3.3.7.2). An <strong>ATO Notice of Assessment (NOA)</strong> is required (early in a new FY before the latest NOA issues, the preceding FY NOA may be accepted under PAM3 VM-6276 §§3.4–3.4.3)."}
         </p>
       </div>
       ${prWarningHtml}
@@ -1447,12 +1608,12 @@ function renderSubclass870DeepCards() {
   if (!box) return;
   const cards = currentLang === "ko" ? [
     {
-      title: "1. 순차적 2단계 필수 절차: 스폰서십 승인 후 6개월(또는 60일) 내 비자 접수",
-      body: "Schedule 1 Item 1239(3)(b) 및 cl 870.211에 따라 <strong>반드시 Parent Sponsor 승인(Form 1501, $420)이 먼저 난 뒤에야</strong> 870 비자(Form 1500)를 접수할 수 있어요(동시 접수 시 비자 무효! 단, 동일 부모의 2차 870 갱신 시에만 예외). 스폰서십 승인 후 <strong>6개월 이내(국내 신청 허가 시 60일 이내)</strong>에 비자를 접수해야 해요 [9,18]."
+      title: "1. 순차적 2단계 필수 절차: 스폰서십 승인 후 6개월(PTA 승인일 기준 60일) 내 비자 접수",
+      body: "Schedule 1 Item 1239(3)(b) 및 cl 870.211에 따라 <strong>반드시 Parent Sponsor 승인(Form 1501, $420)이 먼저 난 뒤에야</strong> 870 비자(Form 1500)를 접수할 수 있어요(동시 접수 시 비자 무효! 단, 동일 부모의 2차 870 갱신 시에만 예외). 스폰서십 승인 후 <strong>6개월 이내(국내 신청 허가 PTA가 승인된 경우 PTA 승인일로부터 60일 이내 — PAM3 VM-6327 §3.3.7.2)</strong>에 비자를 접수해야 해요 [9,18]."
     },
     {
-      title: "2. 스폰서 자격과 '사위·며느리(In-law) 단독 스폰서' & 50%($41,727.40) 소득 규칙",
-      body: "과세소득 <strong>$83,454.80(LIN 19/146)</strong>은 <strong>오직 직전 완료 회계연도 ATO Notice of Assessment(NOA)</strong>로만 증명해요. 배우자 또는 다른 자녀 1명과 합산할 때는 <strong>주 스폰서 본인이 최소 50%($41,727.40) 이상</strong>을 벌었어야 해요(PAM3 VM-6276 s 3.5.2). 만약 자녀 소득이 $30,000이고 사위/며느리 소득이 $60,000이라면, <strong>사위/며느리를 주 스폰서로 세우면 합법 통과</strong>돼요!"
+      title: "2. 스폰서 소득($83,454.80) ATO NOA 입증 · 회계연도 초 특례 & 50%($41,727.40) 규칙 (PAM3 VM-6276 §§3.4–3.4.3)",
+      body: "과세소득 <strong>$83,454.80(LIN 19/146)</strong>은 <strong>국세청 ATO Notice of Assessment(NOA)</strong>로 증명하며 급여명세서/회계사 서한으로 대체할 수 없어요(단, <strong>회계연도 초 최신 NOA 발급 전에는 차직전 완료 회계연도 NOA가 인정됨 — PAM3 VM-6276 §3.4</strong>). 배우자 또는 다른 자녀 1명과 합산할 때는 <strong>주 스폰서 본인이 최소 50%($41,727.40) 이상</strong>을 벌었어야 하며, 심사 도중 스폰서를 교체할 수 없으므로 처음부터 적격 배우자(사위/며느리)를 주 스폰서로 신청해야 해요(§3.4.3)."
     },
     {
       title: "3. 영주권자 스폰서의 '최근 4년 통상 거주 & 불법체류/BVE 무이력' 요건",
@@ -1463,21 +1624,21 @@ function renderSubclass870DeepCards() {
       body: "reg 2.60U(1)(h)–(i)에 따라 <strong>한 가구(부부 합산)당 동시에 단 1건의 활성 Parent Sponsorship만 허용되며, 최대 부모 2명까지만 초청</strong>할 수 있어요. 즉, 남편과 아내가 각각 시부모님과 친정 부모님을 동시에 870 비자로 초청하는 것은 법적으로 불가능해요(한쪽은 600 장기 방문비자 또는 143/864 활용 필요)."
     },
     {
-      title: "5. 2차 신청비 28일/70일 절대 기한(reg 2.12D) & 재신청 시 90일 해외 체류 의무",
-      body: "① 2차 비자신청비($5,125 / $11,195)는 요청일로부터 <strong>국내 체류 시 28일, 해외 체류 시 70일 이내</strong>에 납부해야 하며 <strong>법정 연장이 불가능</strong>해요(미납 시 의무 거절 cl 870.230). ② 1차 870 만료 후 2차 870을 신청하려면 <strong>최소 90일 연속 호주 밖에서 체류</strong>해야 해요(cl 870.223, 국내 신청 허가 예외 승인 시 제외). 평생 최대 누적 체류 한도는 <strong>10년</strong>이에요."
+      title: "5. 2차 신청비($4,715 / $10,605) 간주수령일 28일/70일 기한(s 64(2) · reg 2.12D) & 10년 상한(COVID 연장 제외)",
+      body: "① 2차 비자신청비(<strong>3년 $4,715 / 5년 $10,605</strong>, 1차 $1,180 별도)는 서면 청구 통지의 <strong>간주수령일(deemed receipt)로부터 호주 내 발송→호주 내 수신 주소는 28일, 기타 발송·수신 주소 조합은 70일 이내</strong>에 납부해야 하며(Migration Act s 64(2), reg 2.12D, PAM3 VM-6647 §§3.4.5.1–3.4.5.2), 미납 시 비자가 거절될 수 있어요(PAM3 VM-6327 §3.7.2.1). ② 연속 870 재신청 시 <strong>최소 90일 연속 해외 체류</strong>(cl 870.223, PTA 승인 시 예외)가 필요하며, 평생 누적 <strong>10년 상한 산정 시 코로나19 18개월 자동연장 기간은 제외</strong>돼요(PAM3 VM-6327 §3.3.8)."
     },
     {
-      title: "6. 공공 의료부채 스폰서 연대책임(reg 2.60Z) & 비자 조건(8103 취업금지 · 8501 사보험)",
-      body: "870 비자에는 <strong>Condition 8103(취업 엄격 금지)</strong>과 <strong>Condition 8501(사보험 유지 의무)</strong>이 부과돼요. 만약 부모님께서 체류 중 공립병원 등에서 미납 공공 의료·노인요양 부채(Public Health Debt)를 남기시면 <strong>스폰서 자녀가 법적으로 전액 변제 의무(reg 2.60Z)</strong>를 지며, 완납 전까지 차기 비자 발급이 거절돼요(cl 870.225)."
+      title: "6. 공공 의료부채 비자 요건(cl 870.227 · reg 1.15K) & 스폰서 독립 법정책임(reg 2.87CE) · PIC 4005/4007",
+      body: "① 비자 승인 요건인 <strong>cl 870.227(PAM3 VM-6327 §3.6.7)</strong>에 따라 미납 공공 의료·노인요양 부채(<strong>reg 1.15K</strong>)가 없거나 적절한 분할 상환 약정을 체결해야 해요(cl 870.225는 비자 조건 준수 규정). ② 특히 <strong>스폰서의 법정 변제 의무(reg 2.87CE)는 비자 신청자의 상환 약정 체결로 소멸하지 않는 독립 채무</strong>예요. ③ 건강요건(cl 870.228)은 신청 시 해외 체류 중이면 <strong>PIC 4005</strong>, 호주 내 체류 중이면 <strong>PIC 4007</strong>이 적용돼요."
     }
   ] : [
     {
-      title: "1. Mandatory Two-Step Sequence: Sponsorship Approval MUST Precede Visa Application",
-      body: "Under Schedule 1 Item 1239(3)(b) and cl 870.211, <strong>Parent Sponsorship (Form 1501, $420) must be approved before lodging the Subclass 870 visa (Form 1500)</strong> (except when renewing an existing 870 for the same parent). The visa must be lodged within <strong>6 months</strong> of sponsorship approval (or <strong>60 days</strong> if granted Permission to Apply in Australia) [9,18]."
+      title: "1. Mandatory Two-Step Sequence: 6 Months from Sponsorship Approval (or 60 Days from PTA Grant)",
+      body: "Under Schedule 1 Item 1239(3)(b) and cl 870.211, <strong>Parent Sponsorship (Form 1501, $420) must be approved before lodging the Subclass 870 visa (Form 1500)</strong> (except when renewing an existing 870 for the same parent). The visa must be lodged within <strong>6 months</strong> of sponsorship approval (or within <strong>60 days from Permission to Apply [PTA] grant date</strong> under PAM3 VM-6327 §3.3.7.2) [9,18]."
     },
     {
-      title: "2. The $83,454.80 ATO NOA Rule, 50% Primary Sponsor Rule & In-Law Sponsor Solution",
-      body: "Taxable income of <strong>$83,454.80 (LIN 19/146)</strong> can <strong>only be proven via the latest ATO Notice of Assessment (NOA)</strong>. When combining income with a partner or one other child, the <strong>primary sponsor must personally earn at least 50% ($41,727.40)</strong> (PAM3 VM-6276 s 3.5.2). Because a <strong>child's spouse/partner (son/daughter-in-law) can be the primary sponsor (reg 2.60U(1)(c))</strong>, swapping roles solves the 50% trap!"
+      title: "2. $83,454.80 ATO NOA Rule, Preceding FY Exception & No Mid-Application Sponsor Swap (PAM3 VM-6276 §§3.4–3.4.3)",
+      body: "Taxable income of <strong>$83,454.80 (LIN 19/146)</strong> must be proven via an <strong>ATO Notice of Assessment (NOA)</strong>—payslips or accountant letters cannot substitute, though <strong>early in a new FY before the latest NOA issues, the preceding FY NOA may be accepted (§3.4)</strong>. The primary sponsor must personally earn at least <strong>50% ($41,727.40)</strong>, and mid-application sponsor swapping is not permitted—a new sponsorship application is required (§3.4.3)."
     },
     {
       title: "3. 4-Year Usual Residence & Compliance Rule for PR / ENZC Sponsors",
@@ -1488,12 +1649,12 @@ function renderSubclass870DeepCards() {
       body: "Under reg 2.60U(1)(h)–(i), <strong>only one active Parent Sponsorship is permitted per household at a time, covering at most 2 parents</strong>. A couple cannot simultaneously sponsor both sets of parents (paternal and maternal) on Subclass 870 visas."
     },
     {
-      title: "5. Non-Extendable 28/70-Day 2nd VAC Deadline (reg 2.12D) & 90-Day Offshore Gap",
-      body: "① The 2nd VAC ($5,125 or $11,195) must be paid within <strong>28 calendar days (if onshore) or 70 calendar days (if offshore)</strong>—no extension is legally possible (cl 870.230). ② Between consecutive 870 visas, the parent must spend <strong>at least 90 consecutive days outside Australia</strong> (cl 870.223) unless granted Permission to Apply in Australia. Lifetime cap is <strong>10 years</strong>."
+      title: "5. 28/70-Day Deemed Receipt 2nd VAC Deadline (s 64(2) · reg 2.12D) & 10-Yr Cap (Excl. COVID-19 Extension)",
+      body: "① The 2nd VAC (<strong>$4,715 [3yr] or $10,605 [5yr]</strong>, plus $1,180 1st VAC) is due within <strong>28 calendar days (if sent from a place in Australia to an address in Australia) or 70 calendar days (any other sender/recipient address combination) from deemed receipt</strong> of the written notice (Migration Act s 64(2), reg 2.12D, PAM3 VM-6647 §§3.4.5.1–3.4.5.2), and if unpaid within time, the visa may be refused (PAM3 VM-6327 §3.7.2.1). ② A <strong>90-day offshore gap</strong> applies between 870 visas (cl 870.223) unless granted PTA, and the <strong>10-year lifetime cap excludes automatic 18-month COVID-19 extensions</strong> (PAM3 VM-6327 §3.3.8)."
     },
     {
-      title: "6. Sponsor Statutory Liability for Public Health Debts (reg 2.60Z) & Condition 8103/8501",
-      body: "Subclass 870 carries mandatory <strong>Condition 8103 (No Work)</strong> and <strong>Condition 8501 (Maintain Health Insurance)</strong>. Under s 140AA and reg 2.60Z, the <strong>Parent Sponsor is statutorily liable for any unpaid public hospital or aged care debts</strong> incurred by the parent, and unpaid debts block future grants (cl 870.225)."
+      title: "6. Public Health Debt Grant Criterion (cl 870.227 · reg 1.15K), Sponsor Obligation (reg 2.87CE) & PIC 4005/4007",
+      body: "① Under <strong>cl 870.227 (PAM3 VM-6327 §3.6.7)</strong>, the applicant must have no outstanding public health debt (as defined in <strong>reg 1.15K</strong>) or have entered into appropriate arrangements to pay it (cl 870.225 is visa condition compliance). ② The <strong>sponsor's independent statutory obligation under reg 2.87CE</strong> is not extinguished by the applicant's payment arrangement. ③ Under <strong>cl 870.228(2)–(3)</strong>, <strong>PIC 4005</strong> applies if outside Australia at application and <strong>PIC 4007</strong> applies if in Australia at application."
     }
   ];
   box.innerHTML = cards.map(c => `
@@ -1590,7 +1751,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById(id)?.addEventListener("input", () => { runQueueSimulator(); updateDiagnosticSummaryPreview(); });
   });
 
-  ["wiz-main-age", "wiz-spouse-age", "wiz-location", "wiz-visa-cond", "wiz-total-children", "wiz-au-children", "wiz-budget"].forEach(id => {
+  ["wiz-main-age", "wiz-spouse-age", "wiz-location", "wiz-visa-cond", "wiz-total-children", "wiz-au-children", "wiz-max-overseas-country", "wiz-budget"].forEach(id => {
     document.getElementById(id)?.addEventListener("change", () => { runPathwayWizard(); updateDiagnosticSummaryPreview(); });
   });
 

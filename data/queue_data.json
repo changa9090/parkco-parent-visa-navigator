@@ -1,5 +1,6 @@
 {
-  "generated_at": "2026-10-21T00:22:17+10:00",
+  "release_id": "2026.10.21-audit-v2",
+  "generated_at": "2026-10-21T13:59:05+10:00",
   "last_polled_date": "2026-10-21",
   "official_contact": "enquiry@parkcolawyers.com",
   "live_queue_state": {
@@ -63,60 +64,83 @@
   "queue_lags_months_as_at_aug_2026": [
     {
       "id": "step_up",
+      "subclasses": [
+        "173_to_143",
+        "884_to_864"
+      ],
       "label_ko": "2단계 영주 전환 (173→143 / 884→864)",
       "label_en": "2-Stage Temp→Perm (173→143 / 884→864)",
-      "stage1_assessment_str": "N/A (대기열 면제)",
-      "stage1_assessment_str_en": "N/A (Exempt from Queue)",
+      "stage1_assessment_str": "N/A (Direction 103 s 7(2)(b) 1단계 접수일 의제)",
+      "stage1_assessment_str_en": "N/A (Deemed Stage 1 Lodgement Date under Direction 103 s 7(2)(b))",
       "stage1_lag_months": 0,
       "stage2_release_str": "May 2026",
+      "stage2_release_dec": 2026.42,
       "stage2_lag_months": 3,
-      "official_wait_years": 0.3,
+      "official_wait_years": null,
       "empirical_velocity_months_per_year": 12.0
     },
     {
       "id": "sub_864_884",
+      "subclasses": [
+        "864",
+        "884"
+      ],
       "label_ko": "기여제 고령부모 (864 / 884 · Onshore 67+)",
       "label_en": "Contributory Aged Parent (864 / 884 · Onshore 67+)",
       "stage1_assessment_str": "2023년 4월 접수분",
       "stage1_assessment_str_en": "Lodged April 2023",
       "stage1_lag_months": 40,
       "stage2_release_str": "November 2020",
+      "stage2_release_dec": 2020.92,
       "stage2_lag_months": 69,
       "official_wait_years": 18,
       "empirical_velocity_months_per_year": 9.13
     },
     {
       "id": "sub_143_173",
+      "subclasses": [
+        "143",
+        "173"
+      ],
       "label_ko": "기여제 부모 (143 / 173 · 일반)",
       "label_en": "Contributory Parent (143 / 173 · General)",
       "stage1_assessment_str": "2024년 4월 접수분",
       "stage1_assessment_str_en": "Lodged April 2024",
       "stage1_lag_months": 28,
       "stage2_release_str": "November 2018",
+      "stage2_release_dec": 2018.92,
       "stage2_lag_months": 93,
       "official_wait_years": 18,
       "empirical_velocity_months_per_year": 5.07
     },
     {
       "id": "sub_804",
+      "subclasses": [
+        "804"
+      ],
       "label_ko": "일반 고령부모 (804 · Onshore 67+)",
       "label_en": "Aged Parent (804 · Onshore 67+)",
       "stage1_assessment_str": "2023년 1월 접수분",
       "stage1_assessment_str_en": "Lodged January 2023",
       "stage1_lag_months": 43,
       "stage2_release_str": "October 2014",
+      "stage2_release_dec": 2014.83,
       "stage2_lag_months": 142,
       "official_wait_years": 42,
       "empirical_velocity_months_per_year": 2.35
     },
     {
       "id": "sub_103",
+      "subclasses": [
+        "103"
+      ],
       "label_ko": "일반 부모 (103 · Offshore/일반)",
       "label_en": "Parent (103 · General)",
       "stage1_assessment_str": "2023년 2월 접수분",
       "stage1_assessment_str_en": "Lodged February 2023",
       "stage1_lag_months": 42,
       "stage2_release_str": "March 2014",
+      "stage2_release_dec": 2014.25,
       "stage2_lag_months": 149,
       "official_wait_years": 42,
       "empirical_velocity_months_per_year": 4.18
@@ -203,6 +227,8 @@
     "subclass_804_annual_withdrawals_refusals_fy24_25": 475
   },
   "fee_schedule_fy26_27": {
+    "effective_date": "2026-07-01",
+    "authority": "Migration Regulations 1994 Schedule 1 (Items 1124, 1124A, 1130, 1130A, 1221, 1221A, 1239) & Home Affairs PageSchemaHiddenField / GetPriceList",
     "103": {
       "first_base": 5280,
       "first_adult": 2640,
@@ -279,31 +305,42 @@
       "sponsorship": 420,
       "first_base": 1180,
       "second_per_person": 4715,
-      "total_per_parent": 6315,
-      "sponsor_income": 83454.8
+      "visa_subtotal_per_parent": 5895,
+      "total_1_parent_incl_sponsorship": 6315,
+      "total_2_parents_incl_sponsorship": 12210,
+      "sponsor_income": 83454.8,
+      "primary_sponsor_min_50pct": 41727.4
     },
     "870_5yr": {
       "sponsorship": 420,
       "first_base": 1180,
       "second_per_person": 10605,
-      "total_per_parent": 12205,
-      "sponsor_income": 83454.8
+      "visa_subtotal_per_parent": 11785,
+      "total_1_parent_incl_sponsorship": 12205,
+      "total_2_parents_incl_sponsorship": 23990,
+      "sponsor_income": 83454.8,
+      "primary_sponsor_min_50pct": 41727.4
     }
   },
   "aos_formula_fy26_27": {
-    "authority": "Social Security (Assurance of Support) Determination 2018 (F2024C00296) ss 15-16 & DSS Social Security Guide 9.4.3",
+    "authority": "Social Security (Assurance of Support) Determination 2018 (F2024C00296 / F2018L00425) ss 8, 9, 15, 16 & DSS Social Security Guide 9.4.3.10–9.4.3.30",
     "jsp_annual_base_aud": 22578,
     "ftb_child_add_aud": 2942,
+    "max_concurrent_adult_assurees": 2,
     "corporate_bond_contributory_aud": 20000,
     "corporate_bond_non_contributory_aud": 10000,
+    "corporate_available_funds_per_adult_aud": 5000,
+    "corporate_min_trading_years": 2,
+    "formula_expression": "22578 * (numAssurers + newAdultAssurees + existingAdultAssurees) + 2942 * assurerMinorChildren",
     "examples": {
       "single_assurer_1_parent": 45156,
       "single_assurer_2_parents": 67734,
+      "single_assurer_1_existing_1_new_parent": 67734,
       "single_assurer_2_parents_1_child": 70676,
       "single_assurer_2_parents_2_children": 73618,
       "joint_2_assurers_1_parent": 67734,
       "joint_2_assurers_2_parents": 90312,
-      "joint_2_assurers_2_parents_2_children": 96195
+      "joint_2_assurers_2_parents_2_children": 96196
     }
   }
 }
