@@ -1,8 +1,8 @@
 {
   "release_id": "2026.10.21-audit-v2",
   "manifest_version": "2026.10.21-audit-v2",
-  "generated_at": "2026-11-02T07:35:09+10:00",
-  "last_polled_date": "2026-11-02",
+  "generated_at": "2026-11-05T14:51:53+10:00",
+  "last_polled_date": "2026-11-05",
   "verification_stages": [
     "fetchStatus (HTTP transport / insane-search WAF-bypass retrieval)",
     "contentCheckStatus (SharePoint #contentBox / PageSchemaHiddenField / GetPriceList JSON extraction & \\u200b strip)",
@@ -38,7 +38,7 @@
       "bytes": 1410199,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-02T07:35:09+10:00"
+      "checked_at": "2026-11-05T14:51:53+10:00"
     },
     {
       "id": "ha_pricing_api",
@@ -65,7 +65,7 @@
       "bytes": 39910,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-02T07:35:09+10:00"
+      "checked_at": "2026-11-05T14:51:53+10:00"
     },
     {
       "id": "ha_subclass_143",
@@ -92,7 +92,7 @@
       "bytes": 81219,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-02T07:35:09+10:00"
+      "checked_at": "2026-11-05T14:51:53+10:00"
     },
     {
       "id": "ha_subclass_173",
@@ -119,7 +119,7 @@
       "bytes": 65336,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-02T07:35:09+10:00"
+      "checked_at": "2026-11-05T14:51:53+10:00"
     },
     {
       "id": "ha_subclass_864",
@@ -146,7 +146,7 @@
       "bytes": 74604,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-02T07:35:09+10:00"
+      "checked_at": "2026-11-05T14:51:53+10:00"
     },
     {
       "id": "ha_subclass_884",
@@ -173,7 +173,7 @@
       "bytes": 63970,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-02T07:35:09+10:00"
+      "checked_at": "2026-11-05T14:51:53+10:00"
     },
     {
       "id": "ha_subclass_103",
@@ -200,7 +200,7 @@
       "bytes": 77555,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-02T07:35:09+10:00"
+      "checked_at": "2026-11-05T14:51:53+10:00"
     },
     {
       "id": "ha_subclass_804",
@@ -227,7 +227,7 @@
       "bytes": 72581,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-02T07:35:09+10:00"
+      "checked_at": "2026-11-05T14:51:53+10:00"
     },
     {
       "id": "ha_subclass_870",
@@ -254,7 +254,7 @@
       "bytes": 72164,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-02T07:35:09+10:00"
+      "checked_at": "2026-11-05T14:51:53+10:00"
     },
     {
       "id": "ha_bof_test",
@@ -281,7 +281,7 @@
       "bytes": 9973,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-02T07:35:09+10:00"
+      "checked_at": "2026-11-05T14:51:53+10:00"
     },
     {
       "id": "ha_planning_levels",
@@ -308,7 +308,7 @@
       "bytes": 18172,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-02T07:35:09+10:00"
+      "checked_at": "2026-11-05T14:51:53+10:00"
     },
     {
       "id": "leg_lin_26_042",
@@ -335,7 +335,7 @@
       "bytes": 5251,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-02T07:35:09+10:00"
+      "checked_at": "2026-11-05T14:51:53+10:00"
     },
     {
       "id": "sa_aos_policy",
@@ -362,7 +362,7 @@
       "bytes": 9391,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-02T07:35:09+10:00"
+      "checked_at": "2026-11-05T14:51:53+10:00"
     },
     {
       "id": "sa_medicare_rhca",
@@ -389,7 +389,7 @@
       "bytes": 7108,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-02T07:35:09+10:00"
+      "checked_at": "2026-11-05T14:51:53+10:00"
     },
     {
       "id": "dss_guide_aos",
@@ -416,7 +416,7 @@
       "bytes": 8192,
       "method": "insane-search-verified-snapshot",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-02T07:35:09+10:00"
+      "checked_at": "2026-11-05T14:51:53+10:00"
     }
   ],
   "internal_policy_references": [
@@ -432,7 +432,7 @@
       "legendVersionDate": "2026-07-01",
       "snapshotVerifiedDate": "2026-10-02",
       "sha256": "e2c17fcf48907fcdabfafd42385cb01ec3c92c0cccb4906f9b7cad74abf23623",
-      "localMirrorReference": "/mnt/T7/LegendCom (VM-3058 — Queue Date assignment, §§3.2.6, 3.9.1 post-17 Dec 2024 Age 67 validity & death of primary applicant, substituted 600 exception)",
+      "localMirrorReference": "Policy Reference (VM-3058 — Queue Date assignment, §§3.2.6, 3.9.1 post-17 Dec 2024 Age 67 validity & death of primary applicant, substituted 600 exception)",
       "publicCompanionUrl": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/visa-processing-priorities/parent-visas"
     },
     {
@@ -447,7 +447,7 @@
       "legendVersionDate": "2026-02-06",
       "snapshotVerifiedDate": "2026-10-02",
       "sha256": "eda066b55e0f56f8c0f85c2dd25e03088c8aabcb94e368de9d2f8d508e89ef21",
-      "localMirrorReference": "/mnt/T7/LegendCom (VM-6327 — §3.3.7.2 60-day PTA onshore window, §3.3.8 10-yr cap & COVID-19 18m exclusion, §3.6.6 asymmetric lockout bar, §3.6.7 cl 870.227 public health debt arrangement, §3.6.8 cl 870.228 PIC 4005 offshore vs PIC 4007 onshore, §3.7.2.1 2nd VAC may be refused)",
+      "localMirrorReference": "Policy Reference (VM-6327 — §3.3.7.2 60-day PTA onshore window, §3.3.8 10-yr cap & COVID-19 18m exclusion, §3.6.6 asymmetric lockout bar, §3.6.7 cl 870.227 public health debt arrangement, §3.6.8 cl 870.228 PIC 4005 offshore vs PIC 4007 onshore, §3.7.2.1 2nd VAC may be refused)",
       "publicCompanionUrl": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/sponsored-parent-temporary-870"
     },
     {
@@ -462,7 +462,7 @@
       "legendVersionDate": "2026-04-03",
       "snapshotVerifiedDate": "2026-10-02",
       "sha256": "c17ba2e18f616d1c4e307aca19f3b38045269df1185b0d2a019894b0363b9eda",
-      "localMirrorReference": "/mnt/T7/LegendCom (VM-6276 — §§3.4–3.4.3 taxable income test $83,454.80, early-new-FY preceding NOA evidentiary rule, 50% primary sponsor rule $41,727.40, §3.4.3 no mid-application sponsor swap without new sponsorship)",
+      "localMirrorReference": "Policy Reference (VM-6276 — §§3.4–3.4.3 taxable income test $83,454.80, early-new-FY preceding NOA evidentiary rule, 50% primary sponsor rule $41,727.40, §3.4.3 no mid-application sponsor swap without new sponsorship)",
       "publicCompanionUrl": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/sponsored-parent-temporary-870"
     },
     {
@@ -476,7 +476,7 @@
       "reviewStatus": "approved",
       "legendVersionDate": null,
       "snapshotVerifiedDate": "2026-10-02",
-      "localMirrorReference": "/mnt/T7/LegendCom (VM-6647 §§3.4.5.1–3.4.5.2 — reg 2.12D 28 calendar days AU-to-AU vs 70 calendar days all other sender/recipient address combinations, running from deemed receipt date)",
+      "localMirrorReference": "Policy Reference (VM-6647 §§3.4.5.1–3.4.5.2 — reg 2.12D 28 calendar days AU-to-AU vs 70 calendar days all other sender/recipient address combinations, running from deemed receipt date)",
       "publicCompanionUrl": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/sponsored-parent-temporary-870"
     },
     {
@@ -490,7 +490,7 @@
       "reviewStatus": "approved",
       "legendVersionDate": "2023-06-28",
       "snapshotVerifiedDate": "2026-10-02",
-      "localMirrorReference": "/mnt/T7/LegendCom (Direction No. 103 s 6(2)(c) upfront aged assessment & ss 7(2)(b), 8(1)(b) deemed initial 173/884 application date for 143/864 transition)",
+      "localMirrorReference": "Policy Reference (Direction No. 103 s 6(2)(c) upfront aged assessment & ss 7(2)(b), 8(1)(b) deemed initial 173/884 application date for 143/864 transition)",
       "publicCompanionUrl": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/visa-processing-priorities/parent-visas"
     },
     {
@@ -504,7 +504,7 @@
       "reviewStatus": "approved",
       "legendVersionDate": "2026-07-25",
       "snapshotVerifiedDate": "2026-10-02",
-      "localMirrorReference": "/mnt/T7/LegendCom (Direction No. 117 s 8(2)(a) — Onshore Contributory Aged Parent 864/884 priority release)",
+      "localMirrorReference": "Policy Reference (Direction No. 117 s 8(2)(a) — Onshore Contributory Aged Parent 864/884 priority release)",
       "publicCompanionUrl": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/visa-processing-priorities/parent-visas"
     }
   ],
