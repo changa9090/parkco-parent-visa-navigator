@@ -18,11 +18,11 @@
   <!-- 1-Row Compact Sticky Header -->
   <header class="top-nav">
     <div class="container top-nav-inner">
-      <a href="https://changa9090.github.io/" class="brand-lockup" title="박앤코 법률·비자 통합 허브">
+      <a href="https://changa9090.github.io/" class="brand-lockup" title="박앤코 법률·비자 통합 허브" data-i18n-title="brandHubTitle">
         <img src="./assets/logo-negative.png" alt="Park &amp; Co Lawyers" class="brand-logo" />
         <span class="brand-tag" data-i18n="brandTag">법무법인 박앤코 · 부모초청 비자</span>
       </a>
-      <nav class="header-nav-links" aria-label="핵심 도구 바로가기">
+      <nav class="header-nav-links" aria-label="핵심 도구 바로가기" data-i18n-aria="navQuickAria">
         <a href="#queue-simulator" class="header-nav-link js-tab-jump" data-target-tab="queue" data-i18n="navToolQueue">대기순번 계산</a>
         <a href="#pathway-wizard" class="header-nav-link js-tab-jump" data-target-tab="pathway" data-i18n="navToolPathway">맞춤 경로·가족균형</a>
         <a href="#cost-aos-calculator" class="header-nav-link js-tab-jump" data-target-tab="cost" data-i18n="navToolCost">총비용·AoS</a>
@@ -56,7 +56,7 @@
 
   <main class="container" style="padding-top:10px;padding-bottom:36px;">
     <!-- 4-Tab Interactive Tool Bar -->
-    <div class="mode-tabs-4" role="tablist" aria-label="부모비자 핵심 진단 도구 선택">
+    <div class="mode-tabs-4" role="tablist" aria-label="부모비자 핵심 진단 도구 선택" data-i18n-aria="tabsMainAria">
       <button type="button" id="tab-btn-queue" class="mode-tab-btn active" role="tab" aria-selected="true" data-tab="queue">
         <strong data-i18n="tabQueueTitle">1. 대기순번 시뮬레이터</strong>
         <span data-i18n="tabQueueSub">1·2단계 도달 연도 · 신검 연령</span>
@@ -110,30 +110,30 @@
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
             <div class="form-group">
               <label for="sim-year" data-i18n="simLblYear">3. 접수 연도(또는 Queue 연도)</label>
-              <input type="number" id="sim-year" class="form-input" min="1995" max="2027" placeholder="예: 2024" />
+              <input type="number" id="sim-year" class="form-input" min="1995" max="2030" placeholder="예: 2024" data-i18n-placeholder="phSimYear" />
             </div>
             <div class="form-group">
               <label for="sim-month" data-i18n="simLblMonth">4. 접수 월(1~12월)</label>
               <select id="sim-month" class="form-select">
-                <option value="1">1월 (Jan)</option>
-                <option value="2">2월 (Feb)</option>
-                <option value="3">3월 (Mar)</option>
-                <option value="4" selected>4월 (Apr)</option>
-                <option value="5">5월 (May)</option>
-                <option value="6">6월 (Jun)</option>
-                <option value="7">7월 (Jul)</option>
-                <option value="8">8월 (Aug)</option>
-                <option value="9">9월 (Sep)</option>
-                <option value="10">10월 (Oct)</option>
-                <option value="11">11월 (Nov)</option>
-                <option value="12">12월 (Dec)</option>
+                <option value="1" data-i18n="simMo1">1월 (Jan)</option>
+                <option value="2" data-i18n="simMo2">2월 (Feb)</option>
+                <option value="3" data-i18n="simMo3">3월 (Mar)</option>
+                <option value="4" selected data-i18n="simMo4">4월 (Apr)</option>
+                <option value="5" data-i18n="simMo5">5월 (May)</option>
+                <option value="6" data-i18n="simMo6">6월 (Jun)</option>
+                <option value="7" data-i18n="simMo7">7월 (Jul)</option>
+                <option value="8" data-i18n="simMo8">8월 (Aug)</option>
+                <option value="9" data-i18n="simMo9">9월 (Sep)</option>
+                <option value="10" data-i18n="simMo10">10월 (Oct)</option>
+                <option value="11" data-i18n="simMo11">11월 (Nov)</option>
+                <option value="12" data-i18n="simMo12">12월 (Dec)</option>
               </select>
             </div>
           </div>
           <div class="form-group">
             <label for="sim-age" data-i18n="simLblAge">5. 주신청자 부모님 현재 만 연세 (0~110세)</label>
-            <input type="number" id="sim-age" class="form-input" min="0" max="110" placeholder="예: 68" />
-            <span class="form-hint" data-i18n="simAgeHint">2단계 최종 심사 도달 시점의 예상 연세와 신체검사(PIC 4005) 비용 산정 기간(3년/5년/10년)을 함께 계산합니다.</span>
+            <input type="number" id="sim-age" class="form-input" min="0" max="110" placeholder="예: 64" data-i18n-placeholder="phSimAge" />
+            <span class="form-hint" data-i18n="simAgeHint">기여제(143/864) 대 비기여제(103/804) 예상 비자 승인 시점 연세 비교, 만 67세 온쇼어 고령부모 자격 도달 연도 및 Condition 8503 주의사항을 함께 계산합니다.</span>
           </div>
         </div>
         <div class="card">
@@ -171,6 +171,10 @@
               </select>
             </div>
           </div>
+          <div class="form-group">
+            <label for="wiz-exact-age" data-i18n="wizLblExactAge">1-B. 주신청자 정확한 현재 만 연세 (선택 · 승인 시 예상 연세 &amp; 만 67세 도달 연도 계산)</label>
+            <input type="number" id="wiz-exact-age" class="form-input" min="0" max="110" placeholder="예: 64" data-i18n-placeholder="phSimAge" />
+          </div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
             <div class="form-group">
               <label for="wiz-location" data-i18n="wizLblLoc">3. 접수 시점 부모님 체류지</label>
@@ -191,16 +195,16 @@
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
             <div class="form-group">
               <label for="wiz-total-children" data-i18n="wizLblTotalKids">5. 전 세계 전체 자녀 수 (의붓·입양 포함)</label>
-              <input type="number" id="wiz-total-children" class="form-input" min="1" max="20" placeholder="예: 2" />
+              <input type="number" id="wiz-total-children" class="form-input" min="1" max="20" placeholder="예: 2" data-i18n-placeholder="phWizTotalKids" />
             </div>
             <div class="form-group">
               <label for="wiz-au-children" data-i18n="wizLblAuKids">6. 호주 적격 자녀 수 (시민권·통상거주 PR)</label>
-              <input type="number" id="wiz-au-children" class="form-input" min="0" max="20" placeholder="예: 1" />
+              <input type="number" id="wiz-au-children" class="form-input" min="0" max="20" placeholder="예: 1" data-i18n-placeholder="phWizAuKids" />
             </div>
           </div>
           <div class="form-group">
             <label for="wiz-max-overseas-country" data-i18n="wizLblMaxOverseas">7. 단일 해외 국가 최다 거주 자녀 수 (reg 1.05(2C)(b))</label>
-            <input type="number" id="wiz-max-overseas-country" class="form-input" min="0" max="20" placeholder="선택 입력 (예: 한국 1명, 미국 1명이면 1)" />
+            <input type="number" id="wiz-max-overseas-country" class="form-input" min="0" max="20" placeholder="선택 입력 (예: 한국 1명, 미국 1명이면 1)" data-i18n-placeholder="phWizMaxOv" />
             <span class="form-hint" data-i18n="wizOverseasHint">50% 요건 미달 시에도 호주 적격 자녀 수가 어느 단일 해외 국가 거주 자녀 수보다 많으면 통과할 수 있습니다.</span>
           </div>
           <div class="form-group">
@@ -231,26 +235,36 @@
       <div class="calc-grid">
         <div class="card">
           <h3 style="font-size:15.5px;font-weight:800;margin-bottom:12px;" data-i18n="costFormTitle">비용 및 재정보증인 자격·소득 조건 입력</h3>
-          <div style="display:grid;grid-template-columns:1.25fr 0.75fr;gap:10px;">
+          <div class="form-group">
+            <label for="cost-pathway" data-i18n="costLblPathway">1. 부모비자 신청 경로</label>
+            <select id="cost-pathway" class="form-select">
+              <option value="143" data-i18n="costOpt143">Subclass 143 · 기여제 영주 직행</option>
+              <option value="864" data-i18n="costOpt864">Subclass 864 · 고령 기여제 영주 직행</option>
+              <option value="173_143" data-i18n="costOpt173">Subclass 173 → 143 · 기여제 2단계</option>
+              <option value="884_864" data-i18n="costOpt884">Subclass 884 → 864 · 고령 기여제 2단계</option>
+              <option value="103" data-i18n="costOpt103">Subclass 103 · 일반 부모 영주</option>
+              <option value="804" data-i18n="costOpt804">Subclass 804 · 일반 고령부모 영주</option>
+              <option value="870_3" data-i18n="costOpt870_3">Subclass 870 · 임시 3년</option>
+              <option value="870_5" data-i18n="costOpt870_5">Subclass 870 · 임시 5년</option>
+              <option value="870_10" data-i18n="costOpt870_10">Subclass 870 · 임시 5년×2회(10년)</option>
+            </select>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
             <div class="form-group">
-              <label for="cost-pathway" data-i18n="costLblPathway">1. 부모비자 신청 경로</label>
-              <select id="cost-pathway" class="form-select">
-                <option value="143" data-i18n="costOpt143">Subclass 143 · 기여제 영주 직행</option>
-                <option value="864" data-i18n="costOpt864">Subclass 864 · 고령 기여제 영주 직행</option>
-                <option value="173_143" data-i18n="costOpt173">Subclass 173 → 143 · 기여제 2단계</option>
-                <option value="884_864" data-i18n="costOpt884">Subclass 884 → 864 · 고령 기여제 2단계</option>
-                <option value="103" data-i18n="costOpt103">Subclass 103 · 일반 부모 영주</option>
-                <option value="804" data-i18n="costOpt804">Subclass 804 · 일반 고령부모 영주</option>
-                <option value="870_3" data-i18n="costOpt870_3">Subclass 870 · 임시 3년</option>
-                <option value="870_5" data-i18n="costOpt870_5">Subclass 870 · 임시 5년</option>
-                <option value="870_10" data-i18n="costOpt870_10">Subclass 870 · 임시 5년×2회(10년)</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="cost-parents" data-i18n="costLblParents">2. 초청 부모 인원</label>
+              <label for="cost-parents" data-i18n="costLblParents">2. 초청 성인 신청자 수 (부모님)</label>
               <select id="cost-parents" class="form-select">
                 <option value="2" data-i18n="costPar2">부모님 2분 (부부)</option>
                 <option value="1" data-i18n="costPar1">부모님 1분 (단독)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cost-dep-children" data-i18n="costLblDepChildren">2-B. 동반 미성년 자녀 수 (&lt;18세 형제·자매)</label>
+              <select id="cost-dep-children" class="form-select">
+                <option value="0" data-i18n="costDepCh0">0명 (동반 미성년 자녀 없음)</option>
+                <option value="1" data-i18n="costDepCh1">1명 동반 (&lt;18세 1·2차 VAC 합산)</option>
+                <option value="2" data-i18n="costDepCh2">2명 동반 (&lt;18세 1·2차 VAC 합산)</option>
+                <option value="3" data-i18n="costDepCh3">3명 동반 (&lt;18세 1·2차 VAC 합산)</option>
+                <option value="4" data-i18n="costDepCh4">4명 동반 (&lt;18세 1·2차 VAC 합산)</option>
               </select>
             </div>
           </div>
@@ -286,7 +300,7 @@
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
             <div class="form-group">
               <label for="cost-actual-income" data-i18n="costLblActualIncome">7. 보증인 합산 과세소득 (AUD · ATO NOA)</label>
-              <input type="number" id="cost-actual-income" class="form-input" min="0" step="500" placeholder="예: 75000" />
+              <input type="number" id="cost-actual-income" class="form-input" min="0" step="500" placeholder="예: 75000" data-i18n-placeholder="phCostIncome" />
             </div>
             <div class="form-group">
               <label for="cost-notice-date" data-i18n="costLblNoticeDate">8. 2차 VAC 청구서 간주수령일 (선택 · 기한 병기)</label>
@@ -333,11 +347,11 @@
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
             <div class="form-group">
               <label for="s870-sponsor-income" data-i18n="s870LblSponsorInc">3. 주 스폰서 본인 ATO NOA 과세소득 (AUD)</label>
-              <input type="number" id="s870-sponsor-income" class="form-input" min="0" step="500" placeholder="예: 55000" />
+              <input type="number" id="s870-sponsor-income" class="form-input" min="0" step="500" placeholder="예: 55000" data-i18n-placeholder="phS870SponsorInc" />
             </div>
             <div class="form-group">
               <label for="s870-partner-income" data-i18n="s870LblPartnerInc">4. 배우자(또는 공동자녀 1인) 과세소득 (AUD)</label>
-              <input type="number" id="s870-partner-income" class="form-input" min="0" step="500" placeholder="없으면 0 (예: 35000)" />
+              <input type="number" id="s870-partner-income" class="form-input" min="0" step="500" placeholder="없으면 0 (예: 35000)" data-i18n-placeholder="phS870PartnerInc" />
             </div>
           </div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
@@ -369,7 +383,7 @@
             </div>
             <div class="form-group">
               <label for="s870-prev-years" data-i18n="s870LblPrevYrs">8. 기존 870 누적 보유 연수 (10년 상한)</label>
-              <input type="number" id="s870-prev-years" class="form-input" min="0" max="20" step="0.5" placeholder="예: 0" />
+              <input type="number" id="s870-prev-years" class="form-input" min="0" max="20" step="0.5" placeholder="예: 0" data-i18n-placeholder="phS870PrevYrs" />
             </div>
           </div>
           <div class="form-group">
@@ -385,7 +399,7 @@
     </section>
 
     <!-- Compact Consultation Summary Card -->
-    <section class="card section-block" aria-label="진단 결과 요약 및 상담 신청">
+    <section class="card section-block" aria-label="진단 결과 요약 및 상담 신청" data-i18n-aria="summarySectionAria">
       <div class="section-head" style="margin-bottom:10px;">
         <div>
           <h2 style="font-size:17px;" data-i18n="exportTitle">부모초청 비자 진단 요약서 복사 · 인쇄 및 변호사 상담 연계</h2>
@@ -480,13 +494,13 @@
             <thead>
               <tr>
                 <th data-i18n="smCol0">비교 항목</th>
-                <th>103 (일반)</th>
-                <th>804 (고령 일반)</th>
-                <th>143 (기여 직행)</th>
-                <th>173→143 (2단계)</th>
-                <th>864 (고령 기여)</th>
-                <th>884→864 (고령 2단계)</th>
-                <th>870 (임시 3/5년)</th>
+                <th data-i18n="smCol1">103 (일반)</th>
+                <th data-i18n="smCol2">804 (고령 일반)</th>
+                <th data-i18n="smCol3">143 (기여 직행)</th>
+                <th data-i18n="smCol4">173→143 (2단계)</th>
+                <th data-i18n="smCol5">864 (고령 기여)</th>
+                <th data-i18n="smCol6">884→864 (고령 2단계)</th>
+                <th data-i18n="smCol7">870 (임시 3/5년)</th>
               </tr>
             </thead>
             <tbody id="subclass-comparison-tbody"></tbody>
@@ -590,23 +604,24 @@
     <div class="modal-dialog">
       <div class="modal-header">
         <h3 id="modal-title-heading" data-i18n="modalTitle">공식 1차 출처 모니터 (검증 상태 · 원문 기준일 · 법률 검토 현황)</h3>
-        <button type="button" id="modal-close-btn" class="modal-close" aria-label="닫기">&times;</button>
+        <button type="button" id="modal-close-btn" class="modal-close" aria-label="닫기" data-i18n-aria="modalCloseAria">&times;</button>
       </div>
       <div id="modal-body-content" class="modal-body"></div>
     </div>
   </div>
 
-  <!-- Site Footer + Working Visitor Counter (#visit-counter + #vc-modal) -->
+  <!-- Site Footer + Unified Visit Counter v3.0 (#visit-counter + dynamic #vc-modal) -->
   <footer class="site-footer">
     <div class="container">
-      <div class="visit-counter" id="visit-counter" hidden title="클릭하면 일별 방문 추이와 유입 경로 통계를 볼 수 있습니다">
-        <span>📅 <em data-vc="today">오늘 방문</em> <b id="vc-today">—</b></span>
-        <span>📊 <em data-vc="total">누적 방문</em> <b id="vc-total">—</b></span>
+      <div class="visit-counter" id="visit-counter" title="클릭하면 일별 방문 추이와 유입 경로를 볼 수 있어요" hidden>
+        <span><em id="vc-lbl-total">누적 방문</em><b id="vc-total">-</b></span>
+        <span><em id="vc-lbl-today">오늘 방문</em><b id="vc-today">-</b></span>
+        <span><em id="vc-lbl-visitors">방문자</em><b id="vc-visitors">-</b></span>
       </div>
       <div class="footer-grid">
         <div>
           <strong style="color:#FFFFFF;font-size:15px;" data-i18n="footerFirmLine">법무법인 박앤코 (PNC Legal Pty Ltd t/a Park &amp; Co Lawyers)</strong>
-          <p style="margin-top:6px;line-height:1.6;" data-i18n="footerBio">박창민 대표변호사 (Chang Min Park · Legal Practitioner Director · QLS Accredited Specialist in Immigration Law)<br/>Queensland, Australia · 공식 이메일: <a href="mailto:enquiry@parkcolawyers.com">enquiry@parkcolawyers.com</a></p>
+          <p style="margin-top:6px;line-height:1.6;" data-i18n-html="footerBioHtml">박창민 대표변호사 (Chang Min Park · Legal Practitioner Director · QLS Accredited Specialist in Immigration Law)<br/>Queensland, Australia · 공식 이메일: <a href="mailto:enquiry@parkcolawyers.com">enquiry@parkcolawyers.com</a></p>
         </div>
         <div style="display:flex;flex-direction:column;gap:6px;justify-content:center;">
           <a href="https://parklawyers.com.au/links/?lang=ko" target="_blank" rel="noopener" class="cta-enquiry" data-i18n="footerHubLink">공식 상담 및 문의 허브 (parklawyers.com.au/links) →</a>
@@ -617,197 +632,472 @@
     </div>
   </footer>
 
-  <div id="vc-modal" role="dialog" aria-modal="true" aria-label="방문자 통계">
-    <div class="vc-dialog">
-      <button type="button" class="vc-close" id="vc-close" aria-label="닫기">&times;</button>
-      <h3 id="vc-title">일별 방문자 추이</h3>
-      <div id="vc-body">불러오는 중…</div>
-    </div>
-  </div>
-
   <script src="./assets/app.js"></script>
   <script>
-  (function () {
-    var NS = 'parkco-hub';
-    var P = 'parent', API = 'https://abacus.jasoncameron.dev';
-    var box = document.getElementById('visit-counter');
-    if (!box) return;
-    var tEl = document.getElementById('vc-today'), aEl = document.getElementById('vc-total');
-    var modal = document.getElementById('vc-modal'), body = document.getElementById('vc-body');
-    var titleEl = document.getElementById('vc-title'), closeBtn = document.getElementById('vc-close');
-    var fmt = function (n) { return Number(n || 0).toLocaleString('en-US'); };
-    var isEn = function () {
-      var l = (document.documentElement.lang || '').toLowerCase();
-      if (l.indexOf('en') === 0) return true;
-      return /\b(lang=en)\b/i.test(location.search);
-    };
-    var T = {
-      ko: { today: '오늘 방문', total: '누적 방문', title: '일별 방문자 추이', sub: '(UTC 기준)', loading: '통계를 불러오는 중입니다…', daily: '일별 방문', cum: '기간 누적', sum: function (d, s, a, m) { return '최근 ' + d + '일 합계 <b>' + fmt(s) + '</b> · 일평균 <b>' + a + '</b> · 최고 <b>' + fmt(m) + '</b>'; }, tip: '클릭하면 일별 방문 추이와 유입 경로 통계를 볼 수 있습니다', refTitle: '유입 경로 (Referrer)', refSub: '집계 시작 이후 누적', refEmpty: '아직 기록된 외부 유입 경로가 없습니다.', shareLbl: '채널별 추적 링크 복사 (클릭 시 클립보드 복사):', copied: '복사됨!', labels: { direct: '직접 방문 / 북마크', naver_cafe: '네이버 카페 (호주이민 사랑방)', naver: '네이버 검색·블로그', threads: 'Threads (@crossian90)', youtube: 'YouTube (@immispecialist)', blog: '블로그 (aussielife.org)', google: 'Google 검색', parklawyers: '박앤코 홈페이지·링크허브', github_hub: '박앤코 네비게이터 허브', kakao: '카카오톡 공유', instagram: 'Instagram', facebook: 'Facebook', bing: 'Bing 검색', other: '기타 외부 링크' }, chips: [['naver_cafe','네이버 카페'],['threads','Threads'],['youtube','YouTube'],['blog','블로그'],['kakao','카톡 공유']] },
-      en: { today: 'Today', total: 'Total', title: 'Daily Visitors', sub: '(UTC)', loading: 'Loading statistics…', daily: 'Daily', cum: 'Cumulative', sum: function (d, s, a, m) { return 'Last ' + d + ' days: <b>' + fmt(s) + '</b> · Avg <b>' + a + '/day</b> · Peak <b>' + fmt(m) + '</b>'; }, tip: 'Click to view daily visitor trends & referral sources', refTitle: 'Traffic Sources (Referrers)', refSub: 'Cumulative since tracking began', refEmpty: 'No referral data recorded yet.', shareLbl: 'Copy tracked link for each channel:', copied: 'Copied!', labels: { direct: 'Direct / Bookmark', naver_cafe: 'Naver Cafe', naver: 'Naver Search / Blog', threads: 'Threads (@crossian90)', youtube: 'YouTube (@immispecialist)', blog: 'Blog (aussielife.org)', google: 'Google Search', parklawyers: 'parklawyers.com.au', github_hub: 'Navigator Hub', kakao: 'KakaoTalk', instagram: 'Instagram', facebook: 'Facebook', bing: 'Bing Search', other: 'Other Referrers' }, chips: [['naver_cafe','Naver Cafe'],['threads','Threads'],['youtube','YouTube'],['blog','Blog'],['kakao','KakaoTalk']] }
-    };
-    var REF_KEYS = ['direct','naver_cafe','threads','youtube','blog','google','naver','parklawyers','github_hub','kakao','instagram','facebook','bing','other'];
-    function syncLang() {
-      var L = isEn() ? T.en : T.ko;
-      box.title = L.tip;
-      var e1 = box.querySelector('[data-vc="today"]'), e2 = box.querySelector('[data-vc="total"]');
-      if (e1) e1.textContent = L.today;
-      if (e2) e2.textContent = L.total;
+/* Resilient Self-Hosted Visit Counters + Daily Chart (parent-vc-v3) + Privacy-Safe Referral Channels v3.0 */
+(function () {
+  var VC_BASE = 'https://faq.immispecialist.com/vc/', START = '2026-10-28';
+  var SELF_PATH = '/parkco-parent-visa-navigator';
+  var IS_PROD = (location.hostname === 'changa9090.github.io');
+  var P = 'parent' + (IS_PROD ? '' : '-dev');
+  var BASE_P = 'parent';
+  var SEED_FLOOR_TOTAL = IS_PROD ? 0 : 0;
+  var SEED_FLOOR_VIS = IS_PROD ? 0 : 0;
+  var CACHE_KEY = P + '-counts-cache-v3';
+  var REF_BUCKETS = [
+    { id: 'naver-search', ko: '네이버 통합·웹검색', en: 'Naver Search' },
+    { id: 'naver-cafe', ko: '네이버 카페 (호주이민 사랑방 등)', en: 'Naver Cafe' },
+    { id: 'kakaotalk', ko: '카카오톡 공유·오픈채팅', en: 'KakaoTalk In-App / Share' },
+    { id: 'google', ko: '구글 검색 (Google)', en: 'Google Search' },
+    { id: 'threads-ig', ko: '스레드 · 인스타그램', en: 'Threads & Instagram' },
+    { id: 'youtube', ko: '유튜브 (@immispecialist 등)', en: 'YouTube' },
+    { id: 'faq-portal', ko: '박앤코 이민 FAQ 백과', en: 'Park & Co FAQ Portal' },
+    { id: 'diy-guide', ko: '박앤코 셀프 법률·비용절감 가이드', en: 'Park & Co DIY Legal Guide' },
+    { id: 'parkco-hub', ko: '박앤코 법률·비자 허브 · 내비게이터', en: 'Park & Co Legal Hub & Navigators' },
+    { id: 'parkco-sites', ko: '박앤코 공식 홈페이지 · 블로그', en: 'Park & Co Website & Blog' },
+    { id: 'other-web', ko: '기타 외부 웹사이트·커뮤니티', en: 'Other External Referrers' },
+    { id: 'direct', ko: '직접 접속 · 북마크 · 개인 공유', en: 'Direct / Bookmark / Private Link' }
+  ];
+  var SHARE_CHANNELS = [
+    { ref: 'cafe', ko: '네이버 카페', en: 'Naver Cafe' },
+    { ref: 'kakao', ko: '카카오톡', en: 'KakaoTalk' },
+    { ref: 'threads', ko: '스레드·인스타', en: 'Threads / IG' },
+    { ref: 'youtube', ko: '유튜브', en: 'YouTube' },
+    { ref: 'blog', ko: '블로그', en: 'Blog' }
+  ];
+  var box = document.getElementById('visit-counter');
+  if (!box) return;
+
+  function uiLang() {
+    var bLang = document.body && (document.body.getAttribute('data-ui-lang') || document.body.getAttribute('data-lang'));
+    if (bLang === 'en' || bLang === 'ko') return bLang;
+    var hLang = (document.documentElement && document.documentElement.getAttribute('lang')) || '';
+    if (hLang.toLowerCase().indexOf('en') === 0) return 'en';
+    if (hLang.toLowerCase().indexOf('ko') === 0) return 'ko';
+    try {
+      var q = new URLSearchParams(location.search || '').get('lang');
+      if (q === 'en') return 'en';
+    } catch (e) {}
+    return 'ko';
+  }
+
+  function isSelfPath(p) {
+    var clean = (p || '/').toLowerCase();
+    if (SELF_PATH === '/') {
+      return clean === '/' || clean === '/index.html';
     }
-    syncLang();
-    new MutationObserver(syncLang).observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
-    function utcIso(d) {
-      var y = d.getUTCFullYear();
-      var m = String(d.getUTCMonth() + 1).padStart(2, '0');
-      var day = String(d.getUTCDate()).padStart(2, '0');
-      return y + '-' + m + '-' + day;
+    return clean === SELF_PATH || clean.indexOf(SELF_PATH + '/') === 0;
+  }
+
+  function syncCounterLang() {
+    var en = uiLang() === 'en';
+    var lt = document.getElementById('vc-lbl-total');
+    var ld = document.getElementById('vc-lbl-today');
+    var lv = document.getElementById('vc-lbl-visitors');
+    if (lt) lt.textContent = en ? 'Total visits' : '누적 방문';
+    if (ld) ld.textContent = en ? 'Today' : '오늘 방문';
+    if (lv) lv.textContent = en ? 'Visitors' : '방문자';
+    box.title = en
+      ? 'Click for daily visits & referral sources'
+      : '클릭하면 일별 방문 추이와 유입 경로를 볼 수 있어요';
+    var mt = document.getElementById('vc-modal-title');
+    if (mt) {
+      mt.innerHTML = en
+        ? 'Daily Visits &amp; Referral Sources <small>(Brisbane time)</small>'
+        : '일별 방문 추이 · 유입 경로 <small>(브리즈번 시간 기준)</small>';
     }
-    var today = utcIso(new Date());
-    var sk = 'vc_' + P + '_' + today, done = false;
-    try { done = sessionStorage.getItem(sk) === '1'; } catch (e) {}
-    function get(k) { return fetch(API + '/get/' + NS + '/' + k).then(function (r) { return r.ok ? r.json() : { value: 0 }; }).catch(function () { return { value: 0 }; }); }
-    function hit(k) { return fetch(API + '/hit/' + NS + '/' + k).then(function (r) { return r.ok ? r.json() : { value: 0 }; }).catch(function () { return { value: 0 }; }); }
-    function detectRef() {
-      try {
-        var q = new URLSearchParams(location.search);
-        var tag = (q.get('ref') || q.get('utm_source') || '').toLowerCase().trim().replace(/[^a-z0-9_-]/g, '');
-        if (tag) {
-          if (tag.indexOf('cafe') >= 0) return 'naver_cafe';
-          if (tag.indexOf('naver') >= 0) return 'naver';
-          if (tag.indexOf('thread') >= 0) return 'threads';
-          if (tag.indexOf('youtu') >= 0 || tag === 'yt') return 'youtube';
-          if (tag.indexOf('blog') >= 0 || tag.indexOf('aussie') >= 0) return 'blog';
-          if (tag.indexOf('kakao') >= 0 || tag === 'kt') return 'kakao';
-          if (tag.indexOf('insta') >= 0 || tag === 'ig') return 'instagram';
-          if (tag.indexOf('fb') >= 0 || tag.indexOf('face') >= 0) return 'facebook';
-          if (REF_KEYS.indexOf(tag) >= 0) return tag;
+  }
+  syncCounterLang();
+  if (typeof MutationObserver !== 'undefined') {
+    try {
+      var mo = new MutationObserver(syncCounterLang);
+      if (document.documentElement) mo.observe(document.documentElement, { attributes: true, attributeFilter: ['lang', 'data-lang'] });
+      if (document.body) mo.observe(document.body, { attributes: true, attributeFilter: ['data-ui-lang', 'data-lang', 'class'] });
+    } catch (e) {}
+  }
+
+  /* Preserve cross-system referral attribution across changa9090.github.io & faq.immispecialist.com */
+  document.addEventListener('click', function (ev) {
+    try {
+      var a = ev.target && ev.target.closest ? ev.target.closest('a[href]') : null;
+      if (!a) return;
+      var raw = a.getAttribute('href') || '';
+      if (!raw || raw.charAt(0) === '#') return;
+      var u = new URL(a.href, location.href);
+      if (u.protocol !== 'http:' && u.protocol !== 'https:') return;
+      var th = (u.hostname || '').toLowerCase();
+      var tp = (u.pathname || '/').toLowerCase();
+      if (th !== 'changa9090.github.io' && th !== 'faq.immispecialist.com') return;
+      if (th === location.hostname && isSelfPath(tp)) return;
+      if (!u.searchParams.get('ref') && !u.searchParams.get('utm_source')) {
+        u.searchParams.set('ref', BASE_P);
+        a.href = u.toString();
+      }
+    } catch (e) {}
+  }, true);
+
+  function bne(d) { return new Intl.DateTimeFormat('en-CA', { timeZone: 'Australia/Brisbane' }).format(d); }
+  var today = bne(new Date()), day = today.replace(/-/g, '');
+  var seen = false, lastDay = null, lastRefDay = null, cached = {};
+  try {
+    seen = !!localStorage.getItem(P + '-seen');
+    lastDay = localStorage.getItem(P + '-day');
+    lastRefDay = localStorage.getItem(P + '-ref-day');
+    cached = JSON.parse(localStorage.getItem(CACHE_KEY) || '{}') || {};
+  } catch (e) {}
+
+  var liveTodayViews = (cached.day === day && typeof cached.today === 'number') ? cached.today : null;
+  var liveTodayVis = (cached.day === day && typeof cached.todayVis === 'number') ? cached.todayVis : null;
+
+  function classifyReferralBucket() {
+    try {
+      var qs = new URLSearchParams(location.search || '');
+      var utm = (qs.get('utm_source') || qs.get('ref') || qs.get('channel') || '').toLowerCase().trim();
+      if (utm) {
+        if (utm.indexOf('cafe') >= 0) return 'naver-cafe';
+        if (utm.indexOf('naver') >= 0) return 'naver-search';
+        if (utm.indexOf('kakao') >= 0) return 'kakaotalk';
+        if (utm.indexOf('google') >= 0) return 'google';
+        if (utm.indexOf('thread') >= 0 || utm.indexOf('insta') >= 0 || utm === 'ig') return 'threads-ig';
+        if (utm.indexOf('youtube') >= 0 || utm === 'yt') return 'youtube';
+        if (utm.indexOf('faq') >= 0) return 'faq-portal';
+        if (utm.indexOf('diy') >= 0) return 'diy-guide';
+        if (utm.indexOf('blog') >= 0 || utm.indexOf('aussielife') >= 0 || utm.indexOf('parklawyers') >= 0 || utm === 'website') return 'parkco-sites';
+        if (
+          utm.indexOf('hub') >= 0 || utm.indexOf('guide') >= 0 || utm.indexOf('parkco') >= 0 ||
+          utm.indexOf('vgpt') >= 0 || utm.indexOf('aumlt') >= 0 || utm.indexOf('dama') >= 0 ||
+          utm.indexOf('whm') >= 0 || utm.indexOf('parent') >= 0 || utm.indexOf('gsm') >= 0 ||
+          utm.indexOf('sid') >= 0 || utm.indexOf('crisis') >= 0 || utm.indexOf('partner') >= 0 ||
+          utm.indexOf('employment') >= 0 || utm.indexOf('family') >= 0 || utm.indexOf('settlement') >= 0 ||
+          utm.indexOf('intel') >= 0
+        ) return 'parkco-hub';
+        return 'other-web';
+      }
+      var ref = String(document.referrer || '').trim();
+      var ua = String((navigator && navigator.userAgent) || '');
+      if (ref) {
+        if (ref.indexOf('android-app://com.google') === 0) return 'google';
+        var u = new URL(ref);
+        var h = (u.hostname || '').toLowerCase();
+        var p = (u.pathname || '/').toLowerCase();
+        if (h === location.hostname && (IS_PROD ? isSelfPath(p) : true)) {
+          /* Same-app internal navigation; fall through to mobile UA / direct */
+        } else if (h.indexOf('cafe.naver.') >= 0) {
+          return 'naver-cafe';
+        } else if (h.indexOf('naver.') >= 0) {
+          return 'naver-search';
+        } else if (h.indexOf('kakao.') >= 0 || h.indexOf('daum.') >= 0) {
+          return 'kakaotalk';
+        } else if (h.indexOf('google.') >= 0) {
+          return 'google';
+        } else if (h.indexOf('threads.') >= 0 || h.indexOf('instagram.') >= 0) {
+          return 'threads-ig';
+        } else if (h.indexOf('youtube.') >= 0 || h === 'youtu.be') {
+          return 'youtube';
+        } else if (h.indexOf('immispecialist.com') >= 0) {
+          return 'faq-portal';
+        } else if (h === 'changa9090.github.io' && p.indexOf('/diy-service-save-money') === 0) {
+          return 'diy-guide';
+        } else if (h === 'changa9090.github.io') {
+          return 'parkco-hub';
+        } else if (h.indexOf('aussielife.org') >= 0 || h.indexOf('parklawyers.com.au') >= 0 || h.indexOf('parkcolawyers.com') >= 0 || h.indexOf('hojuro.net') >= 0) {
+          return 'parkco-sites';
+        } else {
+          return 'other-web';
         }
-      } catch (e) {}
-      var r = (document.referrer || '').toLowerCase();
-      if (!r) return 'direct';
-      try { if (new URL(r).hostname === location.hostname) return 'github_hub'; } catch (e) {}
-      if (r.indexOf('cafe.naver') >= 0) return 'naver_cafe';
-      if (r.indexOf('naver.') >= 0) return 'naver';
-      if (r.indexOf('threads.net') >= 0 || r.indexOf('threads.com') >= 0) return 'threads';
-      if (r.indexOf('youtu.be') >= 0 || r.indexOf('youtube.') >= 0) return 'youtube';
-      if (r.indexOf('aussielife.org') >= 0) return 'blog';
-      if (r.indexOf('parklawyers.com.au') >= 0 || r.indexOf('immispecialist.com') >= 0) return 'parklawyers';
-      if (r.indexOf('changa9090.github.io') >= 0) return 'github_hub';
-      if (r.indexOf('kakao') >= 0) return 'kakao';
-      if (r.indexOf('instagram.') >= 0) return 'instagram';
-      if (r.indexOf('facebook.') >= 0 || r.indexOf('fb.com') >= 0) return 'facebook';
-      if (r.indexOf('google.') >= 0) return 'google';
-      if (r.indexOf('bing.') >= 0) return 'bing';
-      return 'other';
-    }
-    var act = done ? get : hit;
-    Promise.all([act(P + '-all'), act(P + '-d-' + today)]).then(function (res) {
-      var total = (res[0] && res[0].value) || 0, td = (res[1] && res[1].value) || 0;
-      if (!done) {
-        hit(P + '-r-' + detectRef());
-        try { sessionStorage.setItem(sk, '1'); } catch (e) {}
       }
-      tEl.textContent = fmt(td);
-      aEl.textContent = fmt(total);
-      if (total > 0 || td > 0) box.hidden = false;
+      if (/KAKAOTALK/i.test(ua)) return 'kakaotalk';
+      if (/NAVER\(inapp/i.test(ua)) return 'naver-search';
+      if (/Barcelona|Threads|Instagram/i.test(ua)) return 'threads-ig';
+    } catch (e) {}
+    return 'direct';
+  }
+
+  function fmt(n) { return typeof n === 'number' && !isNaN(n) ? Number(n).toLocaleString('en-AU') : '-'; }
+
+  function renderBadge(tot, tod, vis) {
+    var elTot = document.getElementById('vc-total');
+    var elTod = document.getElementById('vc-today');
+    var elVis = document.getElementById('vc-visitors');
+    if (tot != null && elTot) elTot.textContent = fmt(tot);
+    if (tod != null && elTod) elTod.textContent = fmt(tod);
+    if (vis != null && elVis) elVis.textContent = fmt(vis);
+    if (tot != null || tod != null || vis != null) box.hidden = false;
+  }
+
+  var seedTot = Number(box.getAttribute('data-seed-total')) || SEED_FLOOR_TOTAL || 0;
+  var seedVis = Number(box.getAttribute('data-seed-visitors')) || SEED_FLOOR_VIS || 0;
+  var initTot = Math.max(cached.total || 0, seedTot) || null;
+  var initVis = Math.max(cached.visitors || 0, seedVis) || null;
+  if (initTot != null || initVis != null) {
+    renderBadge(initTot, liveTodayViews, initVis);
+  }
+
+  function fetchJson(url, opts) {
+    var ctrl = typeof AbortController !== 'undefined' ? new AbortController() : null;
+    var timer = ctrl ? setTimeout(function () { ctrl.abort(); }, 6500) : null;
+    var reqOpts = opts || { mode: 'cors' };
+    if (ctrl) reqOpts.signal = ctrl.signal;
+    return fetch(url, reqOpts).then(function (r) {
+      if (timer) clearTimeout(timer);
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    }).catch(function (err) {
+      if (timer) clearTimeout(timer);
+      throw err;
     });
-    function lastDays(n) {
-      var out = [], base = new Date();
-      for (var i = n - 1; i >= 0; i--) {
-        var d = new Date(base.getTime() - i * 86400000);
-        out.push(utcIso(d));
+  }
+
+  var incVisitor = !seen;
+  var incVday = (lastDay !== day);
+  var refBucket = (lastRefDay !== day) ? classifyReferralBucket() : '';
+  var hitPayload = JSON.stringify({
+    prefix: P,
+    day: day,
+    inc_view: true,
+    inc_visitor: incVisitor,
+    inc_vday: incVday,
+    ref_bucket: refBucket
+  });
+
+  fetchJson(VC_BASE + 'hit', {
+    method: 'POST',
+    mode: 'cors',
+    keepalive: true,
+    headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
+    body: hitPayload
+  }).then(function (j) {
+    if (!j || !j.ok) return;
+    var tot = Math.max(Number(j.total) || 0, seedTot);
+    var tod = typeof j.today === 'number' ? j.today : liveTodayViews;
+    var vis = Math.max(Number(j.visitors) || 0, seedVis);
+    var tvis = typeof j.today_visitors === 'number' ? j.today_visitors : liveTodayVis;
+    liveTodayViews = tod;
+    liveTodayVis = tvis;
+    renderBadge(tot, tod, vis);
+    try {
+      if (incVisitor) localStorage.setItem(P + '-seen', '1');
+      if (incVday) localStorage.setItem(P + '-day', day);
+      if (refBucket) {
+        localStorage.setItem(P + '-ref-day', day);
+        localStorage.setItem(P + '-ref-bucket', refBucket);
       }
-      return out;
-    }
-    var activeRange = 30;
-    function renderChart(days, vals, refs, L) {
-      var W = 620, H = 205, pL = 38, pR = 14, pT = 16, pB = 34;
-      var iW = W - pL - pR, iH = H - pT - pB;
-      var maxV = Math.max.apply(null, vals.concat([1]));
-      var sum = vals.reduce(function (a, b) { return a + b; }, 0);
-      var cum = [], run = 0;
-      for (var i = 0; i < vals.length; i++) { run += vals[i]; cum.push(run); }
-      var maxC = Math.max(run, 1), step = iW / vals.length, bW = Math.max(4, step * 0.62);
-      var yT = [0, Math.round(maxV / 2), maxV], grids = '';
-      for (var g = 0; g < yT.length; g++) {
-        var gy = pT + iH - (yT[g] / maxV) * iH;
-        grids += '<line class="vc-grid" x1="' + pL + '" x2="' + (W - pR) + '" y1="' + gy.toFixed(1) + '" y2="' + gy.toFixed(1) + '"/><text class="vc-ylab" x="' + (pL - 6) + '" y="' + (gy + 4).toFixed(1) + '">' + fmt(yT[g]) + '</text>';
-      }
-      var bars = '', pts = [], dots = '', xLabs = '';
-      var stride = vals.length <= 14 ? 2 : (vals.length <= 30 ? 5 : 14);
-      for (var k = 0; k < vals.length; k++) {
-        var cx = pL + step * (k + 0.5), bh = (vals[k] / maxV) * iH, by = pT + iH - bh;
-        bars += '<rect class="vc-bar" x="' + (cx - bW / 2).toFixed(1) + '" y="' + by.toFixed(1) + '" width="' + bW.toFixed(1) + '" height="' + Math.max(bh, 1).toFixed(1) + '" rx="2"><title>' + days[k] + ': ' + fmt(vals[k]) + '</title></rect>';
-        var ly = pT + iH - (cum[k] / maxC) * iH;
-        pts.push(cx.toFixed(1) + ',' + ly.toFixed(1));
-        dots += '<circle class="vc-dot" cx="' + cx.toFixed(1) + '" cy="' + ly.toFixed(1) + '" r="2.6"><title>' + days[k] + ' (' + L.cum + ' ' + fmt(cum[k]) + ')</title></circle>';
-        if (k % stride === 0 || k === vals.length - 1) xLabs += '<text class="vc-xlab" x="' + cx.toFixed(1) + '" y="' + (H - 10) + '">' + days[k].slice(5) + '</text>';
-      }
-      var avg = (sum / vals.length).toFixed(1);
-      var rangeTabs = [7, 30, 90].map(function (d) {
-        return '<button type="button" class="vc-range-btn' + (activeRange === d ? ' active' : '') + '" data-range="' + d + '">' + d + (L === T.en ? 'd' : '일') + '</button>';
-      }).join('');
-      var refTotal = refs.reduce(function (a, b) { return a + b.v; }, 0);
-      var refRows = refs.filter(function (x) { return x.v > 0; }).sort(function (a, b) { return b.v - a.v; });
-      var refHtml = '';
-      if (!refRows.length) {
-        refHtml = '<p class="vc-ref-note">' + L.refEmpty + '</p>';
+      localStorage.setItem(CACHE_KEY, JSON.stringify({
+        total: tot,
+        today: tod,
+        todayVis: tvis,
+        visitors: vis,
+        day: day
+      }));
+    } catch (e) {}
+  }).catch(function () {
+    if (initTot != null || initVis != null) renderBadge(initTot, liveTodayViews || 1, initVis);
+  });
+
+  var activeRange = 7;
+  var cachedSummary = null;
+  var modal = document.createElement('div');
+  modal.id = 'vc-modal';
+  modal.innerHTML = '<div class="vc-dialog" role="dialog" aria-modal="true" aria-labelledby="vc-modal-title">' +
+    '<button type="button" class="vc-close" aria-label="Close">&times;</button>' +
+    '<h3 id="vc-modal-title"></h3>' +
+    '<div class="vc-body">Loading&hellip;</div></div>';
+  document.body.appendChild(modal);
+  syncCounterLang();
+
+  function close() { modal.classList.remove('open'); }
+  modal.addEventListener('click', function (e) { if (e.target === modal) close(); });
+  modal.querySelector('.vc-close').addEventListener('click', close);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+
+  function copyShareLink(refCode, btnEl) {
+    try {
+      var u = new URL(location.href);
+      u.searchParams.delete('utm_source');
+      u.searchParams.set('ref', refCode);
+      var text = u.toString();
+      var done = function () {
+        if (!btnEl) return;
+        var prev = btnEl.getAttribute('data-orig') || btnEl.textContent;
+        btnEl.setAttribute('data-orig', prev);
+        btnEl.textContent = uiLang() === 'en' ? 'Copied ✓' : '복사됨 ✓';
+        setTimeout(function () { btnEl.textContent = prev; }, 1600);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done).catch(function () {});
       } else {
-        var maxR = refRows[0].v;
-        refHtml = '<div class="vc-ref-list">' + refRows.map(function (it) {
-          var pct = refTotal > 0 ? Math.round((it.v / refTotal) * 100) : 0;
-          var w = Math.max(4, Math.round((it.v / maxR) * 100));
-          var nm = (L.labels && L.labels[it.k]) || it.k;
-          return '<div class="vc-ref-row"><span class="vc-ref-name" title="' + nm + '">' + nm + '</span><div class="vc-ref-track"><div class="vc-ref-fill" style="width:' + w + '%"></div></div><span class="vc-ref-val">' + fmt(it.v) + ' (' + pct + '%)</span></div>';
-        }).join('') + '</div>';
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        done();
       }
-      var baseUrl = location.origin + location.pathname;
-      var chipsHtml = L.chips.map(function (c) {
-        return '<button type="button" class="vc-share-chip" data-url="' + baseUrl + '?ref=' + c[0] + '">🔗 ' + c[1] + '</button>';
-      }).join('');
-      body.innerHTML =
-        '<div class="vc-toolbar"><div class="vc-legend" style="margin:0"><span><i class="vc-k-bar"></i>' + L.daily + '</span><span><i class="vc-k-line"></i>' + L.cum + '</span></div><div class="vc-range-tabs">' + rangeTabs + '</div></div>' +
-        '<svg class="vc-svg" viewBox="0 0 ' + W + ' ' + H + '" aria-label="Daily visitor chart">' + grids + bars + '<polyline class="vc-line" points="' + pts.join(' ') + '"/>' + dots + xLabs + '</svg>' +
-        '<p class="vc-sum">' + L.sum(vals.length, sum, avg, maxV) + '</p>' +
-        '<div class="vc-ref-box"><div class="vc-ref-title"><span>🧭 ' + L.refTitle + '</span><small>' + L.refSub + '</small></div>' + refHtml +
-        '<div class="vc-share-box"><p class="vc-share-lbl">' + L.shareLbl + '</p><div class="vc-share-chips">' + chipsHtml + '</div></div></div>';
-      body.querySelectorAll('.vc-range-btn').forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          activeRange = Number(btn.getAttribute('data-range')) || 30;
-          loadStats(activeRange);
-        });
+    } catch (e) {}
+  }
+
+  modal.addEventListener('click', function (e) {
+    var chip = e.target && e.target.closest ? e.target.closest('.vc-share-chip') : null;
+    if (chip) {
+      var rc = chip.getAttribute('data-ref-code');
+      if (rc) copyShareLink(rc, chip);
+      return;
+    }
+    var rbtn = e.target && e.target.closest ? e.target.closest('.vc-range-btn') : null;
+    if (rbtn) {
+      var nr = Number(rbtn.getAttribute('data-range')) || 7;
+      if (nr !== activeRange) {
+        activeRange = nr;
+        loadAndRenderModal(false);
+      }
+    }
+  });
+
+  function renderShareBar(isEn) {
+    var lbl = isEn
+      ? 'Copy Tracked Referral Share Link (?ref=)'
+      : '채널별 유입 측정 공유 링크 복사 (?ref=)';
+    var chips = SHARE_CHANNELS.map(function (c) {
+      var name = isEn ? c.en : c.ko;
+      return '<button type="button" class="vc-share-chip" data-ref-code="' + c.ref + '">' +
+        name + ' (?ref=' + c.ref + ')</button>';
+    }).join('');
+    return '<div id="vc-share-box" class="vc-share-box"><div class="vc-share-lbl">' + lbl +
+      '</div><div class="vc-share-chips">' + chips + '</div></div>';
+  }
+
+  function renderToolbar(isEn, fullDaysLen) {
+    if (fullDaysLen <= 7) return '';
+    var b7 = '<button type="button" class="vc-range-btn' + (activeRange === 7 ? ' active' : '') + '" data-range="7">' +
+      (isEn ? 'Last 7 days' : '최근 7일') + '</button>';
+    var b30 = '<button type="button" class="vc-range-btn' + (activeRange === 30 ? ' active' : '') + '" data-range="30">' +
+      (isEn ? 'Last 30 days' : '최근 30일') + '</button>';
+    return '<div class="vc-toolbar"><div class="vc-range-tabs">' + b7 + b30 + '</div></div>';
+  }
+
+  function renderChartSvg(days, rows, isEn) {
+    var W = 640, H = 240, L = 40, R = 12, T = 14, B = 38;
+    var max = Math.max(1, Math.max.apply(null, rows.map(function (r) { return Math.max(r[0], r[1]); })));
+    var step = (W - L - R) / days.length, bw = Math.min(36, Math.max(4, step * 0.6));
+    var y = function (v) { return T + (H - T - B) * (1 - v / max); };
+    var svg = '<svg viewBox="0 0 ' + W + ' ' + H + '" class="vc-svg" role="img" aria-label="Daily visits chart">';
+    [0, 0.5, 1].forEach(function (f) {
+      var v = Math.round(max * f), yy = y(v);
+      svg += '<line x1="' + L + '" x2="' + (W - R) + '" y1="' + yy + '" y2="' + yy + '" class="vc-grid"/>' +
+        '<text x="' + (L - 6) + '" y="' + (yy + 4) + '" class="vc-ylab">' + fmt(v) + '</text>';
+    });
+    var pts = [];
+    days.forEach(function (d, i) {
+      var cx = L + step * i + step / 2, views = rows[i][0], vis = rows[i][1];
+      svg += '<rect x="' + (cx - bw / 2) + '" y="' + y(views) + '" width="' + bw + '" height="' +
+        (H - B - y(views)) + '" class="vc-bar"><title>' + d + ': ' + fmt(views) + (isEn ? ' page views' : '회 조회') + '</title></rect>';
+      pts.push(cx + ',' + y(vis));
+      if (days.length <= 10 || i % Math.ceil(days.length / 8) === 0 || i === days.length - 1)
+        svg += '<text x="' + cx + '" y="' + (H - B + 16) + '" class="vc-xlab">' + d.slice(5) + '</text>';
+    });
+    svg += '<polyline points="' + pts.join(' ') + '" class="vc-line"/>';
+    pts.forEach(function (p, i) {
+      var xy = p.split(',');
+      svg += '<circle cx="' + xy[0] + '" cy="' + xy[1] + '" r="3.5" class="vc-dot"><title>' + days[i] + ': ' +
+        fmt(rows[i][1]) + (isEn ? ' visitors' : '명 방문자') + '</title></circle>';
+    });
+    svg += '</svg>';
+    var sum = rows.reduce(function (a, r) { return [a[0] + r[0], a[1] + r[1]]; }, [0, 0]);
+    var summaryLine = isEn
+      ? (days.length + ' day(s) &middot; ' + fmt(sum[0]) + ' page views &middot; ' + fmt(sum[1]) + ' daily visitors (since ' + START + '; 1 daily visitor per browser).')
+      : ('표시 구간 ' + days.length + '일 합계 &middot; 페이지 조회 ' + fmt(sum[0]) + '회 &middot; 일별 순방문자 ' + fmt(sum[1]) + '명 (' + START + ' 집계 시작 &middot; 하루 브라우저당 1회)');
+    return svg + '<div class="vc-legend"><span><i class="vc-k-bar"></i>' + (isEn ? 'Page views' : '페이지 조회') + '</span>' +
+      '<span><i class="vc-k-line"></i>' + (isEn ? 'Daily visitors' : '일별 순방문자') + '</span></div>' +
+      '<p class="vc-sum">' + summaryLine + '</p>';
+  }
+
+  function renderReferrerBox(countsMap, isWindowFallback) {
+    var isEn = uiLang() === 'en';
+    var mapObj = countsMap || {};
+    var items = REF_BUCKETS.map(function (b) {
+      return { id: b.id, label: isEn ? b.en : b.ko, count: mapObj[b.id] || 0 };
+    }).filter(function (x) { return x.count > 0; }).sort(function (a, b) { return b.count - a.count; });
+    var totalRef = items.reduce(function (acc, x) { return acc + x.count; }, 0);
+    var titleKo = isWindowFallback ? '최근 30일 유입 채널 누적 분포' : ('오늘 유입 채널 분포 (' + today + ')');
+    var titleEn = isWindowFallback ? 'Referral Channels (Last 30 Days)' : ('Today&rsquo;s Referral Channels (' + today + ')');
+    var head = '<div class="vc-ref-title"><span>' + (isEn ? titleEn : titleKo) +
+      '</span><small>' + (isEn ? ('Tracked visitors: ' + fmt(totalRef)) : ('채널 집계 방문자: ' + fmt(totalRef) + '명')) + '</small></div>';
+    if (!items.length) {
+      return head + '<p class="vc-ref-note">' +
+        (isEn
+          ? 'Anonymous referral channel buckets (Naver, Cafe, KakaoTalk, Threads, Hub, Direct) are recorded once per browser per day as new visits arrive (zero personal or URL path data stored).'
+          : '익명 유입 경로(검색·카페·카카오톡·스레드·허브 이동 등) 집계는 신규 방문부터 하루 브라우저당 1회씩 기록돼요 (세부 URL·개인정보 미수집).') +
+        '</p>';
+    }
+    var rowsHtml = items.map(function (item) {
+      var pct = totalRef > 0 ? Math.round((item.count / totalRef) * 100) : 0;
+      return '<div class="vc-ref-row">' +
+        '<span class="vc-ref-name" title="' + item.label + '">' + item.label + '</span>' +
+        '<div class="vc-ref-track"><div class="vc-ref-fill" style="width:' + Math.max(4, pct) + '%"></div></div>' +
+        '<span class="vc-ref-val">' + fmt(item.count) + ' (' + pct + '%)</span>' +
+        '</div>';
+    }).join('');
+    var note = isEn
+      ? 'Privacy-safe coarse channel buckets only (1 per browser/day; zero IP, query string, or full referrer URL stored).'
+      : '개인정보 보호형 채널 그룹 집계 (하루 브라우저당 1회 기준 &middot; 검색어·세부 URL·IP 미수집)';
+    return head + '<div class="vc-ref-list">' + rowsHtml + '</div><p class="vc-ref-note">' + note + '</p>';
+  }
+
+  function renderFromSummary(summary) {
+    var isEn = uiLang() === 'en';
+    var rawSeries = Array.isArray(summary.series) ? summary.series : [];
+    var filtered = rawSeries.filter(function (s) { return s && s.date >= START; });
+    if (!filtered.length) filtered = [{ date: today, views: liveTodayViews || 0, visitors: liveTodayVis || 0 }];
+    var slice = activeRange === 7 ? filtered.slice(-7) : filtered;
+    var days = slice.map(function (s) { return s.date; });
+    var rows = slice.map(function (s) { return [Number(s.views) || 0, Number(s.visitors) || 0]; });
+    var refToday = summary.referrals_today || {};
+    var refWin = summary.referrals_window || {};
+    var hasTodayRef = Object.keys(refToday).some(function (k) { return refToday[k] > 0; });
+    var useWin = (activeRange === 30) || (!hasTodayRef && Object.keys(refWin).length > 0);
+    var body = modal.querySelector('.vc-body');
+    body.innerHTML = renderToolbar(isEn, filtered.length) +
+      '<div id="vc-chart-slot">' + renderChartSvg(days, rows, isEn) + '</div>' +
+      '<div id="vc-ref-box" class="vc-ref-box">' + renderReferrerBox(useWin ? refWin : refToday, useWin) + '</div>' +
+      renderShareBar(isEn);
+  }
+
+  function loadAndRenderModal(forceFetch) {
+    syncCounterLang();
+    if (!forceFetch && cachedSummary) {
+      renderFromSummary(cachedSummary);
+      return;
+    }
+    var isEn = uiLang() === 'en';
+    var body = modal.querySelector('.vc-body');
+    var chartWaitMsg = isEn ? 'Loading daily statistics&hellip;' : '일별 통계를 불러오는 중이에요&hellip;';
+    body.innerHTML = '<div id="vc-chart-slot"><p class="vc-sum">' + chartWaitMsg + '</p></div>' + renderShareBar(isEn);
+    var url = VC_BASE + 'summary?prefix=' + encodeURIComponent(P) + '&days=30&day=' + encodeURIComponent(day) + '&start=' + encodeURIComponent(START);
+    fetchJson(url, { mode: 'cors' })
+      .then(function (j) {
+        if (!j || !j.ok) throw new Error('bad summary');
+        cachedSummary = j;
+        renderFromSummary(j);
+      })
+      .catch(function () {
+        var slot = document.getElementById('vc-chart-slot');
+        if (slot) {
+          slot.textContent = uiLang() === 'en' ? 'Could not load the chart.' : '그래프를 불러오지 못했어요.';
+        }
       });
-      body.querySelectorAll('.vc-share-chip').forEach(function (chip) {
-        chip.addEventListener('click', function () {
-          var u = chip.getAttribute('data-url'), orig = chip.textContent;
-          if (navigator.clipboard && navigator.clipboard.writeText) {
-            navigator.clipboard.writeText(u).then(function () {
-              chip.textContent = '✅ ' + L.copied;
-              setTimeout(function () { chip.textContent = orig; }, 1400);
-            });
-          }
-        });
-      });
-    }
-    function loadStats(n) {
-      var L = isEn() ? T.en : T.ko;
-      titleEl.innerHTML = L.title + ' (' + n + (L === T.en ? ' days' : '일') + ') <small>' + L.sub + '</small>';
-      body.textContent = L.loading;
-      var days = lastDays(n);
-      Promise.all([
-        Promise.all(days.map(function (d) { return get(P + '-d-' + d).then(function (r) { return (r && r.value) || 0; }); })),
-        Promise.all(REF_KEYS.map(function (k) { return get(P + '-r-' + k).then(function (r) { return { k: k, v: (r && r.value) || 0 }; }); }))
-      ]).then(function (all) { renderChart(days, all[0], all[1], L); });
-    }
-    function openModal() {
-      modal.classList.add('open');
-      loadStats(activeRange);
-    }
-    function closeModal() { modal.classList.remove('open'); }
-    box.addEventListener('click', openModal);
-    if (closeBtn) closeBtn.addEventListener('click', closeModal);
-    modal.addEventListener('click', function (e) { if (e.target === modal) closeModal(); });
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && modal.classList.contains('open')) closeModal(); });
-  })();
+  }
+
+  function open() {
+    activeRange = 7;
+    modal.classList.add('open');
+    loadAndRenderModal(true);
+  }
+  box.setAttribute('role', 'button');
+  box.setAttribute('tabindex', '0');
+  box.addEventListener('click', open);
+  box.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } });
+})();
   </script>
 </body>
 </html>

@@ -169,6 +169,7 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   scrollbar-width: none;
   -ms-overflow-style: none;
   flex: 1 1 auto;
+  min-width: 0;
   justify-content: center;
 }
 .header-nav-links::-webkit-scrollbar {
@@ -199,6 +200,7 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   align-items: center;
   gap: 8px;
   flex-shrink: 0;
+  min-width: 0;
 }
 
 .header-hub-cta {
@@ -225,6 +227,7 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   border: 1px solid rgba(255, 255, 255, 0.24);
   border-radius: var(--radius-pill);
   padding: 2px;
+  flex-shrink: 0;
 }
 
 .lang-btn {
@@ -254,16 +257,55 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   }
 }
 
-@media (max-width: 520px) {
-  .container {
-    padding: 0 14px;
+@media (max-width: 768px) {
+  .top-nav-inner {
+    flex-wrap: wrap;
+    gap: 6px;
   }
-  .brand-logo {
-    height: 24px;
+  .brand-lockup {
+    min-width: 0;
+  }
+  .nav-actions {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 5px;
+    flex: 1 1 auto;
+    min-width: 0;
+    max-width: 100%;
+  }
+  #btn-polling-status {
+    font-size: 11px !important;
+    padding: 4px 7px !important;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .header-hub-cta {
-    padding: 5px 9px;
-    font-size: 11.5px;
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+  .lang-btn {
+    padding: 3px 7px;
+    font-size: 11px;
+  }
+  .header-nav-links {
+    order: 3;
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    justify-content: flex-start;
+    padding-top: 2px;
+  }
+}
+
+@media (max-width: 520px) {
+  .container {
+    padding: 0 12px;
+  }
+  .brand-logo {
+    height: 22px;
   }
   .header-nav-link {
     font-size: 11.5px;
@@ -888,8 +930,80 @@ table.occ-table tr:hover td {
 
 .visit-counter { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 16px; align-items: center; }
 .visit-counter[hidden] { display: none !important; }
-.visit-counter:not([hidden]) { cursor: pointer; }
+.visit-counter:not([hidden]) { display: flex !important; cursor: pointer; }
 .visit-counter > span em { font-style: normal; }
+
+.age-milestone-panel {
+  margin-top: 12px;
+  background: var(--surface);
+  border: 1.5px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+}
+.age-milestone-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+.age-milestone-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 11px 13px;
+}
+.age-milestone-card strong {
+  display: block;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--brand);
+  margin: 3px 0;
+}
+.age-milestone-card.non-contrib strong {
+  color: #991B1B;
+}
+.age-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  margin-top: 4px;
+}
+.age-badge-pill.ok {
+  background: #ECFDF5;
+  color: #065F46;
+  border: 1px solid #A7F3D0;
+}
+.age-badge-pill.wait {
+  background: #FFFBEB;
+  color: #92400E;
+  border: 1px solid #FDE68A;
+}
+.md117-caveat-banner {
+  margin-top: 12px;
+  background: #FFFBEB;
+  border: 1.5px solid #FDE68A;
+  border-left: 4px solid #D97706;
+  border-radius: var(--radius-md);
+  padding: 12px 15px;
+  font-size: 13px;
+  line-height: 1.58;
+  color: #78350F;
+}
+.cond8503-warning-box {
+  margin-top: 10px;
+  background: #FEF2F2;
+  border: 1px solid #FECACA;
+  border-left: 4px solid #DC2626;
+  border-radius: var(--radius-md);
+  padding: 11px 14px;
+  font-size: 12.8px;
+  line-height: 1.55;
+  color: #7F1D1D;
+}
 .visit-counter > span { background: rgba(255, 255, 255, 0.07); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 999px; padding: 5px 13px; font-size: 12.5px; color: #E8F1F2; display: inline-flex; align-items: center; transition: border-color 0.15s ease, background 0.15s ease; }
 .visit-counter:not([hidden]):hover > span { border-color: #F4DC9C; background: rgba(255, 255, 255, 0.12); }
 .visit-counter b { color: #F4DC9C; font-weight: 800; margin-left: 6px; font-variant-numeric: tabular-nums; }

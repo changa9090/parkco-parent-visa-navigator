@@ -1,8 +1,8 @@
 {
   "release_id": "2026.10.21-audit-v2",
   "manifest_version": "2026.10.21-audit-v2",
-  "generated_at": "2026-11-09T07:35:09+10:00",
-  "last_polled_date": "2026-11-09",
+  "generated_at": "2026-11-11T22:58:22+10:00",
+  "last_polled_date": "2026-11-11",
   "verification_stages": [
     "fetchStatus (HTTP transport / insane-search WAF-bypass retrieval)",
     "contentCheckStatus (SharePoint #contentBox / PageSchemaHiddenField / GetPriceList JSON extraction & \\u200b strip)",
@@ -34,11 +34,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "39450ed5bcee9ff128e0426b83d583f7258182f8f1579301cab03a9837a1729c",
-      "bytes": 1410199,
-      "method": "insane-search-verified-snapshot",
+      "sha256": "2fa08b61086974fe85fda3468259a09c5cdda7032f4c2bb17719038774685489",
+      "bytes": 1308092,
+      "method": "https-direct-live",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-09T07:35:09+10:00"
+      "checked_at": "2026-11-11T22:58:22+10:00"
     },
     {
       "id": "ha_pricing_api",
@@ -61,11 +61,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "d08adc0d2b0d34e547810e912f1581ca701201d678c0632532c7e62197743fe4",
-      "bytes": 39910,
-      "method": "insane-search-verified-snapshot",
+      "sha256": "0ab169e8525c9030d1815ec12767425367481ccc9d4051bbdd38f7328bf4f00f",
+      "bytes": 247792,
+      "method": "dha-json-api-post",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-09T07:35:09+10:00"
+      "checked_at": "2026-11-11T22:58:22+10:00"
     },
     {
       "id": "ha_subclass_143",
@@ -88,11 +88,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "27a497268f67d9daa91b6c39f04e957758ee5e69ba47b2ee6bff9493e5d3f041",
-      "bytes": 81219,
-      "method": "insane-search-verified-snapshot",
+      "sha256": "e56b6fcd06045fa6438bed2826dd8445482cb3c8b2918db2b0729d8decc744b6",
+      "bytes": 1396888,
+      "method": "https-direct-live",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-09T07:35:09+10:00"
+      "checked_at": "2026-11-11T22:58:22+10:00"
     },
     {
       "id": "ha_subclass_173",
@@ -115,11 +115,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "e6d40c3abf3938d929f1a43bbe8d2f796d98c5097cf12b1fa29ed0b560df33ee",
-      "bytes": 65336,
-      "method": "insane-search-verified-snapshot",
+      "sha256": "4debfd614761e617b20d6c7d55fedffd4c1a6bbe8449d14c3dcf37a12131e3fb",
+      "bytes": 1377600,
+      "method": "https-direct-live",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-09T07:35:09+10:00"
+      "checked_at": "2026-11-11T22:58:22+10:00"
     },
     {
       "id": "ha_subclass_864",
@@ -142,11 +142,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "545ba3dc250d453e744265d4f0009acae97dad60d5fad49e81d6474e6f3f962b",
-      "bytes": 74604,
-      "method": "insane-search-verified-snapshot",
+      "sha256": "ef789c320bc3640b29a5df8069fc1d3300329e01241052a0771960c419b6b340",
+      "bytes": 1388704,
+      "method": "https-direct-live",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-09T07:35:09+10:00"
+      "checked_at": "2026-11-11T22:58:22+10:00"
     },
     {
       "id": "ha_subclass_884",
@@ -169,11 +169,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "a4751377866e7acd449a277e3e91ecb72e43035dd2168caccad8a490d8e93888",
-      "bytes": 63970,
-      "method": "insane-search-verified-snapshot",
+      "sha256": "79a305f75cb1cf970a65e7bf6b793c7461d73f94335400bdd69e104418039827",
+      "bytes": 1375632,
+      "method": "https-direct-live",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-09T07:35:09+10:00"
+      "checked_at": "2026-11-11T22:58:22+10:00"
     },
     {
       "id": "ha_subclass_103",
@@ -196,11 +196,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "a7f582901ea26dc83eec22215c506673e757ea136fe13999d392808c7c3b97a5",
-      "bytes": 77555,
-      "method": "insane-search-verified-snapshot",
+      "sha256": "8499631ae687f45c75e03e77aa83e16d6bb83d6a373ca05d2a07d079ccab2d72",
+      "bytes": 1392253,
+      "method": "https-direct-live",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-09T07:35:09+10:00"
+      "checked_at": "2026-11-11T22:58:22+10:00"
     },
     {
       "id": "ha_subclass_804",
@@ -223,11 +223,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "efcaf7868502e651cd1900df4fe274fc0b0bf59938982669ae0ba4d54709b837",
-      "bytes": 72581,
-      "method": "insane-search-verified-snapshot",
+      "sha256": "6db5c33023f9691d375f50de88a5095f537062735796d3354329dd12a6ebacef",
+      "bytes": 1386240,
+      "method": "https-direct-live",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-09T07:35:09+10:00"
+      "checked_at": "2026-11-11T22:58:22+10:00"
     },
     {
       "id": "ha_subclass_870",
@@ -250,11 +250,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "247a2cefa4ff64ba853cd7f239d05ff4cadb047d8e8c7facc934b9e47e58fe2a",
-      "bytes": 72164,
-      "method": "insane-search-verified-snapshot",
+      "sha256": "2b7197592d23cabef70d14c958aeecf3e64b592d8bda7e42d8a69227c9365ce8",
+      "bytes": 1385208,
+      "method": "https-direct-live",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-09T07:35:09+10:00"
+      "checked_at": "2026-11-11T22:58:22+10:00"
     },
     {
       "id": "ha_bof_test",
@@ -277,11 +277,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "9eeb46887e9148b66f8cd47643eca640e2b142a0c458882542eb8f0ef54e319f",
-      "bytes": 9973,
-      "method": "insane-search-verified-snapshot",
+      "sha256": "cc8d9a6fcc677f7f5b8b4d0efe73982070e1f7a9bb2624001b00d0d9d1c5d974",
+      "bytes": 1312559,
+      "method": "https-direct-live",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-09T07:35:09+10:00"
+      "checked_at": "2026-11-11T22:58:22+10:00"
     },
     {
       "id": "ha_planning_levels",
@@ -304,11 +304,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "7248f5e9c92de48f3ab20aa86eaf7a3f7f269b7547670142c6611b19b87fd73d",
-      "bytes": 18172,
-      "method": "insane-search-verified-snapshot",
+      "sha256": "f3ce8cf93ad674583d73c477de2161203f1b12cec213c4ccb65687cdadc45886",
+      "bytes": 1326409,
+      "method": "https-direct-live",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-09T07:35:09+10:00"
+      "checked_at": "2026-11-11T22:58:22+10:00"
     },
     {
       "id": "leg_lin_26_042",
@@ -331,11 +331,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "aed63d3210d9d52224dce7080c269fc46ddb23b41ca6c5253d6f250f4c817daf",
-      "bytes": 5251,
-      "method": "insane-search-verified-snapshot",
-      "changed_since_last_poll": false,
-      "checked_at": "2026-11-09T07:35:09+10:00"
+      "sha256": "da4213a0cc6e690e5e04890daa4b5c8eb346426ef5ba0374f1fc5646d7f00d52",
+      "bytes": 83596,
+      "method": "https-direct-live",
+      "changed_since_last_poll": true,
+      "checked_at": "2026-11-11T22:58:22+10:00"
     },
     {
       "id": "sa_aos_policy",
@@ -358,11 +358,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "33f765446999f6aa0b67a1faf8295afab75c3757222df6f673a6cfc83f298170",
-      "bytes": 9391,
-      "method": "insane-search-verified-snapshot",
+      "sha256": "f70a9eeb15d881f80a97dc5e588f296b08a106cbd96fdc8303322d124cef8f02",
+      "bytes": 198250,
+      "method": "https-direct-live",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-09T07:35:09+10:00"
+      "checked_at": "2026-11-11T22:58:22+10:00"
     },
     {
       "id": "sa_medicare_rhca",
@@ -385,11 +385,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "57ffa518cbc56d0f2fa067473f711d3bfddde45e2641b0d9811203e7e87ee669",
-      "bytes": 7108,
-      "method": "insane-search-verified-snapshot",
+      "sha256": "11e458967d245d088b0a3d398df5f048f5df5092b563ba21a131235021b1a2fc",
+      "bytes": 186571,
+      "method": "https-direct-live",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-09T07:35:09+10:00"
+      "checked_at": "2026-11-11T22:58:22+10:00"
     },
     {
       "id": "dss_guide_aos",
@@ -412,11 +412,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "76482f2c9a82f4f6d36be89dfe388b90b69731fc1dc2fb0c2dbea4b583884624",
-      "bytes": 8192,
-      "method": "insane-search-verified-snapshot",
-      "changed_since_last_poll": false,
-      "checked_at": "2026-11-09T07:35:09+10:00"
+      "sha256": "c1382004a7872a60111f54a35de9d4821af2877b9de1f35d3caf9e4da45c2e58",
+      "bytes": 32335,
+      "method": "insane-search-live",
+      "changed_since_last_poll": true,
+      "checked_at": "2026-11-11T22:58:22+10:00"
     }
   ],
   "internal_policy_references": [
@@ -564,73 +564,89 @@
       "effective_date": "2026-07-01",
       "authority": "Migration Regulations 1994 Schedule 1 (Items 1124, 1124A, 1130, 1130A, 1221, 1221A, 1239) & Home Affairs PageSchemaHiddenField / GetPriceList",
       "103": {
+        "sponsorship": 0,
         "first_base": 5280,
         "first_adult": 2640,
         "first_child": 1325,
         "second_per_person": 2065,
+        "second_child": 2065,
         "aos_years": 4,
         "aos_bond_1": 5000,
         "aos_bond_2": 7000
       },
       "804": {
+        "sponsorship": 0,
         "first_base": 5280,
         "first_adult": 2640,
         "first_child": 1325,
         "second_per_person": 2065,
+        "second_child": 2065,
         "aos_years": 4,
         "aos_bond_1": 5000,
         "aos_bond_2": 7000
       },
       "143": {
+        "sponsorship": 0,
         "first_base": 5040,
         "first_adult": 1700,
         "first_child": 855,
         "second_per_person": 43600,
+        "second_child": 2095,
         "aos_years": 10,
         "aos_bond_1": 10000,
         "aos_bond_2": 14000
       },
       "173": {
+        "sponsorship": 0,
         "first_base": 3395,
         "first_adult": 1145,
         "first_child": 575,
         "second_per_person": 29130,
+        "second_child": 2095,
         "aos_years": 0,
         "aos_bond_1": 0,
         "aos_bond_2": 0
       },
       "173_to_143": {
+        "sponsorship": 0,
         "first_base": 440,
         "first_adult": 195,
         "first_child": 100,
         "second_per_person": 19420,
+        "second_child": 0,
         "aos_years": 10,
         "aos_bond_1": 10000,
         "aos_bond_2": 14000
       },
       "864": {
+        "sponsorship": 0,
         "first_base": 5040,
         "first_adult": 2515,
         "first_child": 1260,
         "second_per_person": 43600,
+        "second_child": 2095,
         "aos_years": 10,
         "aos_bond_1": 10000,
         "aos_bond_2": 14000
       },
       "884": {
+        "sponsorship": 0,
         "first_base": 4990,
         "first_adult": 2490,
         "first_child": 1250,
         "second_per_person": 29130,
+        "second_child": 2095,
         "aos_years": 0,
         "aos_bond_1": 0,
         "aos_bond_2": 0
       },
       "884_to_864": {
+        "sponsorship": 0,
         "first_base": 440,
         "first_adult": 195,
         "first_child": 100,
         "second_per_person": 19420,
+        "second_child": 0,
         "aos_years": 10,
         "aos_bond_1": 10000,
         "aos_bond_2": 14000
@@ -638,7 +654,11 @@
       "870_3yr": {
         "sponsorship": 420,
         "first_base": 1180,
+        "first_adult": 0,
+        "first_child": 0,
         "second_per_person": 4715,
+        "second_child": 0,
+        "secondary_applicants_allowed": false,
         "visa_subtotal_per_parent": 5895,
         "total_1_parent_incl_sponsorship": 6315,
         "total_2_parents_incl_sponsorship": 12210,
@@ -648,7 +668,11 @@
       "870_5yr": {
         "sponsorship": 420,
         "first_base": 1180,
+        "first_adult": 0,
+        "first_child": 0,
         "second_per_person": 10605,
+        "second_child": 0,
+        "secondary_applicants_allowed": false,
         "visa_subtotal_per_parent": 11785,
         "total_1_parent_incl_sponsorship": 12205,
         "total_2_parents_incl_sponsorship": 23990,

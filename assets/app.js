@@ -3,8 +3,8 @@
    Queue Release, Waiting Period Survival & AoS Navigator (app.js)
    ============================================================================ */
 
-const QUEUE_DATA = {"release_id":"2026.10.21-audit-v2","generated_at":"2026-11-09T07:35:09+10:00","last_polled_date":"2026-11-09","official_contact":"https://parklawyers.com.au/links/?lang=ko","live_queue_state":{"as_at_date":"31 August 2026","last_updated_str":"6/10/2026 10:27 AM","queue_release_bullets":{"Contributory Parent":"November 2018","Contributory Aged Parent":"November 2020","Parent":"March 2014","Aged Parent":"October 2014"},"milestone_table":[{"visa_type":"Temporary to Permanent (173 to 143 and 884 to 864)","acknowledge_new_application":"Approx. 4 weeks","queue_assessment":"N/A","visa_assessment_queue_release_date":"May 2026"},{"visa_type":"Contributory Parent (143)","acknowledge_new_application":"Approx. 4 weeks","queue_assessment":"Lodged April 2024","visa_assessment_queue_release_date":"Lodged/queued up to November 2018"},{"visa_type":"Contributory Parent (Temp) (173)","acknowledge_new_application":"Approx. 4 weeks","queue_assessment":"Lodged April 2024","visa_assessment_queue_release_date":"Lodged/queued up to November 2018"},{"visa_type":"Contributory Aged Parent (864)","acknowledge_new_application":"Approx. 4 weeks","queue_assessment":"Lodged April 2023","visa_assessment_queue_release_date":"Lodged/queued up to November 2020"},{"visa_type":"Contributory Aged Parent (Temp) (884)","acknowledge_new_application":"Approx. 4 weeks","queue_assessment":"Lodged April 2023","visa_assessment_queue_release_date":"Lodged/queued up to November 2020"},{"visa_type":"Parent (103)","acknowledge_new_application":"Approx. 4 weeks","queue_assessment":"Lodged February 2023","visa_assessment_queue_release_date":"Queued up to March 2014"},{"visa_type":"Aged Parent (804)","acknowledge_new_application":"Approx. 4 weeks","queue_assessment":"Lodged January 2023","visa_assessment_queue_release_date":"Queued up to October 2014"}],"new_application_estimates":{"Contributory Parent visas":"18 years","Parent & Aged Parent visas":"42 years"}},"queue_lags_months_as_at_aug_2026":[{"id":"step_up","subclasses":["173_to_143","884_to_864"],"label_ko":"2단계 영주 전환 (173→143 / 884→864)","label_en":"2-Stage Temp→Perm (173→143 / 884→864)","stage1_assessment_str":"N/A (Direction 103 s 7(2)(b) 1단계 접수일 의제)","stage1_assessment_str_en":"N/A (Deemed Stage 1 Lodgement Date under Direction 103 s 7(2)(b))","stage1_lag_months":0,"stage2_release_str":"May 2026","stage2_release_dec":2026.42,"stage2_lag_months":3,"official_wait_years":null,"empirical_velocity_months_per_year":12.0},{"id":"sub_864_884","subclasses":["864","884"],"label_ko":"기여제 고령부모 (864 / 884 · Onshore 67+)","label_en":"Contributory Aged Parent (864 / 884 · Onshore 67+)","stage1_assessment_str":"2023년 4월 접수분","stage1_assessment_str_en":"Lodged April 2023","stage1_lag_months":40,"stage2_release_str":"November 2020","stage2_release_dec":2020.92,"stage2_lag_months":69,"official_wait_years":18,"empirical_velocity_months_per_year":9.13},{"id":"sub_143_173","subclasses":["143","173"],"label_ko":"기여제 부모 (143 / 173 · 일반)","label_en":"Contributory Parent (143 / 173 · General)","stage1_assessment_str":"2024년 4월 접수분","stage1_assessment_str_en":"Lodged April 2024","stage1_lag_months":28,"stage2_release_str":"November 2018","stage2_release_dec":2018.92,"stage2_lag_months":93,"official_wait_years":18,"empirical_velocity_months_per_year":5.07},{"id":"sub_804","subclasses":["804"],"label_ko":"일반 고령부모 (804 · Onshore 67+)","label_en":"Aged Parent (804 · Onshore 67+)","stage1_assessment_str":"2023년 1월 접수분","stage1_assessment_str_en":"Lodged January 2023","stage1_lag_months":43,"stage2_release_str":"October 2014","stage2_release_dec":2014.83,"stage2_lag_months":142,"official_wait_years":42,"empirical_velocity_months_per_year":2.35},{"id":"sub_103","subclasses":["103"],"label_ko":"일반 부모 (103 · Offshore/일반)","label_en":"Parent (103 · General)","stage1_assessment_str":"2023년 2월 접수분","stage1_assessment_str_en":"Lodged February 2023","stage1_lag_months":42,"stage2_release_str":"March 2014","stage2_release_dec":2014.25,"stage2_lag_months":149,"official_wait_years":42,"empirical_velocity_months_per_year":4.18}],"historical_velocity_series":[{"period":"2020-09","c_143_year":2016.42,"c_143_label":"May 2016","c_864_year":2016.42,"c_864_label":"May 2016","p_103_year":2010.83,"p_103_label":"Oct 2010"},{"period":"2021-09","c_143_year":2016.42,"c_143_label":"May 2016","c_864_year":2016.58,"c_864_label":"Jul 2016","p_103_year":2010.83,"p_103_label":"Oct 2010"},{"period":"2022-09","c_143_year":2016.83,"c_143_label":"Oct 2016","c_864_year":2017.0,"c_864_label":"Jan 2017","p_103_year":2011.42,"p_103_label":"May 2011"},{"period":"2023-09","c_143_year":2017.42,"c_143_label":"May 2017","c_864_year":2017.42,"c_864_label":"May 2017","p_103_year":2011.83,"p_103_label":"Oct 2011"},{"period":"2024-09","c_143_year":2017.75,"c_143_label":"Sep 2017","c_864_year":2017.75,"c_864_label":"Sep 2017","p_103_year":2012.67,"p_103_label":"Aug 2012"},{"period":"2025-09","c_143_year":2018.42,"c_143_label":"May 2018","c_864_year":2018.42,"c_864_label":"May 2018","p_103_year":2013.33,"p_103_label":"Apr 2013"},{"period":"2026-08","c_143_year":2018.92,"c_143_label":"Nov 2018","c_864_year":2020.92,"c_864_label":"Nov 2020","p_103_year":2014.25,"p_103_label":"Mar 2014"}],"capping_and_backlog":{"instrument_id":"LIN 26/042 (F2026L00724)","s85_contributory_cap":6800,"s85_contributory_aged_earmark":1125,"s85_non_contributory_cap":1700,"s85_total_cap":8500,"fy26_27_planning_level":7060,"backlog_as_at":"31 December 2025 (FOI DA 26/01/00017 & DA 25/07/00301)","backlog_contributory_persons":100762,"backlog_non_contributory_persons":57706,"backlog_total_persons":158468,"subclass_804_onhand":27013,"subclass_804_annual_grants_fy24_25":37,"subclass_804_annual_withdrawals_refusals_fy24_25":475},"fee_schedule_fy26_27":{"effective_date":"2026-07-01","authority":"Migration Regulations 1994 Schedule 1 (Items 1124, 1124A, 1130, 1130A, 1221, 1221A, 1239) & Home Affairs PageSchemaHiddenField / GetPriceList","103":{"first_base":5280,"first_adult":2640,"first_child":1325,"second_per_person":2065,"aos_years":4,"aos_bond_1":5000,"aos_bond_2":7000},"804":{"first_base":5280,"first_adult":2640,"first_child":1325,"second_per_person":2065,"aos_years":4,"aos_bond_1":5000,"aos_bond_2":7000},"143":{"first_base":5040,"first_adult":1700,"first_child":855,"second_per_person":43600,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"173":{"first_base":3395,"first_adult":1145,"first_child":575,"second_per_person":29130,"aos_years":0,"aos_bond_1":0,"aos_bond_2":0},"173_to_143":{"first_base":440,"first_adult":195,"first_child":100,"second_per_person":19420,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"864":{"first_base":5040,"first_adult":2515,"first_child":1260,"second_per_person":43600,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"884":{"first_base":4990,"first_adult":2490,"first_child":1250,"second_per_person":29130,"aos_years":0,"aos_bond_1":0,"aos_bond_2":0},"884_to_864":{"first_base":440,"first_adult":195,"first_child":100,"second_per_person":19420,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"870_3yr":{"sponsorship":420,"first_base":1180,"second_per_person":4715,"visa_subtotal_per_parent":5895,"total_1_parent_incl_sponsorship":6315,"total_2_parents_incl_sponsorship":12210,"sponsor_income":83454.8,"primary_sponsor_min_50pct":41727.4},"870_5yr":{"sponsorship":420,"first_base":1180,"second_per_person":10605,"visa_subtotal_per_parent":11785,"total_1_parent_incl_sponsorship":12205,"total_2_parents_incl_sponsorship":23990,"sponsor_income":83454.8,"primary_sponsor_min_50pct":41727.4}},"aos_formula_fy26_27":{"authority":"Social Security (Assurance of Support) Determination 2018 (F2024C00296 / F2018L00425) ss 8, 9, 15, 16 & DSS Social Security Guide 9.4.3.10–9.4.3.30","jsp_annual_base_aud":22578,"ftb_child_add_aud":2942,"max_concurrent_adult_assurees":2,"corporate_bond_contributory_aud":20000,"corporate_bond_non_contributory_aud":10000,"corporate_available_funds_per_adult_aud":5000,"corporate_min_trading_years":2,"formula_expression":"22578 * (numAssurers + newAdultAssurees + existingAdultAssurees) + 2942 * assurerMinorChildren","examples":{"single_assurer_1_parent":45156,"single_assurer_2_parents":67734,"single_assurer_1_existing_1_new_parent":67734,"single_assurer_2_parents_1_child":70676,"single_assurer_2_parents_2_children":73618,"joint_2_assurers_1_parent":67734,"joint_2_assurers_2_parents":90312,"joint_2_assurers_2_parents_2_children":96196}}};
-const POLLING_DATA = {"release_id":"2026.10.21-audit-v2","last_polled_at":"2026-11-09T07:35:09+10:00","last_polled_date":"2026-11-09","total_sources":15,"live_verified_count":15,"changed_count":0,"official_contact":"https://parklawyers.com.au/links/?lang=ko","monitored_rules":{"release_id":"2026.10.21-audit-v2","parent_visas_queue_state":{"as_at_date":"31 August 2026","last_updated_str":"6/10/2026 10:27 AM","release_dates":{"Contributory Parent":"November 2018","Contributory Aged Parent":"November 2020","Parent":"March 2014","Aged Parent":"October 2014"},"new_application_estimates":{"Contributory Parent visas":"18 years","Parent & Aged Parent visas":"42 years"}},"section_85_cap_and_backlog":{"instrument_id":"LIN 26/042 (F2026L00724)","s85_contributory_cap":6800,"s85_contributory_aged_earmark":1125,"s85_non_contributory_cap":1700,"s85_total_cap":8500,"fy26_27_planning_level":7060,"backlog_as_at":"31 December 2025 (FOI DA 26/01/00017 & DA 25/07/00301)","backlog_contributory_persons":100762,"backlog_non_contributory_persons":57706,"backlog_total_persons":158468,"subclass_804_onhand":27013,"subclass_804_annual_grants_fy24_25":37,"subclass_804_annual_withdrawals_refusals_fy24_25":475},"aos_formula_fy26_27":{"authority":"Social Security (Assurance of Support) Determination 2018 (F2024C00296 / F2018L00425) ss 8, 9, 15, 16 & DSS Social Security Guide 9.4.3.10–9.4.3.30","jsp_annual_base_aud":22578,"ftb_child_add_aud":2942,"max_concurrent_adult_assurees":2,"corporate_bond_contributory_aud":20000,"corporate_bond_non_contributory_aud":10000,"corporate_available_funds_per_adult_aud":5000,"corporate_min_trading_years":2,"formula_expression":"22578 * (numAssurers + newAdultAssurees + existingAdultAssurees) + 2942 * assurerMinorChildren","examples":{"single_assurer_1_parent":45156,"single_assurer_2_parents":67734,"single_assurer_1_existing_1_new_parent":67734,"single_assurer_2_parents_1_child":70676,"single_assurer_2_parents_2_children":73618,"joint_2_assurers_1_parent":67734,"joint_2_assurers_2_parents":90312,"joint_2_assurers_2_parents_2_children":96196}},"statutory_vac_fy26_27":{"effective_date":"2026-07-01","authority":"Migration Regulations 1994 Schedule 1 (Items 1124, 1124A, 1130, 1130A, 1221, 1221A, 1239) & Home Affairs PageSchemaHiddenField / GetPriceList","103":{"first_base":5280,"first_adult":2640,"first_child":1325,"second_per_person":2065,"aos_years":4,"aos_bond_1":5000,"aos_bond_2":7000},"804":{"first_base":5280,"first_adult":2640,"first_child":1325,"second_per_person":2065,"aos_years":4,"aos_bond_1":5000,"aos_bond_2":7000},"143":{"first_base":5040,"first_adult":1700,"first_child":855,"second_per_person":43600,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"173":{"first_base":3395,"first_adult":1145,"first_child":575,"second_per_person":29130,"aos_years":0,"aos_bond_1":0,"aos_bond_2":0},"173_to_143":{"first_base":440,"first_adult":195,"first_child":100,"second_per_person":19420,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"864":{"first_base":5040,"first_adult":2515,"first_child":1260,"second_per_person":43600,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"884":{"first_base":4990,"first_adult":2490,"first_child":1250,"second_per_person":29130,"aos_years":0,"aos_bond_1":0,"aos_bond_2":0},"884_to_864":{"first_base":440,"first_adult":195,"first_child":100,"second_per_person":19420,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"870_3yr":{"sponsorship":420,"first_base":1180,"second_per_person":4715,"visa_subtotal_per_parent":5895,"total_1_parent_incl_sponsorship":6315,"total_2_parents_incl_sponsorship":12210,"sponsor_income":83454.8,"primary_sponsor_min_50pct":41727.4},"870_5yr":{"sponsorship":420,"first_base":1180,"second_per_person":10605,"visa_subtotal_per_parent":11785,"total_1_parent_incl_sponsorship":12205,"total_2_parents_incl_sponsorship":23990,"sponsor_income":83454.8,"primary_sponsor_min_50pct":41727.4}},"waiting_period_statutory_rules":{"immiaccount_online_mandate_date":"2026-04-22","immiaccount_online_instrument":"LIN 26/005 (F2026L00441)","online_subclasses":["103","143","804","864"],"online_mandate_exceptions":"Written permission by Department to lodge paper Form 47PA (LIN 26/005 ss 12-13 & Sch 1) or transitional dispatch before 22 Apr 2026","paper_subclasses":["173","884"],"aged_parent_pension_age":67,"aged_parent_schedule1_validity_date":"2024-12-17","aged_parent_schedule1_exception":"Substituted Subclass 600 holder (F2025L00317 Items 1124A, 1130A, 1221A)","pic_4005_significant_cost_threshold_aud":86000,"pic_4005_assessment_periods":"Up to 5 yrs standard permanent/provisional; 3 yrs for applicants aged 75+; up to 10 yrs (within life expectancy) for permanent/ongoing reasonably predictable conditions; stay period for temporary visas","pic_4005_health_waiver_available":false,"subclass_870_health_criteria":"cl 870.228: PIC 4005 if outside Australia at time of application; PIC 4007 (health waiver available) if in Australia at time of application (PAM3 VM-6327 §3.6.8)","rhca_countries_count":11,"korea_rhca_eligible":false,"korea_social_security_guide":"DSS Social Security Guide 10.22 (Agreement with Korea)","temp_173_884_medicare_eligible":true}},"internal_policy_references":[{"id":"pam3_vm_3058","cite":"PAM3 (Procedural Instruction): Parent Visa Processing & Queue Administration · VM-3058 (LEGEND version 2026-07-01, local snapshot 2026-10-02)","sourceKind":"internal_policy_reference","notPubliclyPollable":true,"fetchStatus":"internal_legendcom_mirror","contentCheckStatus":"verified_against_local_mirror","ruleMatchStatus":"matched","reviewStatus":"approved","legendVersionDate":"2026-07-01","snapshotVerifiedDate":"2026-10-02","sha256":"e2c17fcf48907fcdabfafd42385cb01ec3c92c0cccb4906f9b7cad74abf23623","localMirrorReference":"Policy Reference (VM-3058 · Queue Date assignment, §§3.2.6, 3.9.1 post-17 Dec 2024 Age 67 validity & death of primary applicant, substituted 600 exception)","publicCompanionUrl":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/visa-processing-priorities/parent-visas"},{"id":"pam3_vm_6327","cite":"PAM3 (Procedural Instruction): Sponsored Parent (Temporary) Visa (Subclass 870) · VM-6327 (LEGEND version 2026-02-06, local snapshot 2026-10-02)","sourceKind":"internal_policy_reference","notPubliclyPollable":true,"fetchStatus":"internal_legendcom_mirror","contentCheckStatus":"verified_against_local_mirror","ruleMatchStatus":"matched","reviewStatus":"approved","legendVersionDate":"2026-02-06","snapshotVerifiedDate":"2026-10-02","sha256":"eda066b55e0f56f8c0f85c2dd25e03088c8aabcb94e368de9d2f8d508e89ef21","localMirrorReference":"Policy Reference (VM-6327 · §3.3.7.2 60-day PTA onshore window, §3.3.8 10-yr cap & COVID-19 18m exclusion, §3.6.6 asymmetric lockout bar, §3.6.7 cl 870.227 public health debt arrangement, §3.6.8 cl 870.228 PIC 4005 offshore vs PIC 4007 onshore, §3.7.2.1 2nd VAC may be refused)","publicCompanionUrl":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/sponsored-parent-temporary-870"},{"id":"pam3_vm_6276","cite":"PAM3 (Procedural Instruction): Family (Parent) Sponsor Assessment (Subclass 870) · VM-6276 (LEGEND version 2026-04-03, local snapshot 2026-10-02)","sourceKind":"internal_policy_reference","notPubliclyPollable":true,"fetchStatus":"internal_legendcom_mirror","contentCheckStatus":"verified_against_local_mirror","ruleMatchStatus":"matched","reviewStatus":"approved","legendVersionDate":"2026-04-03","snapshotVerifiedDate":"2026-10-02","sha256":"c17ba2e18f616d1c4e307aca19f3b38045269df1185b0d2a019894b0363b9eda","localMirrorReference":"Policy Reference (VM-6276 · §§3.4–3.4.3 taxable income test $83,454.80, early-new-FY preceding NOA evidentiary rule, 50% primary sponsor rule $41,727.40, §3.4.3 no mid-application sponsor swap without new sponsorship)","publicCompanionUrl":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/sponsored-parent-temporary-870"},{"id":"pam3_vm_6647","cite":"PAM3 (Procedural Instruction): Second Instalment Visa Application Charge (2nd VAC) · VM-6647 (local snapshot 2026-10-02)","sourceKind":"internal_policy_reference","notPubliclyPollable":true,"fetchStatus":"internal_legendcom_mirror","contentCheckStatus":"verified_against_local_mirror","ruleMatchStatus":"matched","reviewStatus":"approved","legendVersionDate":null,"snapshotVerifiedDate":"2026-10-02","localMirrorReference":"Policy Reference (VM-6647 §§3.4.5.1–3.4.5.2 · reg 2.12D 28 calendar days AU-to-AU vs 70 calendar days all other sender/recipient address combinations, running from deemed receipt date)","publicCompanionUrl":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/sponsored-parent-temporary-870"},{"id":"direction_103","cite":"Ministerial Direction No. 103 · Order of Consideration: Certain Family Visas (s 6(2)(c) upfront aged assessment & ss 7(2)(b), 8(1)(b) Stage 1 lodgement date deeming)","sourceKind":"internal_policy_reference","notPubliclyPollable":true,"fetchStatus":"internal_legendcom_mirror","contentCheckStatus":"verified_against_local_mirror","ruleMatchStatus":"matched","reviewStatus":"approved","legendVersionDate":"2023-06-28","snapshotVerifiedDate":"2026-10-02","localMirrorReference":"Policy Reference (Direction No. 103 s 6(2)(c) upfront aged assessment & ss 7(2)(b), 8(1)(b) deemed initial 173/884 application date for 143/864 transition)","publicCompanionUrl":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/visa-processing-priorities/parent-visas"},{"id":"direction_117","cite":"Ministerial Direction No. 117 · Order of Consideration: Certain Family Visas (effective 25 July 2026, s 8(2)(a) priority for onshore aged parent applications)","sourceKind":"internal_policy_reference","notPubliclyPollable":true,"fetchStatus":"internal_legendcom_mirror","contentCheckStatus":"verified_against_local_mirror","ruleMatchStatus":"matched","reviewStatus":"approved","legendVersionDate":"2026-07-25","snapshotVerifiedDate":"2026-10-02","localMirrorReference":"Policy Reference (Direction No. 117 s 8(2)(a) · Onshore Contributory Aged Parent 864/884 priority release)","publicCompanionUrl":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/visa-processing-priorities/parent-visas"}],"sources":[{"id":"ha_parent_queue","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Parent Visas Queue Assessment & Queue Release Dates Official Page","title_ko":"부모초청 비자 월별 Queue Assessment & Queue Release Dates 공시 페이지","title_en":"Parent Visas Queue Assessment & Queue Release Dates Official Page","check_scope_ko":"기준일(2026.08.31) · 7대 비자 1단계/2단계 컷오프 · 신규 신청 거시 예상 대기연수(18년/42년) 파싱","check_scope_en":"Live parsing of 7x4 queue milestone table, release dates & 18yr/42yr new-application macro estimates","cadence_ko":"매주 월·목 폴링 (이민성 월 1회 ~5주 시차 업데이트)","cadence_en":"Polled twice weekly (DHA updates monthly with ~5-week lag)","maxAgeHours":168,"url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/visa-processing-priorities/parent-visas","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"39450ed5bcee9ff128e0426b83d583f7258182f8f1579301cab03a9837a1729c","bytes":1410199,"method":"insane-search-verified-snapshot","changed_since_last_poll":false,"checked_at":"2026-11-09T07:35:09+10:00"},{"id":"ha_pricing_api","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"DHA Visa Pricing JSON API (GetPriceList · All 15 Parent Visa Fee Tiers)","title_ko":"이민성 내부 비자 수수료 API (GetPriceList · 부모비자 15개 스트림 1·2차 VAC)","title_en":"DHA Visa Pricing JSON API (GetPriceList · All 15 Parent Visa Fee Tiers)","check_scope_ko":"103/143/173/804/864/884/870 1차 신청비(Base/18+/<18) 및 2차 기여금($43,600 · 870 $4,715/$10,605 등) 실시간 대조","check_scope_en":"Live verification of 1st & 2nd VAC across all 15 Parent Visa fee schedules","cadence_ko":"매월 1일 및 매년 7월 1일 회계연도 개시일 집중 감시","cadence_en":"Monthly & 1 July FY indexation check","maxAgeHours":720,"url":"https://immi.homeaffairs.gov.au/_layouts/15/api/data.aspx/GetPriceList","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"d08adc0d2b0d34e547810e912f1581ca701201d678c0632532c7e62197743fe4","bytes":39910,"method":"insane-search-verified-snapshot","changed_since_last_poll":false,"checked_at":"2026-11-09T07:35:09+10:00"},{"id":"ha_subclass_143","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Subclass 143 · Contributory Parent (Permanent) Visa","title_ko":"Subclass 143 · 기여제 부모 영주비자 (Contributory Parent Visa)","title_en":"Subclass 143 · Contributory Parent (Permanent) Visa","check_scope_ko":"LIN 26/005 온라인 접수 원칙 및 서면 허가 예외 · 1차/2차 VAC($43,600) · 10년 AoS 요건 파싱","check_scope_en":"PageSchemaHiddenField verification of 143 online lodgement (LIN 26/005), VAC & 10-yr AoS","cadence_ko":"매월 정기 폴링","cadence_en":"Monthly check","maxAgeHours":720,"url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/contributory-parent-143","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"27a497268f67d9daa91b6c39f04e957758ee5e69ba47b2ee6bff9493e5d3f041","bytes":81219,"method":"insane-search-verified-snapshot","changed_since_last_poll":false,"checked_at":"2026-11-09T07:35:09+10:00"},{"id":"ha_subclass_173","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Subclass 173 · Contributory Parent (Temporary) Visa","title_ko":"Subclass 173 · 기여제 부모 임시비자 (2년 · 메디케어 부여 · 2차 VAC 분할)","title_en":"Subclass 173 · Contributory Parent (Temporary) Visa","check_scope_ko":"종이 우편 접수 유지 · 2차 VAC 1단계분($29,130) · 메디케어 자격 및 AoS 유예 확인","check_scope_en":"PageSchemaHiddenField verification of 173 paper lodgement & $29,130 2nd VAC","cadence_ko":"매월 정기 폴링","cadence_en":"Monthly check","maxAgeHours":720,"url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/contributory-parent-temporary-173","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"e6d40c3abf3938d929f1a43bbe8d2f796d98c5097cf12b1fa29ed0b560df33ee","bytes":65336,"method":"insane-search-verified-snapshot","changed_since_last_poll":false,"checked_at":"2026-11-09T07:35:09+10:00"},{"id":"ha_subclass_864","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Subclass 864 · Contributory Aged Parent (Residence) Visa","title_ko":"Subclass 864 · 기여제 고령부모 영주비자 (Onshore 만 67세+ · BVA 부여)","title_en":"Subclass 864 · Contributory Aged Parent (Residence) Visa","check_scope_ko":"만 67세 유효접수 요건(대체 600 특례 포함) · 온쇼어 BVA 부여 · 온라인 접수 · 2차 VAC($43,600) 확인","check_scope_en":"PageSchemaHiddenField verification of 864 Age 67 rule (incl. substituted 600 exception), BVA & VAC","cadence_ko":"매월 정기 폴링","cadence_en":"Monthly check","maxAgeHours":720,"url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/contributory-aged-parent-864","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"545ba3dc250d453e744265d4f0009acae97dad60d5fad49e81d6474e6f3f962b","bytes":74604,"method":"insane-search-verified-snapshot","changed_since_last_poll":false,"checked_at":"2026-11-09T07:35:09+10:00"},{"id":"ha_subclass_884","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Subclass 884 · Contributory Aged Parent (Temporary) Visa","title_ko":"Subclass 884 · 기여제 고령부모 임시비자 (Onshore 만 67세+ · 2단계 전환)","title_en":"Subclass 884 · Contributory Aged Parent (Temporary) Visa","check_scope_ko":"만 67세 요건 · 종이 우편 접수 · 2차 VAC($29,130) · 884->864 전환 규칙 확인","check_scope_en":"PageSchemaHiddenField verification of 884 paper lodgement & step-up rules","cadence_ko":"매월 정기 폴링","cadence_en":"Monthly check","maxAgeHours":720,"url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/contributory-aged-parent-temporary-884","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"a4751377866e7acd449a277e3e91ecb72e43035dd2168caccad8a490d8e93888","bytes":63970,"method":"insane-search-verified-snapshot","changed_since_last_poll":false,"checked_at":"2026-11-09T07:35:09+10:00"},{"id":"ha_subclass_103","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Subclass 103 · Parent (Migrant) Visa","title_ko":"Subclass 103 · 일반 부모 영주비자 (Parent Visa)","title_en":"Subclass 103 · Parent (Migrant) Visa","check_scope_ko":"LIN 26/005 온라인 접수 원칙 및 예외 · 1차 VAC($5,280) · 2차 VAC($2,065) · 4년 AoS 확인","check_scope_en":"PageSchemaHiddenField verification of 103 online lodgement, VAC & 4-yr AoS","cadence_ko":"매월 정기 폴링","cadence_en":"Monthly check","maxAgeHours":720,"url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/parent-103","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"a7f582901ea26dc83eec22215c506673e757ea136fe13999d392808c7c3b97a5","bytes":77555,"method":"insane-search-verified-snapshot","changed_since_last_poll":false,"checked_at":"2026-11-09T07:35:09+10:00"},{"id":"ha_subclass_804","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Subclass 804 · Aged Parent (Residence) Visa","title_ko":"Subclass 804 · 일반 고령부모 영주비자 (Aged Parent Visa · Onshore 67+)","title_en":"Subclass 804 · Aged Parent (Residence) Visa","check_scope_ko":"만 67세 유효접수 요건(대체 600 예외 포함) · 온쇼어 BVA 부여 · 42년 대기 및 PIC 4005 요건 확인","check_scope_en":"PageSchemaHiddenField verification of 804 Age 67 rule, BVA & PIC 4005","cadence_ko":"매월 정기 폴링","cadence_en":"Monthly check","maxAgeHours":720,"url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/aged-parent-804","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"efcaf7868502e651cd1900df4fe274fc0b0bf59938982669ae0ba4d54709b837","bytes":72581,"method":"insane-search-verified-snapshot","changed_since_last_poll":false,"checked_at":"2026-11-09T07:35:09+10:00"},{"id":"ha_subclass_870","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Subclass 870 · Sponsored Parent (Temporary) Visa","title_ko":"Subclass 870 · 스폰서 임시 부모비자 (3년 $5,895 / 5년 $11,785 + 스폰서 $420 · 최대 10년)","title_en":"Subclass 870 · Sponsored Parent (Temporary) Visa","check_scope_ko":"가족균형 면제 · 스폰서 과세소득($83,454.80) · cl 870.228(PIC 4005/4007) · cl 870.227 · reg 2.87CE 파싱","check_scope_en":"PageSchemaHiddenField verification of 870 fees, income threshold, PIC 4005/4007 & permanent bar","cadence_ko":"매월 정기 폴링","cadence_en":"Monthly check","maxAgeHours":720,"url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/sponsored-parent-temporary-870","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"247a2cefa4ff64ba853cd7f239d05ff4cadb047d8e8c7facc934b9e47e58fe2a","bytes":72164,"method":"insane-search-verified-snapshot","changed_since_last_poll":false,"checked_at":"2026-11-09T07:35:09+10:00"},{"id":"ha_bof_test","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Balance of Family Test Official Rules (reg 1.05(2C) & (3))","title_ko":"가족균형테스트 (Balance of Family Test · Migration Regulations reg 1.05(2C)/(3))","title_en":"Balance of Family Test Official Rules (reg 1.05(2C) & (3))","check_scope_ko":"reg 1.05(2C)(a) 50% 이상 요건 및 (2C)(b) 단일 해외국가 최다 거주 자녀수 초과 요건 · 제외 자녀(reg 1.05(3)) 확인","check_scope_en":"Verification of Balance of Family Test two-prong rule (reg 1.05(2C)(a) & (b)) and reg 1.05(3) exclusions","cadence_ko":"분기별 폴링","cadence_en":"Quarterly check","maxAgeHours":2160,"url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/parent-103/balance-of-family-test","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"9eeb46887e9148b66f8cd47643eca640e2b142a0c458882542eb8f0ef54e319f","bytes":9973,"method":"insane-search-verified-snapshot","changed_since_last_poll":false,"checked_at":"2026-11-09T07:35:09+10:00"},{"id":"ha_planning_levels","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Migration Program Planning Levels (Parent Stream Ceiling)","title_ko":"연간 이민 프로그램 계획 수준 (Migration Program Planning Levels)","title_en":"Migration Program Planning Levels (Parent Stream Ceiling)","check_scope_ko":"연간 부모비자 배정 쿼터(8,500석 -> FY26-27 계획치 7,060석 변동) 파싱","check_scope_en":"Verification of annual Parent visa stream planning ceiling (7,060 / 8,500 places)","cadence_ko":"매년 5월 연방 예산안 발표 및 7월 1일 폴링","cadence_en":"Annual May Budget & 1 July check","maxAgeHours":2160,"url":"https://immi.homeaffairs.gov.au/what-we-do/migration-program-planning-levels","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"7248f5e9c92de48f3ab20aa86eaf7a3f7f269b7547670142c6611b19b87fd73d","bytes":18172,"method":"insane-search-verified-snapshot","changed_since_last_poll":false,"checked_at":"2026-11-09T07:35:09+10:00"},{"id":"leg_lin_26_042","authority":"호주 연방 법제처 (Federal Register of Legislation)","authority_ko":"호주 연방 법제처 (Federal Register of Legislation)","authority_en":"Federal Register of Legislation","title":"Migration (Granting of Parent and Other Family Visas) Instrument 2026 · LIN 26/042 (s 85 Cap)","title_ko":"Migration (Granting of Parent and Other Family Visas) Instrument 2026 · LIN 26/042 (F2026L00724)","title_en":"Migration (Granting of Parent and Other Family Visas) Instrument 2026 · LIN 26/042 (s 85 Cap)","check_scope_ko":"Migration Act s 85 연간 최대 발급 상한 고시(기여제 6,800석 + 일반 부모 1,700석 = 8,500석) 감시","check_scope_en":"OData v4 & statutory text check of s 85 Parent Visa Maximum Grant Determination","cadence_ko":"매월 법제처 OData API 폴링","cadence_en":"Monthly Federal Register OData API check","maxAgeHours":720,"url":"https://www.legislation.gov.au/F2026L00724/latest/text","sourceKind":"public_legislation","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"aed63d3210d9d52224dce7080c269fc46ddb23b41ca6c5253d6f250f4c817daf","bytes":5251,"method":"insane-search-verified-snapshot","changed_since_last_poll":false,"checked_at":"2026-11-09T07:35:09+10:00"},{"id":"sa_aos_policy","authority":"호주 서비스청 (Services Australia)","authority_ko":"호주 서비스청 (Services Australia)","authority_en":"Services Australia","title":"Services Australia · Assurance of Support (AoS) Policy, Bank Guarantee & Corporate Capacity Rules","title_ko":"Assurance of Support (AoS) · 재정보증 제도·기간(10년/4년)·은행보증금($10k/$14k/$20k) 및 법인 재무심사","title_en":"Services Australia · Assurance of Support (AoS) Policy, Bank Guarantee & Corporate Capacity Rules","check_scope_ko":"기여제 10년($10k/$14k) · 비기여제 4년($5k/$7k) · 법인 보증($20k/$10k 본드 + 2년 흑자/성인당 $5k 가용자금 심사) 확인","check_scope_en":"Verification of AoS bond durations, individual (s 8) & corporate (s 9 + DSS 9.4.3.30) financial capacity rules","cadence_ko":"분기별 및 매년 7월 1일 폴링","cadence_en":"Quarterly & 1 July check","maxAgeHours":2160,"url":"https://www.servicesaustralia.gov.au/assurance-support","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"33f765446999f6aa0b67a1faf8295afab75c3757222df6f673a6cfc83f298170","bytes":9391,"method":"insane-search-verified-snapshot","changed_since_last_poll":false,"checked_at":"2026-11-09T07:35:09+10:00"},{"id":"sa_medicare_rhca","authority":"호주 서비스청 (Services Australia)","authority_ko":"호주 서비스청 (Services Australia)","authority_en":"Services Australia","title":"Services Australia · Enrolling in Medicare & Reciprocal Health Care Agreements (RHCA)","title_ko":"메디케어 가입 자격 및 상호의료협정(RHCA 11개국) · 부모비자 대기자 배제 규정","title_en":"Services Australia · Enrolling in Medicare & Reciprocal Health Care Agreements (RHCA)","check_scope_ko":"부모비자 BVA 대기자 Interim Medicare 배제 · 173/884 임시비자 메디케어 허용 · RHCA 11개국 명단 확인","check_scope_en":"Verification of Parent Visa interim Medicare exclusion, 173/884 inclusion & 11 RHCA nations","cadence_ko":"분기별 폴링","cadence_en":"Quarterly check","maxAgeHours":2160,"url":"https://www.servicesaustralia.gov.au/reciprocal-health-care-agreements","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"57ffa518cbc56d0f2fa067473f711d3bfddde45e2641b0d9811203e7e87ee669","bytes":7108,"method":"insane-search-verified-snapshot","changed_since_last_poll":false,"checked_at":"2026-11-09T07:35:09+10:00"},{"id":"dss_guide_aos","authority":"호주 사회서비스부 (Department of Social Services)","authority_ko":"호주 사회서비스부 (Department of Social Services)","authority_en":"Department of Social Services (DSS)","title":"DSS Social Security Guide 9.4.3 (AoS Income Formula) & 10.22 (Agreement with Korea)","title_ko":"Social Security Guide 9.4.3 & 10.22 · AoS 보증인 과세소득 산식(ss 15–16) & 한-호 사회보장협정(10.22)","title_en":"DSS Social Security Guide 9.4.3 (AoS Income Formula) & 10.22 (Agreement with Korea)","check_scope_ko":"JobSeeker 기준액($22,578) 기반 AoS 소득 공식(기존 피보증인 합산) 및 DSS 10.22 한-호 국민연금/노령연금 합산 규정 확인","check_scope_en":"Verification of JSP cut-off AoS income threshold formula (incl. existing assurees) & DSS 10.22 Korea-AU Agreement","cadence_ko":"매년 3월 20일 · 7월 1일 · 9월 20일 연금/수당 연동일 폴링","cadence_en":"20 March, 1 July & 20 September indexation check","maxAgeHours":2160,"url":"https://guides.dss.gov.au/social-security-guide/9/4/3","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"76482f2c9a82f4f6d36be89dfe388b90b69731fc1dc2fb0c2dbea4b583884624","bytes":8192,"method":"insane-search-verified-snapshot","changed_since_last_poll":false,"checked_at":"2026-11-09T07:35:09+10:00"}]};
+const QUEUE_DATA = {"release_id":"2026.10.21-audit-v2","generated_at":"2026-11-11T22:58:22+10:00","last_polled_date":"2026-11-11","official_contact":"https://parklawyers.com.au/links/?lang=ko","official_email":"enquiry@parkcolawyers.com","live_queue_state":{"as_at_date":"31 August 2026","last_updated_str":"6/10/2026 10:27 AM","queue_release_bullets":{"Contributory Parent":"November 2018","Contributory Aged Parent":"November 2020","Parent":"March 2014","Aged Parent":"October 2014"},"milestone_table":[{"visa_type":"Temporary to Permanent (173 to 143 and 884 to 864)","acknowledge_new_application":"Approx. 4 weeks","queue_assessment":"N/A","visa_assessment_queue_release_date":"May 2026"},{"visa_type":"Contributory Parent (143)","acknowledge_new_application":"Approx. 4 weeks","queue_assessment":"Lodged April 2024","visa_assessment_queue_release_date":"Lodged/queued up to November 2018"},{"visa_type":"Contributory Parent (Temp) (173)","acknowledge_new_application":"Approx. 4 weeks","queue_assessment":"Lodged April 2024","visa_assessment_queue_release_date":"Lodged/queued up to November 2018"},{"visa_type":"Contributory Aged Parent (864)","acknowledge_new_application":"Approx. 4 weeks","queue_assessment":"Lodged April 2023","visa_assessment_queue_release_date":"Lodged/queued up to November 2020"},{"visa_type":"Contributory Aged Parent (Temp) (884)","acknowledge_new_application":"Approx. 4 weeks","queue_assessment":"Lodged April 2023","visa_assessment_queue_release_date":"Lodged/queued up to November 2020"},{"visa_type":"Parent (103)","acknowledge_new_application":"Approx. 4 weeks","queue_assessment":"Lodged February 2023","visa_assessment_queue_release_date":"Queued up to March 2014"},{"visa_type":"Aged Parent (804)","acknowledge_new_application":"Approx. 4 weeks","queue_assessment":"Lodged January 2023","visa_assessment_queue_release_date":"Queued up to October 2014"}],"new_application_estimates":{"Contributory Parent visas":"18 years","Parent & Aged Parent visas":"42 years"}},"queue_lags_months_as_at_aug_2026":[{"id":"step_up","subclasses":["173_to_143","884_to_864"],"label_ko":"2단계 영주 전환 (173→143 / 884→864)","label_en":"2-Stage Temp→Perm (173→143 / 884→864)","stage1_assessment_str":"N/A (Direction 103 s 7(2)(b) 1단계 접수일 의제)","stage1_assessment_str_en":"N/A (Deemed Stage 1 Lodgement Date under Direction 103 s 7(2)(b))","stage1_lag_months":0,"stage2_release_str":"May 2026","stage2_release_dec":2026.42,"stage2_lag_months":3,"official_wait_years":null,"empirical_velocity_months_per_year":12.0},{"id":"sub_864_884","subclasses":["864","884"],"label_ko":"기여제 고령부모 (864 / 884 · Onshore 67+)","label_en":"Contributory Aged Parent (864 / 884 · Onshore 67+)","stage1_assessment_str":"2023년 4월 접수분","stage1_assessment_str_en":"Lodged April 2023","stage1_lag_months":40,"stage2_release_str":"November 2020","stage2_release_dec":2020.92,"stage2_lag_months":69,"official_wait_years":18,"empirical_velocity_months_per_year":9.13},{"id":"sub_143_173","subclasses":["143","173"],"label_ko":"기여제 부모 (143 / 173 · 일반)","label_en":"Contributory Parent (143 / 173 · General)","stage1_assessment_str":"2024년 4월 접수분","stage1_assessment_str_en":"Lodged April 2024","stage1_lag_months":28,"stage2_release_str":"November 2018","stage2_release_dec":2018.92,"stage2_lag_months":93,"official_wait_years":18,"empirical_velocity_months_per_year":5.07},{"id":"sub_804","subclasses":["804"],"label_ko":"일반 고령부모 (804 · Onshore 67+)","label_en":"Aged Parent (804 · Onshore 67+)","stage1_assessment_str":"2023년 1월 접수분","stage1_assessment_str_en":"Lodged January 2023","stage1_lag_months":43,"stage2_release_str":"October 2014","stage2_release_dec":2014.83,"stage2_lag_months":142,"official_wait_years":42,"empirical_velocity_months_per_year":2.35},{"id":"sub_103","subclasses":["103"],"label_ko":"일반 부모 (103 · Offshore/일반)","label_en":"Parent (103 · General)","stage1_assessment_str":"2023년 2월 접수분","stage1_assessment_str_en":"Lodged February 2023","stage1_lag_months":42,"stage2_release_str":"March 2014","stage2_release_dec":2014.25,"stage2_lag_months":149,"official_wait_years":42,"empirical_velocity_months_per_year":4.18}],"historical_velocity_series":[{"period":"2020-09","c_143_year":2016.42,"c_143_label":"May 2016","c_864_year":2016.42,"c_864_label":"May 2016","p_103_year":2010.83,"p_103_label":"Oct 2010"},{"period":"2021-09","c_143_year":2016.42,"c_143_label":"May 2016","c_864_year":2016.58,"c_864_label":"Jul 2016","p_103_year":2010.83,"p_103_label":"Oct 2010"},{"period":"2022-09","c_143_year":2016.83,"c_143_label":"Oct 2016","c_864_year":2017.0,"c_864_label":"Jan 2017","p_103_year":2011.42,"p_103_label":"May 2011"},{"period":"2023-09","c_143_year":2017.42,"c_143_label":"May 2017","c_864_year":2017.42,"c_864_label":"May 2017","p_103_year":2011.83,"p_103_label":"Oct 2011"},{"period":"2024-09","c_143_year":2017.75,"c_143_label":"Sep 2017","c_864_year":2017.75,"c_864_label":"Sep 2017","p_103_year":2012.67,"p_103_label":"Aug 2012"},{"period":"2025-09","c_143_year":2018.42,"c_143_label":"May 2018","c_864_year":2018.42,"c_864_label":"May 2018","p_103_year":2013.33,"p_103_label":"Apr 2013"},{"period":"2026-08","c_143_year":2018.92,"c_143_label":"Nov 2018","c_864_year":2020.92,"c_864_label":"Nov 2020","p_103_year":2014.25,"p_103_label":"Mar 2014"}],"capping_and_backlog":{"instrument_id":"LIN 26/042 (F2026L00724)","s85_contributory_cap":6800,"s85_contributory_aged_earmark":1125,"s85_non_contributory_cap":1700,"s85_total_cap":8500,"fy26_27_planning_level":7060,"backlog_as_at":"31 December 2025 (FOI DA 26/01/00017 & DA 25/07/00301)","backlog_contributory_persons":100762,"backlog_non_contributory_persons":57706,"backlog_total_persons":158468,"subclass_804_onhand":27013,"subclass_804_annual_grants_fy24_25":37,"subclass_804_annual_withdrawals_refusals_fy24_25":475},"fee_schedule_fy26_27":{"effective_date":"2026-07-01","authority":"Migration Regulations 1994 Schedule 1 (Items 1124, 1124A, 1130, 1130A, 1221, 1221A, 1239) & Home Affairs PageSchemaHiddenField / GetPriceList","103":{"sponsorship":0,"first_base":5280,"first_adult":2640,"first_child":1325,"second_per_person":2065,"second_child":2065,"aos_years":4,"aos_bond_1":5000,"aos_bond_2":7000},"804":{"sponsorship":0,"first_base":5280,"first_adult":2640,"first_child":1325,"second_per_person":2065,"second_child":2065,"aos_years":4,"aos_bond_1":5000,"aos_bond_2":7000},"143":{"sponsorship":0,"first_base":5040,"first_adult":1700,"first_child":855,"second_per_person":43600,"second_child":2095,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"173":{"sponsorship":0,"first_base":3395,"first_adult":1145,"first_child":575,"second_per_person":29130,"second_child":2095,"aos_years":0,"aos_bond_1":0,"aos_bond_2":0},"173_to_143":{"sponsorship":0,"first_base":440,"first_adult":195,"first_child":100,"second_per_person":19420,"second_child":0,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"864":{"sponsorship":0,"first_base":5040,"first_adult":2515,"first_child":1260,"second_per_person":43600,"second_child":2095,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"884":{"sponsorship":0,"first_base":4990,"first_adult":2490,"first_child":1250,"second_per_person":29130,"second_child":2095,"aos_years":0,"aos_bond_1":0,"aos_bond_2":0},"884_to_864":{"sponsorship":0,"first_base":440,"first_adult":195,"first_child":100,"second_per_person":19420,"second_child":0,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"870_3yr":{"sponsorship":420,"first_base":1180,"first_adult":0,"first_child":0,"second_per_person":4715,"second_child":0,"secondary_applicants_allowed":false,"visa_subtotal_per_parent":5895,"total_1_parent_incl_sponsorship":6315,"total_2_parents_incl_sponsorship":12210,"sponsor_income":83454.8,"primary_sponsor_min_50pct":41727.4},"870_5yr":{"sponsorship":420,"first_base":1180,"first_adult":0,"first_child":0,"second_per_person":10605,"second_child":0,"secondary_applicants_allowed":false,"visa_subtotal_per_parent":11785,"total_1_parent_incl_sponsorship":12205,"total_2_parents_incl_sponsorship":23990,"sponsor_income":83454.8,"primary_sponsor_min_50pct":41727.4}},"aos_formula_fy26_27":{"authority":"Social Security (Assurance of Support) Determination 2018 (F2024C00296 / F2018L00425) ss 8, 9, 15, 16 & DSS Social Security Guide 9.4.3.10–9.4.3.30","jsp_annual_base_aud":22578,"ftb_child_add_aud":2942,"max_concurrent_adult_assurees":2,"corporate_bond_contributory_aud":20000,"corporate_bond_non_contributory_aud":10000,"corporate_available_funds_per_adult_aud":5000,"corporate_min_trading_years":2,"formula_expression":"22578 * (numAssurers + newAdultAssurees + existingAdultAssurees) + 2942 * assurerMinorChildren","examples":{"single_assurer_1_parent":45156,"single_assurer_2_parents":67734,"single_assurer_1_existing_1_new_parent":67734,"single_assurer_2_parents_1_child":70676,"single_assurer_2_parents_2_children":73618,"joint_2_assurers_1_parent":67734,"joint_2_assurers_2_parents":90312,"joint_2_assurers_2_parents_2_children":96196}}};
+const POLLING_DATA = {"release_id":"2026.10.21-audit-v2","last_polled_at":"2026-11-11T22:58:22+10:00","last_polled_date":"2026-11-11","total_sources":15,"live_verified_count":15,"changed_count":2,"official_contact":"https://parklawyers.com.au/links/?lang=ko","official_email":"enquiry@parkcolawyers.com","monitored_rules":{"release_id":"2026.10.21-audit-v2","parent_visas_queue_state":{"as_at_date":"31 August 2026","last_updated_str":"6/10/2026 10:27 AM","release_dates":{"Contributory Parent":"November 2018","Contributory Aged Parent":"November 2020","Parent":"March 2014","Aged Parent":"October 2014"},"new_application_estimates":{"Contributory Parent visas":"18 years","Parent & Aged Parent visas":"42 years"}},"section_85_cap_and_backlog":{"instrument_id":"LIN 26/042 (F2026L00724)","s85_contributory_cap":6800,"s85_contributory_aged_earmark":1125,"s85_non_contributory_cap":1700,"s85_total_cap":8500,"fy26_27_planning_level":7060,"backlog_as_at":"31 December 2025 (FOI DA 26/01/00017 & DA 25/07/00301)","backlog_contributory_persons":100762,"backlog_non_contributory_persons":57706,"backlog_total_persons":158468,"subclass_804_onhand":27013,"subclass_804_annual_grants_fy24_25":37,"subclass_804_annual_withdrawals_refusals_fy24_25":475},"aos_formula_fy26_27":{"authority":"Social Security (Assurance of Support) Determination 2018 (F2024C00296 / F2018L00425) ss 8, 9, 15, 16 & DSS Social Security Guide 9.4.3.10–9.4.3.30","jsp_annual_base_aud":22578,"ftb_child_add_aud":2942,"max_concurrent_adult_assurees":2,"corporate_bond_contributory_aud":20000,"corporate_bond_non_contributory_aud":10000,"corporate_available_funds_per_adult_aud":5000,"corporate_min_trading_years":2,"formula_expression":"22578 * (numAssurers + newAdultAssurees + existingAdultAssurees) + 2942 * assurerMinorChildren","examples":{"single_assurer_1_parent":45156,"single_assurer_2_parents":67734,"single_assurer_1_existing_1_new_parent":67734,"single_assurer_2_parents_1_child":70676,"single_assurer_2_parents_2_children":73618,"joint_2_assurers_1_parent":67734,"joint_2_assurers_2_parents":90312,"joint_2_assurers_2_parents_2_children":96196}},"statutory_vac_fy26_27":{"effective_date":"2026-07-01","authority":"Migration Regulations 1994 Schedule 1 (Items 1124, 1124A, 1130, 1130A, 1221, 1221A, 1239) & Home Affairs PageSchemaHiddenField / GetPriceList","103":{"sponsorship":0,"first_base":5280,"first_adult":2640,"first_child":1325,"second_per_person":2065,"second_child":2065,"aos_years":4,"aos_bond_1":5000,"aos_bond_2":7000},"804":{"sponsorship":0,"first_base":5280,"first_adult":2640,"first_child":1325,"second_per_person":2065,"second_child":2065,"aos_years":4,"aos_bond_1":5000,"aos_bond_2":7000},"143":{"sponsorship":0,"first_base":5040,"first_adult":1700,"first_child":855,"second_per_person":43600,"second_child":2095,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"173":{"sponsorship":0,"first_base":3395,"first_adult":1145,"first_child":575,"second_per_person":29130,"second_child":2095,"aos_years":0,"aos_bond_1":0,"aos_bond_2":0},"173_to_143":{"sponsorship":0,"first_base":440,"first_adult":195,"first_child":100,"second_per_person":19420,"second_child":0,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"864":{"sponsorship":0,"first_base":5040,"first_adult":2515,"first_child":1260,"second_per_person":43600,"second_child":2095,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"884":{"sponsorship":0,"first_base":4990,"first_adult":2490,"first_child":1250,"second_per_person":29130,"second_child":2095,"aos_years":0,"aos_bond_1":0,"aos_bond_2":0},"884_to_864":{"sponsorship":0,"first_base":440,"first_adult":195,"first_child":100,"second_per_person":19420,"second_child":0,"aos_years":10,"aos_bond_1":10000,"aos_bond_2":14000},"870_3yr":{"sponsorship":420,"first_base":1180,"first_adult":0,"first_child":0,"second_per_person":4715,"second_child":0,"secondary_applicants_allowed":false,"visa_subtotal_per_parent":5895,"total_1_parent_incl_sponsorship":6315,"total_2_parents_incl_sponsorship":12210,"sponsor_income":83454.8,"primary_sponsor_min_50pct":41727.4},"870_5yr":{"sponsorship":420,"first_base":1180,"first_adult":0,"first_child":0,"second_per_person":10605,"second_child":0,"secondary_applicants_allowed":false,"visa_subtotal_per_parent":11785,"total_1_parent_incl_sponsorship":12205,"total_2_parents_incl_sponsorship":23990,"sponsor_income":83454.8,"primary_sponsor_min_50pct":41727.4}},"waiting_period_statutory_rules":{"immiaccount_online_mandate_date":"2026-04-22","immiaccount_online_instrument":"LIN 26/005 (F2026L00441)","online_subclasses":["103","143","804","864"],"online_mandate_exceptions":"Written permission by Department to lodge paper Form 47PA (LIN 26/005 ss 12-13 & Sch 1) or transitional dispatch before 22 Apr 2026","paper_subclasses":["173","884"],"aged_parent_pension_age":67,"aged_parent_schedule1_validity_date":"2024-12-17","aged_parent_schedule1_exception":"Substituted Subclass 600 holder (F2025L00317 Items 1124A, 1130A, 1221A)","pic_4005_significant_cost_threshold_aud":86000,"pic_4005_assessment_periods":"Up to 5 yrs standard permanent/provisional; 3 yrs for applicants aged 75+; up to 10 yrs (within life expectancy) for permanent/ongoing reasonably predictable conditions; stay period for temporary visas","pic_4005_health_waiver_available":false,"subclass_870_health_criteria":"cl 870.228: PIC 4005 if outside Australia at time of application; PIC 4007 (health waiver available) if in Australia at time of application (PAM3 VM-6327 §3.6.8)","rhca_countries_count":11,"korea_rhca_eligible":false,"korea_social_security_guide":"DSS Social Security Guide 10.22 (Agreement with Korea)","temp_173_884_medicare_eligible":true}},"internal_policy_references":[{"id":"pam3_vm_3058","cite":"PAM3 (Procedural Instruction): Parent Visa Processing & Queue Administration · VM-3058 (LEGEND version 2026-07-01, local snapshot 2026-10-02)","sourceKind":"internal_policy_reference","notPubliclyPollable":true,"fetchStatus":"internal_legendcom_mirror","contentCheckStatus":"verified_against_local_mirror","ruleMatchStatus":"matched","reviewStatus":"approved","legendVersionDate":"2026-07-01","snapshotVerifiedDate":"2026-10-02","sha256":"e2c17fcf48907fcdabfafd42385cb01ec3c92c0cccb4906f9b7cad74abf23623","localMirrorReference":"Policy Reference (VM-3058 · Queue Date assignment, §§3.2.6, 3.9.1 post-17 Dec 2024 Age 67 validity & death of primary applicant, substituted 600 exception)","publicCompanionUrl":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/visa-processing-priorities/parent-visas"},{"id":"pam3_vm_6327","cite":"PAM3 (Procedural Instruction): Sponsored Parent (Temporary) Visa (Subclass 870) · VM-6327 (LEGEND version 2026-02-06, local snapshot 2026-10-02)","sourceKind":"internal_policy_reference","notPubliclyPollable":true,"fetchStatus":"internal_legendcom_mirror","contentCheckStatus":"verified_against_local_mirror","ruleMatchStatus":"matched","reviewStatus":"approved","legendVersionDate":"2026-02-06","snapshotVerifiedDate":"2026-10-02","sha256":"eda066b55e0f56f8c0f85c2dd25e03088c8aabcb94e368de9d2f8d508e89ef21","localMirrorReference":"Policy Reference (VM-6327 · §3.3.7.2 60-day PTA onshore window, §3.3.8 10-yr cap & COVID-19 18m exclusion, §3.6.6 asymmetric lockout bar, §3.6.7 cl 870.227 public health debt arrangement, §3.6.8 cl 870.228 PIC 4005 offshore vs PIC 4007 onshore, §3.7.2.1 2nd VAC may be refused)","publicCompanionUrl":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/sponsored-parent-temporary-870"},{"id":"pam3_vm_6276","cite":"PAM3 (Procedural Instruction): Family (Parent) Sponsor Assessment (Subclass 870) · VM-6276 (LEGEND version 2026-04-03, local snapshot 2026-10-02)","sourceKind":"internal_policy_reference","notPubliclyPollable":true,"fetchStatus":"internal_legendcom_mirror","contentCheckStatus":"verified_against_local_mirror","ruleMatchStatus":"matched","reviewStatus":"approved","legendVersionDate":"2026-04-03","snapshotVerifiedDate":"2026-10-02","sha256":"c17ba2e18f616d1c4e307aca19f3b38045269df1185b0d2a019894b0363b9eda","localMirrorReference":"Policy Reference (VM-6276 · §§3.4–3.4.3 taxable income test $83,454.80, early-new-FY preceding NOA evidentiary rule, 50% primary sponsor rule $41,727.40, §3.4.3 no mid-application sponsor swap without new sponsorship)","publicCompanionUrl":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/sponsored-parent-temporary-870"},{"id":"pam3_vm_6647","cite":"PAM3 (Procedural Instruction): Second Instalment Visa Application Charge (2nd VAC) · VM-6647 (local snapshot 2026-10-02)","sourceKind":"internal_policy_reference","notPubliclyPollable":true,"fetchStatus":"internal_legendcom_mirror","contentCheckStatus":"verified_against_local_mirror","ruleMatchStatus":"matched","reviewStatus":"approved","legendVersionDate":null,"snapshotVerifiedDate":"2026-10-02","localMirrorReference":"Policy Reference (VM-6647 §§3.4.5.1–3.4.5.2 · reg 2.12D 28 calendar days AU-to-AU vs 70 calendar days all other sender/recipient address combinations, running from deemed receipt date)","publicCompanionUrl":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/sponsored-parent-temporary-870"},{"id":"direction_103","cite":"Ministerial Direction No. 103 · Order of Consideration: Certain Family Visas (s 6(2)(c) upfront aged assessment & ss 7(2)(b), 8(1)(b) Stage 1 lodgement date deeming)","sourceKind":"internal_policy_reference","notPubliclyPollable":true,"fetchStatus":"internal_legendcom_mirror","contentCheckStatus":"verified_against_local_mirror","ruleMatchStatus":"matched","reviewStatus":"approved","legendVersionDate":"2023-06-28","snapshotVerifiedDate":"2026-10-02","localMirrorReference":"Policy Reference (Direction No. 103 s 6(2)(c) upfront aged assessment & ss 7(2)(b), 8(1)(b) deemed initial 173/884 application date for 143/864 transition)","publicCompanionUrl":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/visa-processing-priorities/parent-visas"},{"id":"direction_117","cite":"Ministerial Direction No. 117 · Order of Consideration: Certain Family Visas (effective 25 July 2026, s 8(2)(a) priority for onshore aged parent applications)","sourceKind":"internal_policy_reference","notPubliclyPollable":true,"fetchStatus":"internal_legendcom_mirror","contentCheckStatus":"verified_against_local_mirror","ruleMatchStatus":"matched","reviewStatus":"approved","legendVersionDate":"2026-07-25","snapshotVerifiedDate":"2026-10-02","localMirrorReference":"Policy Reference (Direction No. 117 s 8(2)(a) · Onshore Contributory Aged Parent 864/884 priority release)","publicCompanionUrl":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/visa-processing-priorities/parent-visas"}],"sources":[{"id":"ha_parent_queue","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Parent Visas Queue Assessment & Queue Release Dates Official Page","title_ko":"부모초청 비자 월별 Queue Assessment & Queue Release Dates 공시 페이지","title_en":"Parent Visas Queue Assessment & Queue Release Dates Official Page","check_scope_ko":"기준일(2026.08.31) · 7대 비자 1단계/2단계 컷오프 · 신규 신청 거시 예상 대기연수(18년/42년) 파싱","check_scope_en":"Live parsing of 7x4 queue milestone table, release dates & 18yr/42yr new-application macro estimates","cadence_ko":"매주 월·목 폴링 (이민성 월 1회 ~5주 시차 업데이트)","cadence_en":"Polled twice weekly (DHA updates monthly with ~5-week lag)","maxAgeHours":168,"url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/visa-processing-priorities/parent-visas","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"2fa08b61086974fe85fda3468259a09c5cdda7032f4c2bb17719038774685489","bytes":1308092,"method":"https-direct-live","changed_since_last_poll":false,"checked_at":"2026-11-11T22:58:22+10:00"},{"id":"ha_pricing_api","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"DHA Visa Pricing JSON API (GetPriceList · All 15 Parent Visa Fee Tiers)","title_ko":"이민성 내부 비자 수수료 API (GetPriceList · 부모비자 15개 스트림 1·2차 VAC)","title_en":"DHA Visa Pricing JSON API (GetPriceList · All 15 Parent Visa Fee Tiers)","check_scope_ko":"103/143/173/804/864/884/870 1차 신청비(Base/18+/<18) 및 2차 기여금($43,600 · 870 $4,715/$10,605 등) 실시간 대조","check_scope_en":"Live verification of 1st & 2nd VAC across all 15 Parent Visa fee schedules","cadence_ko":"매월 1일 및 매년 7월 1일 회계연도 개시일 집중 감시","cadence_en":"Monthly & 1 July FY indexation check","maxAgeHours":720,"url":"https://immi.homeaffairs.gov.au/_layouts/15/api/data.aspx/GetPriceList","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"0ab169e8525c9030d1815ec12767425367481ccc9d4051bbdd38f7328bf4f00f","bytes":247792,"method":"dha-json-api-post","changed_since_last_poll":false,"checked_at":"2026-11-11T22:58:22+10:00"},{"id":"ha_subclass_143","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Subclass 143 · Contributory Parent (Permanent) Visa","title_ko":"Subclass 143 · 기여제 부모 영주비자 (Contributory Parent Visa)","title_en":"Subclass 143 · Contributory Parent (Permanent) Visa","check_scope_ko":"LIN 26/005 온라인 접수 원칙 및 서면 허가 예외 · 1차/2차 VAC($43,600) · 10년 AoS 요건 파싱","check_scope_en":"PageSchemaHiddenField verification of 143 online lodgement (LIN 26/005), VAC & 10-yr AoS","cadence_ko":"매월 정기 폴링","cadence_en":"Monthly check","maxAgeHours":720,"url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/contributory-parent-143","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"e56b6fcd06045fa6438bed2826dd8445482cb3c8b2918db2b0729d8decc744b6","bytes":1396888,"method":"https-direct-live","changed_since_last_poll":false,"checked_at":"2026-11-11T22:58:22+10:00"},{"id":"ha_subclass_173","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Subclass 173 · Contributory Parent (Temporary) Visa","title_ko":"Subclass 173 · 기여제 부모 임시비자 (2년 · 메디케어 부여 · 2차 VAC 분할)","title_en":"Subclass 173 · Contributory Parent (Temporary) Visa","check_scope_ko":"종이 우편 접수 유지 · 2차 VAC 1단계분($29,130) · 메디케어 자격 및 AoS 유예 확인","check_scope_en":"PageSchemaHiddenField verification of 173 paper lodgement & $29,130 2nd VAC","cadence_ko":"매월 정기 폴링","cadence_en":"Monthly check","maxAgeHours":720,"url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/contributory-parent-temporary-173","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"4debfd614761e617b20d6c7d55fedffd4c1a6bbe8449d14c3dcf37a12131e3fb","bytes":1377600,"method":"https-direct-live","changed_since_last_poll":false,"checked_at":"2026-11-11T22:58:22+10:00"},{"id":"ha_subclass_864","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Subclass 864 · Contributory Aged Parent (Residence) Visa","title_ko":"Subclass 864 · 기여제 고령부모 영주비자 (Onshore 만 67세+ · BVA 부여)","title_en":"Subclass 864 · Contributory Aged Parent (Residence) Visa","check_scope_ko":"만 67세 유효접수 요건(대체 600 특례 포함) · 온쇼어 BVA 부여 · 온라인 접수 · 2차 VAC($43,600) 확인","check_scope_en":"PageSchemaHiddenField verification of 864 Age 67 rule (incl. substituted 600 exception), BVA & VAC","cadence_ko":"매월 정기 폴링","cadence_en":"Monthly check","maxAgeHours":720,"url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/contributory-aged-parent-864","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"ef789c320bc3640b29a5df8069fc1d3300329e01241052a0771960c419b6b340","bytes":1388704,"method":"https-direct-live","changed_since_last_poll":false,"checked_at":"2026-11-11T22:58:22+10:00"},{"id":"ha_subclass_884","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Subclass 884 · Contributory Aged Parent (Temporary) Visa","title_ko":"Subclass 884 · 기여제 고령부모 임시비자 (Onshore 만 67세+ · 2단계 전환)","title_en":"Subclass 884 · Contributory Aged Parent (Temporary) Visa","check_scope_ko":"만 67세 요건 · 종이 우편 접수 · 2차 VAC($29,130) · 884->864 전환 규칙 확인","check_scope_en":"PageSchemaHiddenField verification of 884 paper lodgement & step-up rules","cadence_ko":"매월 정기 폴링","cadence_en":"Monthly check","maxAgeHours":720,"url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/contributory-aged-parent-temporary-884","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"79a305f75cb1cf970a65e7bf6b793c7461d73f94335400bdd69e104418039827","bytes":1375632,"method":"https-direct-live","changed_since_last_poll":false,"checked_at":"2026-11-11T22:58:22+10:00"},{"id":"ha_subclass_103","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Subclass 103 · Parent (Migrant) Visa","title_ko":"Subclass 103 · 일반 부모 영주비자 (Parent Visa)","title_en":"Subclass 103 · Parent (Migrant) Visa","check_scope_ko":"LIN 26/005 온라인 접수 원칙 및 예외 · 1차 VAC($5,280) · 2차 VAC($2,065) · 4년 AoS 확인","check_scope_en":"PageSchemaHiddenField verification of 103 online lodgement, VAC & 4-yr AoS","cadence_ko":"매월 정기 폴링","cadence_en":"Monthly check","maxAgeHours":720,"url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/parent-103","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"8499631ae687f45c75e03e77aa83e16d6bb83d6a373ca05d2a07d079ccab2d72","bytes":1392253,"method":"https-direct-live","changed_since_last_poll":false,"checked_at":"2026-11-11T22:58:22+10:00"},{"id":"ha_subclass_804","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Subclass 804 · Aged Parent (Residence) Visa","title_ko":"Subclass 804 · 일반 고령부모 영주비자 (Aged Parent Visa · Onshore 67+)","title_en":"Subclass 804 · Aged Parent (Residence) Visa","check_scope_ko":"만 67세 유효접수 요건(대체 600 예외 포함) · 온쇼어 BVA 부여 · 42년 대기 및 PIC 4005 요건 확인","check_scope_en":"PageSchemaHiddenField verification of 804 Age 67 rule, BVA & PIC 4005","cadence_ko":"매월 정기 폴링","cadence_en":"Monthly check","maxAgeHours":720,"url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/aged-parent-804","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"6db5c33023f9691d375f50de88a5095f537062735796d3354329dd12a6ebacef","bytes":1386240,"method":"https-direct-live","changed_since_last_poll":false,"checked_at":"2026-11-11T22:58:22+10:00"},{"id":"ha_subclass_870","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Subclass 870 · Sponsored Parent (Temporary) Visa","title_ko":"Subclass 870 · 스폰서 임시 부모비자 (3년 $5,895 / 5년 $11,785 + 스폰서 $420 · 최대 10년)","title_en":"Subclass 870 · Sponsored Parent (Temporary) Visa","check_scope_ko":"가족균형 면제 · 스폰서 과세소득($83,454.80) · cl 870.228(PIC 4005/4007) · cl 870.227 · reg 2.87CE 파싱","check_scope_en":"PageSchemaHiddenField verification of 870 fees, income threshold, PIC 4005/4007 & permanent bar","cadence_ko":"매월 정기 폴링","cadence_en":"Monthly check","maxAgeHours":720,"url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/sponsored-parent-temporary-870","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"2b7197592d23cabef70d14c958aeecf3e64b592d8bda7e42d8a69227c9365ce8","bytes":1385208,"method":"https-direct-live","changed_since_last_poll":false,"checked_at":"2026-11-11T22:58:22+10:00"},{"id":"ha_bof_test","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Balance of Family Test Official Rules (reg 1.05(2C) & (3))","title_ko":"가족균형테스트 (Balance of Family Test · Migration Regulations reg 1.05(2C)/(3))","title_en":"Balance of Family Test Official Rules (reg 1.05(2C) & (3))","check_scope_ko":"reg 1.05(2C)(a) 50% 이상 요건 및 (2C)(b) 단일 해외국가 최다 거주 자녀수 초과 요건 · 제외 자녀(reg 1.05(3)) 확인","check_scope_en":"Verification of Balance of Family Test two-prong rule (reg 1.05(2C)(a) & (b)) and reg 1.05(3) exclusions","cadence_ko":"분기별 폴링","cadence_en":"Quarterly check","maxAgeHours":2160,"url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/parent-103/balance-of-family-test","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"cc8d9a6fcc677f7f5b8b4d0efe73982070e1f7a9bb2624001b00d0d9d1c5d974","bytes":1312559,"method":"https-direct-live","changed_since_last_poll":false,"checked_at":"2026-11-11T22:58:22+10:00"},{"id":"ha_planning_levels","authority":"호주 연방 이민성 (Department of Home Affairs)","authority_ko":"호주 연방 이민성 (Department of Home Affairs)","authority_en":"Department of Home Affairs","title":"Migration Program Planning Levels (Parent Stream Ceiling)","title_ko":"연간 이민 프로그램 계획 수준 (Migration Program Planning Levels)","title_en":"Migration Program Planning Levels (Parent Stream Ceiling)","check_scope_ko":"연간 부모비자 배정 쿼터(8,500석 -> FY26-27 계획치 7,060석 변동) 파싱","check_scope_en":"Verification of annual Parent visa stream planning ceiling (7,060 / 8,500 places)","cadence_ko":"매년 5월 연방 예산안 발표 및 7월 1일 폴링","cadence_en":"Annual May Budget & 1 July check","maxAgeHours":2160,"url":"https://immi.homeaffairs.gov.au/what-we-do/migration-program-planning-levels","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"f3ce8cf93ad674583d73c477de2161203f1b12cec213c4ccb65687cdadc45886","bytes":1326409,"method":"https-direct-live","changed_since_last_poll":false,"checked_at":"2026-11-11T22:58:22+10:00"},{"id":"leg_lin_26_042","authority":"호주 연방 법제처 (Federal Register of Legislation)","authority_ko":"호주 연방 법제처 (Federal Register of Legislation)","authority_en":"Federal Register of Legislation","title":"Migration (Granting of Parent and Other Family Visas) Instrument 2026 · LIN 26/042 (s 85 Cap)","title_ko":"Migration (Granting of Parent and Other Family Visas) Instrument 2026 · LIN 26/042 (F2026L00724)","title_en":"Migration (Granting of Parent and Other Family Visas) Instrument 2026 · LIN 26/042 (s 85 Cap)","check_scope_ko":"Migration Act s 85 연간 최대 발급 상한 고시(기여제 6,800석 + 일반 부모 1,700석 = 8,500석) 감시","check_scope_en":"OData v4 & statutory text check of s 85 Parent Visa Maximum Grant Determination","cadence_ko":"매월 법제처 OData API 폴링","cadence_en":"Monthly Federal Register OData API check","maxAgeHours":720,"url":"https://www.legislation.gov.au/F2026L00724/latest/text","sourceKind":"public_legislation","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"da4213a0cc6e690e5e04890daa4b5c8eb346426ef5ba0374f1fc5646d7f00d52","bytes":83596,"method":"https-direct-live","changed_since_last_poll":true,"checked_at":"2026-11-11T22:58:22+10:00"},{"id":"sa_aos_policy","authority":"호주 서비스청 (Services Australia)","authority_ko":"호주 서비스청 (Services Australia)","authority_en":"Services Australia","title":"Services Australia · Assurance of Support (AoS) Policy, Bank Guarantee & Corporate Capacity Rules","title_ko":"Assurance of Support (AoS) · 재정보증 제도·기간(10년/4년)·은행보증금($10k/$14k/$20k) 및 법인 재무심사","title_en":"Services Australia · Assurance of Support (AoS) Policy, Bank Guarantee & Corporate Capacity Rules","check_scope_ko":"기여제 10년($10k/$14k) · 비기여제 4년($5k/$7k) · 법인 보증($20k/$10k 본드 + 2년 흑자/성인당 $5k 가용자금 심사) 확인","check_scope_en":"Verification of AoS bond durations, individual (s 8) & corporate (s 9 + DSS 9.4.3.30) financial capacity rules","cadence_ko":"분기별 및 매년 7월 1일 폴링","cadence_en":"Quarterly & 1 July check","maxAgeHours":2160,"url":"https://www.servicesaustralia.gov.au/assurance-support","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"f70a9eeb15d881f80a97dc5e588f296b08a106cbd96fdc8303322d124cef8f02","bytes":198250,"method":"https-direct-live","changed_since_last_poll":false,"checked_at":"2026-11-11T22:58:22+10:00"},{"id":"sa_medicare_rhca","authority":"호주 서비스청 (Services Australia)","authority_ko":"호주 서비스청 (Services Australia)","authority_en":"Services Australia","title":"Services Australia · Enrolling in Medicare & Reciprocal Health Care Agreements (RHCA)","title_ko":"메디케어 가입 자격 및 상호의료협정(RHCA 11개국) · 부모비자 대기자 배제 규정","title_en":"Services Australia · Enrolling in Medicare & Reciprocal Health Care Agreements (RHCA)","check_scope_ko":"부모비자 BVA 대기자 Interim Medicare 배제 · 173/884 임시비자 메디케어 허용 · RHCA 11개국 명단 확인","check_scope_en":"Verification of Parent Visa interim Medicare exclusion, 173/884 inclusion & 11 RHCA nations","cadence_ko":"분기별 폴링","cadence_en":"Quarterly check","maxAgeHours":2160,"url":"https://www.servicesaustralia.gov.au/reciprocal-health-care-agreements","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"11e458967d245d088b0a3d398df5f048f5df5092b563ba21a131235021b1a2fc","bytes":186571,"method":"https-direct-live","changed_since_last_poll":false,"checked_at":"2026-11-11T22:58:22+10:00"},{"id":"dss_guide_aos","authority":"호주 사회서비스부 (Department of Social Services)","authority_ko":"호주 사회서비스부 (Department of Social Services)","authority_en":"Department of Social Services (DSS)","title":"DSS Social Security Guide 9.4.3 (AoS Income Formula) & 10.22 (Agreement with Korea)","title_ko":"Social Security Guide 9.4.3 & 10.22 · AoS 보증인 과세소득 산식(ss 15–16) & 한-호 사회보장협정(10.22)","title_en":"DSS Social Security Guide 9.4.3 (AoS Income Formula) & 10.22 (Agreement with Korea)","check_scope_ko":"JobSeeker 기준액($22,578) 기반 AoS 소득 공식(기존 피보증인 합산) 및 DSS 10.22 한-호 국민연금/노령연금 합산 규정 확인","check_scope_en":"Verification of JSP cut-off AoS income threshold formula (incl. existing assurees) & DSS 10.22 Korea-AU Agreement","cadence_ko":"매년 3월 20일 · 7월 1일 · 9월 20일 연금/수당 연동일 폴링","cadence_en":"20 March, 1 July & 20 September indexation check","maxAgeHours":2160,"url":"https://guides.dss.gov.au/social-security-guide/9/4/3","sourceKind":"public_policy_guidance","status":"live","fetchStatus":"http_200_ok","contentCheckStatus":"substantive_content_verified","ruleMatchStatus":"matched","reviewStatus":"approved","http_code":200,"sha256":"c1382004a7872a60111f54a35de9d4821af2877b9de1f35d3caf9e4da45c2e58","bytes":32335,"method":"insane-search-live","changed_since_last_poll":true,"checked_at":"2026-11-11T22:58:22+10:00"}]};
 
 let currentLang = "ko";
 let currentSurvivalFilter = "all";
@@ -12,6 +12,22 @@ let currentLinksCat = "all";
 
 const I18N = {
   ko: {
+    pageTitle: "호주 부모초청 비자 대기열 · 총비용 · AoS · Subclass 870 통합 네비게이터 | 법무법인 박앤코",
+    brandHubTitle: "박앤코 법률·비자 통합 허브로 이동",
+    navQuickAria: "핵심 도구 바로가기",
+    tabsMainAria: "4대 부모비자 핵심 계산기 탭",
+    summarySectionAria: "상담 요약 및 공유",
+    modalCloseAria: "닫기",
+    phSimYear: "예: 2024",
+    phSimAge: "예: 68",
+    phWizTotalKids: "예: 2",
+    phWizAuKids: "예: 1",
+    phWizMaxOv: "미입력 시 자동",
+    phCostIncome: "예: 75000",
+    phS870SponsorInc: "예: 55000",
+    phS870PartnerInc: "예: 35000 (단독 시 0)",
+    phS870PrevYrs: "예: 0 (최초 신청)",
+    footerBioHtml: "박창민 대표변호사 (Chang Min Park · Legal Practitioner Director · QLS Accredited Specialist in Immigration Law)<br/>Queensland, Australia · 공식 이메일: <a href=\"mailto:enquiry@parkcolawyers.com\">enquiry@parkcolawyers.com</a>",
     brandTag: "법무법인 박앤코 · 부모초청 비자",
     pollBadge: "출처 15/15 검증",
     navEnquiry: "공식 문의 허브",
@@ -113,6 +129,108 @@ const I18N = {
     modalTitle: "공식 1차 출처 모니터 (검증 상태 · 원문 기준일 · 법률 검토 현황)"
   },
   en: {
+    pageTitle: "Australian Parent Visa Queue, Cost, AoS & Subclass 870 Navigator | Park & Co Lawyers",
+    brandHubTitle: "Go to Park & Co Legal & Visa Navigator Hub",
+    navQuickAria: "Quick Jump to Calculators",
+    tabsMainAria: "4 Core Parent Visa Calculator Tabs",
+    summarySectionAria: "Diagnostic Summary & Export",
+    modalCloseAria: "Close",
+    phSimYear: "e.g. 2024",
+    phSimAge: "e.g. 68",
+    phWizTotalKids: "e.g. 2",
+    phWizAuKids: "e.g. 1",
+    phWizMaxOv: "Auto if blank",
+    phCostIncome: "e.g. 75000",
+    phS870SponsorInc: "e.g. 55000",
+    phS870PartnerInc: "e.g. 35000 (0 if sole)",
+    phS870PrevYrs: "e.g. 0 (first application)",
+    footerBioHtml: "Chang Min Park (Legal Practitioner Director · QLS Accredited Specialist in Immigration Law)<br/>Queensland, Australia · Official Email: <a href=\"mailto:enquiry@parkcolawyers.com\">enquiry@parkcolawyers.com</a>",
+    simOpt143: "Subclass 143 · Contributory Parent PR (General)",
+    simOpt864: "Subclass 864 · Contributory Aged Parent PR (Onshore 67+)",
+    simOpt173: "Subclass 173 · Contributory Parent Temp (2 Yrs · Medicare)",
+    simOpt884: "Subclass 884 · Contributory Aged Parent Temp (Onshore 67+)",
+    simOptStep143: "2-Stage PR Step-Up · Subclass 173 → 143",
+    simOptStep864: "2-Stage PR Step-Up · Subclass 884 → 864",
+    simOpt103: "Subclass 103 · Parent PR (Non-Contributory)",
+    simOpt804: "Subclass 804 · Aged Parent PR (Onshore 67+)",
+    simStageUnqueued: "Lodged · Queue Date Not Yet Assigned (Stage 1 Wait)",
+    simStageQueued: "Stage 1 Complete · Official Queue Date Assigned",
+    simStagePlanning: "Planning New Application (Lodging Today Scenario)",
+    simMo1: "Jan (01)",
+    simMo2: "Feb (02)",
+    simMo3: "Mar (03)",
+    simMo4: "Apr (04)",
+    simMo5: "May (05)",
+    simMo6: "Jun (06)",
+    simMo7: "Jul (07)",
+    simMo8: "Aug (08)",
+    simMo9: "Sep (09)",
+    simMo10: "Oct (10)",
+    simMo11: "Nov (11)",
+    simMo12: "Dec (12)",
+    simAgeHint: "Computes Expected Age at Visa Grant (Contributory 143/864 vs Non-Contributory 103/804), Age-67 Onshore Aged Parent (804/864) eligibility year, PIC 4005 health window, and Condition 8503 check.",
+    wizAge67Plus: "Aged 67+ (Meets Australian Age Pension Age)",
+    wizAgeUnder67: "Under Age 67",
+    wizSpouseNone: "Single Applicant (No Accompanying Spouse)",
+    wizSpouse67Plus: "Accompanying Spouse Aged 67+",
+    wizSpouseUnder67: "Accompanying Spouse Under Age 67",
+    wizLblExactAge: "1-B. Primary Parent Exact Current Age (Optional · Grant Age & Age-67 Year)",
+    wizLocOnshore: "Currently in Australia (Onshore)",
+    wizLocOffshore: "Outside Australia (Offshore)",
+    wizCondClean: "Valid Visa Without Condition 8503 (or Offshore)",
+    wizCond8503: "Condition 8503 (No Further Stay) Attached",
+    wizCond870: "Currently Holding / Pending Subclass 870 (or Not Departed)",
+    wizOverseasHint: "Even if below 50%, Reg 1.05(2C)(b) passes if eligible children in Australia outnumber children in any single overseas country.",
+    wizBudDirect: "Direct Contributory PR (143 / 864 · $43,600/adult 2nd VAC)",
+    wizBud2Stage: "2-Stage Contributory Split (173→143 / 884→864 · Early Medicare)",
+    wizBudNonContrib: "Low-Fee Non-Contributory PR (103 / 804 · ~42-Yr Wait)",
+    wizBud870: "Temporary Stay Only (Subclass 870 · 3 or 5 Yrs)",
+    costOpt143: "Subclass 143 · Direct Contributory PR",
+    costOpt864: "Subclass 864 · Direct Aged Contributory PR (67+)",
+    costOpt173: "Subclass 173 → 143 · 2-Stage Contributory",
+    costOpt884: "Subclass 884 → 864 · 2-Stage Aged Contributory",
+    costOpt103: "Subclass 103 · Non-Contributory Parent PR",
+    costOpt804: "Subclass 804 · Non-Contributory Aged Parent PR",
+    costOpt870_3: "Subclass 870 · Sponsored Temporary (3 Years)",
+    costOpt870_5: "Subclass 870 · Sponsored Temporary (5 Years)",
+    costOpt870_10: "Subclass 870 · Sponsored Temporary (5 Yrs × 2 = 10 Yrs)",
+    costPar2: "2 Parents (Couple)",
+    costPar1: "1 Parent (Single)",
+    costLblDepChildren: "2-B. Accompanying Dependent Children (<18 Siblings)",
+    costDepCh0: "0 Children (No <18 Secondary Applicants)",
+    costDepCh1: "1 Dependent Child (<18 · 1st & 2nd VAC Included)",
+    costDepCh2: "2 Dependent Children (<18 · 1st & 2nd VAC Included)",
+    costDepCh3: "3 Dependent Children (<18 · 1st & 2nd VAC Included)",
+    costDepCh4: "4 Dependent Children (<18 · 1st & 2nd VAC Included)",
+    costAss1: "1 Individual Assurer (Sole)",
+    costAss2: "2 Joint Individual Assurers (Pooled Income)",
+    costAss3: "3 Joint Individual Assurers (Pooled Income)",
+    costAssCorp: "Australian Corporate Assurer (Pty Ltd · DSS 9.4.3.30)",
+    costEx0: "0 Existing Adult Assurees",
+    costEx1: "1 Existing Adult Assuree",
+    costEx2: "2 Existing Adult Assurees (At 2-Adult Cap)",
+    s870StCitizen: "Australian Citizen (No Prior Residence Wait)",
+    s870StPr4Plus: "Australian PR / Eligible NZ Citizen (4+ Yrs Usual Residence)",
+    s870StPrUnder4: "PR / ENZC (<4 Yrs Residence or Unlawful/BVE History)",
+    s870StTemp: "Temporary Visa Holder (482 / 485 / 500 — Ineligible)",
+    s870RelChild: "Biological, Adopted or Step-Child of Parent",
+    s870RelInlaw: "Spouse / De Facto Partner of Child (Son/Daughter-in-Law)",
+    s870HhNone: "None (0 Active 870 Sponsorships in Household)",
+    s870HhActive: "Yes (Self or Partner Already Sponsoring Another 870)",
+    s870PrFirst: "Lodge 143/103 FIRST, Then Apply for 870 (Permitted)",
+    s870PrOnly: "No PR Plan (Using Subclass 870 Temporary Stay Only)",
+    s870PrAfter: "Apply for 870 First, Then Lodge PR While Holding 870",
+    s870Dur5_2: "5-Year Visa · 2 Parents ($23,990 Total)",
+    s870Dur5_1: "5-Year Visa · 1 Parent ($12,205 Total)",
+    s870Dur3_2: "3-Year Visa · 2 Parents ($12,210 Total)",
+    s870Dur3_1: "3-Year Visa · 1 Parent ($6,315 Total)",
+    smCol1: "103 (Parent)",
+    smCol2: "804 (Aged 67+)",
+    smCol3: "143 (Contrib)",
+    smCol4: "173→143 (2-Stg)",
+    smCol5: "864 (Aged Con)",
+    smCol6: "884→864 (2-Stg)",
+    smCol7: "870 (Temp 3/5y)",
     btnCopySummary: "Copy Diagnostic Summary",
     btnPrefillEmail: "Copy Summary & Open Official Inquiry →",
     btnPrintSummary: "Print / Save PDF",
@@ -121,7 +239,7 @@ const I18N = {
     costLblExisting: "5. Existing Adult Assurees Currently Sponsored",
     costLblKids: "4. Total Dependent Minor Children of Assurer(s) (+$2,942 per child)",
     costLblOvhc: "7. Estimated Years of Onshore OVHC Private Health Insurance ($2,400/yr)",
-    costLblParents: "2. Number of Parents Applied For (1 or 2 Adults)",
+    costLblParents: "2-A. Number of Adult Parents Applied For (1 or 2 Adults)",
     costLblPathway: "1. Select Parent Visa Pathway",
     discOverline: "LEGAL DISCLAIMER, COPYRIGHT & GOVERNMENT ATTRIBUTION",
     discTitle: "Legal Disclaimer, Copyright & Primary Statutory / PAM3 Footnotes",
@@ -163,7 +281,7 @@ const I18N = {
     sfHealth: "PIC 4005 2nd Medical & Aged Care",
     sfMedicare: "Medicare Exclusion · RHCA · 173/884 Strategy",
     sfWelfare: "AoS Bond Deduction · Centrelink & KR-AU Pension",
-    simLblAge: "5. Primary Parent Current Age (for 2nd Medical Risk)",
+    simLblAge: "5. Primary Parent Current Age (Grant Age & Age-67 / 8503 Check)",
     simLblMonth: "4. Lodgement / Queue Month (1–12)",
     simLblStage: "2. Current Application Stage",
     simLblSubclass: "1. Parent Visa Subclass",
@@ -184,7 +302,7 @@ const I18N = {
     wizLblTotalKids: "5. Total Children Worldwide (incl. step/adopted under reg 1.05)",
 
     brandTag: "IMMIGRATION LAW · PARENT VISAS (103 · 143 · 173 · 804 · 864 · 884 · 870)",
-    pollBadge: "Source Monitor (2026-10-21 · 15/15 Verified)",
+    pollBadge: "Source Monitor (15/15 Verified)",
     navEnquiry: "Book a Consultation →",
     urgentBadge: "6 OCT 2026 QUEUE RELEASE & STATUTORY UPDATE",
     urgentText: "Latest Home Affairs Queue Release (as at 31 Aug 2026, published 6 Oct 2026): Contributory (143/173) Nov 2018 · Contributory Aged (864/884) Nov 2020 (Direction 117 onshore priority) · 2-Stage Step-up (173→143 / 884→864) May 2026 cohort under assessment (Direction 103 s 7(2)(b) deemed Stage 1 lodgement date) · Parent (103) Mar 2014 · Aged Parent (804) Oct 2014 [1] / From 22 Apr 2026, 103·143·804·864 generally require ImmiAccount online lodgement (subject to LIN 26/005 ss 12–13 written-permission and transitional exceptions; 173·884 remain paper) [3–8] / From 17 Dec 2024, Age 67+ (or substituted Subclass 600 exception, F2025L00317) is a Schedule 1 validity requirement for 804/864/884 [5,8] / FY2026–27 AoS Assurer Income: $45,156 (1 parent) · $67,734 (2 parents, existing assurees included; corporate assurers subject to DSS 9.4.3.30 financial review) [13,15].",
@@ -311,7 +429,56 @@ const I18N = {
 };
 
 function fmtAud(n) {
-  return "$" + Math.round(Number(n) || 0).toLocaleString("en-AU");
+  const num = Number(n) || 0;
+  if (Math.abs(num - Math.round(num)) > 0.001) {
+    return "$" + num.toLocaleString("en-AU", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  }
+  return "$" + Math.round(num).toLocaleString("en-AU");
+}
+
+function getDynamicCurrentDateParts(overrideNow) {
+  let now = null;
+  if (overrideNow instanceof Date) {
+    now = overrideNow;
+  } else if (typeof overrideNow === "string" && overrideNow) {
+    now = parseIsoNoon(overrideNow) || new Date(overrideNow);
+  }
+  if (!now || Number.isNaN(now.getTime())) {
+    now = new Date();
+  }
+  const calYear = now.getFullYear();
+  const monthZero = now.getMonth();
+  const dayOfMonth = now.getDate();
+  const currentDec = calYear + (monthZero + (dayOfMonth - 1) / 30.4375) / 12;
+  return { now, calYear, month: monthZero + 1, day: dayOfMonth, currentDec };
+}
+
+function parseMonthYearToDec(text, fallbackDec) {
+  if (!text) return fallbackDec;
+  const MONTHS = {
+    january: 0, jan: 0, february: 1, feb: 1, march: 2, mar: 2,
+    april: 3, apr: 3, may: 4, june: 5, jun: 5,
+    july: 6, jul: 6, august: 7, aug: 7, september: 8, sep: 8,
+    october: 9, oct: 9, november: 10, nov: 10, december: 11, dec: 11
+  };
+  const mDay = String(text).match(/(\d{1,2})\s+([A-Za-z]+)\s+(20\d{2})/);
+  if (mDay) {
+    const day = Number(mDay[1]);
+    const mo = MONTHS[mDay[2].toLowerCase()];
+    const yr = Number(mDay[3]);
+    if (mo !== undefined && Number.isFinite(yr)) {
+      return yr + (mo + Math.min(1, day / 31)) / 12;
+    }
+  }
+  const mMy = String(text).match(/([A-Za-z]+)\s+(20\d{2})/);
+  if (mMy) {
+    const mo = MONTHS[mMy[1].toLowerCase()];
+    const yr = Number(mMy[2]);
+    if (mo !== undefined && Number.isFinite(yr)) {
+      return yr + mo / 12;
+    }
+  }
+  return fallbackDec;
 }
 
 function todayBrisbaneIso() {
@@ -579,7 +746,7 @@ function renderInferencesGrid() {
     },
     {
       title: "2. 왜 온쇼어 고령 기여제(864)는 최종 심사 코호트가 24개월 앞선 반면(2020.11 vs 2018.11), 1차 심사는 1년 뒤처져 있는가?",
-      body: "<strong>2단계 기준일 코호트가 2020.11인 배경</strong>: 2026.07.25 발효 Ministerial Direction No. 117 s 8(2)(a)가 온쇼어 고령 신청을 우선 구조에 두고 LIN 26/042에서 1,125석을 별도 배정했기 때문입니다. <strong>1단계가 2023.04인 이유</strong>: Direction 103 s 6(2)(c)에 따라 온쇼어 고령비자는 대기열 편입 전 1차 요건·검사를 선행 심사하며 팬데믹 이후 신청이 집중되었기 때문입니다 [1,12,17]."
+      body: "<strong>2단계 기준일 코호트가 2020.11인 배경 (단기 일회성 점프 외삽 주의!)</strong>: 2026.07.25 발효 Ministerial Direction No. 117 s 8(2)(a)가 온쇼어 고령 신청을 우선 구조에 두고 LIN 26/042에서 1,125석을 별도 배정하면서 행정적 큐 배치·재인덱싱 점프(administrative queue batch/re-indexing jump)가 발생한 것이며, 매월 12개월분씩 상시 전진하는 지속 속도(steady 12 months/month)가 아닙니다(연간 전체 부모비자 상한은 여전히 약 8,500석으로 제한). <strong>1단계가 2023.04인 이유</strong>: Direction 103 s 6(2)(c)에 따라 온쇼어 고령비자는 대기열 편입 전 1차 요건·검사를 선행 심사하며 팬데믹 이후 신청이 집중되었기 때문입니다 [1,12,17]."
     },
     {
       title: "3. 2018년 6월 1일 Queue Date 규칙 변경이 만든 '보이지 않는 28~43개월 추가 대기' 함정",
@@ -600,7 +767,7 @@ function renderInferencesGrid() {
     },
     {
       title: "2. Why Is the Onshore Aged 864 Release Cohort at Nov 2020 vs Nov 2018 for 143, Yet Stage 1 Assessment Is at Apr 2023?",
-      body: "<strong>Stage 2 cohort at Nov 2020</strong> reflects Ministerial Direction No. 117 s 8(2)(a) (effective 25 Jul 2026) priority structure for onshore aged applications and the 1,125-place earmark in LIN 26/042. <strong>Stage 1 assessment at Apr 2023</strong> reflects upfront assessment requirements under Direction 103 s 6(2)(c) and post-pandemic onshore application volume [1,12,17]."
+      body: "<strong>Stage 2 cohort at Nov 2020 (One-Off Batch Jump Caveat)</strong> reflects a Ministerial Direction No. 117 s 8(2)(a) (effective 25 Jul 2026) administrative queue batch/re-indexing jump within the 1,125-place earmark in LIN 26/042 — NOT a steady ongoing 12 months per month processing speed (annual Parent ceiling remains capped at ~8,500 places). <strong>Stage 1 assessment at Apr 2023</strong> reflects upfront assessment requirements under Direction 103 s 6(2)(c) and post-pandemic onshore application volume [1,12,17]."
     },
     {
       title: "3. The 1 June 2018 Queue Date Rule Shift: The Hidden 28–43 Month Front-End Delay",
@@ -624,49 +791,152 @@ function renderInferencesGrid() {
 }
 
 /* ============================================================================
-   MODULE 02: INTERACTIVE QUEUE POSITION & RELEASE YEAR SIMULATOR
+   MODULE 02: INTERACTIVE QUEUE POSITION, PARENT AGE MILESTONE & RELEASE SIMULATOR
    ============================================================================ */
-function runQueueSimulator() {
-  const out = document.getElementById("sim-output-content");
-  if (!out) return;
-  const sub = document.getElementById("sim-subclass")?.value || "143";
-  const stage = document.getElementById("sim-stage")?.value || "lodged_unqueued";
-  const rawYr = (document.getElementById("sim-year")?.value || "").trim();
-  const mo = parseInt(document.getElementById("sim-month")?.value || "4", 10);
-  const rawAge = (document.getElementById("sim-age")?.value || "").trim();
+function getMacroNewApplicationEstimates() {
+  const est = (QUEUE_DATA && QUEUE_DATA.live_queue_state && QUEUE_DATA.live_queue_state.new_application_estimates) || {};
+  const mContrib = String(est["Contributory Parent visas"] || "18").match(/(\d+)/);
+  const mNon = String(est["Parent & Aged Parent visas"] || "42").match(/(\d+)/);
+  return {
+    contribWaitYrs: mContrib ? Number(mContrib[1]) : 18,
+    nonContribWaitYrs: mNon ? Number(mNon[1]) : 42
+  };
+}
 
-  if ((stage !== "planning" && rawYr === "") || rawAge === "") {
-    out.innerHTML = currentLang === "ko"
-      ? `<div class="pv-inference-card" style="background:var(--brand-soft);border-left-color:var(--brand);">
-           <h4>대기순번 및 도달 시나리오 입력 대기 중</h4>
-           <p>좌측에서 <strong>접수(또는 Queue) 연도</strong>와 <strong>주신청자 부모님 현재 만 연세(0~110세)</strong>를 입력하시거나 상단의 <strong>예시 데이터 불러오기</strong> 버튼을 누르시면 1·2단계 도달 시나리오와 신체검사 산정 기간이 계산됩니다.</p>
-         </div>`
-      : `<div class="pv-inference-card" style="background:var(--brand-soft);border-left-color:var(--brand);">
-           <h4>Awaiting Simulation Inputs</h4>
-           <p>Enter the <strong>lodgement/queue year</strong> and <strong>primary parent's current age (0–110)</strong> on the left, or click <strong>Load Sample Data</strong> above to compute Stage 1/2 scenarios and PIC 4005 windows.</p>
-         </div>`;
-    return;
+function evaluateParentAgeMilestones(curAge, opts) {
+  const age = Number(curAge);
+  if (!Number.isFinite(age) || age < 0 || age > 110) return null;
+  const o = opts || {};
+  const dt = getDynamicCurrentDateParts(o.now);
+  const { contribWaitYrs, nonContribWaitYrs } = getMacroNewApplicationEstimates();
+  const pensionAge = Number((POLLING_DATA && POLLING_DATA.monitored_rules && POLLING_DATA.monitored_rules.waiting_period_statutory_rules && POLLING_DATA.monitored_rules.waiting_period_statutory_rules.aged_parent_pension_age) || 67);
+  const contribGrantAge = Math.round(age + contribWaitYrs);
+  const nonContribGrantAge = Math.round(age + nonContribWaitYrs);
+  const eligibleNowAge67 = age >= pensionAge;
+  const yearsTo67 = eligibleNowAge67 ? 0 : Math.round((pensionAge - age) * 10) / 10;
+  const targetYear67 = eligibleNowAge67 ? dt.calYear : Math.round(dt.calYear + (pensionAge - age));
+  return {
+    currentAge: age,
+    pensionAge,
+    eligibleNowAge67,
+    yearsTo67,
+    targetYear67,
+    contribWaitYrs,
+    nonContribWaitYrs,
+    expectedGrantAgeContributory: contribGrantAge,
+    expectedGrantAgeNonContributory: nonContribGrantAge,
+    contribAged75PlusAtGrant: contribGrantAge >= 75,
+    nonContribAged75PlusAtGrant: nonContribGrantAge >= 75,
+    condition8503CheckRequired: true
+  };
+}
+
+function renderParentAgeMilestonePanel(curAge, lang, opts) {
+  const m = evaluateParentAgeMilestones(curAge, opts);
+  if (!m) return "";
+  const panelId = (opts && opts.panelId) ? opts.panelId : "parent-age-milestone-panel";
+  const isKo = lang === "ko";
+  const badgeHtml = m.eligibleNowAge67
+    ? (isKo
+        ? `<div class="age-badge-pill ok">✅ Eligible Now · 만 ${m.pensionAge}세 이상 온쇼어 고령부모(804/864 + BVA) 연령 요건 현재 충족</div>`
+        : `<div class="age-badge-pill ok">✅ Eligible Now (Age ${m.pensionAge}+ Aged Parent — Qualifies Today for Onshore Subclass 804 / 864 + BVA)</div>`)
+    : (isKo
+        ? `<div class="age-badge-pill wait">⏳ 만 ${m.pensionAge}세 도달까지 <strong>${m.yearsTo67}년</strong> 남음 → <strong>${m.targetYear67}년</strong>부터 온쇼어 고령부모(804/864 + BVA) 연령 자격 충족</div>`
+        : `<div class="age-badge-pill wait">⏳ <strong>${m.yearsTo67} Year(s)</strong> Remaining to Age ${m.pensionAge} → Qualifies in <strong>${m.targetYear67}</strong> for Onshore Aged Parent (804/864 + BVA)</div>`);
+
+  if (isKo) {
+    return `
+      <div class="age-milestone-panel" id="${panelId}">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;">
+          <div>
+            <div style="font-size:11.5px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:0.03em;">AGE AT VISA GRANT &amp; AGE-67 ONSHORE MILESTONE (SSA 1991 s 23(5A)–(5D))</div>
+            <h4 style="font-size:15px;font-weight:800;color:var(--ink);margin:2px 0 4px;">부모님 현재 만 ${m.currentAge}세 기준 · 경로별 예상 비자 승인 연세 &amp; 만 67세 온쇼어 자격 판정</h4>
+          </div>
+          ${badgeHtml}
+        </div>
+        <div class="age-milestone-grid">
+          <div class="age-milestone-card">
+            <span style="font-size:12px;font-weight:700;color:var(--ink-muted);">기여제 영주 (Subclass 143 / 864 · 신규 ~${m.contribWaitYrs}년)</span>
+            <strong>예상 승인 시점 만 ${m.expectedGrantAgeContributory}세</strong>
+            <div style="font-size:12px;color:var(--ink-muted);line-height:1.45;">PIC 4005($86,000 상한 · 면제 불가) · ${m.contribAged75PlusAtGrant ? "만 75세+ 3년(지속질환 최대 10년) 신검 산정 구간 — 고령 질환 관리 필수" : "일반 5년(지속질환 최대 10년) 신검 산정 구간"}</div>
+          </div>
+          <div class="age-milestone-card non-contrib">
+            <span style="font-size:12px;font-weight:700;color:var(--ink-muted);">비기여제 일반 (Subclass 103 / 804 · 신규 ~${m.nonContribWaitYrs}년)</span>
+            <strong>예상 승인 시점 만 ${m.expectedGrantAgeNonContributory}세</strong>
+            <div style="font-size:12px;color:#7F1D1D;line-height:1.45;">⚠️ 약 ${m.nonContribWaitYrs}년 대기 시 고령화로 인한 <strong>PIC 4005 신체검사($86,000 한도) 거절 및 기대여명 초과 리스크</strong>가 극도로 높음</div>
+          </div>
+        </div>
+        <div class="cond8503-warning-box">
+          <strong>🚨 온쇼어 804/864 접수 전 필수 점검 — 방문비자 Condition 8503 (No Further Stay) 주의:</strong><br/>
+          Social Security Act 1991 <code>s 23(5A)–(5D)</code>상 호주 노령연금 연령인 <strong>만 67세</strong>(2023.07.01부터 만 67세 고정 · 2024.12.17부터 Sch 1 유효접수 요건 <code>F2025L00317</code>)가 충족되더라도, 호주 입국 비자에 <strong>Condition 8503 (추가 체류 불가 · No Further Stay)</strong>이 붙어 있으면 <code>reg 2.05(4)</code> 면제 승인 없이는 온쇼어 804/864 접수가 원천 무효(<code>s 46(1A)</code>)입니다! 특히 <strong>Subclass 600 Sponsored Family 스트림은 8503이 법정 의무 부과</strong>되는 반면, 일반 <strong>600 Tourist 스트림</strong>이나 <strong>Subclass 601 ETA</strong>는 의무 부과 대상은 아니나 재량 부과 여부를 반드시 입국 후 <strong>VEVO</strong>로 확인하고 접수해야 합니다.
+        </div>
+      </div>
+    `;
+  }
+  return `
+    <div class="age-milestone-panel" id="${panelId}">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;">
+        <div>
+          <div style="font-size:11.5px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:0.03em;">AGE AT VISA GRANT &amp; AGE-67 ONSHORE MILESTONE (SSA 1991 s 23(5A)–(5D))</div>
+          <h4 style="font-size:15px;font-weight:800;color:var(--ink);margin:2px 0 4px;">Current Parent Age ${m.currentAge} · Expected Age at Visa Grant &amp; Age-67 Onshore Eligibility</h4>
+        </div>
+        ${badgeHtml}
+      </div>
+      <div class="age-milestone-grid">
+        <div class="age-milestone-card">
+          <span style="font-size:12px;font-weight:700;color:var(--ink-muted);">Contributory Pathway (Subclass 143 / 864 · ~${m.contribWaitYrs} Yrs New Intake)</span>
+          <strong>Expected Age ${m.expectedGrantAgeContributory} at Grant</strong>
+          <div style="font-size:12px;color:var(--ink-muted);line-height:1.45;">PIC 4005 ($86,000 MOC SCT · No Health Waiver) · ${m.contribAged75PlusAtGrant ? "3-yr window for aged 75+ (up to 10 yrs for ongoing conditions) — proactive medical planning critical" : "5-yr standard window (up to 10 yrs for ongoing conditions)"}</div>
+        </div>
+        <div class="age-milestone-card non-contrib">
+          <span style="font-size:12px;font-weight:700;color:var(--ink-muted);">Non-Contributory Pathway (Subclass 103 / 804 · ~${m.nonContribWaitYrs} Yrs New Intake)</span>
+          <strong>Expected Age ${m.expectedGrantAgeNonContributory} at Grant</strong>
+          <div style="font-size:12px;color:#7F1D1D;line-height:1.45;">⚠️ Extreme <strong>PIC 4005 medical failure ($86,000 SCT, no waiver) &amp; life-expectancy attrition risk</strong> across a ~${m.nonContribWaitYrs}-year queue</div>
+        </div>
+      </div>
+      <div class="cond8503-warning-box">
+        <strong>🚨 Mandatory Pre-Lodgement Check — Condition 8503 (No Further Stay) on Visitor Visas:</strong><br/>
+        Under <em>Social Security Act 1991</em> <code>s 23(5A)–(5D)</code>, Age Pension age is <strong>67</strong> (since 1 July 2023; Schedule 1 validity requirement since 17 Dec 2024 under <code>F2025L00317</code>). Even once aged 67+, an onshore Subclass 804 or 864 application (for Bridging Visa A stay) is <strong>invalid under s 46(1A) if the parent's current visa carries Condition 8503</strong> (absent a rare <code>reg 2.05(4)</code> waiver)! Visitor Visa <strong>Subclass 600 Sponsored Family stream imposes mandatory 8503</strong>, whereas <strong>600 Tourist stream</strong> and <strong>Subclass 601 ETA</strong> do not carry mandatory 8503 — always verify VEVO for zero 8503/8534/8535 before lodging onshore.
+      </div>
+    </div>
+  `;
+}
+
+function renderDirection117CaveatBanner(sub, lang) {
+  if (sub !== "864" && sub !== "884" && sub !== "884_to_864") return "";
+  if (lang === "ko") {
+    return `
+      <div class="md117-caveat-banner" id="md117-864-caveat">
+        <strong>⚠️ Subclass 864/884 대기열 외삽 주의 — Ministerial Direction No. 117 일회성 배치 점프(One-Off Batch Jump) 경고:</strong><br/>
+        최근 Subclass 864/884 심사 기준일이 단기간에 크게 전진(2018.05 → 2020.11)한 현상은 <strong>Ministerial Direction No. 117</strong> 행정 우선순위 개편 및 고령 기여제 배정분(1,125석) 반영에 따른 <strong>일회성 행정 큐 배치·재인덱싱 점프(administrative queue batch/re-indexing jump)</strong>일 뿐, 매월 12개월분씩 처리되는 지속적 속도(steady <code>12 months per month</code> processing speed)가 절대 아닙니다! 부모비자 전체 연간 발급 상한은 여전히 <strong>약 8,500석(LIN 26/042: 기여제 6,800석 + 일반 1,700석 · FY26–27 계획치 7,060석)</strong>으로 제한되어 있으므로 단일 월 점프 폭을 향후 대기기간에 선형 외삽하지 마십시오.
+      </div>
+    `;
+  }
+  return `
+    <div class="md117-caveat-banner" id="md117-864-caveat">
+      <strong>⚠️ Subclass 864/884 Queue Extrapolation Caveat — Ministerial Direction No. 117 One-Off Batch Jump:</strong><br/>
+      A large single-month jump in Subclass 864/884 assessment dates (May 2018 → Nov 2020) reflects a <strong>Ministerial Direction No. 117 administrative queue batch/re-indexing jump</strong> (within the 1,125 aged contributory earmark), <strong>NOT a steady ongoing 12 months per month processing speed</strong>! Because the annual Parent visa planning ceiling remains capped at <strong>~8,500 places across Contributory and Parent categories</strong> (LIN 26/042: 6,800 Contributory + 1,700 Parent; FY26–27 planning ceiling 7,060), this one-off jump must not be linearly extrapolated.
+    </div>
+  `;
+}
+
+function computeQueueSimulation(opts) {
+  const o = opts || {};
+  const sub = o.sub || "143";
+  const stage = o.stage || "lodged_unqueued";
+  const dt = getDynamicCurrentDateParts(o.now);
+  const maxAllowedYear = Math.max(2027, dt.calYear + 1);
+  const yr = stage === "planning" ? dt.calYear : Number(o.year);
+  const mo = Math.max(1, Math.min(12, parseInt(o.month || 4, 10) || 4));
+  const curAge = Number(o.age);
+
+  if (!Number.isFinite(yr) || yr < 1995 || yr > maxAllowedYear || !Number.isFinite(curAge) || curAge < 0 || curAge > 110) {
+    return { valid: false, maxAllowedYear };
   }
 
-  const yr = stage === "planning" ? 2026 : Number(rawYr);
-  const curAge = Number(rawAge);
-  if (!Number.isFinite(yr) || yr < 1995 || yr > 2027 || !Number.isFinite(curAge) || curAge < 0 || curAge > 110) {
-    out.innerHTML = currentLang === "ko"
-      ? `<div class="pv-inference-card" style="background:#FEF2F2;border-left-color:#DC2626;">
-           <h4 style="color:#991B1B;">입력값 범위 오류</h4>
-           <p style="color:#7F1D1D;">접수/Queue 연도는 <strong>1995년~2027년</strong> 사이로 입력하시고 주신청자 연세는 <strong>만 0세~110세</strong> 범위의 숫자로 입력해 주십시오.</p>
-         </div>`
-      : `<div class="pv-inference-card" style="background:#FEF2F2;border-left-color:#DC2626;">
-           <h4 style="color:#991B1B;">Invalid Input Range</h4>
-           <p style="color:#7F1D1D;">Please enter a valid lodgement/queue year (<strong>1995–2027</strong>) and primary parent age between <strong>0 and 110</strong>.</p>
-         </div>`;
-    return;
-  }
+  const currentDec = dt.currentDec;
+  const inputDec = stage === "planning" ? currentDec : (yr + (mo - 1) / 12);
 
-  const NOW_DEC = 2026 + 8 / 12; // Aug 2026 baseline
-  const inputDec = stage === "planning" ? (2026 + 10 / 12) : (yr + (mo - 1) / 12);
-
-  // Pull empirical velocity dynamically from QUEUE_DATA where available (E09/E11)
   const lagMap = {};
   if (QUEUE_DATA && Array.isArray(QUEUE_DATA.queue_lags_months_as_at_aug_2026)) {
     QUEUE_DATA.queue_lags_months_as_at_aug_2026.forEach(row => { lagMap[row.id] = row; });
@@ -675,21 +945,33 @@ function runQueueSimulator() {
   const v143 = lagMap.sub_143_173?.empirical_velocity_months_per_year || 5.07;
   const v103 = lagMap.sub_103?.empirical_velocity_months_per_year || 4.18;
   const v804 = lagMap.sub_804?.empirical_velocity_months_per_year || 2.35;
+  const { contribWaitYrs, nonContribWaitYrs } = getMacroNewApplicationEstimates();
 
-  // Subclass parameters as at Aug 2026
+  const bullets = (QUEUE_DATA && QUEUE_DATA.live_queue_state && QUEUE_DATA.live_queue_state.queue_release_bullets) || {};
+  const stepRow = (QUEUE_DATA && QUEUE_DATA.live_queue_state && Array.isArray(QUEUE_DATA.live_queue_state.milestone_table))
+    ? QUEUE_DATA.live_queue_state.milestone_table[0]
+    : null;
+
+  const stepDec = parseMonthYearToDec(stepRow && stepRow.visa_assessment_queue_release_date, lagMap.step_up?.stage2_release_dec || (2026 + 4 / 12));
+  const c143Dec = parseMonthYearToDec(bullets["Contributory Parent"], lagMap.sub_143_173?.stage2_release_dec || (2018 + 10 / 12));
+  const c864Dec = parseMonthYearToDec(bullets["Contributory Aged Parent"], lagMap.sub_864_884?.stage2_release_dec || (2020 + 10 / 12));
+  const p103Dec = parseMonthYearToDec(bullets["Parent"], lagMap.sub_103?.stage2_release_dec || (2014 + 2 / 12));
+  const p804Dec = parseMonthYearToDec(bullets["Aged Parent"], lagMap.sub_804?.stage2_release_dec || (2014 + 9 / 12));
+
   const PARAMS = {
-    "173_to_143": { s1LagYrs: 0, releaseCutoffDec: 2026 + 4 / 12, officialWaitYrs: 0.35, velocityMosPerYr: 12.0, name: "173 → 143 Step-up" },
-    "884_to_864": { s1LagYrs: 0, releaseCutoffDec: 2026 + 4 / 12, officialWaitYrs: 0.35, velocityMosPerYr: 12.0, name: "884 → 864 Step-up" },
-    "143": { s1LagYrs: 28 / 12, releaseCutoffDec: 2018 + 10 / 12, officialWaitYrs: 18, velocityMosPerYr: v143, name: "Subclass 143" },
-    "173": { s1LagYrs: 28 / 12, releaseCutoffDec: 2018 + 10 / 12, officialWaitYrs: 18, velocityMosPerYr: v143, name: "Subclass 173" },
-    "864": { s1LagYrs: 40 / 12, releaseCutoffDec: 2020 + 10 / 12, officialWaitYrs: 18, velocityMosPerYr: v864, name: "Subclass 864 (Onshore 67+)" },
-    "884": { s1LagYrs: 40 / 12, releaseCutoffDec: 2020 + 10 / 12, officialWaitYrs: 18, velocityMosPerYr: v864, name: "Subclass 884 (Onshore 67+)" },
-    "103": { s1LagYrs: 42 / 12, releaseCutoffDec: 2014 + 2 / 12, officialWaitYrs: 42, velocityMosPerYr: v103, name: "Subclass 103" },
-    "804": { s1LagYrs: 43 / 12, releaseCutoffDec: 2014 + 9 / 12, officialWaitYrs: 42, velocityMosPerYr: v804, name: "Subclass 804 (Onshore 67+)" }
+    "173_to_143": { s1LagYrs: 0, releaseCutoffDec: stepDec, officialWaitYrs: 0.35, velocityMosPerYr: 12.0, name: "173 → 143 Step-up" },
+    "884_to_864": { s1LagYrs: 0, releaseCutoffDec: stepDec, officialWaitYrs: 0.35, velocityMosPerYr: 12.0, name: "884 → 864 Step-up" },
+    "143": { s1LagYrs: (lagMap.sub_143_173?.stage1_lag_months || 28) / 12, releaseCutoffDec: c143Dec, officialWaitYrs: contribWaitYrs, velocityMosPerYr: v143, name: "Subclass 143" },
+    "173": { s1LagYrs: (lagMap.sub_143_173?.stage1_lag_months || 28) / 12, releaseCutoffDec: c143Dec, officialWaitYrs: contribWaitYrs, velocityMosPerYr: v143, name: "Subclass 173" },
+    "864": { s1LagYrs: (lagMap.sub_864_884?.stage1_lag_months || 40) / 12, releaseCutoffDec: c864Dec, officialWaitYrs: contribWaitYrs, velocityMosPerYr: v864, name: "Subclass 864 (Onshore 67+)" },
+    "884": { s1LagYrs: (lagMap.sub_864_884?.stage1_lag_months || 40) / 12, releaseCutoffDec: c864Dec, officialWaitYrs: contribWaitYrs, velocityMosPerYr: v864, name: "Subclass 884 (Onshore 67+)" },
+    "103": { s1LagYrs: (lagMap.sub_103?.stage1_lag_months || 42) / 12, releaseCutoffDec: p103Dec, officialWaitYrs: nonContribWaitYrs, velocityMosPerYr: v103, name: "Subclass 103" },
+    "804": { s1LagYrs: (lagMap.sub_804?.stage1_lag_months || 43) / 12, releaseCutoffDec: p804Dec, officialWaitYrs: nonContribWaitYrs, velocityMosPerYr: v804, name: "Subclass 804 (Onshore 67+)" }
   };
 
   const p = PARAMS[sub] || PARAMS["143"];
   const isStepUp = sub === "173_to_143" || sub === "884_to_864";
+  const hasDirection117JumpCaveat = sub === "864" || sub === "884" || sub === "884_to_864";
 
   let estQueueDateDec = inputDec;
   let s1StatusKo = "";
@@ -704,15 +986,13 @@ function runQueueSimulator() {
     s1StatusKo = `${yr}년 ${mo}월 확정 완료`;
     s1StatusEn = `Assigned ${yr}-${String(mo).padStart(2, "0")}`;
   } else {
-    // Post-1 June 2018 rule: Queue Date is assigned when Stage 1 assessment completes
-    estQueueDateDec = Math.max(NOW_DEC + 0.15, inputDec + p.s1LagYrs);
+    estQueueDateDec = Math.max(currentDec + 0.15, inputDec + p.s1LagYrs);
     const qYr = Math.floor(estQueueDateDec);
     const qMo = Math.max(1, Math.min(12, Math.round((estQueueDateDec - qYr) * 12) + 1));
     s1StatusKo = `예상 ${qYr}년 ${qMo}월 (접수 후 ~${Math.round(p.s1LagYrs * 12)}개월 뒤)`;
     s1StatusEn = `Est. ${qYr}-${String(qMo).padStart(2, "0")} (~${Math.round(p.s1LagYrs * 12)}m after lodgement)`;
   }
 
-  // E07 & E08: Do NOT add the "new applications lodged today" benchmark (18yr / 42yr) to historical/already-queued applications!
   let officialCardValKo = "";
   let officialCardValEn = "";
   let officialCardSubKo = "";
@@ -720,6 +1000,8 @@ function runQueueSimulator() {
   let velocityCardValKo = "";
   let velocityCardValEn = "";
   let remainingYrs = 0.35;
+  let estReleaseVelocityYr = dt.calYear;
+  let newAppBenchmarkYr = Math.round(currentDec + p.officialWaitYrs);
 
   if (isStepUp) {
     officialCardValKo = "2026년 5월 접수분 심사 중";
@@ -733,8 +1015,7 @@ function runQueueSimulator() {
     const queueGapYears = Math.max(0, estQueueDateDec - p.releaseCutoffDec);
     const queueGapMonths = Math.round(queueGapYears * 12);
     const velYearsFromNow = (queueGapYears * 12) / p.velocityMosPerYr;
-    const estReleaseVelocityYr = Math.round(NOW_DEC + velYearsFromNow);
-    const newAppBenchmarkYr = Math.round(2026.8 + p.officialWaitYrs);
+    estReleaseVelocityYr = Math.round(currentDec + velYearsFromNow);
 
     if (queueGapMonths <= 0) {
       officialCardValKo = "현재 공시 컷오프 도달 (개별 심사 상태 확인)";
@@ -763,40 +1044,108 @@ function runQueueSimulator() {
     }
   }
 
-  // E13, E15, E20 & E24: Explain PIC 4005 cost assessment window (3 yrs for aged 75+, 5 yrs standard, up to 10 yrs ongoing) without a binary age-80 pass/fail cutoff
   const ageAtRelease = Math.round(curAge + remainingYrs);
   const isAged75PlusAtRelease = ageAtRelease >= 75;
+  const ageMilestones = evaluateParentAgeMilestones(curAge, { now: dt.now });
+
+  return {
+    valid: true,
+    currentDec,
+    inputDec,
+    estQueueDateDec,
+    estReleaseVelocityYr,
+    newAppBenchmarkYr,
+    remainingYrs,
+    ageAtRelease,
+    isAged75PlusAtRelease,
+    isStepUp,
+    hasDirection117JumpCaveat,
+    params: p,
+    s1StatusKo,
+    s1StatusEn,
+    officialCardValKo,
+    officialCardValEn,
+    officialCardSubKo,
+    officialCardSubEn,
+    velocityCardValKo,
+    velocityCardValEn,
+    ageMilestones
+  };
+}
+
+function runQueueSimulator() {
+  const out = document.getElementById("sim-output-content");
+  if (!out) return;
+  const sub = document.getElementById("sim-subclass")?.value || "143";
+  const stage = document.getElementById("sim-stage")?.value || "lodged_unqueued";
+  const rawYr = (document.getElementById("sim-year")?.value || "").trim();
+  const mo = parseInt(document.getElementById("sim-month")?.value || "4", 10);
+  const rawAge = (document.getElementById("sim-age")?.value || "").trim();
+  const d117Banner = renderDirection117CaveatBanner(sub, currentLang);
+  const earlyAgePanel = rawAge !== "" ? renderParentAgeMilestonePanel(rawAge, currentLang) : "";
+
+  if ((stage !== "planning" && rawYr === "") || rawAge === "") {
+    out.innerHTML = (currentLang === "ko"
+      ? `<div class="pv-inference-card" style="background:var(--brand-soft);border-left-color:var(--brand);">
+           <h4>대기순번 및 도달 시나리오 입력 대기 중</h4>
+           <p>좌측에서 <strong>접수(또는 Queue) 연도</strong>와 <strong>주신청자 부모님 현재 만 연세(0~110세)</strong>를 입력하시거나 상단의 <strong>예시 데이터 불러오기</strong> 버튼을 누르시면 1·2단계 도달 시나리오, 예상 승인 연세, 만 67세 온쇼어 자격 도달 시점 및 Condition 8503 주의사항이 계산됩니다.</p>
+         </div>`
+      : `<div class="pv-inference-card" style="background:var(--brand-soft);border-left-color:var(--brand);">
+           <h4>Awaiting Simulation Inputs</h4>
+           <p>Enter the <strong>lodgement/queue year</strong> and <strong>primary parent's current age (0–110)</strong> on the left, or click <strong>Load Sample Data</strong> above to compute Stage 1/2 scenarios, Expected Age at Grant, Age-67 Onshore Eligibility, and Condition 8503 warnings.</p>
+         </div>`) + d117Banner + earlyAgePanel;
+    return;
+  }
+
+  const sim = computeQueueSimulation({ sub, stage, year: rawYr, month: mo, age: rawAge });
+  if (!sim.valid) {
+    out.innerHTML = currentLang === "ko"
+      ? `<div class="pv-inference-card" style="background:#FEF2F2;border-left-color:#DC2626;">
+           <h4 style="color:#991B1B;">입력값 범위 오류</h4>
+           <p style="color:#7F1D1D;">접수/Queue 연도는 <strong>1995년~${sim.maxAllowedYear}년</strong> 사이로 입력하시고 주신청자 연세는 <strong>만 0세~110세</strong> 범위의 숫자로 입력해 주십시오.</p>
+         </div>`
+      : `<div class="pv-inference-card" style="background:#FEF2F2;border-left-color:#DC2626;">
+           <h4 style="color:#991B1B;">Invalid Input Range</h4>
+           <p style="color:#7F1D1D;">Please enter a valid lodgement/queue year (<strong>1995–${sim.maxAllowedYear}</strong>) and primary parent age between <strong>0 and 110</strong>.</p>
+         </div>`;
+    return;
+  }
+
+  const p = sim.params;
+  const agePanelHtml = renderParentAgeMilestonePanel(rawAge, currentLang);
 
   if (currentLang === "ko") {
     out.innerHTML = `
       <div class="pv-sim-kpi-grid">
         <div class="pv-sim-kpi">
           <div class="kpi-label">1단계 Queue Date 부여 시점</div>
-          <div class="kpi-val" style="font-size:17px;">${s1StatusKo}</div>
+          <div class="kpi-val" style="font-size:17px;">${sim.s1StatusKo}</div>
           <div class="kpi-sub">2018.06.01 이후 심사완료일 = Queue Date</div>
         </div>
         <div class="pv-sim-kpi">
-          <div class="kpi-label">이민성 공시 컷오프 격차 & 신규 벤치마크</div>
-          <div class="kpi-val" style="font-size:17px;">${officialCardValKo}</div>
-          <div class="kpi-sub">${officialCardSubKo}</div>
+          <div class="kpi-label">이민성 공시 컷오프 격차 &amp; 신규 벤치마크</div>
+          <div class="kpi-val" style="font-size:17px;">${sim.officialCardValKo}</div>
+          <div class="kpi-sub">${sim.officialCardSubKo}</div>
         </div>
         <div class="pv-sim-kpi">
           <div class="kpi-label">실증 큐 속도(Velocity) 외삽 시나리오</div>
-          <div class="kpi-val" style="font-size:17px;">${velocityCardValKo}</div>
+          <div class="kpi-val" style="font-size:17px;">${sim.velocityCardValKo}</div>
           <div class="kpi-sub">연간 쿼터·이탈률에 따라 변동 가능 (비보장 계획 도구)</div>
         </div>
         <div class="pv-sim-kpi">
-          <div class="kpi-label">예상 도달 시점 계획 연령 & 신검 기간</div>
-          <div class="kpi-val" style="color:#991B1B;">만 ${ageAtRelease}세</div>
-          <div class="kpi-sub">영주 부모비자 PIC 4005 ($86,000 MOC 기준) · ${isAged75PlusPlusLabelKo(isAged75PlusAtRelease)}</div>
+          <div class="kpi-label">선택 경로 도달 시점 예상 연세 &amp; 신검</div>
+          <div class="kpi-val" style="color:#991B1B;">만 ${sim.ageAtRelease}세</div>
+          <div class="kpi-sub">영주 부모비자 PIC 4005 ($86,000 MOC 기준) · ${isAged75PlusPlusLabelKo(sim.isAged75PlusAtRelease)}</div>
         </div>
       </div>
+      ${d117Banner}
+      ${agePanelHtml}
       <div class="pv-inference-card" style="margin-top:12px;">
         <h4>박앤코 법률 시나리오 계획 노트 (${p.name})</h4>
         <p>
-          ${isStepUp
+          ${sim.isStepUp
             ? "1단계 임시 기여제 비자(173 또는 884) 소지자가 영주 전환(143 또는 864)을 신청하시는 경우, <strong>Ministerial Direction No. 103 s 7(2)(b)</strong>에 따라 최초 임시비자 접수일이 영주비자 접수일로 법정 의제(deemed)되며 <strong>s 8(1)(b)</strong>의 큐 순서 원칙 하에 심사됩니다(공식 표상 <code>Queue Assessment: N/A</code>). 2026년 8월 31일 기준 <strong>2026년 5월 접수분</strong>이 최종 심사 중이며 건강검사는 <strong>cl 143.225–143.226</strong>에 따라 장관이 추가 검사를 요청하는 경우에 한해 재검을 받습니다."
-            : `현재 선택하신 <strong>${p.name}</strong> 경로의 계획 시나리오상 최종 단계 도달 시 주신청자 부모님 연세는 <strong>약 만 ${ageAtRelease}세</strong>로 추산됩니다. 영주·임시 부모비자(103/143/173/804/864/884)는 건강요건 면제(Health Waiver)가 없는 <strong>PIC 4005($86,000 MOC 유의미한 비용 기준)</strong>가 적용되며(반면 Subclass 870은 신청 시 해외 체류면 PIC 4005, 호주 국내 체류면 PIC 4007 적용, cl 870.228), MOC 비용 평가 기간은 <strong>일반 영주/임시 5년, 만 75세 이상 신청자 3년, 예측 가능한 영구·지속 질환은 기대여명 범위 내 최대 10년</strong>으로 구분됩니다.`}
+            : `현재 선택하신 <strong>${p.name}</strong> 경로의 계획 시나리오상 최종 단계 도달 시 주신청자 부모님 연세는 <strong>약 만 ${sim.ageAtRelease}세</strong>로 추산됩니다. 영주·임시 부모비자(103/143/173/804/864/884)는 건강요건 면제(Health Waiver)가 없는 <strong>PIC 4005($86,000 MOC 유의미한 비용 기준)</strong>가 적용되며(반면 Subclass 870은 신청 시 해외 체류면 PIC 4005, 호주 국내 체류면 PIC 4007 적용, cl 870.228), MOC 비용 평가 기간은 <strong>일반 영주/임시 5년, 만 75세 이상 신청자 3년, 예측 가능한 영구·지속 질환은 기대여명 범위 내 최대 10년</strong>으로 구분됩니다.`}
         </p>
       </div>
     `;
@@ -805,31 +1154,33 @@ function runQueueSimulator() {
       <div class="pv-sim-kpi-grid">
         <div class="pv-sim-kpi">
           <div class="kpi-label">Stage 1 Queue Date Assignment</div>
-          <div class="kpi-val" style="font-size:17px;">${s1StatusEn}</div>
+          <div class="kpi-val" style="font-size:17px;">${sim.s1StatusEn}</div>
           <div class="kpi-sub">Post-1 Jun 2018: Assessment Date = Queue Date</div>
         </div>
         <div class="pv-sim-kpi">
           <div class="kpi-label">Cutoff Gap &amp; Official New-App Benchmark</div>
-          <div class="kpi-val" style="font-size:17px;">${officialCardValEn}</div>
-          <div class="kpi-sub">${officialCardSubEn}</div>
+          <div class="kpi-val" style="font-size:17px;">${sim.officialCardValEn}</div>
+          <div class="kpi-sub">${sim.officialCardSubEn}</div>
         </div>
         <div class="pv-sim-kpi">
           <div class="kpi-label">Empirical Velocity Scenario</div>
-          <div class="kpi-val" style="font-size:17px;">${velocityCardValEn}</div>
+          <div class="kpi-val" style="font-size:17px;">${sim.velocityCardValEn}</div>
           <div class="kpi-sub">Advancing ${p.velocityMosPerYr} queue-months/yr (planning scenario only)</div>
         </div>
         <div class="pv-sim-kpi">
           <div class="kpi-label">Planning Age &amp; PIC 4005 Assessment Window</div>
-          <div class="kpi-val" style="color:#991B1B;">Age ${ageAtRelease}</div>
-          <div class="kpi-sub">Permanent parent PIC 4005 ($86,000 MOC SCT) · ${isAged75PlusAtRelease ? "3-yr window (aged 75+) or up to 10 yrs (ongoing)" : "5-yr standard window (up to 10 yrs ongoing)"}</div>
+          <div class="kpi-val" style="color:#991B1B;">Age ${sim.ageAtRelease}</div>
+          <div class="kpi-sub">Permanent parent PIC 4005 ($86,000 MOC SCT) · ${sim.isAged75PlusAtRelease ? "3-yr window (aged 75+) or up to 10 yrs (ongoing)" : "5-yr standard window (up to 10 yrs ongoing)"}</div>
         </div>
       </div>
+      ${d117Banner}
+      ${agePanelHtml}
       <div class="pv-inference-card" style="margin-top:12px;">
         <h4>Park &amp; Co Scenario Planning Note (${p.name})</h4>
         <p>
-          ${isStepUp
+          ${sim.isStepUp
             ? "When stepping up from a Subclass 173 or 884 temporary visa to permanent Subclass 143 or 864, <strong>Ministerial Direction No. 103 s 7(2)(b)</strong> deems the permanent application to have been lodged on the initial temporary application date, while <strong>s 8(1)(b)</strong> maintains queue-date order (published table shows <code>Queue Assessment: N/A</code>). As at 31 August 2026, Home Affairs is assessing the <strong>May 2026</strong> step-up cohort (not a guaranteed personal completion time). Under <strong>cl 143.225–143.226</strong>, a step-up applicant undergoes further medical checks only if requested by the Minister."
-            : `Under this planning scenario for <strong>${p.name}</strong>, the primary applicant would be <strong>~Age ${ageAtRelease}</strong> at Stage 2 assessment. Permanent and provisional parent visas (103/143/173/804/864/884) are subject to <strong>PIC 4005 ($86,000 MOC Significant Cost Threshold, no health waiver)</strong> (whereas Subclass 870 applies PIC 4005 if offshore at application or PIC 4007 if onshore under cl 870.228), assessed over <strong>5 years standard, 3 years for applicants aged 75+, or up to 10 years within life expectancy for permanent/ongoing conditions</strong>.`}
+            : `Under this planning scenario for <strong>${p.name}</strong>, the primary applicant would be <strong>~Age ${sim.ageAtRelease}</strong> at Stage 2 assessment. Permanent and provisional parent visas (103/143/173/804/864/884) are subject to <strong>PIC 4005 ($86,000 MOC Significant Cost Threshold, no health waiver)</strong> (whereas Subclass 870 applies PIC 4005 if offshore at application or PIC 4007 if onshore under cl 870.228), assessed over <strong>5 years standard, 3 years for applicants aged 75+, or up to 10 years within life expectancy for permanent/ongoing conditions</strong>.`}
         </p>
       </div>
     `;
@@ -847,6 +1198,12 @@ function runPathwayWizard() {
   const out = document.getElementById("wiz-output-content");
   if (!out) return;
   const mainAge = document.getElementById("wiz-main-age")?.value || "67plus";
+  const rawWizAge = (document.getElementById("wiz-exact-age")?.value || "").trim();
+  const fallbackSimAge = (document.getElementById("sim-age")?.value || "").trim();
+  const effectiveAgeRaw = rawWizAge !== "" ? rawWizAge : fallbackSimAge;
+  const wizAgePanel = effectiveAgeRaw !== ""
+    ? renderParentAgeMilestonePanel(effectiveAgeRaw, currentLang, { panelId: "wiz-age-milestone-panel" })
+    : "";
   const spouseAge = document.getElementById("wiz-spouse-age")?.value || "none";
   const loc = document.getElementById("wiz-location")?.value || "onshore";
   const cond = document.getElementById("wiz-visa-cond")?.value || "clean";
@@ -857,15 +1214,15 @@ function runPathwayWizard() {
   const budget = document.getElementById("wiz-budget")?.value || "contrib_direct";
 
   if (rawTotal === "" || rawAu === "") {
-    out.innerHTML = currentLang === "ko"
+    out.innerHTML = (currentLang === "ko"
       ? `<div class="pv-inference-card" style="background:var(--brand-soft);border-left-color:var(--brand);">
            <h4>가족균형테스트(Reg 1.05) 및 맞춤 경로 입력 대기 중</h4>
-           <p>좌측에서 <strong>전 세계 전체 자녀 수</strong>와 <strong>호주 적격 자녀 수(시민권자·통상거주 영주권자)</strong>를 입력하시거나 상단의 <strong>예시 데이터 불러오기</strong>를 누르시면 Reg 1.05(2C)(a)·(b) 통과 여부와 최적 신청 순서가 표시됩니다.</p>
+           <p>좌측에서 <strong>전 세계 전체 자녀 수</strong>와 <strong>호주 적격 자녀 수(시민권자·통상거주 영주권자)</strong>를 입력하시거나 상단의 <strong>예시 데이터 불러오기</strong>를 누르시면 Reg 1.05(2C)(a)·(b) 통과 여부, 경로별 예상 승인 연세 및 만 67세 온쇼어 자격이 표시됩니다.</p>
          </div>`
       : `<div class="pv-inference-card" style="background:var(--brand-soft);border-left-color:var(--brand);">
            <h4>Awaiting Family Composition Inputs</h4>
-           <p>Enter <strong>total children worldwide</strong> and <strong>eligible children in Australia</strong> on the left, or click <strong>Load Sample Data</strong> above to evaluate Reg 1.05(2C) and recommended pathways.</p>
-         </div>`;
+           <p>Enter <strong>total children worldwide</strong> and <strong>eligible children in Australia</strong> on the left, or click <strong>Load Sample Data</strong> above to evaluate Reg 1.05(2C), Expected Age at Grant, and Age-67 Onshore Eligibility.</p>
+         </div>`) + wizAgePanel;
     return;
   }
 
@@ -949,7 +1306,8 @@ function runPathwayWizard() {
     bofSubTextEn = `${auKids} of ${totalKids} in AU${maxOverseas !== null ? `, max ${maxOverseas} in one overseas country` : ""} (Min ${minAuRequired50} for 50% rule)`;
   }
 
-  const isAged = mainAge === "67plus";
+  const parsedWizAgeNum = rawWizAge !== "" ? Number(rawWizAge) : NaN;
+  const isAged = Number.isFinite(parsedWizAgeNum) ? (parsedWizAgeNum >= 67) : (mainAge === "67plus");
   const spouseMortalityTrap = isAged && spouseAge === "under67";
   const holding870 = cond === "holding_870";
   const has8503 = cond === "8503";
@@ -1033,6 +1391,7 @@ function runPathwayWizard() {
       <p>${currentLang === "ko" ? recBodyKo : recBodyEn}</p>
     </div>
     ${mortalityHtml}
+    ${wizAgePanel}
   `;
 }
 
@@ -1086,67 +1445,105 @@ function renderSubclassComparisonTable() {
 /* ============================================================================
    MODULE 04: 20-YEAR TCO, ASSURER ELIGIBILITY & AOS INCOME CALCULATOR + CHART 4
    ============================================================================ */
-function computePathwayCost(pathway, parentsCount, isCorp) {
-  const p = parentsCount;
+function computePathwayCost(pathway, parentsCount, isCorp, depChildrenCount) {
+  const p = Math.max(1, parseInt(parentsCount, 10) || 1);
   const sec = p > 1 ? (p - 1) : 0;
+  const kids = Math.max(0, parseInt(depChildrenCount || 0, 10) || 0);
   const fs = (QUEUE_DATA && QUEUE_DATA.fee_schedule_fy26_27) ? QUEUE_DATA.fee_schedule_fy26_27 : {};
   const aosCfg = (QUEUE_DATA && QUEUE_DATA.aos_formula_fy26_27) ? QUEUE_DATA.aos_formula_fy26_27 : {};
   const corpBondContrib = aosCfg.corporate_bond_contributory_aud || 20000;
   const corpBondNonContrib = aosCfg.corporate_bond_non_contributory_aud || 10000;
-  let vac1 = 0, vac2 = 0, bond = 0, aosYears = 10;
+  let adultVac1 = 0, childVac1 = 0, adultVac2 = 0, childVac2 = 0, sponsorshipFee = 0, bond = 0, aosYears = 10;
+  let depChildrenIneligible870 = false;
 
   if (pathway === "143") {
-    const f = fs["143"] || { first_base: 5040, first_adult: 1700, second_per_person: 43600, aos_years: 10, aos_bond_1: 10000, aos_bond_2: 14000 };
-    vac1 = f.first_base + sec * f.first_adult;
-    vac2 = p * f.second_per_person;
+    const f = fs["143"] || { sponsorship: 0, first_base: 5040, first_adult: 1700, first_child: 855, second_per_person: 43600, second_child: 2095, aos_years: 10, aos_bond_1: 10000, aos_bond_2: 14000 };
+    sponsorshipFee = Number(f.sponsorship || 0);
+    adultVac1 = sponsorshipFee + Number(f.first_base) + sec * Number(f.first_adult || 0);
+    childVac1 = kids * Number(f.first_child !== undefined ? f.first_child : 855);
+    adultVac2 = p * Number(f.second_per_person);
+    childVac2 = kids * Number(f.second_child !== undefined ? f.second_child : 2095);
     bond = isCorp ? corpBondContrib : (p === 1 ? f.aos_bond_1 : f.aos_bond_2);
     aosYears = f.aos_years;
   } else if (pathway === "173_143") {
-    const f1 = fs["173"] || { first_base: 3395, first_adult: 1145, second_per_person: 29130 };
-    const f2 = fs["173_to_143"] || { first_base: 440, first_adult: 195, second_per_person: 19420, aos_years: 10, aos_bond_1: 10000, aos_bond_2: 14000 };
-    vac1 = (f1.first_base + sec * f1.first_adult) + (f2.first_base + sec * f2.first_adult);
-    vac2 = p * (f1.second_per_person + f2.second_per_person);
+    const f1 = fs["173"] || { sponsorship: 0, first_base: 3395, first_adult: 1145, first_child: 575, second_per_person: 29130, second_child: 2095 };
+    const f2 = fs["173_to_143"] || { sponsorship: 0, first_base: 440, first_adult: 195, first_child: 100, second_per_person: 19420, second_child: 0, aos_years: 10, aos_bond_1: 10000, aos_bond_2: 14000 };
+    sponsorshipFee = Number(f1.sponsorship || 0) + Number(f2.sponsorship || 0);
+    adultVac1 = sponsorshipFee + (Number(f1.first_base) + sec * Number(f1.first_adult || 0)) + (Number(f2.first_base) + sec * Number(f2.first_adult || 0));
+    childVac1 = kids * (Number(f1.first_child !== undefined ? f1.first_child : 575) + Number(f2.first_child !== undefined ? f2.first_child : 100));
+    adultVac2 = p * (Number(f1.second_per_person) + Number(f2.second_per_person));
+    childVac2 = kids * (Number(f1.second_child !== undefined ? f1.second_child : 2095) + Number(f2.second_child !== undefined ? f2.second_child : 0));
     bond = isCorp ? corpBondContrib : (p === 1 ? f2.aos_bond_1 : f2.aos_bond_2);
     aosYears = f2.aos_years;
   } else if (pathway === "864") {
-    const f = fs["864"] || { first_base: 5040, first_adult: 2515, second_per_person: 43600, aos_years: 10, aos_bond_1: 10000, aos_bond_2: 14000 };
-    vac1 = f.first_base + sec * f.first_adult;
-    vac2 = p * f.second_per_person;
+    const f = fs["864"] || { sponsorship: 0, first_base: 5040, first_adult: 2515, first_child: 1260, second_per_person: 43600, second_child: 2095, aos_years: 10, aos_bond_1: 10000, aos_bond_2: 14000 };
+    sponsorshipFee = Number(f.sponsorship || 0);
+    adultVac1 = sponsorshipFee + Number(f.first_base) + sec * Number(f.first_adult || 0);
+    childVac1 = kids * Number(f.first_child !== undefined ? f.first_child : 1260);
+    adultVac2 = p * Number(f.second_per_person);
+    childVac2 = kids * Number(f.second_child !== undefined ? f.second_child : 2095);
     bond = isCorp ? corpBondContrib : (p === 1 ? f.aos_bond_1 : f.aos_bond_2);
     aosYears = f.aos_years;
   } else if (pathway === "884_864") {
-    const f1 = fs["884"] || { first_base: 4990, first_adult: 2490, second_per_person: 29130 };
-    const f2 = fs["884_to_864"] || { first_base: 440, first_adult: 195, second_per_person: 19420, aos_years: 10, aos_bond_1: 10000, aos_bond_2: 14000 };
-    vac1 = (f1.first_base + sec * f1.first_adult) + (f2.first_base + sec * f2.first_adult);
-    vac2 = p * (f1.second_per_person + f2.second_per_person);
+    const f1 = fs["884"] || { sponsorship: 0, first_base: 4990, first_adult: 2490, first_child: 1250, second_per_person: 29130, second_child: 2095 };
+    const f2 = fs["884_to_864"] || { sponsorship: 0, first_base: 440, first_adult: 195, first_child: 100, second_per_person: 19420, second_child: 0, aos_years: 10, aos_bond_1: 10000, aos_bond_2: 14000 };
+    sponsorshipFee = Number(f1.sponsorship || 0) + Number(f2.sponsorship || 0);
+    adultVac1 = sponsorshipFee + (Number(f1.first_base) + sec * Number(f1.first_adult || 0)) + (Number(f2.first_base) + sec * Number(f2.first_adult || 0));
+    childVac1 = kids * (Number(f1.first_child !== undefined ? f1.first_child : 1250) + Number(f2.first_child !== undefined ? f2.first_child : 100));
+    adultVac2 = p * (Number(f1.second_per_person) + Number(f2.second_per_person));
+    childVac2 = kids * (Number(f1.second_child !== undefined ? f1.second_child : 2095) + Number(f2.second_child !== undefined ? f2.second_child : 0));
     bond = isCorp ? corpBondContrib : (p === 1 ? f2.aos_bond_1 : f2.aos_bond_2);
     aosYears = f2.aos_years;
   } else if (pathway === "103" || pathway === "804") {
-    const f = fs[pathway] || { first_base: 5280, first_adult: 2640, second_per_person: 2065, aos_years: 4, aos_bond_1: 5000, aos_bond_2: 7000 };
-    vac1 = f.first_base + sec * f.first_adult;
-    vac2 = p * f.second_per_person;
+    const f = fs[pathway] || { sponsorship: 0, first_base: 5280, first_adult: 2640, first_child: 1325, second_per_person: 2065, second_child: 2065, aos_years: 4, aos_bond_1: 5000, aos_bond_2: 7000 };
+    sponsorshipFee = Number(f.sponsorship || 0);
+    adultVac1 = sponsorshipFee + Number(f.first_base) + sec * Number(f.first_adult || 0);
+    childVac1 = kids * Number(f.first_child !== undefined ? f.first_child : 1325);
+    adultVac2 = p * Number(f.second_per_person);
+    childVac2 = kids * Number(f.second_child !== undefined ? f.second_child : 2065);
     bond = isCorp ? corpBondNonContrib : (p === 1 ? f.aos_bond_1 : f.aos_bond_2);
     aosYears = f.aos_years;
   } else if (pathway === "870_3") {
     const f = fs["870_3yr"] || { sponsorship: 420, first_base: 1180, second_per_person: 4715 };
-    vac1 = f.sponsorship + p * f.first_base;
-    vac2 = p * f.second_per_person;
+    sponsorshipFee = Number(f.sponsorship !== undefined ? f.sponsorship : 420);
+    adultVac1 = sponsorshipFee + p * Number(f.first_base !== undefined ? f.first_base : 1180);
+    adultVac2 = p * Number(f.second_per_person !== undefined ? f.second_per_person : 4715);
+    depChildrenIneligible870 = kids > 0;
     bond = 0;
     aosYears = 0;
   } else if (pathway === "870_5") {
     const f = fs["870_5yr"] || { sponsorship: 420, first_base: 1180, second_per_person: 10605 };
-    vac1 = f.sponsorship + p * f.first_base;
-    vac2 = p * f.second_per_person;
+    sponsorshipFee = Number(f.sponsorship !== undefined ? f.sponsorship : 420);
+    adultVac1 = sponsorshipFee + p * Number(f.first_base !== undefined ? f.first_base : 1180);
+    adultVac2 = p * Number(f.second_per_person !== undefined ? f.second_per_person : 10605);
+    depChildrenIneligible870 = kids > 0;
     bond = 0;
     aosYears = 0;
   } else if (pathway === "870_10") {
     const f = fs["870_5yr"] || { sponsorship: 420, first_base: 1180, second_per_person: 10605 };
-    vac1 = (f.sponsorship + p * f.first_base) * 2;
-    vac2 = p * (f.second_per_person * 2);
+    sponsorshipFee = Number(f.sponsorship !== undefined ? f.sponsorship : 420) * 2;
+    adultVac1 = sponsorshipFee + p * Number(f.first_base !== undefined ? f.first_base : 1180) * 2;
+    adultVac2 = p * (Number(f.second_per_person !== undefined ? f.second_per_person : 10605) * 2);
+    depChildrenIneligible870 = kids > 0;
     bond = 0;
     aosYears = 0;
   }
-  return { vac1, vac2, bond, aosYears, govTotal: vac1 + vac2 + bond };
+  const vac1 = adultVac1 + childVac1;
+  const vac2 = adultVac2 + childVac2;
+  return {
+    vac1,
+    vac2,
+    adultVac1,
+    childVac1,
+    adultVac2,
+    childVac2,
+    sponsorshipFee,
+    depChildrenCount: kids,
+    depChildrenIneligible870,
+    bond,
+    aosYears,
+    govTotal: vac1 + vac2 + bond
+  };
 }
 
 function runCostAosCalculator() {
@@ -1154,6 +1551,7 @@ function runCostAosCalculator() {
   if (!out) return;
   const pathway = document.getElementById("cost-pathway")?.value || "143";
   const parentsCount = parseInt(document.getElementById("cost-parents")?.value || "2", 10);
+  const depChildrenCount = Math.max(0, parseInt(document.getElementById("cost-dep-children")?.value || "0", 10) || 0);
   const assurerRaw = document.getElementById("cost-assurers")?.value || "1";
   const isCorp = assurerRaw === "corp";
   const numAssurers = isCorp ? 0 : parseInt(assurerRaw, 10);
@@ -1173,15 +1571,17 @@ function runCostAosCalculator() {
   }
 
   const is870 = pathway.startsWith("870");
-  const c = computePathwayCost(pathway, parentsCount, isCorp);
+  const c = computePathwayCost(pathway, parentsCount, isCorp, depChildrenCount);
   const ovhcTotal = ovhcYears * parentsCount * 2400;
   const grandTotal = c.govTotal + ovhcTotal;
 
-  const JSP_BASE = 22578;
-  const FTB_CHILD = 2942;
+  const aosCfg = (QUEUE_DATA && QUEUE_DATA.aos_formula_fy26_27) ? QUEUE_DATA.aos_formula_fy26_27 : {};
+  const JSP_BASE = Number(aosCfg.jsp_annual_base_aud || 22578);
+  const FTB_CHILD = Number(aosCfg.ftb_child_add_aud || 2942);
+  const fs870 = (QUEUE_DATA && QUEUE_DATA.fee_schedule_fy26_27 && QUEUE_DATA.fee_schedule_fy26_27["870_3yr"]) || {};
   let requiredIncome = 0;
   if (is870) {
-    requiredIncome = 83455;
+    requiredIncome = Number(fs870.sponsor_income !== undefined ? fs870.sponsor_income : 83454.80);
   } else if (isCorp) {
     requiredIncome = 0;
   } else {
@@ -1226,13 +1626,32 @@ function runCostAosCalculator() {
     verdictBadge = `<span class="badge-no">${currentLang === "ko" ? `❌ 소득 부족 (${fmtAud(Math.abs(incomeDelta))} 미달 → 공동 보증 또는 법인 보증 검토)` : `❌ Shortfall of ${fmtAud(Math.abs(incomeDelta))} (Below ${fmtAud(requiredIncome)} threshold)`}</span>`;
   }
 
+  const depChildBannerHtml = c.depChildrenIneligible870
+    ? (currentLang === "ko"
+        ? `<div class="pv-inference-card" style="margin-top:10px;background:#FEF2F2;border-left-color:#DC2626;">
+             <h4 style="color:#991B1B;">⚠️ Subclass 870 동반 미성년 자녀(&lt;18세) 포함 불가 안내 (Sch 1 Item 1239)</h4>
+             <p style="color:#7F1D1D;"><strong>Subclass 870 임시 부모비자는 부양가족·동반 미성년 자녀(&lt;18세)를 신청서에 함께 포함할 수 없습니다</strong>(부모님 각자 개별 비자 신청). 만 18세 미만 동반 자녀가 함께 이주해야 하는 경우 영주/임시 부모비자(<strong>143 / 173 / 864 / 884 / 103 / 804</strong>) 경로를 선택하셔야 합니다.</p>
+           </div>`
+        : `<div class="pv-inference-card" style="margin-top:10px;background:#FEF2F2;border-left-color:#DC2626;">
+             <h4 style="color:#991B1B;">⚠️ Secondary Child (&lt;18) Applicants Not Permitted on Subclass 870 (Sch 1 Item 1239)</h4>
+             <p style="color:#7F1D1D;"><strong>Subclass 870 does NOT permit secondary dependent child (&lt;18) applicants</strong> (each parent applies individually). To include a dependent sibling under 18, select a permanent/provisional parent pathway (<strong>143 / 173 / 864 / 884 / 103 / 804</strong>).</p>
+           </div>`)
+    : "";
+
+  const vacSubKo = (depChildrenCount > 0 && !is870)
+    ? `1차 ${fmtAud(c.vac1)} + 2차 ${fmtAud(c.vac2)} (미성년 ${depChildrenCount}명: 1차 ${fmtAud(c.childVac1)} + 2차 ${fmtAud(c.childVac2)} 포함)`
+    : `1차 ${fmtAud(c.vac1)} + 2차 ${fmtAud(c.vac2)}`;
+  const vacSubEn = (depChildrenCount > 0 && !is870)
+    ? `1st ${fmtAud(c.vac1)} + 2nd ${fmtAud(c.vac2)} (incl. ${depChildrenCount} child[ren] <18: 1st ${fmtAud(c.childVac1)} + 2nd ${fmtAud(c.childVac2)})`
+    : `1st ${fmtAud(c.vac1)} + 2nd ${fmtAud(c.vac2)}`;
+
   if (currentLang === "ko") {
     out.innerHTML = `
       <div class="pv-sim-kpi-grid">
         <div class="pv-sim-kpi">
           <div class="kpi-label">1차 + 2차 비자신청비 합계</div>
           <div class="kpi-val">${fmtAud(c.vac1 + c.vac2)}</div>
-          <div class="kpi-sub">1차 ${fmtAud(c.vac1)} + 2차 ${fmtAud(c.vac2)}</div>
+          <div class="kpi-sub">${vacSubKo}</div>
         </div>
         <div class="pv-sim-kpi">
           <div class="kpi-label">재정보증 본드 (CBA Bank Guarantee)</div>
@@ -1250,6 +1669,7 @@ function runCostAosCalculator() {
           <div class="kpi-sub">정부/본드 ${fmtAud(c.govTotal)} + 사보험 ${fmtAud(ovhcTotal)}</div>
         </div>
       </div>
+      ${depChildBannerHtml}
       <div class="pv-inference-card" style="margin-top:12px;">
         <h4>보증인(Assurer / 870 Sponsor) 자격 및 소득 판정: ${verdictBadge}</h4>
         <p>
@@ -1274,7 +1694,7 @@ function runCostAosCalculator() {
         <div class="pv-sim-kpi">
           <div class="kpi-label">1st + 2nd VAC Total</div>
           <div class="kpi-val">${fmtAud(c.vac1 + c.vac2)}</div>
-          <div class="kpi-sub">1st ${fmtAud(c.vac1)} + 2nd ${fmtAud(c.vac2)}</div>
+          <div class="kpi-sub">${vacSubEn}</div>
         </div>
         <div class="pv-sim-kpi">
           <div class="kpi-label">AoS Bank Guarantee Bond (CBA)</div>
@@ -1292,6 +1712,7 @@ function runCostAosCalculator() {
           <div class="kpi-sub">Gov/Bond ${fmtAud(c.govTotal)} + OVHC ${fmtAud(ovhcTotal)}</div>
         </div>
       </div>
+      ${depChildBannerHtml}
       <div class="pv-inference-card" style="margin-top:12px;">
         <h4>Assurer / Sponsor Eligibility &amp; Income Verdict: ${verdictBadge}</h4>
         <p>
@@ -1312,10 +1733,10 @@ function runCostAosCalculator() {
     `;
   }
 
-  renderSvgChartCosts(parentsCount, isCorp);
+  renderSvgChartCosts(parentsCount, isCorp, depChildrenCount);
 }
 
-function renderSvgChartCosts(parentsCount, isCorp) {
+function renderSvgChartCosts(parentsCount, isCorp, depChildrenCount) {
   const box = document.getElementById("svg-chart-costs");
   if (!box) return;
   const list = [
@@ -1324,10 +1745,10 @@ function renderSvgChartCosts(parentsCount, isCorp) {
     { id: "143", label: currentLang === "ko" ? "143 (기여제 직행)" : "143 (Direct Contrib)" },
     { id: "864", label: currentLang === "ko" ? "864 (고령 기여 직행)" : "864 (Direct Aged)" },
     { id: "173_143", label: currentLang === "ko" ? "173→143 (2단계 분할)" : "173→143 (2-Stage)" }
-  ].map(item => ({ ...item, ...computePathwayCost(item.id, parentsCount, isCorp) }));
+  ].map(item => ({ ...item, ...computePathwayCost(item.id, parentsCount, isCorp, depChildrenCount) }));
 
   const W = 680, H = 240, L = 165, R = 95, T = 16, B = 28;
-  const maxVal = 130000;
+  const maxVal = Math.max(130000, Math.ceil(Math.max(...list.map(x => x.govTotal)) / 10000) * 10000 + 10000);
   const rowH = (H - T - B) / list.length;
 
   let svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Pathway Total Cost Stacked Bar Chart">`;
@@ -1732,8 +2153,16 @@ function runSubclass870Simulator() {
     return;
   }
 
-  const THRESHOLD_870 = 83454.80;
-  const MIN_SPONSOR_50PCT = 41727.40;
+  const is3Yr = durRaw.startsWith("3yr");
+  const numParents = durRaw.endsWith("_2") ? 2 : 1;
+  const reqYears = is3Yr ? 3 : 5;
+  const remainingCapYears = Math.max(0, 10 - prevYears);
+  const effectiveGrantYears = Math.min(reqYears, remainingCapYears);
+
+  const feeSched = (QUEUE_DATA && QUEUE_DATA.fee_schedule_fy26_27) || {};
+  const s870Sched = (is3Yr ? feeSched["870_3yr"] : feeSched["870_5yr"]) || {};
+  const THRESHOLD_870 = s870Sched.sponsor_income !== undefined ? Number(s870Sched.sponsor_income) : 83454.80;
+  const MIN_SPONSOR_50PCT = s870Sched.primary_sponsor_min_50pct !== undefined ? Number(s870Sched.primary_sponsor_min_50pct) : 41727.40;
   const combinedInc = sponsorInc + partnerInc;
 
   const statusOk = status === "citizen" || status === "pr_4yr_plus";
@@ -1743,17 +2172,9 @@ function runSubclass870Simulator() {
   const failed50PctTrap = !soloIncomeOk && combinedInc >= THRESHOLD_870 && sponsorInc < MIN_SPONSOR_50PCT;
   const incomeOk = soloIncomeOk || combinedIncomeOk;
 
-  const is3Yr = durRaw.startsWith("3yr");
-  const numParents = durRaw.endsWith("_2") ? 2 : 1;
-  const reqYears = is3Yr ? 3 : 5;
-  const remainingCapYears = Math.max(0, 10 - prevYears);
-  const effectiveGrantYears = Math.min(reqYears, remainingCapYears);
-
-  const feeSched = (QUEUE_DATA && QUEUE_DATA.fee_schedule_fy26_27) || {};
-  const s870Sched = (is3Yr ? feeSched["870_3yr"] : feeSched["870_5yr"]) || {};
-  const sponsorFee = s870Sched.sponsorship_fee !== undefined ? s870Sched.sponsorship_fee : 420;
-  const vac1PerParent = s870Sched.vac1 !== undefined ? s870Sched.vac1 : 1180;
-  const vac2PerParent = s870Sched.vac2 !== undefined ? s870Sched.vac2 : (is3Yr ? 4715 : 10605);
+  const sponsorFee = s870Sched.sponsorship !== undefined ? Number(s870Sched.sponsorship) : 420;
+  const vac1PerParent = s870Sched.first_base !== undefined ? Number(s870Sched.first_base) : 1180;
+  const vac2PerParent = s870Sched.second_per_person !== undefined ? Number(s870Sched.second_per_person) : (is3Yr ? 4715 : 10605);
   const totalGovFee = sponsorFee + numParents * (vac1PerParent + vac2PerParent);
 
   // P0-1: Evaluate ALL eligibility rules independently and list EVERY failing item together!
@@ -1989,29 +2410,38 @@ function updateDiagnosticSummaryPreview() {
   const sub = document.getElementById("sim-subclass")?.value || "143";
   const yr = (document.getElementById("sim-year")?.value || "").trim() || "-";
   const mo = document.getElementById("sim-month")?.value || "4";
-  const curAge = (document.getElementById("sim-age")?.value || "").trim() || "-";
+  const curAge = (document.getElementById("sim-age")?.value || document.getElementById("wiz-exact-age")?.value || "").trim() || "-";
   const totalKids = (document.getElementById("wiz-total-children")?.value || "").trim() || "-";
   const auKids = (document.getElementById("wiz-au-children")?.value || "").trim() || "-";
   const costPathway = document.getElementById("cost-pathway")?.value || "143";
   const costParents = document.getElementById("cost-parents")?.value || "2";
+  const costDepChildren = document.getElementById("cost-dep-children")?.value || "0";
   const costIncomeRaw = (document.getElementById("cost-actual-income")?.value || "").trim();
   const s870SponsorRaw = (document.getElementById("s870-sponsor-income")?.value || "").trim();
   const s870PartnerRaw = (document.getElementById("s870-partner-income")?.value || "").trim();
   const todayIso = todayBrisbaneIso();
+  const asAtStr = (QUEUE_DATA && QUEUE_DATA.live_queue_state && QUEUE_DATA.live_queue_state.as_at_date) || "31 August 2026";
+  const ageMiles = curAge !== "-" ? evaluateParentAgeMilestones(curAge) : null;
+  const ageMilesLineKo = ageMiles
+    ? ` (기여제 예상 승인 연세 만 ${ageMiles.expectedGrantAgeContributory}세 / 일반 만 ${ageMiles.expectedGrantAgeNonContributory}세 · 만 67세 자격: ${ageMiles.eligibleNowAge67 ? "현재 충족" : `${ageMiles.targetYear67}년 도달`})`
+    : "";
+  const ageMilesLineEn = ageMiles
+    ? ` (Est. Grant Age: Contributory ${ageMiles.expectedGrantAgeContributory} / Non-Contrib ${ageMiles.expectedGrantAgeNonContributory} · Age-67 Onshore: ${ageMiles.eligibleNowAge67 ? "Eligible Now" : `Qualifies in ${ageMiles.targetYear67}`})`
+    : "";
 
   const summaryText = currentLang === "ko"
     ? `법무법인 박앤코 (Park & Co Lawyers) · 호주 부모초청 비자 상담용 진단 요약\n` +
-      `• 시뮬레이션 기준일: ${todayIso} (이민성 Queue Release 기준일: 2026-08-31)\n` +
-      `• 1. 대기열 시뮬레이션: Subclass ${sub} | 접수/큐 기준: ${yr}년 ${mo}월 | 주신청자 현재 연세: 만 ${curAge}세\n` +
+      `• 시뮬레이션 기준일: ${todayIso} (이민성 Queue Release 기준일: ${asAtStr})\n` +
+      `• 1. 대기열 & 연세 진단: Subclass ${sub} | 접수/큐 기준: ${yr}년 ${mo}월 | 부모님 현재 연세: 만 ${curAge}세${ageMilesLineKo}\n` +
       `• 2. 가족균형테스트(Reg 1.05): 전체 자녀 ${totalKids}명 중 호주 영주권·시민권 자녀 ${auKids}명\n` +
-      `• 3. 총비용 & 재정보증(AoS): 경로 ${costPathway} (${costParents}인) | 보증인 합산 과세소득: ${costIncomeRaw ? "AUD $" + Number(costIncomeRaw).toLocaleString() : "미입력"}\n` +
+      `• 3. 총비용 & 재정보증(AoS): 경로 ${costPathway} (부모 ${costParents}인 + 미성년 동반자녀 ${costDepChildren}인) | 보증인 합산 과세소득: ${costIncomeRaw ? "AUD $" + Number(costIncomeRaw).toLocaleString() : "미입력"}\n` +
       `• 4. Subclass 870 스폰서 진단: 주 스폰서 ${s870SponsorRaw ? "AUD $" + Number(s870SponsorRaw).toLocaleString() : "미입력"} + 배우자/공동 ${s870PartnerRaw ? "AUD $" + Number(s870PartnerRaw).toLocaleString() : "$0"} (기준 $83,454.80 / 50% 룰 $41,727.40)\n` +
       `• 공식 상담 문의: https://parklawyers.com.au/links/?lang=ko (enquiry@parkcolawyers.com)`
     : `Park & Co Lawyers · Australian Parent Visa Diagnostic Summary\n` +
-      `• Generated: ${todayIso} (Home Affairs Queue Release Baseline: 31 August 2026)\n` +
-      `• 1. Queue Simulation: Subclass ${sub} | Lodgement/Queue: ${yr}-${mo} | Primary Applicant Age: ${curAge}\n` +
+      `• Generated: ${todayIso} (Home Affairs Queue Release Baseline: ${asAtStr})\n` +
+      `• 1. Queue & Age Milestones: Subclass ${sub} | Lodgement/Queue: ${yr}-${mo} | Parent Current Age: ${curAge}${ageMilesLineEn}\n` +
       `• 2. Balance of Family (Reg 1.05): ${auKids} of ${totalKids} children settled in Australia\n` +
-      `• 3. TCO & AoS Check: Pathway ${costPathway} (${costParents} parent[s]) | Assurer Income: ${costIncomeRaw ? "AUD $" + Number(costIncomeRaw).toLocaleString() : "Not entered"}\n` +
+      `• 3. TCO & AoS Check: Pathway ${costPathway} (${costParents} parent[s] + ${costDepChildren} child[ren] <18) | Assurer Income: ${costIncomeRaw ? "AUD $" + Number(costIncomeRaw).toLocaleString() : "Not entered"}\n` +
       `• 4. Subclass 870 Sponsor Check: Primary ${s870SponsorRaw ? "AUD $" + Number(s870SponsorRaw).toLocaleString() : "Not entered"} + Partner ${s870PartnerRaw ? "AUD $" + Number(s870PartnerRaw).toLocaleString() : "$0"} ($83,454.80 threshold / $41,727.40 50% rule)\n` +
       `• Official Inquiry: https://parklawyers.com.au/links/ (enquiry@parkcolawyers.com)`;
 
@@ -2030,25 +2460,53 @@ function updateDiagnosticSummaryPreview() {
 
 var _koInitDone = false;
 function applyLanguage(lang) {
+  if (typeof document === "undefined") return;
   if (!_koInitDone) {
-    document.querySelectorAll("[data-i18n]").forEach(function(el) {
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
       var k = el.getAttribute("data-i18n");
       if (k && !I18N.ko[k]) I18N.ko[k] = el.textContent;
+    });
+    document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
+      var k = el.getAttribute("data-i18n-html");
+      if (k && !I18N.ko[k]) I18N.ko[k] = el.innerHTML;
     });
     _koInitDone = true;
   }
   currentLang = lang === "en" ? "en" : "ko";
   document.documentElement.lang = currentLang;
+  if (document.body) {
+    document.body.setAttribute("data-ui-lang", currentLang);
+  }
+
+  const dict = I18N[currentLang] || I18N.ko;
+  if (dict.pageTitle) {
+    document.title = dict.pageTitle;
+  }
 
   const btnKo = document.getElementById("lang-toggle-ko");
   const btnEn = document.getElementById("lang-toggle-en");
   if (btnKo) btnKo.classList.toggle("active", currentLang === "ko");
   if (btnEn) btnEn.classList.toggle("active", currentLang === "en");
 
-  const dict = I18N[currentLang] || I18N.ko;
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const k = el.getAttribute("data-i18n");
-    if (dict[k]) el.textContent = dict[k];
+    if (dict[k] !== undefined) el.textContent = dict[k];
+  });
+  document.querySelectorAll("[data-i18n-html]").forEach(el => {
+    const k = el.getAttribute("data-i18n-html");
+    if (dict[k] !== undefined) el.innerHTML = dict[k];
+  });
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+    const k = el.getAttribute("data-i18n-placeholder");
+    if (dict[k] !== undefined) el.setAttribute("placeholder", dict[k]);
+  });
+  document.querySelectorAll("[data-i18n-title]").forEach(el => {
+    const k = el.getAttribute("data-i18n-title");
+    if (dict[k] !== undefined) el.setAttribute("title", dict[k]);
+  });
+  document.querySelectorAll("[data-i18n-aria]").forEach(el => {
+    const k = el.getAttribute("data-i18n-aria");
+    if (dict[k] !== undefined) el.setAttribute("aria-label", dict[k]);
   });
 
   renderPipelineFlow();
@@ -2070,124 +2528,169 @@ function applyLanguage(lang) {
   updateDiagnosticSummaryPreview();
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  applyLanguage("ko");
-
-  document.getElementById("lang-toggle-ko")?.addEventListener("click", () => applyLanguage("ko"));
-  document.getElementById("lang-toggle-en")?.addEventListener("click", () => applyLanguage("en"));
-
-  document.querySelectorAll(".mode-tab-btn").forEach(btn => {
-    btn.addEventListener("click", () => switchParentTab(btn.getAttribute("data-tab") || "queue"));
-  });
-  document.querySelectorAll(".js-tab-jump").forEach(lnk => {
-    lnk.addEventListener("click", () => {
-      const targetTab = lnk.getAttribute("data-target-tab");
-      if (targetTab) switchParentTab(targetTab);
-    });
-  });
-
-  document.getElementById("btn-fill-sample")?.addEventListener("click", () => {
-    const setVal = (id, v) => { const el = document.getElementById(id); if (el) el.value = v; };
-    setVal("sim-subclass", "143");
-    setVal("sim-stage", "lodged_unqueued");
-    setVal("sim-year", "2024");
-    setVal("sim-month", "4");
-    setVal("sim-age", "68");
-    setVal("wiz-total-children", "2");
-    setVal("wiz-au-children", "1");
-    setVal("wiz-max-overseas-country", "");
-    setVal("cost-actual-income", "75000");
-    setVal("cost-notice-date", todayBrisbaneIso());
-    setVal("s870-sponsor-income", "55000");
-    setVal("s870-partner-income", "35000");
-    setVal("s870-prev-years", "0");
-    setVal("s870-approval-date", todayBrisbaneIso());
-    runQueueSimulator();
-    runPathwayWizard();
-    runCostAosCalculator();
-    runSubclass870Simulator();
-    updateDiagnosticSummaryPreview();
-  });
-
-  document.getElementById("btn-reset-all")?.addEventListener("click", () => {
-    ["sim-year", "sim-age", "wiz-total-children", "wiz-au-children", "wiz-max-overseas-country",
-     "cost-actual-income", "cost-notice-date", "s870-sponsor-income", "s870-partner-income",
-     "s870-prev-years", "s870-approval-date"].forEach(id => {
-      const el = document.getElementById(id);
-      if (el) el.value = "";
-    });
-    runQueueSimulator();
-    runPathwayWizard();
-    runCostAosCalculator();
-    runSubclass870Simulator();
-    updateDiagnosticSummaryPreview();
-  });
-
-  ["sim-subclass", "sim-stage", "sim-year", "sim-month", "sim-age"].forEach(id => {
-    document.getElementById(id)?.addEventListener("change", () => { runQueueSimulator(); updateDiagnosticSummaryPreview(); });
-    document.getElementById(id)?.addEventListener("input", () => { runQueueSimulator(); updateDiagnosticSummaryPreview(); });
-  });
-
-  ["wiz-main-age", "wiz-spouse-age", "wiz-location", "wiz-visa-cond", "wiz-total-children", "wiz-au-children", "wiz-max-overseas-country", "wiz-budget"].forEach(id => {
-    document.getElementById(id)?.addEventListener("change", () => { runPathwayWizard(); updateDiagnosticSummaryPreview(); });
-    document.getElementById(id)?.addEventListener("input", () => { runPathwayWizard(); updateDiagnosticSummaryPreview(); });
-  });
-
-  ["cost-pathway", "cost-parents", "cost-assurers", "cost-assurer-kids", "cost-existing-assured", "cost-actual-income", "cost-ovhc-years", "cost-notice-date"].forEach(id => {
-    document.getElementById(id)?.addEventListener("change", () => { runCostAosCalculator(); updateDiagnosticSummaryPreview(); });
-    document.getElementById(id)?.addEventListener("input", () => { runCostAosCalculator(); updateDiagnosticSummaryPreview(); });
-  });
-
-  ["s870-sponsor-status", "s870-relationship", "s870-sponsor-income", "s870-partner-income", "s870-household", "s870-pr-plan", "s870-duration", "s870-prev-years", "s870-approval-date"].forEach(id => {
-    document.getElementById(id)?.addEventListener("change", () => { runSubclass870Simulator(); updateDiagnosticSummaryPreview(); });
-    document.getElementById(id)?.addEventListener("input", () => { runSubclass870Simulator(); updateDiagnosticSummaryPreview(); });
-  });
-
-  document.getElementById("btn-copy-summary")?.addEventListener("click", () => {
-    const txt = document.getElementById("diagnostic-summary-preview")?.textContent || "";
-    if (navigator.clipboard && txt) {
-      navigator.clipboard.writeText(txt);
-      const btn = document.getElementById("btn-copy-summary");
-      if (btn) {
-        const orig = btn.textContent;
-        btn.textContent = currentLang === "ko" ? "✅ 복사 완료!" : "✅ Copied!";
-        setTimeout(() => { btn.textContent = orig; }, 1800);
+if (typeof document !== "undefined") {
+  document.addEventListener("DOMContentLoaded", () => {
+    let initLang = "ko";
+    try {
+      const qs = new URLSearchParams(window.location.search || "");
+      if (qs.get("lang") === "en") initLang = "en";
+      const tabParam = qs.get("tab") || qs.get("mode");
+      if (tabParam && ["queue", "pathway", "cost", "s870"].includes(tabParam)) {
+        switchParentTab(tabParam);
       }
-    }
-  });
+    } catch (e) {}
+    applyLanguage(initLang);
 
-  document.getElementById("btn-print-summary")?.addEventListener("click", () => {
-    window.print();
-  });
+    document.getElementById("lang-toggle-ko")?.addEventListener("click", () => applyLanguage("ko"));
+    document.getElementById("lang-toggle-en")?.addEventListener("click", () => applyLanguage("en"));
 
-  document.querySelectorAll("#survival-filter-bar .pv-filter-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-      document.querySelectorAll("#survival-filter-bar .pv-filter-btn").forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
-      currentSurvivalFilter = btn.getAttribute("data-filter") || "all";
-      renderSurvivalCards();
+    document.querySelectorAll(".mode-tab-btn").forEach(btn => {
+      btn.addEventListener("click", () => switchParentTab(btn.getAttribute("data-tab") || "queue"));
     });
-  });
-
-  document.querySelectorAll("#links-filter-bar .pv-filter-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-      document.querySelectorAll("#links-filter-bar .pv-filter-btn").forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
-      currentLinksCat = btn.getAttribute("data-cat") || "all";
-      renderOfficialLinksGrid();
+    document.querySelectorAll(".js-tab-jump").forEach(lnk => {
+      lnk.addEventListener("click", () => {
+        const targetTab = lnk.getAttribute("data-target-tab");
+        if (targetTab) switchParentTab(targetTab);
+      });
     });
-  });
 
-  document.getElementById("btn-polling-status")?.addEventListener("click", openSourceMonitorModal);
-  document.getElementById("modal-close-btn")?.addEventListener("click", () => {
-    document.getElementById("detail-modal")?.classList.remove("open");
-  });
-  document.getElementById("detail-modal")?.addEventListener("click", e => {
-    if (e.target.id === "detail-modal") {
+    document.getElementById("btn-fill-sample")?.addEventListener("click", () => {
+      const setVal = (id, v) => { const el = document.getElementById(id); if (el) el.value = v; };
+      setVal("sim-subclass", "143");
+      setVal("sim-stage", "lodged_unqueued");
+      setVal("sim-year", "2024");
+      setVal("sim-month", "4");
+      setVal("sim-age", "68");
+      setVal("wiz-exact-age", "68");
+      setVal("wiz-main-age", "67plus");
+      setVal("wiz-total-children", "2");
+      setVal("wiz-au-children", "1");
+      setVal("wiz-max-overseas-country", "");
+      setVal("cost-dep-children", "0");
+      setVal("cost-actual-income", "75000");
+      setVal("cost-notice-date", todayBrisbaneIso());
+      setVal("s870-sponsor-income", "55000");
+      setVal("s870-partner-income", "35000");
+      setVal("s870-prev-years", "0");
+      setVal("s870-approval-date", todayBrisbaneIso());
+      runQueueSimulator();
+      runPathwayWizard();
+      runCostAosCalculator();
+      runSubclass870Simulator();
+      updateDiagnosticSummaryPreview();
+    });
+
+    document.getElementById("btn-reset-all")?.addEventListener("click", () => {
+      ["sim-year", "sim-age", "wiz-exact-age", "wiz-total-children", "wiz-au-children", "wiz-max-overseas-country",
+       "cost-actual-income", "cost-notice-date", "s870-sponsor-income", "s870-partner-income",
+       "s870-prev-years", "s870-approval-date"].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.value = "";
+      });
+      const depSel = document.getElementById("cost-dep-children");
+      if (depSel) depSel.value = "0";
+      runQueueSimulator();
+      runPathwayWizard();
+      runCostAosCalculator();
+      runSubclass870Simulator();
+      updateDiagnosticSummaryPreview();
+    });
+
+    ["sim-subclass", "sim-stage", "sim-year", "sim-month", "sim-age"].forEach(id => {
+      const handler = () => {
+        if (id === "sim-age") {
+          const v = (document.getElementById("sim-age")?.value || "").trim();
+          const wizAgeEl = document.getElementById("wiz-exact-age");
+          if (wizAgeEl && v !== "" && wizAgeEl.value === "") {
+            wizAgeEl.value = v;
+          }
+          runPathwayWizard();
+        }
+        runQueueSimulator();
+        updateDiagnosticSummaryPreview();
+      };
+      document.getElementById(id)?.addEventListener("change", handler);
+      document.getElementById(id)?.addEventListener("input", handler);
+    });
+
+    ["wiz-main-age", "wiz-exact-age", "wiz-spouse-age", "wiz-location", "wiz-visa-cond", "wiz-total-children", "wiz-au-children", "wiz-max-overseas-country", "wiz-budget"].forEach(id => {
+      const handler = () => {
+        if (id === "wiz-exact-age") {
+          const v = (document.getElementById("wiz-exact-age")?.value || "").trim();
+          const n = Number(v);
+          const mainAgeSel = document.getElementById("wiz-main-age");
+          if (v !== "" && Number.isFinite(n) && mainAgeSel) {
+            mainAgeSel.value = n >= 67 ? "67plus" : "under67";
+          }
+          const simAgeEl = document.getElementById("sim-age");
+          if (simAgeEl && v !== "" && simAgeEl.value === "") {
+            simAgeEl.value = v;
+            runQueueSimulator();
+          }
+        }
+        runPathwayWizard();
+        updateDiagnosticSummaryPreview();
+      };
+      document.getElementById(id)?.addEventListener("change", handler);
+      document.getElementById(id)?.addEventListener("input", handler);
+    });
+
+    ["cost-pathway", "cost-parents", "cost-dep-children", "cost-assurers", "cost-assurer-kids", "cost-existing-assured", "cost-actual-income", "cost-ovhc-years", "cost-notice-date"].forEach(id => {
+      document.getElementById(id)?.addEventListener("change", () => { runCostAosCalculator(); updateDiagnosticSummaryPreview(); });
+      document.getElementById(id)?.addEventListener("input", () => { runCostAosCalculator(); updateDiagnosticSummaryPreview(); });
+    });
+
+    ["s870-sponsor-status", "s870-relationship", "s870-sponsor-income", "s870-partner-income", "s870-household", "s870-pr-plan", "s870-duration", "s870-prev-years", "s870-approval-date"].forEach(id => {
+      document.getElementById(id)?.addEventListener("change", () => { runSubclass870Simulator(); updateDiagnosticSummaryPreview(); });
+      document.getElementById(id)?.addEventListener("input", () => { runSubclass870Simulator(); updateDiagnosticSummaryPreview(); });
+    });
+
+    document.getElementById("btn-copy-summary")?.addEventListener("click", () => {
+      const txt = document.getElementById("diagnostic-summary-preview")?.textContent || "";
+      if (navigator.clipboard && txt) {
+        navigator.clipboard.writeText(txt);
+        const btn = document.getElementById("btn-copy-summary");
+        if (btn) {
+          const orig = btn.textContent;
+          btn.textContent = currentLang === "ko" ? "✅ 복사 완료!" : "✅ Copied!";
+          setTimeout(() => { btn.textContent = orig; }, 1800);
+        }
+      }
+    });
+
+    document.getElementById("btn-print-summary")?.addEventListener("click", () => {
+      window.print();
+    });
+
+    document.querySelectorAll("#survival-filter-bar .pv-filter-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll("#survival-filter-bar .pv-filter-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        currentSurvivalFilter = btn.getAttribute("data-filter") || "all";
+        renderSurvivalCards();
+      });
+    });
+
+    document.querySelectorAll("#links-filter-bar .pv-filter-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll("#links-filter-bar .pv-filter-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        currentLinksCat = btn.getAttribute("data-cat") || "all";
+        renderOfficialLinksGrid();
+      });
+    });
+
+    document.getElementById("btn-polling-status")?.addEventListener("click", openSourceMonitorModal);
+    document.getElementById("modal-close-btn")?.addEventListener("click", () => {
       document.getElementById("detail-modal")?.classList.remove("open");
-    }
+    });
+    document.getElementById("detail-modal")?.addEventListener("click", e => {
+      if (e.target.id === "detail-modal") {
+        document.getElementById("detail-modal")?.classList.remove("open");
+      }
+    });
   });
-});
+}
 
 
 /* === Park & Co Universal Ecosystem Strip & Static Leaf KO<->EN Enhancer === */
@@ -2425,23 +2928,35 @@ document.addEventListener("DOMContentLoaded", () => {
     walk(document.body);
   }
 
-  document.addEventListener("DOMContentLoaded", function () {
-    var btns = document.querySelectorAll("#lang-en, #lang-ko, #lang-toggle-en, #lang-toggle-ko, .lang-btn");
-    btns.forEach(function (b) {
-      b.addEventListener("click", function () {
-        var isEn = (b.id && b.id.indexOf("en") !== -1) || b.getAttribute("data-lang") === "en";
-        document.documentElement.lang = isEn ? "en" : "ko";
-        setTimeout(function () { applyUniversalLeafTranslation(isEn ? "en" : "ko"); }, 20);
+  if (typeof document !== "undefined") {
+    document.addEventListener("DOMContentLoaded", function () {
+      var btns = document.querySelectorAll("#lang-en, #lang-ko, #lang-toggle-en, #lang-toggle-ko, .lang-btn");
+      btns.forEach(function (b) {
+        b.addEventListener("click", function () {
+          var isEn = (b.id && b.id.indexOf("en") !== -1) || b.getAttribute("data-lang") === "en";
+          document.documentElement.lang = isEn ? "en" : "ko";
+          setTimeout(function () { applyUniversalLeafTranslation(isEn ? "en" : "ko"); }, 20);
+        });
       });
-    });
 
-    var params = new URLSearchParams(window.location.search);
-    if (params.get("lang") === "en") {
-      var enBtn = document.getElementById("lang-en") || document.getElementById("lang-toggle-en") || document.querySelector('[data-lang="en"]');
-      if (enBtn) {
-        enBtn.click();
-        setTimeout(function () { applyUniversalLeafTranslation("en"); }, 40);
+      var params = new URLSearchParams(window.location.search);
+      if (params.get("lang") === "en") {
+        applyUniversalLeafTranslation("en");
       }
-    }
-  });
+    });
+  }
 })();
+
+if (typeof globalThis !== "undefined") {
+  globalThis.ParentVisaEngine = {
+    I18N,
+    fmtAud,
+    getDynamicCurrentDateParts,
+    parseMonthYearToDec,
+    computeQueueSimulation,
+    evaluateParentAgeMilestones,
+    renderParentAgeMilestonePanel,
+    renderDirection117CaveatBanner,
+    computePathwayCost
+  };
+}
