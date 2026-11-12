@@ -212,7 +212,7 @@ const I18N = {
     s870StCitizen: "Australian Citizen (No Prior Residence Wait)",
     s870StPr4Plus: "Australian PR / Eligible NZ Citizen (4+ Yrs Usual Residence)",
     s870StPrUnder4: "PR / ENZC (<4 Yrs Residence or Unlawful/BVE History)",
-    s870StTemp: "Temporary Visa Holder (482 / 485 / 500 — Ineligible)",
+    s870StTemp: "Temporary Visa Holder (482 / 485 / 500 · Ineligible)",
     s870RelChild: "Biological, Adopted or Step-Child of Parent",
     s870RelInlaw: "Spouse / De Facto Partner of Child (Son/Daughter-in-Law)",
     s870HhNone: "None (0 Active 870 Sponsorships in Household)",
@@ -746,7 +746,7 @@ function renderInferencesGrid() {
     },
     {
       title: "2. 왜 온쇼어 고령 기여제(864)는 최종 심사 코호트가 24개월 앞선 반면(2020.11 vs 2018.11), 1차 심사는 1년 뒤처져 있는가?",
-      body: "<strong>2단계 기준일 코호트가 2020.11인 배경 (단기 일회성 점프 외삽 주의!)</strong>: 2026.07.25 발효 Ministerial Direction No. 117 s 8(2)(a)가 온쇼어 고령 신청을 우선 구조에 두고 LIN 26/042에서 1,125석을 별도 배정하면서 행정적 큐 배치·재인덱싱 점프(administrative queue batch/re-indexing jump)가 발생한 것이며, 매월 12개월분씩 상시 전진하는 지속 속도(steady 12 months/month)가 아닙니다(연간 전체 부모비자 상한은 여전히 약 8,500석으로 제한). <strong>1단계가 2023.04인 이유</strong>: Direction 103 s 6(2)(c)에 따라 온쇼어 고령비자는 대기열 편입 전 1차 요건·검사를 선행 심사하며 팬데믹 이후 신청이 집중되었기 때문입니다 [1,12,17]."
+      body: "<strong>2단계 기준일 코호트가 2020.11인 배경 (단기 일회성 점프 외삽 주의!)</strong>: 2026.07.25 발효 Ministerial Direction No. 117 s 8(2)(a)가 온쇼어 고령 신청을 우선 구조에 두고 LIN 26/042에서 1,125석을 별도 배정하면서 행정적 큐 배치·재인덱싱 점프(administrative queue batch/re-indexing jump)가 발생한 것이며 매월 12개월분씩 상시 전진하는 지속 속도(steady 12 months/month)가 아닙니다(연간 전체 부모비자 상한은 여전히 약 8,500석으로 제한). <strong>1단계가 2023.04인 이유</strong>: Direction 103 s 6(2)(c)에 따라 온쇼어 고령비자는 대기열 편입 전 1차 요건·검사를 선행 심사하며 팬데믹 이후 신청이 집중되었기 때문입니다 [1,12,17]."
     },
     {
       title: "3. 2018년 6월 1일 Queue Date 규칙 변경이 만든 '보이지 않는 28~43개월 추가 대기' 함정",
@@ -767,7 +767,7 @@ function renderInferencesGrid() {
     },
     {
       title: "2. Why Is the Onshore Aged 864 Release Cohort at Nov 2020 vs Nov 2018 for 143, Yet Stage 1 Assessment Is at Apr 2023?",
-      body: "<strong>Stage 2 cohort at Nov 2020 (One-Off Batch Jump Caveat)</strong> reflects a Ministerial Direction No. 117 s 8(2)(a) (effective 25 Jul 2026) administrative queue batch/re-indexing jump within the 1,125-place earmark in LIN 26/042 — NOT a steady ongoing 12 months per month processing speed (annual Parent ceiling remains capped at ~8,500 places). <strong>Stage 1 assessment at Apr 2023</strong> reflects upfront assessment requirements under Direction 103 s 6(2)(c) and post-pandemic onshore application volume [1,12,17]."
+      body: "<strong>Stage 2 cohort at Nov 2020 (One-Off Batch Jump Caveat)</strong> reflects a Ministerial Direction No. 117 s 8(2)(a) (effective 25 Jul 2026) administrative queue batch/re-indexing jump within the 1,125-place earmark in LIN 26/042 · NOT a steady ongoing 12 months per month processing speed (annual Parent ceiling remains capped at ~8,500 places). <strong>Stage 1 assessment at Apr 2023</strong> reflects upfront assessment requirements under Direction 103 s 6(2)(c) and post-pandemic onshore application volume [1,12,17]."
     },
     {
       title: "3. The 1 June 2018 Queue Date Rule Shift: The Hidden 28–43 Month Front-End Delay",
@@ -839,7 +839,7 @@ function renderParentAgeMilestonePanel(curAge, lang, opts) {
   const badgeHtml = m.eligibleNowAge67
     ? (isKo
         ? `<div class="age-badge-pill ok">✅ Eligible Now · 만 ${m.pensionAge}세 이상 온쇼어 고령부모(804/864 + BVA) 연령 요건 현재 충족</div>`
-        : `<div class="age-badge-pill ok">✅ Eligible Now (Age ${m.pensionAge}+ Aged Parent — Qualifies Today for Onshore Subclass 804 / 864 + BVA)</div>`)
+        : `<div class="age-badge-pill ok">✅ Eligible Now (Age ${m.pensionAge}+ Aged Parent · Qualifies Today for Onshore Subclass 804 / 864 + BVA)</div>`)
     : (isKo
         ? `<div class="age-badge-pill wait">⏳ 만 ${m.pensionAge}세 도달까지 <strong>${m.yearsTo67}년</strong> 남음 → <strong>${m.targetYear67}년</strong>부터 온쇼어 고령부모(804/864 + BVA) 연령 자격 충족</div>`
         : `<div class="age-badge-pill wait">⏳ <strong>${m.yearsTo67} Year(s)</strong> Remaining to Age ${m.pensionAge} → Qualifies in <strong>${m.targetYear67}</strong> for Onshore Aged Parent (804/864 + BVA)</div>`);
@@ -858,7 +858,7 @@ function renderParentAgeMilestonePanel(curAge, lang, opts) {
           <div class="age-milestone-card">
             <span style="font-size:12px;font-weight:700;color:var(--ink-muted);">기여제 영주 (Subclass 143 / 864 · 신규 ~${m.contribWaitYrs}년)</span>
             <strong>예상 승인 시점 만 ${m.expectedGrantAgeContributory}세</strong>
-            <div style="font-size:12px;color:var(--ink-muted);line-height:1.45;">PIC 4005($86,000 상한 · 면제 불가) · ${m.contribAged75PlusAtGrant ? "만 75세+ 3년(지속질환 최대 10년) 신검 산정 구간 — 고령 질환 관리 필수" : "일반 5년(지속질환 최대 10년) 신검 산정 구간"}</div>
+            <div style="font-size:12px;color:var(--ink-muted);line-height:1.45;">PIC 4005($86,000 상한 · 면제 불가) · ${m.contribAged75PlusAtGrant ? "만 75세+ 3년(지속질환 최대 10년) 신검 산정 구간 · 고령 질환 관리 필수" : "일반 5년(지속질환 최대 10년) 신검 산정 구간"}</div>
           </div>
           <div class="age-milestone-card non-contrib">
             <span style="font-size:12px;font-weight:700;color:var(--ink-muted);">비기여제 일반 (Subclass 103 / 804 · 신규 ~${m.nonContribWaitYrs}년)</span>
@@ -867,7 +867,7 @@ function renderParentAgeMilestonePanel(curAge, lang, opts) {
           </div>
         </div>
         <div class="cond8503-warning-box">
-          <strong>🚨 온쇼어 804/864 접수 전 필수 점검 — 방문비자 Condition 8503 (No Further Stay) 주의:</strong><br/>
+          <strong>🚨 온쇼어 804/864 접수 전 필수 점검 · 방문비자 Condition 8503 (No Further Stay) 주의:</strong><br/>
           Social Security Act 1991 <code>s 23(5A)–(5D)</code>상 호주 노령연금 연령인 <strong>만 67세</strong>(2023.07.01부터 만 67세 고정 · 2024.12.17부터 Sch 1 유효접수 요건 <code>F2025L00317</code>)가 충족되더라도, 호주 입국 비자에 <strong>Condition 8503 (추가 체류 불가 · No Further Stay)</strong>이 붙어 있으면 <code>reg 2.05(4)</code> 면제 승인 없이는 온쇼어 804/864 접수가 원천 무효(<code>s 46(1A)</code>)입니다! 특히 <strong>Subclass 600 Sponsored Family 스트림은 8503이 법정 의무 부과</strong>되는 반면, 일반 <strong>600 Tourist 스트림</strong>이나 <strong>Subclass 601 ETA</strong>는 의무 부과 대상은 아니나 재량 부과 여부를 반드시 입국 후 <strong>VEVO</strong>로 확인하고 접수해야 합니다.
         </div>
       </div>
@@ -886,7 +886,7 @@ function renderParentAgeMilestonePanel(curAge, lang, opts) {
         <div class="age-milestone-card">
           <span style="font-size:12px;font-weight:700;color:var(--ink-muted);">Contributory Pathway (Subclass 143 / 864 · ~${m.contribWaitYrs} Yrs New Intake)</span>
           <strong>Expected Age ${m.expectedGrantAgeContributory} at Grant</strong>
-          <div style="font-size:12px;color:var(--ink-muted);line-height:1.45;">PIC 4005 ($86,000 MOC SCT · No Health Waiver) · ${m.contribAged75PlusAtGrant ? "3-yr window for aged 75+ (up to 10 yrs for ongoing conditions) — proactive medical planning critical" : "5-yr standard window (up to 10 yrs for ongoing conditions)"}</div>
+          <div style="font-size:12px;color:var(--ink-muted);line-height:1.45;">PIC 4005 ($86,000 MOC SCT · No Health Waiver) · ${m.contribAged75PlusAtGrant ? "3-yr window for aged 75+ (up to 10 yrs for ongoing conditions) · proactive medical planning critical" : "5-yr standard window (up to 10 yrs for ongoing conditions)"}</div>
         </div>
         <div class="age-milestone-card non-contrib">
           <span style="font-size:12px;font-weight:700;color:var(--ink-muted);">Non-Contributory Pathway (Subclass 103 / 804 · ~${m.nonContribWaitYrs} Yrs New Intake)</span>
@@ -895,8 +895,8 @@ function renderParentAgeMilestonePanel(curAge, lang, opts) {
         </div>
       </div>
       <div class="cond8503-warning-box">
-        <strong>🚨 Mandatory Pre-Lodgement Check — Condition 8503 (No Further Stay) on Visitor Visas:</strong><br/>
-        Under <em>Social Security Act 1991</em> <code>s 23(5A)–(5D)</code>, Age Pension age is <strong>67</strong> (since 1 July 2023; Schedule 1 validity requirement since 17 Dec 2024 under <code>F2025L00317</code>). Even once aged 67+, an onshore Subclass 804 or 864 application (for Bridging Visa A stay) is <strong>invalid under s 46(1A) if the parent's current visa carries Condition 8503</strong> (absent a rare <code>reg 2.05(4)</code> waiver)! Visitor Visa <strong>Subclass 600 Sponsored Family stream imposes mandatory 8503</strong>, whereas <strong>600 Tourist stream</strong> and <strong>Subclass 601 ETA</strong> do not carry mandatory 8503 — always verify VEVO for zero 8503/8534/8535 before lodging onshore.
+        <strong>🚨 Mandatory Pre-Lodgement Check · Condition 8503 (No Further Stay) on Visitor Visas:</strong><br/>
+        Under <em>Social Security Act 1991</em> <code>s 23(5A)–(5D)</code>, Age Pension age is <strong>67</strong> (since 1 July 2023; Schedule 1 validity requirement since 17 Dec 2024 under <code>F2025L00317</code>). Even once aged 67+, an onshore Subclass 804 or 864 application (for Bridging Visa A stay) is <strong>invalid under s 46(1A) if the parent's current visa carries Condition 8503</strong> (absent a rare <code>reg 2.05(4)</code> waiver)! Visitor Visa <strong>Subclass 600 Sponsored Family stream imposes mandatory 8503</strong>, whereas <strong>600 Tourist stream</strong> and <strong>Subclass 601 ETA</strong> do not carry mandatory 8503 · always verify VEVO for zero 8503/8534/8535 before lodging onshore.
       </div>
     </div>
   `;
@@ -907,14 +907,14 @@ function renderDirection117CaveatBanner(sub, lang) {
   if (lang === "ko") {
     return `
       <div class="md117-caveat-banner" id="md117-864-caveat">
-        <strong>⚠️ Subclass 864/884 대기열 외삽 주의 — Ministerial Direction No. 117 일회성 배치 점프(One-Off Batch Jump) 경고:</strong><br/>
+        <strong>⚠️ Subclass 864/884 대기열 외삽 주의 · Ministerial Direction No. 117 일회성 배치 점프(One-Off Batch Jump) 경고:</strong><br/>
         최근 Subclass 864/884 심사 기준일이 단기간에 크게 전진(2018.05 → 2020.11)한 현상은 <strong>Ministerial Direction No. 117</strong> 행정 우선순위 개편 및 고령 기여제 배정분(1,125석) 반영에 따른 <strong>일회성 행정 큐 배치·재인덱싱 점프(administrative queue batch/re-indexing jump)</strong>일 뿐, 매월 12개월분씩 처리되는 지속적 속도(steady <code>12 months per month</code> processing speed)가 절대 아닙니다! 부모비자 전체 연간 발급 상한은 여전히 <strong>약 8,500석(LIN 26/042: 기여제 6,800석 + 일반 1,700석 · FY26–27 계획치 7,060석)</strong>으로 제한되어 있으므로 단일 월 점프 폭을 향후 대기기간에 선형 외삽하지 마십시오.
       </div>
     `;
   }
   return `
     <div class="md117-caveat-banner" id="md117-864-caveat">
-      <strong>⚠️ Subclass 864/884 Queue Extrapolation Caveat — Ministerial Direction No. 117 One-Off Batch Jump:</strong><br/>
+      <strong>⚠️ Subclass 864/884 Queue Extrapolation Caveat · Ministerial Direction No. 117 One-Off Batch Jump:</strong><br/>
       A large single-month jump in Subclass 864/884 assessment dates (May 2018 → Nov 2020) reflects a <strong>Ministerial Direction No. 117 administrative queue batch/re-indexing jump</strong> (within the 1,125 aged contributory earmark), <strong>NOT a steady ongoing 12 months per month processing speed</strong>! Because the annual Parent visa planning ceiling remains capped at <strong>~8,500 places across Contributory and Parent categories</strong> (LIN 26/042: 6,800 Contributory + 1,700 Parent; FY26–27 planning ceiling 7,060), this one-off jump must not be linearly extrapolated.
     </div>
   `;
