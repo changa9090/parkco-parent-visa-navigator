@@ -1,8 +1,8 @@
 {
   "release_id": "2026.10.21-audit-v2",
   "manifest_version": "2026.10.21-audit-v2",
-  "generated_at": "2026-11-11T22:58:22+10:00",
-  "last_polled_date": "2026-11-11",
+  "generated_at": "2026-11-18T08:29:29+10:00",
+  "last_polled_date": "2026-11-18",
   "verification_stages": [
     "fetchStatus (HTTP transport / insane-search WAF-bypass retrieval)",
     "contentCheckStatus (SharePoint #contentBox / PageSchemaHiddenField / GetPriceList JSON extraction & \\u200b strip)",
@@ -34,11 +34,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "2fa08b61086974fe85fda3468259a09c5cdda7032f4c2bb17719038774685489",
-      "bytes": 1308092,
+      "sha256": "13139fd457ed278bf75838b2de402b27700c64dd1344c1ec92e2ef42fa6ae4eb",
+      "bytes": 1312440,
       "method": "https-direct-live",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-11T22:58:22+10:00"
+      "checked_at": "2026-11-18T08:29:29+10:00"
     },
     {
       "id": "ha_pricing_api",
@@ -48,8 +48,8 @@
       "title": "DHA Visa Pricing JSON API (GetPriceList · All 15 Parent Visa Fee Tiers)",
       "title_ko": "이민성 내부 비자 수수료 API (GetPriceList · 부모비자 15개 스트림 1·2차 VAC)",
       "title_en": "DHA Visa Pricing JSON API (GetPriceList · All 15 Parent Visa Fee Tiers)",
-      "check_scope_ko": "103/143/173/804/864/884/870 1차 신청비(Base/18+/<18) 및 2차 기여금($43,600 · 870 $4,715/$10,605 등) 실시간 대조",
-      "check_scope_en": "Live verification of 1st & 2nd VAC across all 15 Parent Visa fee schedules",
+      "check_scope_ko": "103/143/173/804/864/884/870/020 1차 신청비(Base/18+/<18) 및 2차 기여금($43,600 · 870 $4,855/$10,925 · BVB $575) 실시간 JSON 파싱 대조",
+      "check_scope_en": "Live JSON parsing & verification of 1st & 2nd VAC across all 15 Parent Visa & BVB fee schedules",
       "cadence_ko": "매월 1일 및 매년 7월 1일 회계연도 개시일 집중 감시",
       "cadence_en": "Monthly & 1 July FY indexation check",
       "maxAgeHours": 720,
@@ -65,7 +65,7 @@
       "bytes": 247792,
       "method": "dha-json-api-post",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-11T22:58:22+10:00"
+      "checked_at": "2026-11-18T08:29:29+10:00"
     },
     {
       "id": "ha_subclass_143",
@@ -88,11 +88,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "e56b6fcd06045fa6438bed2826dd8445482cb3c8b2918db2b0729d8decc744b6",
-      "bytes": 1396888,
+      "sha256": "84896d5c5f60ed3571c9ab4f8b0b8fd947859bdd6e2c71c468e429e7064699ad",
+      "bytes": 1401236,
       "method": "https-direct-live",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-11T22:58:22+10:00"
+      "checked_at": "2026-11-18T08:29:29+10:00"
     },
     {
       "id": "ha_subclass_173",
@@ -115,11 +115,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "4debfd614761e617b20d6c7d55fedffd4c1a6bbe8449d14c3dcf37a12131e3fb",
-      "bytes": 1377600,
+      "sha256": "65f2c9fe842b7196a74aaa42ccf67f0d58d1bf29a9548b9083f8fe73cd5e71bc",
+      "bytes": 1381948,
       "method": "https-direct-live",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-11T22:58:22+10:00"
+      "checked_at": "2026-11-18T08:29:29+10:00"
     },
     {
       "id": "ha_subclass_864",
@@ -142,11 +142,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "ef789c320bc3640b29a5df8069fc1d3300329e01241052a0771960c419b6b340",
-      "bytes": 1388704,
+      "sha256": "91368b4dae176f79ffa437b5d270b877916534448668432322555d0e8d813f3b",
+      "bytes": 1393052,
       "method": "https-direct-live",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-11T22:58:22+10:00"
+      "checked_at": "2026-11-18T08:29:29+10:00"
     },
     {
       "id": "ha_subclass_884",
@@ -169,11 +169,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "79a305f75cb1cf970a65e7bf6b793c7461d73f94335400bdd69e104418039827",
-      "bytes": 1375632,
+      "sha256": "5b164a427ded6ecca85495292b85cc02f9e0ccec0895754cadc70669b73f0d8c",
+      "bytes": 1379980,
       "method": "https-direct-live",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-11T22:58:22+10:00"
+      "checked_at": "2026-11-18T08:29:29+10:00"
     },
     {
       "id": "ha_subclass_103",
@@ -183,7 +183,7 @@
       "title": "Subclass 103 · Parent (Migrant) Visa",
       "title_ko": "Subclass 103 · 일반 부모 영주비자 (Parent Visa)",
       "title_en": "Subclass 103 · Parent (Migrant) Visa",
-      "check_scope_ko": "LIN 26/005 온라인 접수 원칙 및 예외 · 1차 VAC($5,280) · 2차 VAC($2,065) · 4년 AoS 확인",
+      "check_scope_ko": "LIN 26/005 온라인 접수 원칙 및 예외 · 1차 VAC($6,600) · 2차 VAC($2,065) · 4년 AoS 확인",
       "check_scope_en": "PageSchemaHiddenField verification of 103 online lodgement, VAC & 4-yr AoS",
       "cadence_ko": "매월 정기 폴링",
       "cadence_en": "Monthly check",
@@ -196,11 +196,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "8499631ae687f45c75e03e77aa83e16d6bb83d6a373ca05d2a07d079ccab2d72",
-      "bytes": 1392253,
+      "sha256": "5c6cd16085f2059297ad612a8225481880bb003ae91ba646a91e2be86245b9e6",
+      "bytes": 1396601,
       "method": "https-direct-live",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-11T22:58:22+10:00"
+      "checked_at": "2026-11-18T08:29:29+10:00"
     },
     {
       "id": "ha_subclass_804",
@@ -223,11 +223,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "6db5c33023f9691d375f50de88a5095f537062735796d3354329dd12a6ebacef",
-      "bytes": 1386240,
+      "sha256": "df6731f3c6ab8860879cf827f6508745d628d40864fa778ee58a4149172ef26b",
+      "bytes": 1390588,
       "method": "https-direct-live",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-11T22:58:22+10:00"
+      "checked_at": "2026-11-18T08:29:29+10:00"
     },
     {
       "id": "ha_subclass_870",
@@ -235,7 +235,7 @@
       "authority_ko": "호주 연방 이민성 (Department of Home Affairs)",
       "authority_en": "Department of Home Affairs",
       "title": "Subclass 870 · Sponsored Parent (Temporary) Visa",
-      "title_ko": "Subclass 870 · 스폰서 임시 부모비자 (3년 $5,895 / 5년 $11,785 + 스폰서 $420 · 최대 10년)",
+      "title_ko": "Subclass 870 · 스폰서 임시 부모비자 (3년 $6,370 / 5년 $12,440 + 스폰서 $420 · 최대 10년)",
       "title_en": "Subclass 870 · Sponsored Parent (Temporary) Visa",
       "check_scope_ko": "가족균형 면제 · 스폰서 과세소득($83,454.80) · cl 870.228(PIC 4005/4007) · cl 870.227 · reg 2.87CE 파싱",
       "check_scope_en": "PageSchemaHiddenField verification of 870 fees, income threshold, PIC 4005/4007 & permanent bar",
@@ -250,11 +250,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "2b7197592d23cabef70d14c958aeecf3e64b592d8bda7e42d8a69227c9365ce8",
-      "bytes": 1385208,
+      "sha256": "8f910fd2939901bde26a32a61c7a7e5b2869577bdfcf36faac36ed4deecf681d",
+      "bytes": 1389668,
       "method": "https-direct-live",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-11T22:58:22+10:00"
+      "checked_at": "2026-11-18T08:29:29+10:00"
     },
     {
       "id": "ha_bof_test",
@@ -277,11 +277,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "cc8d9a6fcc677f7f5b8b4d0efe73982070e1f7a9bb2624001b00d0d9d1c5d974",
-      "bytes": 1312559,
+      "sha256": "0db26649fed39443b1773619ddc0a35ef5753277fb5cbf1c06191fcd77e7a753",
+      "bytes": 1316907,
       "method": "https-direct-live",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-11T22:58:22+10:00"
+      "checked_at": "2026-11-18T08:29:29+10:00"
     },
     {
       "id": "ha_planning_levels",
@@ -304,11 +304,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "f3ce8cf93ad674583d73c477de2161203f1b12cec213c4ccb65687cdadc45886",
-      "bytes": 1326409,
+      "sha256": "60e1b138bbbaf900c8a1c89b6b5985c064e8ae105100b4ea773af6c271d36c4d",
+      "bytes": 1330757,
       "method": "https-direct-live",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-11T22:58:22+10:00"
+      "checked_at": "2026-11-18T08:29:29+10:00"
     },
     {
       "id": "leg_lin_26_042",
@@ -331,11 +331,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "da4213a0cc6e690e5e04890daa4b5c8eb346426ef5ba0374f1fc5646d7f00d52",
-      "bytes": 83596,
+      "sha256": "13b182430428c0ed1d5deb8ec450bdb1375a7514a640cc599e69aba3a1d195fc",
+      "bytes": 81973,
       "method": "https-direct-live",
       "changed_since_last_poll": true,
-      "checked_at": "2026-11-11T22:58:22+10:00"
+      "checked_at": "2026-11-18T08:29:29+10:00"
     },
     {
       "id": "sa_aos_policy",
@@ -358,11 +358,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "f70a9eeb15d881f80a97dc5e588f296b08a106cbd96fdc8303322d124cef8f02",
+      "sha256": "856c57d08d3976b32e0bd421b197c64e4c9a4bbd0c697213ecb61b0b8d317f1f",
       "bytes": 198250,
       "method": "https-direct-live",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-11T22:58:22+10:00"
+      "checked_at": "2026-11-18T08:29:29+10:00"
     },
     {
       "id": "sa_medicare_rhca",
@@ -385,11 +385,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "11e458967d245d088b0a3d398df5f048f5df5092b563ba21a131235021b1a2fc",
-      "bytes": 186571,
+      "sha256": "dd6985e4eac7e5542aab130a038c3a20fe37954334172f8fd411cdf94161ceb3",
+      "bytes": 186738,
       "method": "https-direct-live",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-11T22:58:22+10:00"
+      "checked_at": "2026-11-18T08:29:29+10:00"
     },
     {
       "id": "dss_guide_aos",
@@ -412,11 +412,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "c1382004a7872a60111f54a35de9d4821af2877b9de1f35d3caf9e4da45c2e58",
+      "sha256": "efbb44dc67eddd43eb1ee4d5cb5ab563ef041b61cd8db74612f9549b0f45ee85",
       "bytes": 32335,
       "method": "insane-search-live",
       "changed_since_last_poll": true,
-      "checked_at": "2026-11-11T22:58:22+10:00"
+      "checked_at": "2026-11-18T08:29:29+10:00"
     }
   ],
   "internal_policy_references": [
@@ -563,11 +563,12 @@
     "statutory_vac_fy26_27": {
       "effective_date": "2026-07-01",
       "authority": "Migration Regulations 1994 Schedule 1 (Items 1124, 1124A, 1130, 1130A, 1221, 1221A, 1239) & Home Affairs PageSchemaHiddenField / GetPriceList",
+      "bvb_020_base": 575,
       "103": {
         "sponsorship": 0,
-        "first_base": 5280,
-        "first_adult": 2640,
-        "first_child": 1325,
+        "first_base": 6600,
+        "first_adult": 3300,
+        "first_child": 1655,
         "second_per_person": 2065,
         "second_child": 2065,
         "aos_years": 4,
@@ -576,9 +577,9 @@
       },
       "804": {
         "sponsorship": 0,
-        "first_base": 5280,
-        "first_adult": 2640,
-        "first_child": 1325,
+        "first_base": 6600,
+        "first_adult": 3300,
+        "first_child": 1655,
         "second_per_person": 2065,
         "second_child": 2065,
         "aos_years": 4,
@@ -587,9 +588,9 @@
       },
       "143": {
         "sponsorship": 0,
-        "first_base": 5040,
-        "first_adult": 1700,
-        "first_child": 855,
+        "first_base": 6300,
+        "first_adult": 2125,
+        "first_child": 1065,
         "second_per_person": 43600,
         "second_child": 2095,
         "aos_years": 10,
@@ -598,9 +599,9 @@
       },
       "173": {
         "sponsorship": 0,
-        "first_base": 3395,
-        "first_adult": 1145,
-        "first_child": 575,
+        "first_base": 4245,
+        "first_adult": 2125,
+        "first_child": 1065,
         "second_per_person": 29130,
         "second_child": 2095,
         "aos_years": 0,
@@ -609,9 +610,9 @@
       },
       "173_to_143": {
         "sponsorship": 0,
-        "first_base": 440,
-        "first_adult": 195,
-        "first_child": 100,
+        "first_base": 555,
+        "first_adult": 280,
+        "first_child": 135,
         "second_per_person": 19420,
         "second_child": 0,
         "aos_years": 10,
@@ -620,9 +621,9 @@
       },
       "864": {
         "sponsorship": 0,
-        "first_base": 5040,
-        "first_adult": 2515,
-        "first_child": 1260,
+        "first_base": 6300,
+        "first_adult": 3145,
+        "first_child": 1580,
         "second_per_person": 43600,
         "second_child": 2095,
         "aos_years": 10,
@@ -631,9 +632,9 @@
       },
       "884": {
         "sponsorship": 0,
-        "first_base": 4990,
-        "first_adult": 2490,
-        "first_child": 1250,
+        "first_base": 6300,
+        "first_adult": 3145,
+        "first_child": 1580,
         "second_per_person": 29130,
         "second_child": 2095,
         "aos_years": 0,
@@ -642,9 +643,9 @@
       },
       "884_to_864": {
         "sponsorship": 0,
-        "first_base": 440,
-        "first_adult": 195,
-        "first_child": 100,
+        "first_base": 555,
+        "first_adult": 280,
+        "first_child": 135,
         "second_per_person": 19420,
         "second_child": 0,
         "aos_years": 10,
@@ -653,29 +654,29 @@
       },
       "870_3yr": {
         "sponsorship": 420,
-        "first_base": 1180,
+        "first_base": 1515,
         "first_adult": 0,
         "first_child": 0,
-        "second_per_person": 4715,
+        "second_per_person": 4855,
         "second_child": 0,
         "secondary_applicants_allowed": false,
-        "visa_subtotal_per_parent": 5895,
-        "total_1_parent_incl_sponsorship": 6315,
-        "total_2_parents_incl_sponsorship": 12210,
+        "visa_subtotal_per_parent": 6370,
+        "total_1_parent_incl_sponsorship": 6790,
+        "total_2_parents_incl_sponsorship": 13160,
         "sponsor_income": 83454.8,
         "primary_sponsor_min_50pct": 41727.4
       },
       "870_5yr": {
         "sponsorship": 420,
-        "first_base": 1180,
+        "first_base": 1515,
         "first_adult": 0,
         "first_child": 0,
-        "second_per_person": 10605,
+        "second_per_person": 10925,
         "second_child": 0,
         "secondary_applicants_allowed": false,
-        "visa_subtotal_per_parent": 11785,
-        "total_1_parent_incl_sponsorship": 12205,
-        "total_2_parents_incl_sponsorship": 23990,
+        "visa_subtotal_per_parent": 12440,
+        "total_1_parent_incl_sponsorship": 12860,
+        "total_2_parents_incl_sponsorship": 25300,
         "sponsor_income": 83454.8,
         "primary_sponsor_min_50pct": 41727.4
       }
