@@ -1,10 +1,10 @@
 {
   "release_id": "2026.10.21-audit-v2",
-  "last_polled_at": "2026-11-18T08:29:29+10:00",
-  "last_polled_date": "2026-11-18",
+  "last_polled_at": "2026-11-23T07:35:24+10:00",
+  "last_polled_date": "2026-11-23",
   "total_sources": 15,
   "live_verified_count": 15,
-  "changed_count": 2,
+  "changed_count": 14,
   "official_contact": "https://parklawyers.com.au/links/?lang=ko",
   "official_email": "enquiry@parkcolawyers.com",
   "monitored_rules": {
@@ -318,11 +318,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "13139fd457ed278bf75838b2de402b27700c64dd1344c1ec92e2ef42fa6ae4eb",
-      "bytes": 1312440,
+      "sha256": "877e5d035f53d93bbe8ada88534efe9c6b3061b17b6581b43c81224d3b344a45",
+      "bytes": 1312204,
       "method": "https-direct-live",
-      "changed_since_last_poll": false,
-      "checked_at": "2026-11-18T08:29:29+10:00"
+      "changed_since_last_poll": true,
+      "checked_at": "2026-11-23T07:35:24+10:00"
     },
     {
       "id": "ha_pricing_api",
@@ -349,7 +349,7 @@
       "bytes": 247792,
       "method": "dha-json-api-post",
       "changed_since_last_poll": false,
-      "checked_at": "2026-11-18T08:29:29+10:00"
+      "checked_at": "2026-11-23T07:35:24+10:00"
     },
     {
       "id": "ha_subclass_143",
@@ -372,11 +372,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "84896d5c5f60ed3571c9ab4f8b0b8fd947859bdd6e2c71c468e429e7064699ad",
-      "bytes": 1401236,
+      "sha256": "a33dd4cf69b81fa64bec262475cbcce1f92123c936f3490564540b4d3b21b042",
+      "bytes": 1401000,
       "method": "https-direct-live",
-      "changed_since_last_poll": false,
-      "checked_at": "2026-11-18T08:29:29+10:00"
+      "changed_since_last_poll": true,
+      "checked_at": "2026-11-23T07:35:24+10:00"
     },
     {
       "id": "ha_subclass_173",
@@ -399,11 +399,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "65f2c9fe842b7196a74aaa42ccf67f0d58d1bf29a9548b9083f8fe73cd5e71bc",
-      "bytes": 1381948,
+      "sha256": "d3a352b98dbf25c2de2a075b05a4e0697c19916879dd27c7b2873650c1d302c7",
+      "bytes": 1381712,
       "method": "https-direct-live",
-      "changed_since_last_poll": false,
-      "checked_at": "2026-11-18T08:29:29+10:00"
+      "changed_since_last_poll": true,
+      "checked_at": "2026-11-23T07:35:24+10:00"
     },
     {
       "id": "ha_subclass_864",
@@ -426,11 +426,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "91368b4dae176f79ffa437b5d270b877916534448668432322555d0e8d813f3b",
-      "bytes": 1393052,
+      "sha256": "986e23d0a3617fb2c7d5b92a756e928cf948b7e84147490f4b80f5f2e6010a9c",
+      "bytes": 1392816,
       "method": "https-direct-live",
-      "changed_since_last_poll": false,
-      "checked_at": "2026-11-18T08:29:29+10:00"
+      "changed_since_last_poll": true,
+      "checked_at": "2026-11-23T07:35:24+10:00"
     },
     {
       "id": "ha_subclass_884",
@@ -453,11 +453,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "5b164a427ded6ecca85495292b85cc02f9e0ccec0895754cadc70669b73f0d8c",
-      "bytes": 1379980,
+      "sha256": "642283e89ec98771e4419f350b7ca872ae198d744fb9923514e53a894370484d",
+      "bytes": 1379744,
       "method": "https-direct-live",
-      "changed_since_last_poll": false,
-      "checked_at": "2026-11-18T08:29:29+10:00"
+      "changed_since_last_poll": true,
+      "checked_at": "2026-11-23T07:35:24+10:00"
     },
     {
       "id": "ha_subclass_103",
@@ -480,11 +480,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "5c6cd16085f2059297ad612a8225481880bb003ae91ba646a91e2be86245b9e6",
-      "bytes": 1396601,
+      "sha256": "362887d539d8c85ecfcada4f5477e16362adba2729b5ec482cc67f578ae285df",
+      "bytes": 1396365,
       "method": "https-direct-live",
-      "changed_since_last_poll": false,
-      "checked_at": "2026-11-18T08:29:29+10:00"
+      "changed_since_last_poll": true,
+      "checked_at": "2026-11-23T07:35:24+10:00"
     },
     {
       "id": "ha_subclass_804",
@@ -507,11 +507,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "df6731f3c6ab8860879cf827f6508745d628d40864fa778ee58a4149172ef26b",
-      "bytes": 1390588,
+      "sha256": "d1dabf1d1b908e792e8eb21340e9753e7942052baade5f3cfa81155434dc2762",
+      "bytes": 1390352,
       "method": "https-direct-live",
-      "changed_since_last_poll": false,
-      "checked_at": "2026-11-18T08:29:29+10:00"
+      "changed_since_last_poll": true,
+      "checked_at": "2026-11-23T07:35:24+10:00"
     },
     {
       "id": "ha_subclass_870",
@@ -534,11 +534,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "8f910fd2939901bde26a32a61c7a7e5b2869577bdfcf36faac36ed4deecf681d",
-      "bytes": 1389668,
+      "sha256": "173084f5cfa91dfee0dca35f31380a6c336e5833a11e8fc4f2173ec60678cd65",
+      "bytes": 1389320,
       "method": "https-direct-live",
-      "changed_since_last_poll": false,
-      "checked_at": "2026-11-18T08:29:29+10:00"
+      "changed_since_last_poll": true,
+      "checked_at": "2026-11-23T07:35:24+10:00"
     },
     {
       "id": "ha_bof_test",
@@ -561,11 +561,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "0db26649fed39443b1773619ddc0a35ef5753277fb5cbf1c06191fcd77e7a753",
-      "bytes": 1316907,
+      "sha256": "bc1b81adf525b8fe4d4593a26e467daaab0d8dd7c502e081843dd7ffa174ea9c",
+      "bytes": 1316671,
       "method": "https-direct-live",
-      "changed_since_last_poll": false,
-      "checked_at": "2026-11-18T08:29:29+10:00"
+      "changed_since_last_poll": true,
+      "checked_at": "2026-11-23T07:35:24+10:00"
     },
     {
       "id": "ha_planning_levels",
@@ -588,11 +588,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "60e1b138bbbaf900c8a1c89b6b5985c064e8ae105100b4ea773af6c271d36c4d",
-      "bytes": 1330757,
+      "sha256": "8f7f11cce2a5b2efa6c3ab6e433ebe93ff6819ae88251da5a0177036fe4c853b",
+      "bytes": 1330521,
       "method": "https-direct-live",
-      "changed_since_last_poll": false,
-      "checked_at": "2026-11-18T08:29:29+10:00"
+      "changed_since_last_poll": true,
+      "checked_at": "2026-11-23T07:35:24+10:00"
     },
     {
       "id": "leg_lin_26_042",
@@ -615,11 +615,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "13b182430428c0ed1d5deb8ec450bdb1375a7514a640cc599e69aba3a1d195fc",
+      "sha256": "8cf06cb657304d8da123349e265728da3b48799e8e6f1c824873d98d0b187df2",
       "bytes": 81973,
       "method": "https-direct-live",
       "changed_since_last_poll": true,
-      "checked_at": "2026-11-18T08:29:29+10:00"
+      "checked_at": "2026-11-23T07:35:24+10:00"
     },
     {
       "id": "sa_aos_policy",
@@ -642,11 +642,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "856c57d08d3976b32e0bd421b197c64e4c9a4bbd0c697213ecb61b0b8d317f1f",
-      "bytes": 198250,
+      "sha256": "1ccdb42833f98d2559bd4c69bc35f9f0eb74054783f187cfb664d8621273bf44",
+      "bytes": 198060,
       "method": "https-direct-live",
-      "changed_since_last_poll": false,
-      "checked_at": "2026-11-18T08:29:29+10:00"
+      "changed_since_last_poll": true,
+      "checked_at": "2026-11-23T07:35:24+10:00"
     },
     {
       "id": "sa_medicare_rhca",
@@ -669,11 +669,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "dd6985e4eac7e5542aab130a038c3a20fe37954334172f8fd411cdf94161ceb3",
-      "bytes": 186738,
+      "sha256": "096971dc100b9d27a5b23469724567982d5620259c02a5a799482323289412c1",
+      "bytes": 186381,
       "method": "https-direct-live",
-      "changed_since_last_poll": false,
-      "checked_at": "2026-11-18T08:29:29+10:00"
+      "changed_since_last_poll": true,
+      "checked_at": "2026-11-23T07:35:24+10:00"
     },
     {
       "id": "dss_guide_aos",
@@ -696,11 +696,11 @@
       "ruleMatchStatus": "matched",
       "reviewStatus": "approved",
       "http_code": 200,
-      "sha256": "efbb44dc67eddd43eb1ee4d5cb5ab563ef041b61cd8db74612f9549b0f45ee85",
+      "sha256": "115f4e438538e32004f6a111ed4af41d178a0d5e2eb060a67fda794d0359fc4b",
       "bytes": 32335,
       "method": "insane-search-live",
       "changed_since_last_poll": true,
-      "checked_at": "2026-11-18T08:29:29+10:00"
+      "checked_at": "2026-11-23T07:35:24+10:00"
     }
   ]
 }
